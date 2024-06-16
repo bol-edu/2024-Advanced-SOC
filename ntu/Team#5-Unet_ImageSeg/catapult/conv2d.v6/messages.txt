@@ -1,0 +1,264 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'conv2d.v6' at state 'new' (PRJ-2)
+conv2d.v6
+go analyze
+# Info: Starting transformation 'analyze' on solution 'conv2d.v6' (SOL-8)
+Front End called with arguments: -I/home/raid7_2/user12/r12016/asoc/final/hls -- /home/raid7_2/user12/r12016/asoc/final/hls/main.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 29.46 seconds, memory usage 6169444kB, peak memory usage 6169444kB (SOL-15)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 42.33 seconds, memory usage 6169444kB, peak memory usage 6169444kB (SOL-15)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: trailing comma is nonstandard (CRD-228)
+# Warning: last line of file ends without a newline (CRD-1)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 60.53 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'UNET_IP::main' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'conv2d.v6': elapsed time 85.94 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-9)
+
+# Messages from "go compile"
+
+go compile
+# Info: Starting transformation 'compile' on solution 'conv2d.v6' (SOL-8)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 28.48 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+Generating synthesis internal form... (CIN-3)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 39.75 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+Found top design routine 'UNET_IP::conv2d' specified by directive (CIN-52)
+# Warning: Instantiating global variable 'filters_pretrain' which may be accessed outside this scope (CIN-18)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 59.09 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 87.98 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 98.18 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 125.94 seconds, memory usage 6431588kB, peak memory usage 6431588kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 153.72 seconds, memory usage 6431588kB, peak memory usage 6431588kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 160.44 seconds, memory usage 6431588kB, peak memory usage 6431588kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 186.32 seconds, memory usage 6431588kB, peak memory usage 6431588kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 215.71 seconds, memory usage 6431588kB, peak memory usage 6431588kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 224.38 seconds, memory usage 6497124kB, peak memory usage 6497124kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 247.30 seconds, memory usage 6497124kB, peak memory usage 6497124kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 276.27 seconds, memory usage 6497124kB, peak memory usage 6497124kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 284.66 seconds, memory usage 6497124kB, peak memory usage 6497124kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 307.55 seconds, memory usage 6497124kB, peak memory usage 6497124kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 335.53 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Inlining member function 'UNET_IP::conv2d::conv2d' on object '' (CIN-64)
+Synthesizing method 'UNET_IP::conv2d::run_conv' (CIN-13)
+Inlining member function 'UNET_IP::conv2d::run_conv' on object '' (CIN-64)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/UNET_IP::conv2d/run_conv/for:for:for' (CIN-203)
+Inlining routine 'operator/<2, false>' (CIN-14)
+Optimizing block '/UNET_IP::conv2d' ... (CIN-4)
+INOUT port 'input' is only used as an input. (OPT-10)
+INOUT port 'output' is only used as an output. (OPT-11)
+INOUT port 'height' is only used as an input. (OPT-10)
+INOUT port 'width' is only used as an input. (OPT-10)
+INOUT port 'kernel_size' is only used as an input. (OPT-10)
+INOUT port 'padding' is only used as an input. (OPT-10)
+INOUT port 'filter_offset' is only used as an input. (OPT-10)
+INOUT port 'in_channels' is only used as an input. (OPT-10)
+INOUT port 'out_channels' is only used as an input. (OPT-10)
+# Info: Partition '/UNET_IP::conv2d/constructor' is found empty and is optimized away. (OPT-12)
+# Info: Running transformation 'compile' on solution 'conv2d.v6': elapsed time 343.90 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Design 'UNET_IP::conv2d' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/conv2d.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/conv2d.v6/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'conv2d.v6': elapsed time 363.27 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 111, Real ops = 68, Vars = 26 (SOL-21)
+
+# Messages from "go libraries"
+
+go libraries
+# Info: Starting transformation 'libraries' on solution 'conv2d.v6' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Completed transformation 'libraries' on solution 'conv2d.v6': elapsed time 2.31 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 111, Real ops = 68, Vars = 26 (SOL-21)
+
+# Messages from "go assembly"
+
+go assembly
+# Info: Starting transformation 'assembly' on solution 'conv2d.v6' (SOL-8)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::filters_pretrain.rom', from '8' bits to '5' bits. (MEM-87)
+# Info: Completed transformation 'assembly' on solution 'conv2d.v6': elapsed time 2.79 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 112, Real ops = 69, Vars = 29 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /UNET_IP::conv2d/run_conv/LOOP_Y -PIPELINE_INIT_INTERVAL 1
+/UNET_IP::conv2d/run_conv/LOOP_Y/PIPELINE_INIT_INTERVAL 1
+go architect
+# Info: Starting transformation 'loops' on solution 'conv2d.v6' (SOL-8)
+Loop '/UNET_IP::conv2d/run_conv/for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_Y' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_X' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_WIDTH' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_HEIGHT' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_IN' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/LOOP_OUT' is left rolled. (LOOP-4)
+Loop '/UNET_IP::conv2d/run_conv/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'conv2d.v6': elapsed time 1.11 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 132, Real ops = 69, Vars = 39 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'conv2d.v6' (SOL-8)
+Memory Resource '/UNET_IP::conv2d/input:rsc' (from var: input) mapped to 'Xilinx_RAMS.DIST_1R1W_RBW suppress_sim_read_addr_range_errs=1' (size: 32768 x 12). (MEM-4)
+Memory Resource '/UNET_IP::conv2d/padded_input:rsc' (from var: padded_input) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 34848 x 12). (MEM-4)
+Memory Resource '/UNET_IP::conv2d/output:rsc' (from var: output) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+ROM Resource '/UNET_IP::conv2d/UNET_IP::filters_pretrain.rom:rsc' (from var: UNET_IP::filters_pretrain.rom#3) mapped to 'Xilinx_ROMS.mgc_rom' (size: 485120 x 5). (MEM-10)
+# Info: Completed transformation 'memories' on solution 'conv2d.v6': elapsed time 3.75 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 136, Real ops = 69, Vars = 36 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'conv2d.v6' (SOL-8)
+# Warning: ROM clustering skipped Technology Library(ies) required for Prototyping not found (CLUSTER-24)
+# Info: Completed transformation 'cluster' on solution 'conv2d.v6': elapsed time 0.72 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 136, Real ops = 69, Vars = 36 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'conv2d.v6' (SOL-8)
+Design 'UNET_IP::conv2d' contains '99' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'conv2d.v6': elapsed time 6.07 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 311, Real ops = 99, Vars = 59 (SOL-21)
+
+# Messages from "go allocate"
+
+go allocate
+# Info: Starting transformation 'allocate' on solution 'conv2d.v6' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::conv2d/run_conv' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_Y' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_X' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_WIDTH' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_HEIGHT' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/for:for:for' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_IN' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/LOOP_OUT' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/main' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::conv2d/run_conv/run_conv:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/UNET_IP::conv2d/run_conv' (total length 200856 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/UNET_IP::conv2d/run_conv': Latency = 200850, Area (Datapath, Register, Total) = 400844.00, 0.00, 400844.00 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+Input operation 'operator_<2,false>:asn#5' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'LOOP_Y:asn#11' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'operator_<2,false>:asn#9' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'width:asn#2' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'width:asn#2' moved from c-step 1 to c-step 3 to save registers (SCHD-49)
+Input operation 'operator_<2,false>:asn#10' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'operator_<2,false>:asn#10' moved from c-step 1 to c-step 3 to save registers (SCHD-49)
+Input operation 'for:for:for:asn#8' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'padded_width:asn#2' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'for:for:for:asn#10' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'for:for:for:asn#10' moved from c-step 1 to c-step 3 to save registers (SCHD-49)
+Input operation 'padded_height:asn#2' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'padded_width:asn#3' moved from c-step 2 to c-step 3 to save registers (SCHD-49)
+# Info: Final schedule of SEQUENTIAL '/UNET_IP::conv2d/run_conv': Latency = 200850, Area (Datapath, Register, Total) = 398849.00, 0.00, 398849.00 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'conv2d.v6': elapsed time 8.97 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 311, Real ops = 99, Vars = 59 (SOL-21)
+
+# Messages from "go schedule"
+
+go extract
+# Info: Starting transformation 'schedule' on solution 'conv2d.v6' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::conv2d/run_conv' (CRAAS-1)
+Global signal 'input:rsc.clken' added to design 'UNET_IP::conv2d' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.q' added to design 'UNET_IP::conv2d' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.re' added to design 'UNET_IP::conv2d' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.radr' added to design 'UNET_IP::conv2d' for component 'input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.clken' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.q' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.re' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.radr' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.we' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.d' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.wadr' added to design 'UNET_IP::conv2d' for component 'padded_input:rsci' (LIB-3)
+Global signal 'output:rsc.clken' added to design 'UNET_IP::conv2d' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.we' added to design 'UNET_IP::conv2d' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.d' added to design 'UNET_IP::conv2d' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.wadr' added to design 'UNET_IP::conv2d' for component 'output:rsci' (LIB-3)
+Global signal 'input.triosy.lz' added to design 'UNET_IP::conv2d' for component 'input.triosy:obj' (LIB-3)
+Global signal 'padded_input.triosy.lz' added to design 'UNET_IP::conv2d' for component 'padded_input.triosy:obj' (LIB-3)
+Global signal 'output.triosy.lz' added to design 'UNET_IP::conv2d' for component 'output.triosy:obj' (LIB-3)
+# Info: Loop '/UNET_IP::conv2d/run_conv/for:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::conv2d/run_conv/LOOP_Y' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Running transformation 'schedule' on solution 'conv2d.v6': elapsed time 28.02 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'conv2d.v6': elapsed time 35.48 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'conv2d.v6': elapsed time 54.97 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'conv2d.v6': elapsed time 72.66 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 686, Real ops = 100, Vars = 168 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'conv2d.v6' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'LOOP_WIDTH:mul#1.itm' for variables 'LOOP_WIDTH:mul#1.itm, for:for:h.sva, LOOP_Y:asn#20.itm.1' (2 registers deleted). (FSM-3)
+# Info: Completed transformation 'dpfsm' on solution 'conv2d.v6': elapsed time 7.52 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 655, Real ops = 325, Vars = 182 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'conv2d.v6' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Running transformation 'instance' on solution 'conv2d.v6': elapsed time 6.52 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Completed transformation 'instance' on solution 'conv2d.v6': elapsed time 6.58 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 573, Real ops = 211, Vars = 483 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'conv2d.v6' (SOL-8)
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 21.06 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Report written to file 'rtl.rpt'
+ROM component 'mgc_rom(12,485120,5,1)' initialization mode: inline_init. (MEM-76)
+Generating scverify_top.cpp ()
+Generating SCVerify ccs_wrapper_UNET_IP_conv2d.vhdl ()
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: ./rtl_UNET_IP_conv2dmgc_rom_12_485120_5_1.vhdl
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 48.01 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 60.53 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/conv2d.v6/concat_rtl.vhdl
+order file name is: rtl.vhdl_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: ./rtl_UNET_IP_conv2dmgc_rom_12_485120_5_1.vhdl
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 80.53 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 109.18 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 119.57 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/conv2d.v6/concat_sim_rtl.vhdl
+Generating SCVerify testbench files
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/conv2d.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_vhdl/rtl.vhdl.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_vhdl/concat_rtl.vhdl.xv'
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 138.49 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+ROM component 'mgc_rom(12,485120,5,1)' initialization mode: inline_init. (MEM-76)
+Generating SCVerify ccs_wrapper_UNET_IP_conv2d.v ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: ./rtl_UNET_IP_conv2dmgc_rom_12_485120_5_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/conv2d.v6/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: ./rtl_UNET_IP_conv2dmgc_rom_12_485120_5_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/conv2d.v6/concat_sim_rtl.v
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_v/rtl.v.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_v/concat_rtl.v.xv'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 157.87 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'extract' on solution 'conv2d.v6': elapsed time 164.50 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Completed transformation 'extract' on solution 'conv2d.v6': elapsed time 184.84 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 580, Real ops = 228, Vars = 159 (SOL-21)

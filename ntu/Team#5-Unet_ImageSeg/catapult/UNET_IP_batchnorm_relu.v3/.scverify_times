@@ -1,0 +1,4 @@
+4662485 '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/rtl.vhdl' 'VHDL' 'rtl'
+1511067 '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_sim_rtl.vhdl' 'VHDL' 'rtl'
+1827076 '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/rtl.v' 'VERILOG' 'rtl'
+1808238 '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_sim_rtl.v' 'VERILOG' 'rtl'

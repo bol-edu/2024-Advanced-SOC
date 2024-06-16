@@ -1,0 +1,26 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(gdb) Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "/home/raid7_2/userk/m11102167/ASoC/Final/01_edgedetect/catapult_work/EdgeDetect_IP__EdgeDetect_Top",
+			"args": [ "./test.bmp","out_algorithm.bmp","out_hw.bmp" ],
+			"stopAtEntry": true,
+			"cwd": "/home/raid7_2/userk/m11102167/ASoC/Final/01_edgedetect/catapult_work",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "g++ build",
+			"miDebuggerPath": "/bin/gdb"
+		}
+	]
+}

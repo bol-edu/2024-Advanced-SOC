@@ -1,0 +1,218 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'conv2d.v6' at state 'new' (PRJ-2)
+conv2d.v6
+go analyze
+# Info: Starting transformation 'analyze' on solution 'conv2d.v6' (SOL-8)
+Front End called with arguments: -I/home/raid7_2/user12/r12016/asoc/final/hls -- /home/raid7_2/user12/r12016/asoc/final/hls/main.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 29.46 seconds, memory usage 6169444kB, peak memory usage 6169444kB (SOL-15)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 42.33 seconds, memory usage 6169444kB, peak memory usage 6169444kB (SOL-15)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: trailing comma is nonstandard (CRD-228)
+# Warning: last line of file ends without a newline (CRD-1)
+# Info: Running transformation 'analyze' on solution 'conv2d.v6': elapsed time 60.53 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-15)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'UNET_IP::main' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'conv2d.v6': elapsed time 85.94 seconds, memory usage 6366052kB, peak memory usage 6366052kB (SOL-9)
+
+# Messages from "go compile"
+
+# Info: Branching solution 'solution.v1' at state 'analyze' (PRJ-2)
+solution design set UNET_IP::conv2d -block (HC-8)
+solution design set UNET_IP::maxpool -top
+solution design set UNET_IP::maxpool -top (HC-8)
+go compile
+# Info: Starting transformation 'compile' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+# Info: Running transformation 'compile' on solution 'UNET_IP::maxpool.v1': elapsed time 25.94 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'UNET_IP::maxpool.v1': elapsed time 37.51 seconds, memory usage 6693732kB, peak memory usage 6693732kB (SOL-15)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'UNET_IP::maxpool' specified by directive (CIN-52)
+Inlining member function 'UNET_IP::maxpool::maxpool' on object '' (CIN-64)
+Synthesizing method 'UNET_IP::maxpool::run_max' (CIN-13)
+Inlining member function 'UNET_IP::maxpool::run_max' on object '' (CIN-64)
+Inlining routine 'operator==<3, false>' (CIN-14)
+Inlining routine 'operator==<3, false>' (CIN-14)
+Optimizing block '/UNET_IP::maxpool' ... (CIN-4)
+INOUT port 'input' is only used as an input. (OPT-10)
+INOUT port 'output' is only used as an output. (OPT-11)
+INOUT port 'channels' is only used as an input. (OPT-10)
+INOUT port 'height' is only used as an input. (OPT-10)
+INOUT port 'width' is only used as an input. (OPT-10)
+INOUT port 'pool_size' is only used as an input. (OPT-10)
+INOUT port 'stride' is only used as an input. (OPT-10)
+# Info: Partition '/UNET_IP::maxpool/constructor' is found empty and is optimized away. (OPT-12)
+Design 'UNET_IP::maxpool' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/maxpool.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_maxpool.v1/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'UNET_IP::maxpool.v1': elapsed time 45.01 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 57, Real ops = 37, Vars = 20 (SOL-21)
+
+# Messages from "go libraries"
+
+go libraries
+# Info: Starting transformation 'libraries' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Completed transformation 'libraries' on solution 'UNET_IP::maxpool.v1': elapsed time 0.92 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 57, Real ops = 37, Vars = 20 (SOL-21)
+
+# Messages from "go assembly"
+
+go assembly
+# Info: Starting transformation 'assembly' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+# Info: Completed transformation 'assembly' on solution 'UNET_IP::maxpool.v1': elapsed time 0.37 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 58, Real ops = 38, Vars = 23 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /UNET_IP::maxpool -RESET_CLEARS_ALL_REGS no
+/UNET_IP::maxpool/RESET_CLEARS_ALL_REGS no
+directive set /UNET_IP::maxpool/input:rsc -GEN_EXTERNAL_ENABLE true
+/UNET_IP::maxpool/input:rsc/GEN_EXTERNAL_ENABLE true
+directive set /UNET_IP::maxpool/output:rsc -GEN_EXTERNAL_ENABLE true
+/UNET_IP::maxpool/output:rsc/GEN_EXTERNAL_ENABLE true
+directive set /UNET_IP::maxpool/channels:rsc -MAP_TO_MODULE {[DirectInput]}
+/UNET_IP::maxpool/channels:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /UNET_IP::maxpool/height:rsc -MAP_TO_MODULE {[DirectInput]}
+/UNET_IP::maxpool/height:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /UNET_IP::maxpool/width:rsc -MAP_TO_MODULE {[DirectInput]}
+/UNET_IP::maxpool/width:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /UNET_IP::maxpool/pool_size:rsc -MAP_TO_MODULE {[DirectInput]}
+/UNET_IP::maxpool/pool_size:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /UNET_IP::maxpool/stride:rsc -MAP_TO_MODULE {[DirectInput]}
+/UNET_IP::maxpool/stride:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /UNET_IP::maxpool/run_max/LOOP_Y -PIPELINE_INIT_INTERVAL 1
+/UNET_IP::maxpool/run_max/LOOP_Y/PIPELINE_INIT_INTERVAL 1
+go architect
+# Info: Starting transformation 'loops' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Loop '/UNET_IP::maxpool/run_max/LOOP_Y' is left rolled. (LOOP-4)
+Loop '/UNET_IP::maxpool/run_max/LOOP_X' is left rolled. (LOOP-4)
+Loop '/UNET_IP::maxpool/run_max/LOOP_WIDTH' is left rolled. (LOOP-4)
+Loop '/UNET_IP::maxpool/run_max/LOOP_HEIGHT' is left rolled. (LOOP-4)
+Loop '/UNET_IP::maxpool/run_max/LOOP_CH' is left rolled. (LOOP-4)
+Loop '/UNET_IP::maxpool/run_max/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'UNET_IP::maxpool.v1': elapsed time 0.18 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 72, Real ops = 38, Vars = 30 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Memory Resource '/UNET_IP::maxpool/input:rsc' (from var: input) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+Memory Resource '/UNET_IP::maxpool/output:rsc' (from var: output) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+# Info: Completed transformation 'memories' on solution 'UNET_IP::maxpool.v1': elapsed time 1.25 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 62, Real ops = 38, Vars = 31 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+# Warning: ROM clustering skipped Technology Library(ies) required for Prototyping not found (CLUSTER-24)
+# Info: Completed transformation 'cluster' on solution 'UNET_IP::maxpool.v1': elapsed time 0.08 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 62, Real ops = 38, Vars = 31 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Design 'UNET_IP::maxpool' contains '59' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'UNET_IP::maxpool.v1': elapsed time 3.09 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 175, Real ops = 59, Vars = 49 (SOL-21)
+
+# Messages from "go allocate"
+
+go allocate
+# Info: Starting transformation 'allocate' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::maxpool/run_max' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/LOOP_Y' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/LOOP_X' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/LOOP_WIDTH' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/LOOP_HEIGHT' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/LOOP_CH' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/main' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::maxpool/run_max/run_max:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/UNET_IP::maxpool/run_max' (total length 15 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/UNET_IP::maxpool/run_max': Latency = 10, Area (Datapath, Register, Total) = 4201.66, 0.00, 4201.66 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+Input operation 'LOOP_Y:if:asn#4' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'LOOP_Y:if:asn#6' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'LOOP_Y:if:asn#7' moved from c-step 2 to c-step 3 to save registers (SCHD-49)
+Input operation 'channels:asn' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+# Info: Final schedule of SEQUENTIAL '/UNET_IP::maxpool/run_max': Latency = 11, Area (Datapath, Register, Total) = 3513.83, 0.00, 3513.83 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'UNET_IP::maxpool.v1': elapsed time 1.73 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 175, Real ops = 59, Vars = 49 (SOL-21)
+
+# Messages from "go schedule"
+
+go extract
+# Info: Starting transformation 'schedule' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::maxpool/run_max' (CRAAS-1)
+Global signal 'input:rsc.clken' added to design 'UNET_IP::maxpool' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.q' added to design 'UNET_IP::maxpool' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.re' added to design 'UNET_IP::maxpool' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.radr' added to design 'UNET_IP::maxpool' for component 'input:rsci' (LIB-3)
+Global signal 'output:rsc.clken' added to design 'UNET_IP::maxpool' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.we' added to design 'UNET_IP::maxpool' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.d' added to design 'UNET_IP::maxpool' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.wadr' added to design 'UNET_IP::maxpool' for component 'output:rsci' (LIB-3)
+Global signal 'input.triosy.lz' added to design 'UNET_IP::maxpool' for component 'input.triosy:obj' (LIB-3)
+Global signal 'output.triosy.lz' added to design 'UNET_IP::maxpool' for component 'output.triosy:obj' (LIB-3)
+# Info: Loop '/UNET_IP::maxpool/run_max/LOOP_Y' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'UNET_IP::maxpool.v1': elapsed time 23.45 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 339, Real ops = 61, Vars = 114 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'max_val(13:2).lpi#3' for variables 'max_val(13:2).lpi#3, max_val(13:2).lpi#4, max_val(13:2).lpi#6' (2 registers deleted). (FSM-3)
+# Info: Completed transformation 'dpfsm' on solution 'UNET_IP::maxpool.v1': elapsed time 1.66 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 380, Real ops = 204, Vars = 111 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'UNET_IP::maxpool.v1': elapsed time 2.14 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 310, Real ops = 125, Vars = 257 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'UNET_IP::maxpool.v1' (SOL-8)
+Loop '/UNET_IP::maxpool/mgc_div_7_3_0/b0_line_26/divmod6448_2_loop951' is being fully unrolled (7 times). (LOOP-7)
+Report written to file 'rtl.rpt'
+Generating scverify_top.cpp ()
+Generating SCVerify ccs_wrapper_UNET_IP_maxpool.vhdl ()
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_maxpool.v1/concat_rtl.vhdl
+order file name is: rtl.vhdl_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_maxpool.v1/concat_sim_rtl.vhdl
+Generating SCVerify testbench files
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/maxpool.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_vhdl/rtl.vhdl.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_vhdl/concat_rtl.vhdl.xv'
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+Generating SCVerify ccs_wrapper_UNET_IP_maxpool.v ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_maxpool.v1/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_maxpool.v1/concat_sim_rtl.v
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_v/rtl.v.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_v/concat_rtl.v.xv'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Running transformation 'extract' on solution 'UNET_IP::maxpool.v1': elapsed time 22.18 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-15)
+# Info: Completed transformation 'extract' on solution 'UNET_IP::maxpool.v1': elapsed time 23.39 seconds, memory usage 6693732kB, peak memory usage 6824804kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 436, Real ops = 195, Vars = 140 (SOL-21)

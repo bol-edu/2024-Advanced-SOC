@@ -1,0 +1,258 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'UNET_IP::batchnorm_relu.v3' at state 'new' (PRJ-2)
+UNET_IP::batchnorm_relu.v3
+go analyze
+# Info: Starting transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Front End called with arguments: -I/home/raid7_2/user12/r12016/asoc/final/hls -- /home/raid7_2/user12/r12016/asoc/final/hls/main.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Info: Running transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 25.05 seconds, memory usage 6759268kB, peak memory usage 6890340kB (SOL-15)
+# Info: Running transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 33.40 seconds, memory usage 6759268kB, peak memory usage 6890340kB (SOL-15)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: trailing comma is nonstandard (CRD-228)
+# Warning: last line of file ends without a newline (CRD-1)
+# Info: Running transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 55.72 seconds, memory usage 6824804kB, peak memory usage 6890340kB (SOL-15)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Info: Running transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 82.79 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+Pragma 'hls_design<top>' detected on class 'UNET_IP::main' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Running transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 93.02 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+# Info: Completed transformation 'analyze' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 93.59 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+
+# Messages from "go compile"
+
+go compile
+# Info: Starting transformation 'compile' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+# Info: Running transformation 'compile' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 28.25 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+# Info: Running transformation 'compile' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 37.84 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'UNET_IP::batchnorm_relu' specified by directive (CIN-52)
+# Warning: Instantiating global variable 'gamma_pretrain' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'beta_pretrain' which may be accessed outside this scope (CIN-18)
+Inlining member function 'UNET_IP::batchnorm_relu::batchnorm_relu' on object '' (CIN-64)
+Synthesizing method 'UNET_IP::batchnorm_relu::run_batch' (CIN-13)
+Inlining member function 'UNET_IP::batchnorm_relu::run_batch' on object '' (CIN-64)
+Inlining routine 'operator/<20, 8, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'operator/<34, 16, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'ac_math::ac_sqrt_pwl<AC_TRN, 22, 17, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_normalize<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<=<22, 0, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<25, 1, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<32, 8, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator><22, 16, false, AC_TRN, AC_WRAP>' (CIN-14)
+Optimizing block '/UNET_IP::batchnorm_relu' ... (CIN-4)
+INOUT port 'input' is only used as an input. (OPT-10)
+INOUT port 'output' is only used as an output. (OPT-11)
+INOUT port 'channels' is only used as an input. (OPT-10)
+INOUT port 'height' is only used as an input. (OPT-10)
+INOUT port 'width' is only used as an input. (OPT-10)
+INOUT port 'offset' is only used as an input. (OPT-10)
+# Info: Partition '/UNET_IP::batchnorm_relu/constructor' is found empty and is optimized away. (OPT-12)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:m_lut.rom', from '10' bits to '6' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:c_lut.rom', from '13' bits to '10' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::gamma_pretrain.rom#1', from '8' bits to '5' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::beta_pretrain.rom#1', from '8' bits to '4' bits. (MEM-87)
+Design 'UNET_IP::batchnorm_relu' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/batchnorm_relu.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 53.55 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 218, Real ops = 109, Vars = 51 (SOL-21)
+
+# Messages from "go libraries"
+
+directive set -SCHED_USE_MULTICYCLE true
+/SCHED_USE_MULTICYCLE true
+go libraries
+# Info: Starting transformation 'libraries' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Completed transformation 'libraries' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 1.44 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 218, Real ops = 109, Vars = 51 (SOL-21)
+
+# Messages from "go assembly"
+
+go assembly
+# Info: Starting transformation 'assembly' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+# Info: Completed transformation 'assembly' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 0.66 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 219, Real ops = 110, Vars = 54 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /UNET_IP::batchnorm_relu/run_batch/LOOP_OUT -PIPELINE_INIT_INTERVAL 1
+/UNET_IP::batchnorm_relu/run_batch/LOOP_OUT/PIPELINE_INIT_INTERVAL 1
+go architect
+# Info: Starting transformation 'loops' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_MEAN' is left rolled. (LOOP-4)
+Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_VAR' is left rolled. (LOOP-4)
+Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_OUT' is left rolled. (LOOP-4)
+Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_CH' is left rolled. (LOOP-4)
+Loop '/UNET_IP::batchnorm_relu/run_batch/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 0.76 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 230, Real ops = 110, Vars = 59 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Memory Resource '/UNET_IP::batchnorm_relu/input:rsc' (from var: input) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+Memory Resource '/UNET_IP::batchnorm_relu/output:rsc' (from var: output) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+ROM Resource '/UNET_IP::batchnorm_relu/UNET_IP::gamma_pretrain.rom:rsc' (from var: UNET_IP::gamma_pretrain.rom) mapped to 'Xilinx_ROMS.mgc_rom' (size: 736 x 5). (MEM-10)
+ROM Resource '/UNET_IP::batchnorm_relu/UNET_IP::beta_pretrain.rom:rsc' (from var: UNET_IP::beta_pretrain.rom) mapped to 'Xilinx_ROMS.mgc_rom' (size: 736 x 4). (MEM-10)
+# Info: Completed transformation 'memories' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 1.28 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 222, Real ops = 110, Vars = 59 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+# Warning: ROM clustering skipped Technology Library(ies) required for Prototyping not found (CLUSTER-24)
+Module for CCORE 'leading_sign_22_0' has been successfully synthesized (TD-4)
+# Info: Completed transformation 'cluster' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 5.36 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 120, Real ops = 48, Vars = 41 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Design 'UNET_IP::batchnorm_relu' contains '67' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 3.52 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 234, Real ops = 67, Vars = 50 (SOL-21)
+
+# Messages from "go allocate"
+
+go allocate
+# Info: Starting transformation 'allocate' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::batchnorm_relu/run_batch' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/LOOP_OUT' (11 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/LOOP_VAR' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/LOOP_MEAN' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/LOOP_CH' (10 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/main' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::batchnorm_relu/run_batch/run_batch:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/UNET_IP::batchnorm_relu/run_batch' (total length 3614 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/UNET_IP::batchnorm_relu/run_batch': Latency = 3610, Area (Datapath, Register, Total) = 10509.49, 0.00, 10509.49 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 3 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 4 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 5 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 6 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 7 to save registers (SCHD-49)
+Input operation 'LOOP_OUT:asn#2' moved from c-step 1 to c-step 8 to save registers (SCHD-49)
+# Info: Final schedule of SEQUENTIAL '/UNET_IP::batchnorm_relu/run_batch': Latency = 3997, Area (Datapath, Register, Total) = 8786.96, 0.00, 8786.96 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 3.17 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 234, Real ops = 67, Vars = 50 (SOL-21)
+
+# Messages from "go schedule"
+
+go extract
+# Info: Starting transformation 'schedule' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::batchnorm_relu/run_batch' (CRAAS-1)
+Combinational multicycle operation 'LOOP_OUT:div' in pipelined loop 'LOOP_OUT' (SCHD-52)
+Global signal 'input:rsc.clken' added to design 'UNET_IP::batchnorm_relu' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.q' added to design 'UNET_IP::batchnorm_relu' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.re' added to design 'UNET_IP::batchnorm_relu' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.radr' added to design 'UNET_IP::batchnorm_relu' for component 'input:rsci' (LIB-3)
+Global signal 'output:rsc.clken' added to design 'UNET_IP::batchnorm_relu' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.we' added to design 'UNET_IP::batchnorm_relu' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.d' added to design 'UNET_IP::batchnorm_relu' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.wadr' added to design 'UNET_IP::batchnorm_relu' for component 'output:rsci' (LIB-3)
+Global signal 'input.triosy.lz' added to design 'UNET_IP::batchnorm_relu' for component 'input.triosy:obj' (LIB-3)
+Global signal 'output.triosy.lz' added to design 'UNET_IP::batchnorm_relu' for component 'output.triosy:obj' (LIB-3)
+# Info: Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_MEAN' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::batchnorm_relu/run_batch/LOOP_OUT' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Running transformation 'schedule' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 28.35 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 38.78 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 46.90 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 1147, Real ops = 67, Vars = 247 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'LOOP_CH:i#1.sva' for variables 'LOOP_CH:i#1.sva, LOOP_CH:i#2.sva, LOOP_CH:i.sva' (2 registers deleted). (FSM-3)
+Creating shared register 'LOOP_MEAN.stage_0' for variables 'LOOP_MEAN.stage_0, LOOP_OUT.stage_0.10, LOOP_VAR:slc()(13)#1.itm, exit:LOOP_VAR.sva' (3 registers deleted). (FSM-3)
+Creating shared register 'LOOP_VAR:acc#4.cse.sva' for variables 'LOOP_VAR:acc#4.cse.sva, LOOP_CH:idx(14:0).sva.1, LOOP_CH:mean_tmp(19:8).sva, LOOP_CH:mean_tmp(19:8).sva.dfm' (2 registers deleted). (FSM-3)
+# Info: Completed transformation 'dpfsm' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 4.68 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 835, Real ops = 435, Vars = 241 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 4.39 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 690, Real ops = 294, Vars = 616 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'UNET_IP::batchnorm_relu.v3' (SOL-8)
+Report written to file 'rtl.rpt'
+ROM component 'mgc_rom(11,736,5,1)' initialization mode: inline_init. (MEM-76)
+ROM component 'mgc_rom(12,736,4,1)' initialization mode: inline_init. (MEM-76)
+Generating scverify_top.cpp ()
+Generating SCVerify ccs_wrapper_UNET_IP_batchnorm_relu.vhdl ()
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_dc00658b4b4575636e73bb7f99c473ff6c07_0/rtl.vhdl
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.vhd
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_11_736_5_1.vhdl
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_12_736_4_1.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_rtl.vhdl
+order file name is: rtl.vhdl_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_dc00658b4b4575636e73bb7f99c473ff6c07_0/rtl.vhdl
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.vhd
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_11_736_5_1.vhdl
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_12_736_4_1.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_sim_rtl.vhdl
+Generating SCVerify testbench files
+# Warning: Toplevel found in header $PROJECT_HOME/../hls/batchnorm_relu.h, using $PROJECT_HOME/../hls/main.h for header dependencies.
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_vhdl/rtl.vhdl.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_vhdl/concat_rtl.vhdl.xv'
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+ROM component 'mgc_rom(11,736,5,1)' initialization mode: inline_init. (MEM-76)
+ROM component 'mgc_rom(12,736,4,1)' initialization mode: inline_init. (MEM-76)
+Generating SCVerify ccs_wrapper_UNET_IP_batchnorm_relu.v ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_dc00658b4b4575636e73bb7f99c473ff6c07_0/rtl.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_11_736_5_1.v
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_12_736_4_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_dc00658b4b4575636e73bb7f99c473ff6c07_0/rtl.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_11_736_5_1.v
+Add dependent file: ./rtl_UNET_IP_batchnorm_relumgc_rom_12_736_4_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult/UNET_IP_batchnorm_relu.v3/concat_sim_rtl.v
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_v/rtl.v.xv'
+# Info: Running transformation 'extract' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 24.35 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-15)
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_v/concat_rtl.v.xv'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Completed transformation 'extract' on solution 'UNET_IP::batchnorm_relu.v3': elapsed time 28.55 seconds, memory usage 6890340kB, peak memory usage 6890340kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 705, Real ops = 306, Vars = 212 (SOL-21)

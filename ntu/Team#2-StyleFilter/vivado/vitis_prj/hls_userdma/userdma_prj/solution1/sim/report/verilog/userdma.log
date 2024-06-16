@@ -1,0 +1,805 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/tools/Xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
+   Compiling apatb_userdma_util.cpp
+   Compiling userdma.cpp_pre.cpp.tb.cpp
+   Compiling apatb_userdma.cpp
+   Compiling userdma_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_userdma_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-323] Starting verilog simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+INFO: [COSIM-316] Starting C post checking ...
+before-phase s2m_buf_sts is 0
+Prepare data stream
+before-phase m2s_buf_sts is 0
+Call S2MM/MM2S design
+
+after-phase s2m_buf_sts is 1
+after-phase m2s_buf_sts is 1
+
+s2m_err: 0
+S2M data
+out_b, address: 4a363940
+3e8 3e9 3ea 3eb 3ec 3ed 3ee 3ef 3f0 3f1 3f2 3f3 3f4 3f5 3f6 3f7 3f8 3f9 3fa 3fb 3fc 3fd 3fe 3ff 400 401 402 403 404 405 406 407 
+408 409 40a 40b 40c 40d 40e 40f 410 411 412 413 414 415 416 417 418 419 41a 41b 41c 41d 41e 41f 420 421 422 423 424 425 426 427 
+428 429 42a 42b 42c 42d 42e 42f 430 431 432 433 434 435 436 437 438 439 43a 43b 43c 43d 43e 43f 440 441 442 443 444 445 446 447 
+448 449 44a 44b 44c 44d 44e 44f 450 451 452 453 454 455 456 457 458 459 45a 45b 45c 45d 45e 45f 460 461 462 463 464 465 466 467 
+468 469 46a 46b 46c 46d 46e 46f 470 471 472 473 474 475 476 477 478 479 47a 47b 47c 47d 47e 47f 480 481 482 483 484 485 486 487 
+488 489 48a 48b 48c 48d 48e 48f 490 491 492 493 494 495 496 497 498 499 49a 49b 49c 49d 49e 49f 4a0 4a1 4a2 4a3 4a4 4a5 4a6 4a7 
+4a8 4a9 4aa 4ab 4ac 4ad 4ae 4af 4b0 4b1 4b2 4b3 4b4 4b5 4b6 4b7 4b8 4b9 4ba 4bb 4bc 4bd 4be 4bf 4c0 4c1 4c2 4c3 4c4 4c5 4c6 4c7 
+4c8 4c9 4ca 4cb 4cc 4cd 4ce 4cf 4d0 4d1 4d2 4d3 4d4 4d5 4d6 4d7 4d8 4d9 4da 4db 4dc 4dd 4de 4df 4e0 4e1 4e2 4e3 4e4 4e5 4e6 4e7 
+4e8 4e9 4ea 4eb 4ec 4ed 4ee 4ef 4f0 4f1 4f2 4f3 4f4 4f5 4f6 4f7 4f8 4f9 4fa 4fb 4fc 4fd 4fe 4ff 500 501 502 503 504 505 506 507 
+508 509 50a 50b 50c 50d 50e 50f 510 511 512 513 514 515 516 517 518 519 51a 51b 51c 51d 51e 51f 520 521 522 523 524 525 526 527 
+528 529 52a 52b 52c 52d 52e 52f 530 531 532 533 534 535 536 537 538 539 53a 53b 53c 53d 53e 53f 540 541 542 543 544 545 546 547 
+548 549 54a 54b 54c 54d 54e 54f 550 551 552 553 554 555 556 557 558 559 55a 55b 55c 55d 55e 55f 560 561 562 563 564 565 566 567 
+568 569 56a 56b 56c 56d 56e 56f 570 571 572 573 574 575 576 577 578 579 57a 57b 57c 57d 57e 57f 580 581 582 583 584 585 586 587 
+588 589 58a 58b 58c 58d 58e 58f 590 591 592 593 594 595 596 597 598 599 59a 59b 59c 59d 59e 59f 5a0 5a1 5a2 5a3 5a4 5a5 5a6 5a7 
+5a8 5a9 5aa 5ab 5ac 5ad 5ae 5af 5b0 5b1 5b2 5b3 5b4 5b5 5b6 5b7 5b8 5b9 5ba 5bb 5bc 5bd 5be 5bf 5c0 5c1 5c2 5c3 5c4 5c5 5c6 5c7 
+5c8 5c9 5ca 5cb 5cc 5cd 5ce 5cf 5d0 5d1 5d2 5d3 5d4 5d5 5d6 5d7 5d8 5d9 5da 5db 5dc 5dd 5de 5df 5e0 5e1 5e2 5e3 5e4 5e5 5e6 5e7 
+5e8 5e9 5ea 5eb 5ec 5ed 5ee 5ef 5f0 5f1 5f2 5f3 5f4 5f5 5f6 5f7 5f8 5f9 5fa 5fb 5fc 5fd 5fe 5ff 600 601 602 603 604 605 606 607 
+608 609 60a 60b 60c 60d 60e 60f 610 611 612 613 614 615 616 617 618 619 61a 61b 61c 61d 61e 61f 620 621 622 623 624 625 626 627 
+628 629 62a 62b 62c 62d 62e 62f 630 631 632 633 634 635 636 637 638 639 63a 63b 63c 63d 63e 63f 640 641 642 643 644 645 646 647 
+648 649 64a 64b 64c 64d 64e 64f 650 651 652 653 654 655 656 657 658 659 65a 65b 65c 65d 65e 65f 660 661 662 663 664 665 666 667 
+668 669 66a 66b 66c 66d 66e 66f 670 671 672 673 674 675 676 677 678 679 67a 67b 67c 67d 67e 67f 680 681 682 683 684 685 686 687 
+688 689 68a 68b 68c 68d 68e 68f 690 691 692 693 694 695 696 697 698 699 69a 69b 69c 69d 69e 69f 6a0 6a1 6a2 6a3 6a4 6a5 6a6 6a7 
+6a8 6a9 6aa 6ab 6ac 6ad 6ae 6af 6b0 6b1 6b2 6b3 6b4 6b5 6b6 6b7 6b8 6b9 6ba 6bb 6bc 6bd 6be 6bf 6c0 6c1 6c2 6c3 6c4 6c5 6c6 6c7 
+6c8 6c9 6ca 6cb 6cc 6cd 6ce 6cf 6d0 6d1 6d2 6d3 6d4 6d5 6d6 6d7 6d8 6d9 6da 6db 6dc 6dd 6de 6df 6e0 6e1 6e2 6e3 6e4 6e5 6e6 6e7 
+6e8 6e9 6ea 6eb 6ec 6ed 6ee 6ef 6f0 6f1 6f2 6f3 6f4 6f5 6f6 6f7 6f8 6f9 6fa 6fb 6fc 6fd 6fe 6ff 700 701 702 703 704 705 706 707 
+708 709 70a 70b 70c 70d 70e 70f 710 711 712 713 714 715 716 717 718 719 71a 71b 71c 71d 71e 71f 720 721 722 723 724 725 726 727 
+728 729 72a 72b 72c 72d 72e 72f 730 731 732 733 734 735 736 737 738 739 73a 73b 73c 73d 73e 73f 740 741 742 743 744 745 746 747 
+748 749 74a 74b 74c 74d 74e 74f 750 751 752 753 754 755 756 757 758 759 75a 75b 75c 75d 75e 75f 760 761 762 763 764 765 766 767 
+768 769 76a 76b 76c 76d 76e 76f 770 771 772 773 774 775 776 777 778 779 77a 77b 77c 77d 77e 77f 780 781 782 783 784 785 786 787 
+788 789 78a 78b 78c 78d 78e 78f 790 791 792 793 794 795 796 797 798 799 79a 79b 79c 79d 79e 79f 7a0 7a1 7a2 7a3 7a4 7a5 7a6 7a7 
+7a8 7a9 7aa 7ab 7ac 7ad 7ae 7af 7b0 7b1 7b2 7b3 7b4 7b5 7b6 7b7 7b8 7b9 7ba 7bb 7bc 7bd 7be 7bf 7c0 7c1 7c2 7c3 7c4 7c5 7c6 7c7 
+7c8 7c9 7ca 7cb 7cc 7cd 7ce 7cf 7d0 7d1 7d2 7d3 7d4 7d5 7d6 7d7 7d8 7d9 7da 7db 7dc 7dd 7de 7df 7e0 7e1 7e2 7e3 7e4 7e5 7e6 7e7 
+7e8 7e9 7ea 7eb 7ec 7ed 7ee 7ef 7f0 7f1 7f2 7f3 7f4 7f5 7f6 7f7 7f8 7f9 7fa 7fb 7fc 7fd 7fe 7ff 800 801 802 803 804 805 806 807 
+808 809 80a 80b 80c 80d 80e 80f 810 811 812 813 814 815 816 817 818 819 81a 81b 81c 81d 81e 81f 820 821 822 823 824 825 826 827 
+828 829 82a 82b 82c 82d 82e 82f 830 831 832 833 834 835 836 837 838 839 83a 83b 83c 83d 83e 83f 840 841 842 843 844 845 846 847 
+848 849 84a 84b 84c 84d 84e 84f 850 851 852 853 854 855 856 857 858 859 85a 85b 85c 85d 85e 85f 860 861 862 863 864 865 866 867 
+868 869 86a 86b 86c 86d 86e 86f 870 871 872 873 874 875 876 877 878 879 87a 87b 87c 87d 87e 87f 880 881 882 883 884 885 886 887 
+888 889 88a 88b 88c 88d 88e 88f 890 891 892 893 894 895 896 897 
+
+M2S data
+
+0000 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 
+0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 
+0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0092 0093 0094 0095 
+0096 0097 0098 0099 0100 0101 0102 0103 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 
+0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 
+0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0181 0182 0183 0184 0185 0186 0187 0188 0189 0190 0191 
+0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 0203 0204 0205 0206 0207 0208 0209 0210 0211 0212 0213 0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 
+0224 0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 0236 0237 0238 0239 0240 0241 0242 0243 0244 0245 0246 0247 0248 0249 0250 0251 0252 0253 0254 0255 
+0256 0257 0258 0259 0260 0261 0262 0263 0264 0265 0266 0267 0268 0269 0270 0271 0272 0273 0274 0275 0276 0277 0278 0279 0280 0281 0282 0283 0284 0285 0286 0287 
+0288 0289 0290 0291 0292 0293 0294 0295 0296 0297 0298 0299 0300 0301 0302 0303 0304 0305 0306 0307 0308 0309 0310 0311 0312 0313 0314 0315 0316 0317 0318 0319 
+0320 0321 0322 0323 0324 0325 0326 0327 0328 0329 0330 0331 0332 0333 0334 0335 0336 0337 0338 0339 0340 0341 0342 0343 0344 0345 0346 0347 0348 0349 0350 0351 
+0352 0353 0354 0355 0356 0357 0358 0359 0360 0361 0362 0363 0364 0365 0366 0367 0368 0369 0370 0371 0372 0373 0374 0375 0376 0377 0378 0379 0380 0381 0382 0383 
+0384 0385 0386 0387 0388 0389 0390 0391 0392 0393 0394 0395 0396 0397 0398 0399 0400 0401 0402 0403 0404 0405 0406 0407 0408 0409 0410 0411 0412 0413 0414 0415 
+0416 0417 0418 0419 0420 0421 0422 0423 0424 0425 0426 0427 0428 0429 0430 0431 0432 0433 0434 0435 0436 0437 0438 0439 0440 0441 0442 0443 0444 0445 0446 0447 
+0448 0449 0450 0451 0452 0453 0454 0455 0456 0457 0458 0459 0460 0461 0462 0463 0464 0465 0466 0467 0468 0469 0470 0471 0472 0473 0474 0475 0476 0477 0478 0479 
+0480 0481 0482 0483 0484 0485 0486 0487 0488 0489 0490 0491 0492 0493 0494 0495 0496 0497 0498 0499 0500 0501 0502 0503 0504 0505 0506 0507 0508 0509 0510 0511 
+0512 0513 0514 0515 0516 0517 0518 0519 0520 0521 0522 0523 0524 0525 0526 0527 0528 0529 0530 0531 0532 0533 0534 0535 0536 0537 0538 0539 0540 0541 0542 0543 
+0544 0545 0546 0547 0548 0549 0550 0551 0552 0553 0554 0555 0556 0557 0558 0559 0560 0561 0562 0563 0564 0565 0566 0567 0568 0569 0570 0571 0572 0573 0574 0575 
+0576 0577 0578 0579 0580 0581 0582 0583 0584 0585 0586 0587 0588 0589 0590 0591 0592 0593 0594 0595 0596 0597 0598 0599 0600 0601 0602 0603 0604 0605 0606 0607 
+0608 0609 0610 0611 0612 0613 0614 0615 0616 0617 0618 0619 0620 0621 0622 0623 0624 0625 0626 0627 0628 0629 0630 0631 0632 0633 0634 0635 0636 0637 0638 0639 
+0640 0641 0642 0643 0644 0645 0646 0647 0648 0649 0650 0651 0652 0653 0654 0655 0656 0657 0658 0659 0660 0661 0662 0663 0664 0665 0666 0667 0668 0669 0670 0671 
+0672 0673 0674 0675 0676 0677 0678 0679 0680 0681 0682 0683 0684 0685 0686 0687 0688 0689 0690 0691 0692 0693 0694 0695 0696 0697 0698 0699 0700 0701 0702 0703 
+0704 0705 0706 0707 0708 0709 0710 0711 0712 0713 0714 0715 0716 0717 0718 0719 0720 0721 0722 0723 0724 0725 0726 0727 0728 0729 0730 0731 0732 0733 0734 0735 
+0736 0737 0738 0739 0740 0741 0742 0743 0744 0745 0746 0747 0748 0749 0750 0751 0752 0753 0754 0755 0756 0757 0758 0759 0760 0761 0762 0763 0764 0765 0766 0767 
+0768 0769 0770 0771 0772 0773 0774 0775 0776 0777 0778 0779 0780 0781 0782 0783 0784 0785 0786 0787 0788 0789 0790 0791 0792 0793 0794 0795 0796 0797 0798 0799 
+0800 0801 0802 0803 0804 0805 0806 0807 0808 0809 0810 0811 0812 0813 0814 0815 0816 0817 0818 0819 0820 0821 0822 0823 0824 0825 0826 0827 0828 0829 0830 0831 
+0832 0833 0834 0835 0836 0837 0838 0839 0840 0841 0842 0843 0844 0845 0846 0847 0848 0849 0850 0851 0852 0853 0854 0855 0856 0857 0858 0859 0860 0861 0862 0863 
+0864 0865 0866 0867 0868 0869 0870 0871 0872 0873 0874 0875 0876 0877 0878 0879 0880 0881 0882 0883 0884 0885 0886 0887 0888 0889 0890 0891 0892 0893 0894 0895 
+0896 0897 0898 0899 0900 0901 0902 0903 0904 0905 0906 0907 0908 0909 0910 0911 0912 0913 0914 0915 0916 0917 0918 0919 0920 0921 0922 0923 0924 0925 0926 0927 
+0928 0929 0930 0931 0932 0933 0934 0935 0936 0937 0938 0939 0940 0941 0942 0943 0944 0945 0946 0947 0948 0949 0950 0951 0952 0953 0954 0955 0956 0957 0958 0959 
+0960 0961 0962 0963 0964 0965 0966 0967 0968 0969 0970 0971 0972 0973 0974 0975 0976 0977 0978 0979 0980 0981 0982 0983 0984 0985 0986 0987 0988 0989 0990 0991 
+0992 0993 0994 0995 0996 0997 0998 0999 1000 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 
+1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 1055 
+1056 1057 1058 1059 1060 1061 1062 1063 1064 1065 1066 1067 1068 1069 1070 1071 1072 1073 1074 1075 1076 1077 1078 1079 1080 1081 1082 1083 1084 1085 1086 1087 
+1088 1089 1090 1091 1092 1093 1094 1095 1096 1097 1098 1099 1100 1101 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115 1116 1117 1118 1119 
+1120 1121 1122 1123 1124 1125 1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 
+1152 1153 1154 1155 1156 1157 1158 1159 1160 1161 1162 1163 1164 1165 1166 1167 1168 1169 1170 1171 1172 1173 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 
+1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1197 1198 1199 
+
+m2s_sof_err-->0 
+m2s_sof_err-->0 
+clear s2m_buf_sts -> 0
+clear m2s_buf_sts -> 0
+s2m_err: 0
+
+WARNING: Hls::stream 'hls::stream<hls::axis<ap_uint<32>, 7ul, 0ul, 0ul>, 0>0' contains leftover data, which may result in RTL simulation hanging.
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_userdma_top glbl -Oenable_linking_all_libraries -prj userdma.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_20 -L floating_point_v7_1_14 --lib ieee_proposed=./ieee_proposed -s userdma -debug wave 
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_start_for_sendoutstream_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_start_for_sendoutstream_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_start_for_sendoutstream_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_start_for_streamtoparallelwithburst_U0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_start_for_streamtoparallelwithburst_U0_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_start_for_streamtoparallelwithburst_U0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w33_d1024_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w33_d1024_A_ram
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w33_d1024_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_entry_proc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_entry_proc
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w32_d64_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w32_d64_A_ram
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w32_d64_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_getinstream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_getinstream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_regslice_both.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_regslice_both
+INFO: [VRFC 10-311] analyzing module userdma_regslice_both_w1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_sendoutstream.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_sendoutstream
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_sendoutstream_Pipeline_VITIS_LOOP_149_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_fifo.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_gmem1_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_load
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_store
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_flushManager
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_read
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_write
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_srl
+INFO: [VRFC 10-311] analyzing module userdma_gmem1_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w1_d3_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w1_d3_S_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w1_d3_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w40_d1024_A.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w40_d1024_A_ram
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w40_d1024_A
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_axi_s_inStreamTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_inStreamTop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_flow_control_loop_pipe_sequential_init
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_axi_master_gmem0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_axi_master_gmem1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_gmem0_m_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_load
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_store
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_flushManager
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_read
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_write
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_throttle
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_reg_slice
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_fifo
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_srl
+INFO: [VRFC 10-311] analyzing module userdma_gmem0_m_axi_mem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_userdma_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_axi_s_outStreamTop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_s_outStreamTop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w1_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w1_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w1_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w32_d2_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w32_d2_S_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w32_d2_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_kernel_monitor_top
+WARNING: [VRFC 10-3824] variable 'block_delay' must explicitly be declared as automatic or static [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:42]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_fifo_w64_d3_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w64_d3_S_shiftReg
+INFO: [VRFC 10-311] analyzing module userdma_fifo_w64_d3_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_paralleltostreamwithburst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_paralleltostreamwithburst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_control_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_control_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_getinstream_Pipeline_VITIS_LOOP_48_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_getinstream_Pipeline_VITIS_LOOP_48_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_idx0_monitor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma_streamtoparallelwithburst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module userdma_streamtoparallelwithburst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3645] port 'axis_block_info' remains unconnected for this instance [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_kernel_monitor_top.v:32]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:26]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:27]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:31]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:40]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:58]
+WARNING: [VRFC 10-3705] select index -1 into 'axis_block_sigs' is out of bounds [/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/AESL_deadlock_idx0_monitor.v:66]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+Compiling module xil_defaultlib.userdma_control_s_axi
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_store(NUM_WR...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_load(NUM_REA...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_throttle(CON...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_write(CONSER...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi_read(C_USER_...
+Compiling module xil_defaultlib.userdma_gmem0_m_axi(CONSERVATIVE...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_store(NUM_WR...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_mem(MEM_STYL...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(MEM_STY...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_load(NUM_REA...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_srl(DATA_WID...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_fifo(DATA_WI...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_throttle(CON...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_write(CONSER...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_reg_slice(DA...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi_read(C_USER_...
+Compiling module xil_defaultlib.userdma_gmem1_m_axi(CONSERVATIVE...
+Compiling module xil_defaultlib.userdma_entry_proc
+Compiling module xil_defaultlib.userdma_flow_control_loop_pipe_s...
+Compiling module xil_defaultlib.userdma_getinstream_Pipeline_VIT...
+Compiling module xil_defaultlib.userdma_regslice_both
+Compiling module xil_defaultlib.userdma_regslice_both(DataWidth=...
+Compiling module xil_defaultlib.userdma_regslice_both(DataWidth=...
+Compiling module xil_defaultlib.userdma_regslice_both(DataWidth=...
+Compiling module xil_defaultlib.userdma_getinstream
+Compiling module xil_defaultlib.userdma_streamtoparallelwithburs...
+Compiling module xil_defaultlib.userdma_streamtoparallelwithburs...
+Compiling module xil_defaultlib.userdma_paralleltostreamwithburs...
+Compiling module xil_defaultlib.userdma_paralleltostreamwithburs...
+Compiling module xil_defaultlib.userdma_sendoutstream_Pipeline_V...
+Compiling module xil_defaultlib.userdma_sendoutstream
+Compiling module xil_defaultlib.userdma_fifo_w1_d3_S_shiftReg
+Compiling module xil_defaultlib.userdma_fifo_w1_d3_S
+Compiling module xil_defaultlib.userdma_fifo_w64_d3_S_shiftReg
+Compiling module xil_defaultlib.userdma_fifo_w64_d3_S
+Compiling module xil_defaultlib.userdma_fifo_w33_d1024_A_ram
+Compiling module xil_defaultlib.userdma_fifo_w33_d1024_A
+Compiling module xil_defaultlib.userdma_fifo_w32_d64_A_ram
+Compiling module xil_defaultlib.userdma_fifo_w32_d64_A
+Compiling module xil_defaultlib.userdma_fifo_w32_d2_S_shiftReg
+Compiling module xil_defaultlib.userdma_fifo_w32_d2_S
+Compiling module xil_defaultlib.userdma_fifo_w1_d2_S_shiftReg
+Compiling module xil_defaultlib.userdma_fifo_w1_d2_S
+Compiling module xil_defaultlib.userdma_fifo_w40_d1024_A_ram
+Compiling module xil_defaultlib.userdma_fifo_w40_d1024_A
+Compiling module xil_defaultlib.userdma_start_for_streamtoparall...
+Compiling module xil_defaultlib.userdma_start_for_streamtoparall...
+Compiling module xil_defaultlib.userdma_start_for_sendoutstream_...
+Compiling module xil_defaultlib.userdma_start_for_sendoutstream_...
+Compiling module xil_defaultlib.userdma
+Compiling module xil_defaultlib.fifo(DEPTH=1200,WIDTH=32)
+Compiling module xil_defaultlib.fifo(DEPTH=1200,WIDTH=4)
+Compiling module xil_defaultlib.fifo(DEPTH=1200,WIDTH=7)
+Compiling module xil_defaultlib.fifo(DEPTH=1200,WIDTH=1)
+Compiling module xil_defaultlib.AESL_axi_s_inStreamTop
+Compiling module xil_defaultlib.AESL_axi_s_outStreamTop
+Compiling module xil_defaultlib.AESL_axi_master_gmem0
+Compiling module xil_defaultlib.AESL_axi_master_gmem1
+Compiling module xil_defaultlib.AESL_axi_slave_control
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+Compiling module xil_defaultlib.AESL_deadlock_detector_1
+Compiling module xil_defaultlib.AESL_deadlock_idx0_monitor
+Compiling module xil_defaultlib.AESL_deadlock_kernel_monitor_top...
+Compiling module xil_defaultlib.df_fifo_intf
+Compiling module xil_defaultlib.df_process_intf
+Compiling module xil_defaultlib.nodf_module_intf
+Compiling module xil_defaultlib.pp_loop_intf(FSM_WIDTH=4)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=21)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=22)
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+Compiling module xil_defaultlib.dataflow_monitor_1
+Compiling module xil_defaultlib.apatb_userdma_top
+Compiling module work.glbl
+Built simulation snapshot userdma
+
+****** xsim v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/userdma/xsim_script.tcl
+# xsim {userdma} -view {{userdma_dataflow_ana.wcfg}} -tclbatch {userdma.tcl} -protoinst {userdma.protoinst}
+INFO: [Wavedata 42-565] Reading protoinst file userdma.protoinst
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma//AESL_inst_userdma_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/entry_proc_U0/entry_proc_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/getinstream_U0/getinstream_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/getinstream_U0/grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132/grp_getinstream_Pipeline_VITIS_LOOP_48_1_fu_132_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/paralleltostreamwithburst_U0/grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2_fu_173/grp_paralleltostreamwithburst_Pipeline_VITIS_LOOP_106_2_fu_173_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/paralleltostreamwithburst_U0/paralleltostreamwithburst_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/sendoutstream_U0/grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101/grp_sendoutstream_Pipeline_VITIS_LOOP_149_2_fu_101_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/sendoutstream_U0/sendoutstream_U0_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/streamtoparallelwithburst_U0/grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148/grp_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2_fu_148_activity
+INFO: [Wavedata 42-564]   Found protocol instance at /apatb_userdma_top/AESL_inst_userdma/streamtoparallelwithburst_U0/streamtoparallelwithburst_U0_activity
+Time resolution is 1 ps
+open_wave_config userdma_dataflow_ana.wcfg
+source userdma.tcl
+## log_wave -r /
+WARNING: [Simtcl 6-197] One or more HDL objects could not be logged because of object type or size limitations.  To see details please rerun the command with -verbose (-v).
+## set designtopgroup [add_wave_group "Design Top Signals"]
+## set coutputgroup [add_wave_group "C Outputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axis) -into $coutputgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TLAST -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TUSER -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TSTRB -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TKEEP -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/outStreamTop_TDATA -into $return_group -radix hex
+## set s2mbuf_group [add_wave_group s2mbuf(axi_master) -into $coutputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $s2mbuf_group]
+## set wdata_group [add_wave_group "Write Channel" -into $s2mbuf_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $s2mbuf_group]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group [add_wave_group s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return(axi_slave) -into $coutputgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/interrupt -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_BRESP -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_BREADY -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_BVALID -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_RRESP -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_RDATA -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_RREADY -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_RVALID -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_ARREADY -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_ARVALID -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_ARADDR -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_WSTRB -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_WDATA -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_WREADY -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_WVALID -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_AWREADY -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_AWVALID -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/s_axi_control_AWADDR -into $s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## set cinputgroup [add_wave_group "C Inputs" -into $designtopgroup]
+## set return_group [add_wave_group return(axis) -into $cinputgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TREADY -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TVALID -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TLAST -into $return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TUSER -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TSTRB -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TKEEP -into $return_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/inStreamTop_TDATA -into $return_group -radix hex
+## set m2sbuf_group [add_wave_group m2sbuf(axi_master) -into $cinputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $m2sbuf_group]
+## set wdata_group [add_wave_group "Write Channel" -into $m2sbuf_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $m2sbuf_group]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/AESL_inst_userdma/m_axi_gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set blocksiggroup [add_wave_group "Block-level IO Handshake(internal)" -into $designtopgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_done -into $blocksiggroup
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_idle -into $blocksiggroup
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_ready -into $blocksiggroup
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_start -into $blocksiggroup
+## set resetgroup [add_wave_group "Reset" -into $designtopgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_rst_n -into $resetgroup
+## set clockgroup [add_wave_group "Clock" -into $designtopgroup]
+## add_wave /apatb_userdma_top/AESL_inst_userdma/ap_clk -into $clockgroup
+## set testbenchgroup [add_wave_group "Test Bench Signals"]
+## set tbinternalsiggroup [add_wave_group "Internal Signals" -into $testbenchgroup]
+## set tb_simstatus_group [add_wave_group "Simulation Status" -into $tbinternalsiggroup]
+## set tb_portdepth_group [add_wave_group "Port Depth" -into $tbinternalsiggroup]
+## add_wave /apatb_userdma_top/AUTOTB_TRANSACTION_NUM -into $tb_simstatus_group -radix hex
+## add_wave /apatb_userdma_top/ready_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_userdma_top/done_cnt -into $tb_simstatus_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_inStreamTop_V_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_inStreamTop_V_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_inStreamTop_V_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_inStreamTop_V_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_inStreamTop_V_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2m_buf_sts -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2m_sts_clear -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2m_len -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2m_enb_clrsts -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2mbuf -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_s2m_err -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_Img_width -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_m2sbuf -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_m2s_buf_sts -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_m2s_sts_clear -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_m2s_len -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_m2s_enb_clrsts -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_outStreamTop_V_data_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_outStreamTop_V_keep_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_outStreamTop_V_strb_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_outStreamTop_V_user_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_outStreamTop_V_last_V -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_gmem0 -into $tb_portdepth_group -radix hex
+## add_wave /apatb_userdma_top/LENGTH_gmem1 -into $tb_portdepth_group -radix hex
+## set tbcoutputgroup [add_wave_group "C Outputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axis) -into $tbcoutputgroup]
+## add_wave /apatb_userdma_top/outStreamTop_TREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TLAST -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TUSER -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TSTRB -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TKEEP -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/outStreamTop_TDATA -into $tb_return_group -radix hex
+## set tb_s2mbuf_group [add_wave_group s2mbuf(axi_master) -into $tbcoutputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_s2mbuf_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_s2mbuf_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_s2mbuf_group]
+## add_wave /apatb_userdma_top/gmem0_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_BID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_RID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_WID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem0_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## set tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group [add_wave_group s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return(axi_slave) -into $tbcoutputgroup]
+## add_wave /apatb_userdma_top/control_INTERRUPT -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_BRESP -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_BREADY -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_BVALID -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_RRESP -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_RDATA -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_RREADY -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_RVALID -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_ARREADY -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_ARVALID -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_ARADDR -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_WSTRB -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_WDATA -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## add_wave /apatb_userdma_top/control_WREADY -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_WVALID -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_AWREADY -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_AWVALID -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/control_AWADDR -into $tb_s2m_buf_sts__s2m_sts_clear__s2m_len__s2m_enb_clrsts__s2mbuf__s2m_err__Img_width__m2sbuf__m2s_buf_sts__m2s_sts_clear__m2s_len__m2s_enb_clrsts__return_group -radix hex
+## set tbcinputgroup [add_wave_group "C Inputs" -into $testbenchgroup]
+## set tb_return_group [add_wave_group return(axis) -into $tbcinputgroup]
+## add_wave /apatb_userdma_top/inStreamTop_TREADY -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TVALID -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TLAST -into $tb_return_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TUSER -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TSTRB -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TKEEP -into $tb_return_group -radix hex
+## add_wave /apatb_userdma_top/inStreamTop_TDATA -into $tb_return_group -radix hex
+## set tb_m2sbuf_group [add_wave_group m2sbuf(axi_master) -into $tbcinputgroup]
+## set rdata_group [add_wave_group "Read Channel" -into $tb_m2sbuf_group]
+## set wdata_group [add_wave_group "Write Channel" -into $tb_m2sbuf_group]
+## set ctrl_group [add_wave_group "Handshakes" -into $tb_m2sbuf_group]
+## add_wave /apatb_userdma_top/gmem1_BUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_BID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_BRESP -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_BREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_BVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_RRESP -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_RUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_RID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_RLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_RDATA -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_RREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_RVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARUSER -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARREGION -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARQOS -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARPROT -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARCACHE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARLOCK -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARBURST -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARSIZE -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARLEN -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARID -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARADDR -into $rdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_ARVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_WUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_WID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_WLAST -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_WSTRB -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_WDATA -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_WREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_WVALID -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWUSER -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWREGION -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWQOS -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWPROT -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWCACHE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWLOCK -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWBURST -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWSIZE -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWLEN -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWID -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWADDR -into $wdata_group -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWREADY -into $ctrl_group -color #ffff00 -radix hex
+## add_wave /apatb_userdma_top/gmem1_AWVALID -into $ctrl_group -color #ffff00 -radix hex
+## save_wave_config userdma.wcfg
+## run all
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 2 [n/a] @ "125000"
+// RTL Simulation : 1 / 2 [n/a] @ "45265000"
+// RTL Simulation : 2 / 2 [n/a] @ "46375000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 46435 ns : File "/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/sim/verilog/userdma.autotb.v" Line 779
+## quit
+INFO: [Common 17-206] Exiting xsim at Thu Jun 13 12:21:12 2024...
+before-phase s2m_buf_sts is 0
+Prepare data stream
+before-phase m2s_buf_sts is 0
+Call S2MM/MM2S design
+
+after-phase s2m_buf_sts is 1
+after-phase m2s_buf_sts is 1
+
+s2m_err: 0
+S2M data
+out_b, address: a8aef010
+3e8 3e9 3ea 3eb 3ec 3ed 3ee 3ef 3f0 3f1 3f2 3f3 3f4 3f5 3f6 3f7 3f8 3f9 3fa 3fb 3fc 3fd 3fe 3ff 400 401 402 403 404 405 406 407 
+408 409 40a 40b 40c 40d 40e 40f 410 411 412 413 414 415 416 417 418 419 41a 41b 41c 41d 41e 41f 420 421 422 423 424 425 426 427 
+428 429 42a 42b 42c 42d 42e 42f 430 431 432 433 434 435 436 437 438 439 43a 43b 43c 43d 43e 43f 440 441 442 443 444 445 446 447 
+448 449 44a 44b 44c 44d 44e 44f 450 451 452 453 454 455 456 457 458 459 45a 45b 45c 45d 45e 45f 460 461 462 463 464 465 466 467 
+468 469 46a 46b 46c 46d 46e 46f 470 471 472 473 474 475 476 477 478 479 47a 47b 47c 47d 47e 47f 480 481 482 483 484 485 486 487 
+488 489 48a 48b 48c 48d 48e 48f 490 491 492 493 494 495 496 497 498 499 49a 49b 49c 49d 49e 49f 4a0 4a1 4a2 4a3 4a4 4a5 4a6 4a7 
+4a8 4a9 4aa 4ab 4ac 4ad 4ae 4af 4b0 4b1 4b2 4b3 4b4 4b5 4b6 4b7 4b8 4b9 4ba 4bb 4bc 4bd 4be 4bf 4c0 4c1 4c2 4c3 4c4 4c5 4c6 4c7 
+4c8 4c9 4ca 4cb 4cc 4cd 4ce 4cf 4d0 4d1 4d2 4d3 4d4 4d5 4d6 4d7 4d8 4d9 4da 4db 4dc 4dd 4de 4df 4e0 4e1 4e2 4e3 4e4 4e5 4e6 4e7 
+4e8 4e9 4ea 4eb 4ec 4ed 4ee 4ef 4f0 4f1 4f2 4f3 4f4 4f5 4f6 4f7 4f8 4f9 4fa 4fb 4fc 4fd 4fe 4ff 500 501 502 503 504 505 506 507 
+508 509 50a 50b 50c 50d 50e 50f 510 511 512 513 514 515 516 517 518 519 51a 51b 51c 51d 51e 51f 520 521 522 523 524 525 526 527 
+528 529 52a 52b 52c 52d 52e 52f 530 531 532 533 534 535 536 537 538 539 53a 53b 53c 53d 53e 53f 540 541 542 543 544 545 546 547 
+548 549 54a 54b 54c 54d 54e 54f 550 551 552 553 554 555 556 557 558 559 55a 55b 55c 55d 55e 55f 560 561 562 563 564 565 566 567 
+568 569 56a 56b 56c 56d 56e 56f 570 571 572 573 574 575 576 577 578 579 57a 57b 57c 57d 57e 57f 580 581 582 583 584 585 586 587 
+588 589 58a 58b 58c 58d 58e 58f 590 591 592 593 594 595 596 597 598 599 59a 59b 59c 59d 59e 59f 5a0 5a1 5a2 5a3 5a4 5a5 5a6 5a7 
+5a8 5a9 5aa 5ab 5ac 5ad 5ae 5af 5b0 5b1 5b2 5b3 5b4 5b5 5b6 5b7 5b8 5b9 5ba 5bb 5bc 5bd 5be 5bf 5c0 5c1 5c2 5c3 5c4 5c5 5c6 5c7 
+5c8 5c9 5ca 5cb 5cc 5cd 5ce 5cf 5d0 5d1 5d2 5d3 5d4 5d5 5d6 5d7 5d8 5d9 5da 5db 5dc 5dd 5de 5df 5e0 5e1 5e2 5e3 5e4 5e5 5e6 5e7 
+5e8 5e9 5ea 5eb 5ec 5ed 5ee 5ef 5f0 5f1 5f2 5f3 5f4 5f5 5f6 5f7 5f8 5f9 5fa 5fb 5fc 5fd 5fe 5ff 600 601 602 603 604 605 606 607 
+608 609 60a 60b 60c 60d 60e 60f 610 611 612 613 614 615 616 617 618 619 61a 61b 61c 61d 61e 61f 620 621 622 623 624 625 626 627 
+628 629 62a 62b 62c 62d 62e 62f 630 631 632 633 634 635 636 637 638 639 63a 63b 63c 63d 63e 63f 640 641 642 643 644 645 646 647 
+648 649 64a 64b 64c 64d 64e 64f 650 651 652 653 654 655 656 657 658 659 65a 65b 65c 65d 65e 65f 660 661 662 663 664 665 666 667 
+668 669 66a 66b 66c 66d 66e 66f 670 671 672 673 674 675 676 677 678 679 67a 67b 67c 67d 67e 67f 680 681 682 683 684 685 686 687 
+688 689 68a 68b 68c 68d 68e 68f 690 691 692 693 694 695 696 697 698 699 69a 69b 69c 69d 69e 69f 6a0 6a1 6a2 6a3 6a4 6a5 6a6 6a7 
+6a8 6a9 6aa 6ab 6ac 6ad 6ae 6af 6b0 6b1 6b2 6b3 6b4 6b5 6b6 6b7 6b8 6b9 6ba 6bb 6bc 6bd 6be 6bf 6c0 6c1 6c2 6c3 6c4 6c5 6c6 6c7 
+6c8 6c9 6ca 6cb 6cc 6cd 6ce 6cf 6d0 6d1 6d2 6d3 6d4 6d5 6d6 6d7 6d8 6d9 6da 6db 6dc 6dd 6de 6df 6e0 6e1 6e2 6e3 6e4 6e5 6e6 6e7 
+6e8 6e9 6ea 6eb 6ec 6ed 6ee 6ef 6f0 6f1 6f2 6f3 6f4 6f5 6f6 6f7 6f8 6f9 6fa 6fb 6fc 6fd 6fe 6ff 700 701 702 703 704 705 706 707 
+708 709 70a 70b 70c 70d 70e 70f 710 711 712 713 714 715 716 717 718 719 71a 71b 71c 71d 71e 71f 720 721 722 723 724 725 726 727 
+728 729 72a 72b 72c 72d 72e 72f 730 731 732 733 734 735 736 737 738 739 73a 73b 73c 73d 73e 73f 740 741 742 743 744 745 746 747 
+748 749 74a 74b 74c 74d 74e 74f 750 751 752 753 754 755 756 757 758 759 75a 75b 75c 75d 75e 75f 760 761 762 763 764 765 766 767 
+768 769 76a 76b 76c 76d 76e 76f 770 771 772 773 774 775 776 777 778 779 77a 77b 77c 77d 77e 77f 780 781 782 783 784 785 786 787 
+788 789 78a 78b 78c 78d 78e 78f 790 791 792 793 794 795 796 797 798 799 79a 79b 79c 79d 79e 79f 7a0 7a1 7a2 7a3 7a4 7a5 7a6 7a7 
+7a8 7a9 7aa 7ab 7ac 7ad 7ae 7af 7b0 7b1 7b2 7b3 7b4 7b5 7b6 7b7 7b8 7b9 7ba 7bb 7bc 7bd 7be 7bf 7c0 7c1 7c2 7c3 7c4 7c5 7c6 7c7 
+7c8 7c9 7ca 7cb 7cc 7cd 7ce 7cf 7d0 7d1 7d2 7d3 7d4 7d5 7d6 7d7 7d8 7d9 7da 7db 7dc 7dd 7de 7df 7e0 7e1 7e2 7e3 7e4 7e5 7e6 7e7 
+7e8 7e9 7ea 7eb 7ec 7ed 7ee 7ef 7f0 7f1 7f2 7f3 7f4 7f5 7f6 7f7 7f8 7f9 7fa 7fb 7fc 7fd 7fe 7ff 800 801 802 803 804 805 806 807 
+808 809 80a 80b 80c 80d 80e 80f 810 811 812 813 814 815 816 817 818 819 81a 81b 81c 81d 81e 81f 820 821 822 823 824 825 826 827 
+828 829 82a 82b 82c 82d 82e 82f 830 831 832 833 834 835 836 837 838 839 83a 83b 83c 83d 83e 83f 840 841 842 843 844 845 846 847 
+848 849 84a 84b 84c 84d 84e 84f 850 851 852 853 854 855 856 857 858 859 85a 85b 85c 85d 85e 85f 860 861 862 863 864 865 866 867 
+868 869 86a 86b 86c 86d 86e 86f 870 871 872 873 874 875 876 877 878 879 87a 87b 87c 87d 87e 87f 880 881 882 883 884 885 886 887 
+888 889 88a 88b 88c 88d 88e 88f 890 891 892 893 894 895 896 897 
+
+M2S data
+
+0000 0001 0002 0003 0004 0005 0006 0007 0008 0009 0010 0011 0012 0013 0014 0015 0016 0017 0018 0019 0020 0021 0022 0023 0024 0025 0026 0027 0028 0029 0030 0031 
+0032 0033 0034 0035 0036 0037 0038 0039 0040 0041 0042 0043 0044 0045 0046 0047 0048 0049 0050 0051 0052 0053 0054 0055 0056 0057 0058 0059 0060 0061 0062 0063 
+0064 0065 0066 0067 0068 0069 0070 0071 0072 0073 0074 0075 0076 0077 0078 0079 0080 0081 0082 0083 0084 0085 0086 0087 0088 0089 0090 0091 0092 0093 0094 0095 
+0096 0097 0098 0099 0100 0101 0102 0103 0104 0105 0106 0107 0108 0109 0110 0111 0112 0113 0114 0115 0116 0117 0118 0119 0120 0121 0122 0123 0124 0125 0126 0127 
+0128 0129 0130 0131 0132 0133 0134 0135 0136 0137 0138 0139 0140 0141 0142 0143 0144 0145 0146 0147 0148 0149 0150 0151 0152 0153 0154 0155 0156 0157 0158 0159 
+0160 0161 0162 0163 0164 0165 0166 0167 0168 0169 0170 0171 0172 0173 0174 0175 0176 0177 0178 0179 0180 0181 0182 0183 0184 0185 0186 0187 0188 0189 0190 0191 
+0192 0193 0194 0195 0196 0197 0198 0199 0200 0201 0202 0203 0204 0205 0206 0207 0208 0209 0210 0211 0212 0213 0214 0215 0216 0217 0218 0219 0220 0221 0222 0223 
+0224 0225 0226 0227 0228 0229 0230 0231 0232 0233 0234 0235 0236 0237 0238 0239 0240 0241 0242 0243 0244 0245 0246 0247 0248 0249 0250 0251 0252 0253 0254 0255 
+0256 0257 0258 0259 0260 0261 0262 0263 0264 0265 0266 0267 0268 0269 0270 0271 0272 0273 0274 0275 0276 0277 0278 0279 0280 0281 0282 0283 0284 0285 0286 0287 
+0288 0289 0290 0291 0292 0293 0294 0295 0296 0297 0298 0299 0300 0301 0302 0303 0304 0305 0306 0307 0308 0309 0310 0311 0312 0313 0314 0315 0316 0317 0318 0319 
+0320 0321 0322 0323 0324 0325 0326 0327 0328 0329 0330 0331 0332 0333 0334 0335 0336 0337 0338 0339 0340 0341 0342 0343 0344 0345 0346 0347 0348 0349 0350 0351 
+0352 0353 0354 0355 0356 0357 0358 0359 0360 0361 0362 0363 0364 0365 0366 0367 0368 0369 0370 0371 0372 0373 0374 0375 0376 0377 0378 0379 0380 0381 0382 0383 
+0384 0385 0386 0387 0388 0389 0390 0391 0392 0393 0394 0395 0396 0397 0398 0399 0400 0401 0402 0403 0404 0405 0406 0407 0408 0409 0410 0411 0412 0413 0414 0415 
+0416 0417 0418 0419 0420 0421 0422 0423 0424 0425 0426 0427 0428 0429 0430 0431 0432 0433 0434 0435 0436 0437 0438 0439 0440 0441 0442 0443 0444 0445 0446 0447 
+0448 0449 0450 0451 0452 0453 0454 0455 0456 0457 0458 0459 0460 0461 0462 0463 0464 0465 0466 0467 0468 0469 0470 0471 0472 0473 0474 0475 0476 0477 0478 0479 
+0480 0481 0482 0483 0484 0485 0486 0487 0488 0489 0490 0491 0492 0493 0494 0495 0496 0497 0498 0499 0500 0501 0502 0503 0504 0505 0506 0507 0508 0509 0510 0511 
+0512 0513 0514 0515 0516 0517 0518 0519 0520 0521 0522 0523 0524 0525 0526 0527 0528 0529 0530 0531 0532 0533 0534 0535 0536 0537 0538 0539 0540 0541 0542 0543 
+0544 0545 0546 0547 0548 0549 0550 0551 0552 0553 0554 0555 0556 0557 0558 0559 0560 0561 0562 0563 0564 0565 0566 0567 0568 0569 0570 0571 0572 0573 0574 0575 
+0576 0577 0578 0579 0580 0581 0582 0583 0584 0585 0586 0587 0588 0589 0590 0591 0592 0593 0594 0595 0596 0597 0598 0599 0600 0601 0602 0603 0604 0605 0606 0607 
+0608 0609 0610 0611 0612 0613 0614 0615 0616 0617 0618 0619 0620 0621 0622 0623 0624 0625 0626 0627 0628 0629 0630 0631 0632 0633 0634 0635 0636 0637 0638 0639 
+0640 0641 0642 0643 0644 0645 0646 0647 0648 0649 0650 0651 0652 0653 0654 0655 0656 0657 0658 0659 0660 0661 0662 0663 0664 0665 0666 0667 0668 0669 0670 0671 
+0672 0673 0674 0675 0676 0677 0678 0679 0680 0681 0682 0683 0684 0685 0686 0687 0688 0689 0690 0691 0692 0693 0694 0695 0696 0697 0698 0699 0700 0701 0702 0703 
+0704 0705 0706 0707 0708 0709 0710 0711 0712 0713 0714 0715 0716 0717 0718 0719 0720 0721 0722 0723 0724 0725 0726 0727 0728 0729 0730 0731 0732 0733 0734 0735 
+0736 0737 0738 0739 0740 0741 0742 0743 0744 0745 0746 0747 0748 0749 0750 0751 0752 0753 0754 0755 0756 0757 0758 0759 0760 0761 0762 0763 0764 0765 0766 0767 
+0768 0769 0770 0771 0772 0773 0774 0775 0776 0777 0778 0779 0780 0781 0782 0783 0784 0785 0786 0787 0788 0789 0790 0791 0792 0793 0794 0795 0796 0797 0798 0799 
+0800 0801 0802 0803 0804 0805 0806 0807 0808 0809 0810 0811 0812 0813 0814 0815 0816 0817 0818 0819 0820 0821 0822 0823 0824 0825 0826 0827 0828 0829 0830 0831 
+0832 0833 0834 0835 0836 0837 0838 0839 0840 0841 0842 0843 0844 0845 0846 0847 0848 0849 0850 0851 0852 0853 0854 0855 0856 0857 0858 0859 0860 0861 0862 0863 
+0864 0865 0866 0867 0868 0869 0870 0871 0872 0873 0874 0875 0876 0877 0878 0879 0880 0881 0882 0883 0884 0885 0886 0887 0888 0889 0890 0891 0892 0893 0894 0895 
+0896 0897 0898 0899 0900 0901 0902 0903 0904 0905 0906 0907 0908 0909 0910 0911 0912 0913 0914 0915 0916 0917 0918 0919 0920 0921 0922 0923 0924 0925 0926 0927 
+0928 0929 0930 0931 0932 0933 0934 0935 0936 0937 0938 0939 0940 0941 0942 0943 0944 0945 0946 0947 0948 0949 0950 0951 0952 0953 0954 0955 0956 0957 0958 0959 
+0960 0961 0962 0963 0964 0965 0966 0967 0968 0969 0970 0971 0972 0973 0974 0975 0976 0977 0978 0979 0980 0981 0982 0983 0984 0985 0986 0987 0988 0989 0990 0991 
+0992 0993 0994 0995 0996 0997 0998 0999 1000 1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012 1013 1014 1015 1016 1017 1018 1019 1020 1021 1022 1023 
+1024 1025 1026 1027 1028 1029 1030 1031 1032 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1049 1050 1051 1052 1053 1054 1055 
+1056 1057 1058 1059 1060 1061 1062 1063 1064 1065 1066 1067 1068 1069 1070 1071 1072 1073 1074 1075 1076 1077 1078 1079 1080 1081 1082 1083 1084 1085 1086 1087 
+1088 1089 1090 1091 1092 1093 1094 1095 1096 1097 1098 1099 1100 1101 1102 1103 1104 1105 1106 1107 1108 1109 1110 1111 1112 1113 1114 1115 1116 1117 1118 1119 
+1120 1121 1122 1123 1124 1125 1126 1127 1128 1129 1130 1131 1132 1133 1134 1135 1136 1137 1138 1139 1140 1141 1142 1143 1144 1145 1146 1147 1148 1149 1150 1151 
+1152 1153 1154 1155 1156 1157 1158 1159 1160 1161 1162 1163 1164 1165 1166 1167 1168 1169 1170 1171 1172 1173 1174 1175 1176 1177 1178 1179 1180 1181 1182 1183 
+1184 1185 1186 1187 1188 1189 1190 1191 1192 1193 1194 1195 1196 1197 1198 1199 
+
+m2s_sof_err-->0 
+m2s_sof_err-->0 
+clear s2m_buf_sts -> 0
+clear m2s_buf_sts -> 0
+s2m_err: 0
+
+WARNING: Hls::stream 'hls::stream<hls::axis<ap_uint<32>, 7ul, 0ul, 0ul>, 0>0' contains leftover data, which may result in RTL simulation hanging.
+INFO: [COSIM-1000] *** C/RTL co-simulation finished: PASS ***

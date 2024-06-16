@@ -1,0 +1,12 @@
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/out_width:div RESOURCE_NAME out_height:div:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/out_height:div RESOURCE_NAME out_height:div:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:if:acc#4 RESOURCE_NAME LOOP_Y:else:acc#6:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:else:acc#6 RESOURCE_NAME LOOP_Y:else:acc#6:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:else:acc RESOURCE_NAME LOOP_Y:else:acc:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:if:acc RESOURCE_NAME LOOP_Y:else:acc:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:if:mul#1 RESOURCE_NAME LOOP_WIDTH:mul#1:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_WIDTH:mul#1 RESOURCE_NAME LOOP_WIDTH:mul#1:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:if:mul#3 RESOURCE_NAME LOOP_WIDTH:mul#2:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_WIDTH:mul#2 RESOURCE_NAME LOOP_WIDTH:mul#2:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_Y:if:mul RESOURCE_NAME LOOP_WIDTH:mul:rg
+directive set /UNET_IP::maxpool/UNET_IP::maxpool:run_max/UNET_IP::maxpool:run_max:conc/LOOP_WIDTH:mul RESOURCE_NAME LOOP_WIDTH:mul:rg

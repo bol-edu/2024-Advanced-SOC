@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "g++ build",
+			"command": "/usr/mentor/Catapult/2023.2/Mgc_home/bin/g++",
+			"args": [
+				"-g",
+				"-std=c++11",
+				"-DSC_INCLUDE_DYNAMIC_PROCESSES",
+				"-Wl,-rpath=/usr/mentor/Catapult/2023.2/Mgc_home/lib,-rpath=/usr/mentor/Catapult/2023.2/Mgc_home/shared/lib",
+				"../hls_c/src/EdgeDetect_tb.cpp",
+				"../bmpUtil/src/bmp_io.cpp",
+				"-I/home/raid7_2/userk/m11102167/ASoC/Final/01_edgedetect/catapult_work",
+				"-I./../hls_c/inc",
+				"-I./../cmodel/inc",
+				"-I./../bmpUtil/inc",
+				"-I./../hls_c/inc",
+				"-I./../cmodel/inc",
+				"-I./../bmpUtil/inc",
+				"-I/usr/mentor/Catapult/2023.2/Mgc_home/shared/include",
+				"-L/usr/mentor/Catapult/2023.2/Mgc_home/shared/lib",
+				"-Wl,-Bstatic",
+				"-lsystemc",
+				"-Wl,-Bdynamic",
+				"-lpthread",
+				"-o",
+				"/home/raid7_2/userk/m11102167/ASoC/Final/01_edgedetect/catapult_work/EdgeDetect_IP__EdgeDetect_Top"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "run",
+			"command": "/home/raid7_2/userk/m11102167/ASoC/Final/01_edgedetect/catapult_work/EdgeDetect_IP__EdgeDetect_Top ./test.bmp out_algorithm.bmp out_hw.bmp",
+			"dependsOn": [
+				"g++ build"
+			],
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "trace",
+			"command": "gtkwave trace.vcd",
+			"dependsOn": [
+				"run"
+			],
+			"problemMatcher": []
+		}
+	]
+}

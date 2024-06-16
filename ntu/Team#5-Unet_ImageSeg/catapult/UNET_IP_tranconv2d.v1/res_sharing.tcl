@@ -1,0 +1,14 @@
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/out_width:mul RESOURCE_NAME LOOP_Y:mul#7:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#7 RESOURCE_NAME LOOP_Y:mul#7:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/out_height:mul RESOURCE_NAME LOOP_Y:mul#8:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#8 RESOURCE_NAME LOOP_Y:mul#8:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#5 RESOURCE_NAME LOOP_Y:mul#3:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#3 RESOURCE_NAME LOOP_Y:mul#3:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/filter_size:mul RESOURCE_NAME LOOP_Y:mul#6:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#6 RESOURCE_NAME LOOP_Y:mul#6:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_RESET:mul#1 RESOURCE_NAME LOOP_RESET:mul#1:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:LOOP_Y:mul RESOURCE_NAME LOOP_RESET:mul#1:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#1 RESOURCE_NAME LOOP_Y:mul:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#2 RESOURCE_NAME LOOP_Y:mul:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul#9 RESOURCE_NAME LOOP_Y:mul:rg
+directive set /UNET_IP::tranconv2d/UNET_IP::tranconv2d:run_tran/UNET_IP::tranconv2d:run_tran:conc/LOOP_Y:mul RESOURCE_NAME LOOP_Y:mul:rg

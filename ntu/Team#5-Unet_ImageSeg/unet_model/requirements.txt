@@ -1,0 +1,11 @@
+numpy
+matplotlib
+argparse
+Pillow
+scipy
+torch
+torchaudio
+torchvision
+torchsummary
+tqdm
+pathlib

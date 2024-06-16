@@ -1,0 +1,424 @@
+
+# Messages from "go new"
+
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'UNET_IP::main.v4' at state 'new' (PRJ-2)
+UNET_IP::main.v4
+go compile
+# Info: Starting transformation 'analyze' on solution 'UNET_IP::main.v4' (SOL-8)
+Front End called with arguments: -I/home/raid7_2/user12/r12016/asoc/final/hlsall -- /home/raid7_2/user12/r12016/asoc/final/hlsall/main_all.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: last line of file ends without a newline (CRD-1)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'UNET_IP::main' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'UNET_IP::main.v4': elapsed time 13.54 seconds, memory usage 1778056kB, peak memory usage 1843592kB (SOL-9)
+
+# Messages from "go compile"
+
+# Info: Starting transformation 'compile' on solution 'UNET_IP::main.v4' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'UNET_IP::main' specified by directive (CIN-52)
+# Warning: Instantiating global variable 'filters_pretrain' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'gamma_pretrain' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'beta_pretrain' which may be accessed outside this scope (CIN-18)
+Inlining member function 'UNET_IP::main::main' on object '' (CIN-64)
+Synthesizing method 'UNET_IP::main::run' (CIN-13)
+Inlining member function 'UNET_IP::main::run' on object '' (CIN-64)
+Inlining routine 'operator<<20, false>' (CIN-14)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Inlining routine 'operator/<2, false>' (CIN-14)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/UNET_IP::main/run/for#1:for:for' (CIN-203)
+Inlining routine 'operator/<20, 8, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'operator/<34, 16, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'ac_math::ac_sqrt_pwl<AC_TRN, 22, 17, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_normalize<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<=<22, 0, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<25, 1, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<32, 8, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator><40, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator+=<20, false>' (CIN-14)
+Inlining routine 'operator+=<10, false>' (CIN-14)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Inlining routine 'operator*<2, false>' (CIN-14)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/UNET_IP::main/run/for#4:for:for' (CIN-203)
+Inlining routine 'operator/<20, 8, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'operator/<34, 16, false, AC_TRN, AC_WRAP, 13, false>' (CIN-14)
+Inlining routine 'ac_math::ac_sqrt_pwl<AC_TRN, 22, 17, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_normalize<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<=<22, 0, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<25, 1, AC_TRN, AC_WRAP, 14, 8, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<32, 8, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<22, 17, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator><40, 20, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<3, true>' (CIN-14)
+Inlining routine 'operator==<3, true>' (CIN-14)
+Inlining routine 'operator<<20, false>' (CIN-14)
+Optimizing block '/UNET_IP::main' ... (CIN-4)
+INOUT port 'input' is only used as an input. (OPT-10)
+INOUT port 'output' is only used as an output. (OPT-11)
+# Info: Partition '/UNET_IP::main/constructor' is found empty and is optimized away. (OPT-12)
+# Info: Running transformation 'compile' on solution 'UNET_IP::main.v4': elapsed time 10.81 seconds, memory usage 1843592kB, peak memory usage 1882656kB (SOL-15)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:m_lut.rom', from '10' bits to '6' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:c_lut.rom', from '13' bits to '10' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:m_lut.rom', from '10' bits to '6' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:c_lut.rom', from '13' bits to '10' bits. (MEM-87)
+Loop '/UNET_IP::main/run/for' iterated at most 12288 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#1:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#1:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#1' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2:for:for:for:for:for' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2:for:for:for:for' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2:for:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2:for' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#2' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#3:for' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#3:for#1' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#3:for#2' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#3' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#4:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#4:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#4' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5:for:for:for:for:for' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5:for:for:for:for' iterated at most 3 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5:for:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5:for:for' iterated at most 64 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5:for' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#5' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#6:for' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#6:for#1' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#6:for#2' iterated at most 4096 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#6' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#7:for:for:for:for' iterated at most 2 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#7:for:for:for' iterated at most 2 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#7:for:for' iterated at most 32 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#7:for' iterated at most 32 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#7' iterated at most 8 times. (LOOP-2)
+Loop '/UNET_IP::main/run/for#8' iterated at most 12288 times. (LOOP-2)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::gamma_pretrain.rom#1', from '8' bits to '7' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::beta_pretrain.rom#1', from '8' bits to '1' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::gamma_pretrain.rom#2', from '8' bits to '7' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::beta_pretrain.rom#2', from '8' bits to '1' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::filters_pretrain.rom#1', from '8' bits to '5' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'UNET_IP::filters_pretrain.rom#2', from '8' bits to '5' bits. (MEM-87)
+Design 'UNET_IP::main' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Info: CDesignChecker Shell script written to '/home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult_3/UNET_IP_main.v4/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'UNET_IP::main.v4': elapsed time 22.23 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 547, Real ops = 176, Vars = 103 (SOL-21)
+
+# Messages from "go libraries"
+
+directive set SCHED_USE_MULTICYCLE true
+/SCHED_USE_MULTICYCLE true
+go libraries
+# Info: Starting transformation 'libraries' on solution 'UNET_IP::main.v4' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+# Info: Completed transformation 'libraries' on solution 'UNET_IP::main.v4': elapsed time 0.97 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 547, Real ops = 176, Vars = 103 (SOL-21)
+
+# Messages from "go assembly"
+
+go assembly
+# Info: Starting transformation 'assembly' on solution 'UNET_IP::main.v4' (SOL-8)
+# Info: Completed transformation 'assembly' on solution 'UNET_IP::main.v4': elapsed time 3.46 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 548, Real ops = 177, Vars = 105 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /UNET_IP::main/run/for#3:for#1 -PIPELINE_INIT_INTERVAL 1
+/UNET_IP::main/run/for#3:for#1/PIPELINE_INIT_INTERVAL 1
+directive set /UNET_IP::main/run/for#3:for#2 -PIPELINE_INIT_INTERVAL 0
+/UNET_IP::main/run/for#3:for#2/PIPELINE_INIT_INTERVAL 0
+directive set /UNET_IP::main/run/for#6:for#1 -PIPELINE_INIT_INTERVAL 1
+/UNET_IP::main/run/for#6:for#1/PIPELINE_INIT_INTERVAL 1
+directive set /UNET_IP::main/run/for#6:for#2 -PIPELINE_INIT_INTERVAL 0
+/UNET_IP::main/run/for#6:for#2/PIPELINE_INIT_INTERVAL 0
+go architect
+# Info: Starting transformation 'loops' on solution 'UNET_IP::main.v4' (SOL-8)
+Loop '/UNET_IP::main/run/for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#1:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#1:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#1' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2:for:for:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2:for:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#2' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#3:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#3:for#1' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#3:for#2' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#3' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#4:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#4:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#4' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5:for:for:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5:for:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#5' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#6:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#6:for#1' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#6:for#2' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#6' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#7:for:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#7:for:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#7:for:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#7:for' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#7' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/for#8' is left rolled. (LOOP-4)
+Loop '/UNET_IP::main/run/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'UNET_IP::main.v4': elapsed time 7.59 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 488, Real ops = 139, Vars = 94 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'UNET_IP::main.v4' (SOL-8)
+Memory Resource '/UNET_IP::main/run/buf1:rsc' (from var: buf1) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+Memory Resource '/UNET_IP::main/run/padded_input:rsc' (from var: padded_input) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 13068 x 12). (MEM-4)
+Memory Resource '/UNET_IP::main/run/buf2:rsc' (from var: buf2) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+Memory Resource '/UNET_IP::main/run/enc1:rsc' (from var: enc1) mapped to 'Xilinx_RAMS.BLOCK_1R1W_RBW' (size: 32768 x 12). (MEM-4)
+ROM Resource '/UNET_IP::main/UNET_IP::filters_pretrain.rom:rsc' (from var: UNET_IP::filters_pretrain.rom) mapped to 'Xilinx_ROMS.mgc_rom' (size: 792 x 5). (MEM-10)
+ROM Resource '/UNET_IP::main/UNET_IP::filters_pretrain.rom#6:rsc' (from var: UNET_IP::filters_pretrain.rom#6) mapped to 'Xilinx_ROMS.mgc_rom' (size: 792 x 5). (MEM-10)
+# Info: Completed transformation 'memories' on solution 'UNET_IP::main.v4': elapsed time 11.80 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 482, Real ops = 139, Vars = 95 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'UNET_IP::main.v4' (SOL-8)
+# Warning: ROM clustering skipped Technology Library(ies) required for Prototyping not found (CLUSTER-24)
+Module for CCORE 'leading_sign_22_0' has been successfully synthesized (TD-4)
+# Info: Completed transformation 'cluster' on solution 'UNET_IP::main.v4': elapsed time 5.04 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 437, Real ops = 115, Vars = 86 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'UNET_IP::main.v4' (SOL-8)
+Design 'UNET_IP::main' contains '208' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'UNET_IP::main.v4': elapsed time 6.36 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 839, Real ops = 208, Vars = 135 (SOL-21)
+
+# Messages from "go allocate"
+
+go allocate
+# Info: Starting transformation 'allocate' on solution 'UNET_IP::main.v4' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::main/run' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/UNET_IP::main/run/for#5:for:for:for:for:for' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2:for:for:for:for:for' (4 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#7:for:for:for:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#5:for:for:for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2:for:for:for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#7:for:for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#5:for:for:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2:for:for:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#7:for:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#5:for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#4:for:for' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2:for:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#1:for:for' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#7:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#6:for#2' (11 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#6:for#1' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#6:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#5:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#4:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#3:for#2' (11 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#3:for#1' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#3:for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#1:for' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#8' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#7' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#6' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#5' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#4' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#3' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#2' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for#1' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/for' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/main' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/UNET_IP::main/run/run:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/UNET_IP::main/run' (total length 16128588 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/UNET_IP::main/run': Latency = 9338874, Area (Datapath, Register, Total) = 8012.40, 0.00, 8012.40 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+# Info: Final schedule of SEQUENTIAL '/UNET_IP::main/run': Latency = 9338874, Area (Datapath, Register, Total) = 4687.40, 0.00, 4687.40 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'UNET_IP::main.v4': elapsed time 5.48 seconds, memory usage 1843592kB, peak memory usage 1941900kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 839, Real ops = 208, Vars = 135 (SOL-21)
+
+# Messages from "go schedule"
+
+go extract
+# Info: Starting transformation 'schedule' on solution 'UNET_IP::main.v4' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/UNET_IP::main/run' (CRAAS-1)
+Global signal 'input:rsc.rdy' added to design 'UNET_IP::main' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.vld' added to design 'UNET_IP::main' for component 'input:rsci' (LIB-3)
+Global signal 'input:rsc.dat' added to design 'UNET_IP::main' for component 'input:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'input:rsc' (SCHD-46)
+Global signal 'output:rsc.rdy' added to design 'UNET_IP::main' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.vld' added to design 'UNET_IP::main' for component 'output:rsci' (LIB-3)
+Global signal 'output:rsc.dat' added to design 'UNET_IP::main' for component 'output:rsci' (LIB-3)
+Global signal 'buf1:rsc.clken' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.q' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.re' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.radr' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.we' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.d' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'buf1:rsc.wadr' added to design 'UNET_IP::main' for component 'buf1:rsci' (LIB-3)
+Global signal 'padded_input:rsc.clken' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.q' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.re' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.radr' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.we' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.d' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'padded_input:rsc.wadr' added to design 'UNET_IP::main' for component 'padded_input:rsci' (LIB-3)
+Global signal 'buf2:rsc.clken' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.q' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.re' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.radr' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.we' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.d' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'buf2:rsc.wadr' added to design 'UNET_IP::main' for component 'buf2:rsci' (LIB-3)
+Global signal 'enc1:rsc.clken' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.q' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.re' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.radr' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.we' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.d' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+Global signal 'enc1:rsc.wadr' added to design 'UNET_IP::main' for component 'enc1:rsci' (LIB-3)
+# Info: Loop '/UNET_IP::main/run/for#1:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#2:for:for:for:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#3:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#3:for#1' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#4:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#5:for:for:for:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#6:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#6:for#1' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+# Info: Loop '/UNET_IP::main/run/for#7:for:for:for:for' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#1:for:for' iterated at most 66 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#3:for' iterated at most 4097 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#3:for#1' iterated at most 4098 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#4:for:for' iterated at most 66 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#6:for' iterated at most 4097 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#6:for#1' iterated at most 4098 times. (LOOP-2)
+Loop '/UNET_IP::main/UNET_IP::main:run/run/for#7:for:for:for:for' iterated at most 3 times. (LOOP-2)
+# Info: Running transformation 'schedule' on solution 'UNET_IP::main.v4': elapsed time 25.15 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'UNET_IP::main.v4': elapsed time 28.53 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-15)
+# Info: Running transformation 'schedule' on solution 'UNET_IP::main.v4': elapsed time 53.06 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-15)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'UNET_IP::main.v4': elapsed time 75.70 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 3371, Real ops = 213, Vars = 383 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'UNET_IP::main.v4' (SOL-8)
+Performing FSM extraction... (FSM-1)
+Creating shared register 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:_qr(0).lpi#3.dfm' for variables 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:_qr(0).lpi#3.dfm, ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>:expret:_qr(0).lpi#3.dfm, operator<<20,false>#1:slc(operator<<20,false>#1:acc)(2).itm, operator<<20,false>:slc(operator<<20,false>:acc)(2).itm, x#2(2).sva, x(0).sva' (5 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:and.itm' for variables 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:and.itm, ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>:expret:ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>:expret:and.itm, for#2:for:for:for:for:for:read_rom(UNET_IP::filters_pretrain.rom_map_1).itm.1, for#5:for:for:for:for:for:read_rom(UNET_IP::filters_pretrain.rom#6_map_1).itm.1, i#12(5:0).sva(4:0)' (4 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:unequal.tmp' for variables 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:expret:unequal.tmp, ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>:expret:unequal.tmp, for#1:for:for.stage_0, for#2:for:for:for:for:for.stage_0, for#3:for#1.stage_0, for#3:for.stage_0, for#4:for:for.stage_0, for#5:for:for:for:for:for.stage_0, for#6:for#1.stage_0, for#6:for.stage_0, for#7:for:for:for:for.stage_0' (10 registers deleted). (FSM-3)
+Creating shared register 'for#1:for:for.stage_0.2' for variables 'for#1:for:for.stage_0.2, for#2:for:for:for:for:for.stage_0.1, for#3:for.stage_0.2, for#4:for:for.stage_0.2, for#5:for:for:for:for:for.stage_0.1, for#6:for.stage_0.2, for#7:for:for:for:for.stage_0.2' (6 registers deleted). (FSM-3)
+Creating shared register 'for#2:for:for:for:for:for.stage_0.2' for variables 'for#2:for:for:for:for:for.stage_0.2, for#3:for#1.stage_0.2, for#5:for:for:for:for:for.stage_0.2, for#6:for#1.stage_0.2, for#7:for:for:for:for:asn#3.itm' (4 registers deleted). (FSM-3)
+Creating shared register 'for#2:for:for:for:for:for.stage_0.3' for variables 'for#2:for:for:for:for:for.stage_0.3, for#3:for#1.stage_0.3, for#5:for:for:for:for:for.stage_0.3, for#6:for#1.stage_0.3, for#7:for:for:for:for:asn#3.itm.1' (4 registers deleted). (FSM-3)
+Creating shared register 'for#2:for:for:for:for:for.stage_0.4' for variables 'for#2:for:for:for:for:for.stage_0.4, for#5:for:for:for:for:for.stage_0.4, for#7:for:for:for:for:land.lpi#6.dfm.1, i:asn#11.itm.1, i:asn#22.itm.1, i:asn#26.itm.1, i:asn#7.itm.1' (6 registers deleted). (FSM-3)
+Creating shared register 'for#7:for:for:for:for:land.lpi#6.dfm.st.1' for variables 'for#7:for:for:for:for:land.lpi#6.dfm.st.1, i:asn#11.itm.2, i:asn#26.itm.2, y:asn#1.itm.1, y:asn#3.itm.1' (4 registers deleted). (FSM-3)
+Creating shared register 'i#1(13:0).sva' for variables 'i#1(13:0).sva, i(13:0).sva, i#1(13:0).sva#1, i(13:0).sva#1, mean_tmp(19:6)#1.sva, mean_tmp(19:6).sva, mean_tmp(19:6)#1.sva#1, mean_tmp(19:6).sva#1' (7 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:normalized_fixed_temp#1(20:7).sva' for variables 'ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>#1:normalized_fixed_temp#1(20:7).sva, ac_math::ac_normalize<22,17,false,AC_TRN,AC_WRAP>:normalized_fixed_temp#1(20:7).sva, ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:and.itm, ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:and.itm' (3 registers deleted). (FSM-3)
+Creating shared register 'for#3:for#1:acc#4.cse.sva.1' for variables 'for#3:for#1:acc#4.cse.sva.1, for#6:for#1:acc#4.cse.sva.1, for#3:for#2:acc#6.itm, for#6:for#2:acc#6.itm' (3 registers deleted). (FSM-3)
+Creating shared register 'j#1.sva(5:0)' for variables 'j#1.sva(5:0), j#3.sva(5:0), j(5:0).sva#1' (2 registers deleted). (FSM-3)
+# Info: Running transformation 'dpfsm' on solution 'UNET_IP::main.v4': elapsed time 7.88 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-15)
+Creating shared register 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:normalized_output:mux.itm' for variables 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:normalized_output:mux.itm, ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:normalized_output:mux.itm, for#2:for:for:for:for:for:acc.itm.1(5:0), for#5:for:for:for:for:for:acc#25.itm.1(5:0), i#2(6:0).sva(5:0), i#7(6:0).sva(5:0)' (5 registers deleted). (FSM-3)
+Creating shared register 'i#10(12:0).sva(11:0)' for variables 'i#10(12:0).sva(11:0), i#11(12:0).sva(11:0), i#4(12:0).sva(11:0), i#6(12:0).sva(11:0), i#9(12:0).sva(11:0), max_val(11:0).lpi#5, max_val(11:0).lpi#6, max_val(11:0).lpi#6.dfm#1, for#2:for:for:for:for:for:asn#14.itm.1, for#5:for:for:for:for:for:asn#13.itm.1' (9 registers deleted). (FSM-3)
+Creating shared register 'in_c#1(1:0).sva' for variables 'in_c#1(1:0).sva, out_c#1(1:0).sva, for#5:for:for:for:for:for:acc#7.sdt.sva.1(1:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'j#2.sva' for variables 'j#2.sva, j#4.sva, j#2.sva#1, j#4.sva#1' (3 registers deleted). (FSM-3)
+Creating shared register 'i#3(6:0).sva' for variables 'i#3(6:0).sva, i#8(6:0).sva, for#6:for#2:mux.itm' (2 registers deleted). (FSM-3)
+Creating shared register 'out_c#2(3:0).sva(2:0)' for variables 'out_c#2(3:0).sva(2:0), out_c#4(3:0).sva(2:0), in_c(3:0).sva(2:0)' (2 registers deleted). (FSM-3)
+Creating shared register 'out_c#3(3:0).sva(2:0)' for variables 'out_c#3(3:0).sva(2:0), out_c#5(3:0).sva(2:0), out_c#6(3:0).sva(2:0), out_c(3:0).sva(2:0)' (3 registers deleted). (FSM-3)
+Creating shared register 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:normalized_output:mux#1.itm' for variables 'ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>#1:normalized_output:mux#1.itm, ac_math::ac_sqrt_pwl<AC_TRN,22,17,AC_TRN,AC_WRAP,14,8,AC_TRN,AC_WRAP>:normalized_output:mux#1.itm, for#2:for:for:for:for:for:read_rom(UNET_IP::filters_pretrain.rom_map_1).itm.2, j(5:0).sva(4:0), for#5:for:for:for:for:for:read_rom(UNET_IP::filters_pretrain.rom#6_map_1).itm.2' (2 registers deleted). (FSM-3)
+Creating shared register 'for#3:for#2:asn.itm' for variables 'for#3:for#2:asn.itm, for#3:for#1:acc#4.cse.sva.1, for#6:for#1:acc#4.cse.sva.1, for#3:for#2:acc#6.itm, for#6:for#2:acc#6.itm, for#6:for#2:asn.itm' (2 registers deleted). (FSM-3)
+# Info: Completed transformation 'dpfsm' on solution 'UNET_IP::main.v4': elapsed time 11.53 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 1701, Real ops = 628, Vars = 368 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'UNET_IP::main.v4' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'UNET_IP::main.v4': elapsed time 5.89 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 1504, Real ops = 475, Vars = 1265 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'UNET_IP::main.v4' (SOL-8)
+Report written to file 'rtl.rpt'
+ROM component 'mgc_rom(17,792,5,1)' initialization mode: inline_init. (MEM-76)
+Generating scverify_top.cpp ()
+Generating SCVerify ccs_wrapper_UNET_IP_main.vhdl ()
+Netlist written to file 'rtl.vhdl' (NET-4)
+generate concat
+order file name is: rtl.vhdl_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_d840c0cc3faff3dab9b8e63cb3d67e055661_0/rtl.vhdl
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/ccs_xilinx/hdl/BLOCK_1R1W_RBW.vhd
+Add dependent file: ./rtl_UNET_IP_mainmgc_rom_17_792_5_1.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult_3/UNET_IP_main.v4/concat_rtl.vhdl
+order file name is: rtl.vhdl_order_sim.txt
+# Info: Running transformation 'extract' on solution 'UNET_IP::main.v4': elapsed time 11.82 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-15)
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/src/funcs.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_comps.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_comps_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.vhd
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.vhd
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_d840c0cc3faff3dab9b8e63cb3d67e055661_0/rtl.vhdl
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/ccs_xilinx/hdl/BLOCK_1R1W_RBW.vhd
+Add dependent file: ./rtl_UNET_IP_mainmgc_rom_17_792_5_1.vhdl
+Add dependent file: ./rtl.vhdl
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult_3/UNET_IP_main.v4/concat_sim_rtl.vhdl
+Generating SCVerify testbench files
+Makefile for RTL VHDL output 'rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_rtl_vhdl_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_vhdl/rtl.vhdl.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_vhdl/concat_rtl.vhdl.xv'
+Makefile for Concat RTL VHDL output 'concat_sim_rtl.vhdl' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_vhdl_msim.mk'
+ROM component 'mgc_rom(17,792,5,1)' initialization mode: inline_init. (MEM-76)
+Generating SCVerify ccs_wrapper_UNET_IP_main.v ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_d840c0cc3faff3dab9b8e63cb3d67e055661_0/rtl.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/ccs_xilinx/hdl/BLOCK_1R1W_RBW.v
+Add dependent file: ./rtl_UNET_IP_mainmgc_rom_17_792_5_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult_3/UNET_IP_main.v4/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/hls_pkgs/mgc_comps_src/mgc_div_beh.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_22_0_d840c0cc3faff3dab9b8e63cb3d67e055661_0/rtl.v
+Add dependent file: /home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/ccs_xilinx/hdl/BLOCK_1R1W_RBW.v
+Add dependent file: ./rtl_UNET_IP_mainmgc_rom_17_792_5_1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/raid7_2/user12/r12016/asoc/final/catapult2/Catapult_3/UNET_IP_main.v4/concat_sim_rtl.v
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+# Info: Xilinx Vivado synthesis script written to 'vivado_v/rtl.v.xv'
+# Info: Xilinx Vivado synthesis script written to 'vivado_concat_v/concat_rtl.v.xv'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Completed transformation 'extract' on solution 'UNET_IP::main.v4': elapsed time 30.36 seconds, memory usage 1844200kB, peak memory usage 1942508kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 1488, Real ops = 502, Vars = 337 (SOL-21)

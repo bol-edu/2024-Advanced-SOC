@@ -1,0 +1,761 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 13671
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Jun 14 03:17:33 EDT 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.15.0-107-generic
+OS Architecture: amd64
+Available processors (cores): 2
+
+Display: 0
+Screen size: 2560x1301
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/tools/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ubuntu
+User home directory: /home/ubuntu
+User working directory: /home/ubuntu/Desktop/fsic_fpga/vivado
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2022.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: /home/ubuntu/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/ubuntu/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/ubuntu/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/ubuntu/Desktop/fsic_fpga/vivado/vivado.log
+Vivado journal file: 	/home/ubuntu/Desktop/fsic_fpga/vivado/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-13671-ubuntu2004
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2022.1
+XILINX_SDK: /tools/Xilinx/Vitis/2022.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2022.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,772 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,772 MB. GUI used memory: 62 MB. Current time: 6/14/24, 3:17:34 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr", 0); // r
+// [GUI Memory]: 92 MB (+93579kb) [00:00:53]
+// [Engine Memory]: 1,779 MB (+1713846kb) [00:00:53]
+// Opening Vivado Project: /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_caravel_ps'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_output_pin'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,955 MB (+91785kb) [00:01:00]
+// [GUI Memory]: 113 MB (+17937kb) [00:01:01]
+// [GUI Memory]: 130 MB (+11180kb) [00:01:01]
+// WARNING: HEventQueue.dispatchEvent() is taking  5012 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,991 MB. GUI used memory: 84 MB. Current time: 6/14/24, 3:18:21 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1524 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7697.094 ; gain = 197.516 ; free physical = 5365 ; free virtual = 8309 
+// Project name: vvd_caravel_fpga; location: /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga; part: xc7z020clg400-1
+// Elapsed time: 11 seconds
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 149 MB (+13049kb) [00:01:07]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file </home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_mem_intercon Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_quad_spi:3.2 - axi_quad_spi_0 Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0 Adding component instance block -- xilinx.com:module_ref:caravel:1.0 - caravel_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  5378 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1321 ms.
+// [Engine Memory]: 2,129 MB (+78992kb) [00:01:29]
+// Elapsed time: 21 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 7753.801 ; gain = 8.672 ; free physical = 3856 ; free virtual = 6912 
+// 'ca' command handler elapsed time: 21 seconds
+// [GUI Memory]: 158 MB (+2135kb) [00:01:30]
+// JavaFX intialization before: 1718349529596
+dismissDialog("Open Block Design"); // bA
+// WARNING: HEventQueue.dispatchEvent() is taking  3260 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,183 MB. GUI used memory: 101 MB. Current time: 6/14/24, 3:18:53 AM EDT
+// JavaFX initialization after: 1718349534330
+// WARNING: HTimer (Open addressing views timer) is taking 4960ms to process. Increasing delay to 1300 ms.
+// [GUI Memory]: 179 MB (+13697kb) [00:01:39]
+// [Engine Memory]: 2,316 MB (+84780kb) [00:01:39]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 34 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 1985, 127); // dT
+// Elapsed time: 26 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // n
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// WARNING: HEventQueue.dispatchEvent() is taking  1342 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6, true); // B - Node
+expandTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP]", 6); // B
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, IP, Repository]", 7, false); // B
+selectButton(PAResourceQtoS.SettingsProjectIPRepositoryPage_ADD_REPOSITORY, "Add Repository"); // D
+// [GUI Memory]: 221 MB (+34317kb) [00:02:46]
+// Elapsed time: 20 seconds
+setFolderChooser("/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/impl/ip");
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property  ip_repo_paths  {/home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_caravel_ps /home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma_prj/solution1/impl/ip /home/ubuntu/Desktop/fsic_fpga/vivado/vitis_prj/hls_output_pin} [current_project] 
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+selectButton(RDIResource.AddRepositoryInfoDialog_OK, "OK"); // a
+dismissDialog("Add Repository"); // c
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+// [GUI Memory]: 234 MB (+2369kb) [00:03:18]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1287, 288, 1760, 764, false, false, false, true, false); // hw - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 2,397 MB. GUI used memory: 140 MB. Current time: 6/14/24, 3:20:44 AM EDT
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ADD_IP, "Add IP..."); // ar
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "dma"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Time-Aware DMA", 4, "Time-Aware DMA", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 5, "Userdma", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:userdma:1.0 userdma_0 
+// Tcl Message: endgroup 
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // g
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (0 out of 3 selected)]", 0, true, false, ui.utils.collection.couples.TriState.False); // ac - Node
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (3 out of 3 selected)]", 0, true, true, ui.utils.collection.couples.TriState.True); // ac - Node
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Run Connection Automation"); // O
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: startgroup 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/clk_out1 (5 MHz)} Clk_xbar {/clk_wiz_0/clk_out1 (5 MHz)} Master {/userdma_0/m_axi_gmem0} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins userdma_0/m_axi_gmem0] 
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// HMemoryUtils.trashcanNow. Engine heap size: 2,423 MB. GUI used memory: 140 MB. Current time: 6/14/24, 3:21:09 AM EDT
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 9210.719 ; gain = 1.254 ; free physical = 278 ; free virtual = 3440 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_UPDATE_GUI_ELEMENT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+// Tcl Message: Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/userdma_0/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>. 
+// Tcl Message: apply_bd_automation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 9210.719 ; gain = 1.254 ; free physical = 294 ; free virtual = 3456 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/clk_out1 (5 MHz)} Clk_xbar {/clk_wiz_0/clk_out1 (5 MHz)} Master {/userdma_0/m_axi_gmem1} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/axi_mem_intercon} master_apm {0}}  [get_bd_intf_pins userdma_0/m_axi_gmem1] 
+// Tcl Message: Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/userdma_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>. 
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_out1 (5 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_out1 (5 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/userdma_0/s_axi_control} ddr_seg {Auto} intc_ip {/ps7_0_axi_periph} master_apm {0}}  [get_bd_intf_pins userdma_0/s_axi_control] 
+// Tcl Message: Slave segment '/userdma_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4002_0000 [ 64K ]>. 
+// Tcl Message: endgroup 
+dismissDialog("Run Connection Automation"); // bA
+// [Engine Memory]: 2,440 MB (+8821kb) [00:03:53]
+// Elapsed time: 32 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Save Project"); // al
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Design"); // bA
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+dismissDialog("Synthesis is Out-of-date"); // A
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// Tcl Message: INFO: [Project 1-1160] Copying file /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/synth_1/design_1_wrapper.dcp to /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/utils_1/imports/synth_1 and adding it to utils fileset 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cW' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cZ
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,456 MB. GUI used memory: 138 MB. Current time: 6/14/24, 3:21:59 AM EDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 9240.094 ; gain = 10.629 ; free physical = 318 ; free virtual = 3072 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/synth/design_1.v 
+// Tcl Message: Verilog Output written to : /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block userdma_0 . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: Exporting to file /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,491 MB. GUI used memory: 138 MB. Current time: 6/14/24, 3:22:25 AM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,491 MB. GUI used memory: 137 MB. Current time: 6/14/24, 3:22:26 AM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: [Fri Jun 14 03:22:44 2024] Launched impl_1... Run output will be captured here: /home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 9289.387 ; gain = 62.660 ; free physical = 281 ; free virtual = 2846 
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 54 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+dismissDialog("Launch Run Critical Messages"); // bu
+// HMemoryUtils.trashcanNow. Engine heap size: 2,508 MB. GUI used memory: 138 MB. Current time: 6/14/24, 3:22:55 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1833 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1815 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1566 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 668ms to process. Increasing delay to 2000 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 11835ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11835 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13397 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 698ms to process. Increasing delay to 3000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 22973 ms. Increasing delay to 68919 ms.
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ExpRunMgr Pending Runs Timer) is taking 987ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1982 ms.
+// TclEventType: FILE_SET_CHANGE
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 156 ms. Decreasing delay to 2156 ms.
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// WARNING: HEventQueue.dispatchEvent() is taking  1109 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 1218 seconds
+dismissDialog("Bitstream Generation Completed"); // ag
+// Elapsed time: 240 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // n
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/home/ubuntu/Desktop/fsic_fpga/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd} 
+dismissDialog("Open Block Design"); // bA
+// PAPropertyPanels.initPanels (userdma_0) elapsed time: 0.4s
+// PAPropertyPanels.initPanels (outStreamTop) elapsed time: 0.2s
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_PIN
+// Elapsed time: 21 seconds
+dismissDialog("Customize Pin"); // r
+// Elapsed time: 83 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Generate Block Design]", 8, false); // n
+// Run Command: PAResourceCommand.PACommandNames_GENERATE_RSB_DESIGN
+// 'bM' command handler elapsed time: 3 seconds
+dismissDialog("Generate Output Products"); // aI
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // n
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+dismissDialog("Settings"); // d
+// [GUI Memory]: 258 MB (+12680kb) [00:32:51]
+// Elapsed time: 68 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+// [GUI Memory]: 272 MB (+1112kb) [00:33:05]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a
+selectButton("OptionPane.button", "Yes"); // JButton
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 2, "User Repository", 0, true); // L - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // L - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,507 MB. GUI used memory: 185 MB. Current time: 6/14/24, 3:52:59 AM EDT
+// Elapsed time: 1650 seconds
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 411, 61); // dT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,507 MB. GUI used memory: 163 MB. Current time: 6/14/24, 4:23:01 AM EDT
+// Elapsed time: 1479 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+// HMemoryUtils.trashcanNow. Engine heap size: 2,508 MB. GUI used memory: 160 MB. Current time: 6/14/24, 4:53:01 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1263 ms.

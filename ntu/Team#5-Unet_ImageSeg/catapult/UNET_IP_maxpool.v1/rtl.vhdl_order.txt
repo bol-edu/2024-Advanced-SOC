@@ -1,0 +1,2 @@
+/home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.vhd
+./rtl.vhdl

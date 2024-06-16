@@ -1,0 +1,4 @@
+/home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+/home/raid7_4/raid1_1/linux/mentor/Catapult/2023.2/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+./rtl_UNET_IP_tranconv2dmgc_rom_11_485120_5_1.v
+./rtl.v
