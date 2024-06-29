@@ -2,7 +2,7 @@
 The GitHub link for each group is as follows:  
 - Team 1: https://github.com/sungsungwu/ASoC_final
 - Team 2: https://github.com/nthuyouwei/asoclab/tree/main/final_project
-- Team 3: https://github.com/vic9112/PQC_Falcon
+- Team 3: https://github.com/vic9112/Advance_SOC/tree/main/final_project
 - Team 4: https://github.com/PatriChou/Final_prj.git
 - Team 5: https://github.com/ruei7916/ASoC-Final-Project
 - Team 6: https://github.com/whywhytellmewhy/ASoC-Final_project-optical_flow
