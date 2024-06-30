@@ -1,0 +1,1 @@
+./SCVerify_HDRISP.exe /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_dsc.json

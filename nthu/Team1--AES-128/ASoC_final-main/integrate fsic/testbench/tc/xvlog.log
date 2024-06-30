@@ -1,0 +1,75 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/testbench/tb_fsic.v" into library work
+INFO: [VRFC 10-311] analyzing module tb_fsic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/testbench/fpga.v" into library work
+INFO: [VRFC 10-311] analyzing module fpga
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axi_ctrl_logic.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_ctrl_logic
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axil_axis.sv" into library work
+INFO: [VRFC 10-311] analyzing module AXIL_AXIS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axilite_master.sv" into library work
+INFO: [VRFC 10-311] analyzing module axilite_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axilite_slave.sv" into library work
+INFO: [VRFC 10-311] analyzing module axilite_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axis_master.sv" into library work
+INFO: [VRFC 10-311] analyzing module axis_master
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/axis_slave.sv" into library work
+INFO: [VRFC 10-311] analyzing module axis_slave
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/sw_caravel.v" into library work
+INFO: [VRFC 10-311] analyzing module AXIS_SW
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/config_ctrl.v" into library work
+INFO: [VRFC 10-311] analyzing module CFG_CTRL
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/fsic_clkrst.v" into library work
+INFO: [VRFC 10-311] analyzing module FSIC_CLKRST
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/fsic_clock.v" into library work
+INFO: [VRFC 10-311] analyzing module fsic_clock_div
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/fsic_coreclk_phase_cnt.v" into library work
+INFO: [VRFC 10-311] analyzing module fsic_coreclk_phase_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/fsic_io_serdes_rx.v" into library work
+INFO: [VRFC 10-311] analyzing module fsic_io_serdes_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/fsic.v" into library work
+INFO: [VRFC 10-311] analyzing module FSIC
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/io_serdes.v" into library work
+INFO: [VRFC 10-311] analyzing module IO_SERDES
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/logic_anlz.dummy_io.v" into library work
+INFO: [VRFC 10-311] analyzing module LOGIC_ANLZ
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/logic_anlz.dummy_io.vd" into library work
+INFO: [VRFC 10-311] analyzing module LOGIC_ANLZ
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'LOGIC_ANLZ' [/home/ubuntu/soc2_final/fsic/rtl/logic_anlz.dummy_io.vd:7]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/mprj_io.sv" into library work
+INFO: [VRFC 10-311] analyzing module MPRJ_IO
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/user_subsys.all.v" into library work
+INFO: [VRFC 10-311] analyzing module AXIL_SLAV
+INFO: [VRFC 10-311] analyzing module AXIS_MSTR
+INFO: [VRFC 10-311] analyzing module AXIS_SLAV
+INFO: [VRFC 10-311] analyzing module IRQ_MUX
+INFO: [VRFC 10-311] analyzing module LA_MUX
+INFO: [VRFC 10-311] analyzing module USER_SUBSYS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/user_prj0.v" into library work
+INFO: [VRFC 10-311] analyzing module USER_PRJ0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/user_prj1.v" into library work
+INFO: [VRFC 10-311] analyzing module USER_PRJ1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/user_prj2.v" into library work
+INFO: [VRFC 10-311] analyzing module USER_PRJ2
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/user_prj3.v" into library work
+INFO: [VRFC 10-311] analyzing module USER_PRJ3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/spram.v" into library work
+INFO: [VRFC 10-311] analyzing module SPRAM
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ubuntu/soc2_final/fsic/rtl/concat_rtl_less_lat.v" into library work
+INFO: [VRFC 10-311] analyzing module ccs_in_wait_v1
+INFO: [VRFC 10-311] analyzing module ccs_out_wait_v1
+INFO: [VRFC 10-311] analyzing module ROM_1i8_1o8_139451376f09106dead983b38fa9b384b9
+INFO: [VRFC 10-311] analyzing module ROM_1i8_1o8_d27bb9a4f562995da244365665090d67b9
+INFO: [VRFC 10-311] analyzing module ROM_1i8_1o8_285a0b00f8e79dc935ff6be0a48707dfb9
+INFO: [VRFC 10-311] analyzing module aes_enc_run_run_fsm
+INFO: [VRFC 10-311] analyzing module aes_enc_run_staller
+INFO: [VRFC 10-311] analyzing module aes_enc_run_ekey_rsci_ekey_wait_dp
+INFO: [VRFC 10-311] analyzing module aes_enc_run_ekey_rsci_ekey_wait_ctrl
+INFO: [VRFC 10-311] analyzing module aes_enc_run_cipher_rsci_cipher_wait_dp
+INFO: [VRFC 10-311] analyzing module aes_enc_run_cipher_rsci_cipher_wait_ctrl
+INFO: [VRFC 10-311] analyzing module aes_enc_run_state_rsci_state_wait_dp
+INFO: [VRFC 10-311] analyzing module aes_enc_run_state_rsci_state_wait_ctrl
+INFO: [VRFC 10-311] analyzing module aes_enc_run_ekey_rsci
+INFO: [VRFC 10-311] analyzing module aes_enc_run_cipher_rsci
+INFO: [VRFC 10-311] analyzing module aes_enc_run_state_rsci
+INFO: [VRFC 10-311] analyzing module aes_enc_run
+INFO: [VRFC 10-311] analyzing module aes_enc

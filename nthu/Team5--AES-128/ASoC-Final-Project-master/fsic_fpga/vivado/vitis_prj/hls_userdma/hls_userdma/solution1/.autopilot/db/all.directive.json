@@ -1,0 +1,23 @@
+[
+  {
+    "functionLabel": "",
+    "functionName": "userdma",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "userdma"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1/csynth.tcl",
+    "sourceLine": 16,
+    "success": true
+  }
+]

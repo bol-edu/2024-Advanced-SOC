@@ -1,0 +1,126 @@
+
+
+================================================================
+== Vitis HLS Report for 'sendoutstream_Pipeline_VITIS_LOOP_128_1'
+================================================================
+* Date:           Sat Jun 15 17:11:13 2024
+
+* Version:        2023.2 (Build 4023990 on Oct 11 2023)
+* Project:        hls_userdma
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.561 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_128_1  |        ?|        ?|         1|          1|          1|     ?|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.56>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i32 %outStreamTop_V_data_V, i4 %outStreamTop_V_keep_V, i4 %outStreamTop_V_strb_V, i7 %outStreamTop_V_user_V, i1 %outStreamTop_V_last_V, i1 0, i1 0, void @empty_22"   --->   Operation 4 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %outStreamTop_V_data_V, i4 %outStreamTop_V_keep_V, i4 %outStreamTop_V_strb_V, i7 %outStreamTop_V_user_V, i1 %outStreamTop_V_last_V, void @empty_6, i32 0, i32 0, void @empty_17, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 5 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i33 %outbuf, void @empty, i32 0, i32 0, void @empty_2, i32 0, i32 0, void @empty_2, void @empty_2, void @empty_2, i32 0, i32 0, i32 0, i32 0, void @empty_2, void @empty_2, i32 4294967295, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %do.cond"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%specpipeline_ln129 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, void @empty_2" [userdma.cpp:129]   --->   Operation 8 'specpipeline' 'specpipeline_ln129' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specloopname_ln128 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [userdma.cpp:128]   --->   Operation 9 'specloopname' 'specloopname_ln128' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (3.56ns)   --->   "%outbuf_read = read i33 @_ssdm_op_Read.ap_fifo.volatile.i33P0A, i33 %outbuf" [userdma.cpp:130]   --->   Operation 10 'read' 'outbuf_read' <Predicate = true> <Delay = 3.56> <CoreInst = "FIFO">   --->   Core 78 'FIFO' <Latency = 0> <II = 1> <Delay = 3.56> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 33> <Depth = 64> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%trunc_ln130 = trunc i33 %outbuf_read" [userdma.cpp:130]   --->   Operation 11 'trunc' 'trunc_ln130' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%in_data_last = bitselect i1 @_ssdm_op_BitSelect.i1.i33.i32, i33 %outbuf_read, i32 32" [userdma.cpp:130]   --->   Operation 12 'bitselect' 'in_data_last' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (1.00ns)   --->   "%write_ln134 = write void @_ssdm_op_Write.axis.volatile.i32P0A.i4P0A.i4P0A.i7P0A.i1P0A, i32 %outStreamTop_V_data_V, i4 %outStreamTop_V_keep_V, i4 %outStreamTop_V_strb_V, i7 %outStreamTop_V_user_V, i1 %outStreamTop_V_last_V, i32 %trunc_ln130, i4 0, i4 0, i7 0, i1 %in_data_last" [userdma.cpp:134]   --->   Operation 13 'write' 'write_ln134' <Predicate = true> <Delay = 1.00> <CoreInst = "axis">   --->   Core 115 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln136 = br i1 %in_data_last, void %do.cond, void %do.end.exitStub" [userdma.cpp:136]   --->   Operation 14 'br' 'br_ln136' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 15 'ret' 'ret_ln0' <Predicate = (in_data_last)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.561ns
+The critical path consists of the following:
+	fifo read operation ('outbuf_read', userdma.cpp:130) on port 'outbuf' (userdma.cpp:130) [14]  (3.561 ns)
+	axis write operation ('write_ln134', userdma.cpp:134) on port 'outStreamTop_V_data_V' (userdma.cpp:134) [17]  (1.000 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

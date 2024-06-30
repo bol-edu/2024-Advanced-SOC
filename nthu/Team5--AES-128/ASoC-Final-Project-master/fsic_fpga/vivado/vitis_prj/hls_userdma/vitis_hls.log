@@ -1,0 +1,48 @@
+INFO: [HLS 200-10] Running '/tools/Xilinx/Vitis_HLS/2023.2/bin/unwrapped/lnx64.o/vitis_hls'
+INFO: [HLS 200-10] For user 'ricky' on host 'ricky-lab' (Linux_x86_64 version 6.5.0-35-generic) on Sat Jun 15 17:15:12 CST 2024
+INFO: [HLS 200-10] On os Linux Mint 21.3
+INFO: [HLS 200-10] In directory '/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma'
+INFO: [HLS 200-2053] The vitis_hls executable is being deprecated. Consider using vitis-run --mode hls --tcl
+Sourcing Tcl script '/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: source /home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1/export.tcl
+INFO: [HLS 200-1510] Running: open_project hls_userdma 
+INFO: [HLS 200-10] Opening project '/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma'.
+INFO: [HLS 200-1510] Running: set_top userdma 
+INFO: [HLS 200-1510] Running: add_files userdma.cpp 
+INFO: [HLS 200-10] Adding design file 'userdma.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files userdma.h 
+INFO: [HLS 200-10] Adding design file 'userdma.h' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution '/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2023.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=verilog
+INFO: [HLS 200-1464] Running solution command: config_export -vivado_clock=10
+INFO: [HLS 200-1510] Running: set_part xc7z020clg400-1 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output /home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma -rtl verilog -vivado_clock 10 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output /home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+INFO: [Common 17-1460] Use of init.tcl in /home/ricky/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/home/ricky/.Xilinx/Vivado/init.tcl'
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sat Jun 15 17:15:20 2024...
+INFO: [HLS 200-802] Generated output file export.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 7.59 seconds. CPU system time: 0.33 seconds. Elapsed time: 10.45 seconds; current allocated memory: 10.695 MB.
+INFO: [HLS 200-112] Total CPU user time: 8.75 seconds. Total CPU system time: 0.47 seconds. Total elapsed time: 11.62 seconds; peak allocated memory: 338.754 MB.

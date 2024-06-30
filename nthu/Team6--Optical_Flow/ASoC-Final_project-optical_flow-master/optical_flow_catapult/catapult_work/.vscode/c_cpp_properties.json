@@ -1,0 +1,21 @@
+{
+	"configurations": [
+		{
+			"name": "Linux",
+			"includePath": [
+				"./../hls_c/inc",
+				"./../cmodel/inc",
+				"./../bmpUtil/inc",
+				"./../hls_c/inc",
+				"./../cmodel/inc",
+				"./../bmpUtil/inc",
+				"/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/shared/include"
+			],
+			"defines": [],
+			"compilerPath": "/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/bin/g++",
+			"cppStandard": "c++11",
+			"intelliSenseMode": "gcc-x64"
+		}
+	],
+"version": 4
+}

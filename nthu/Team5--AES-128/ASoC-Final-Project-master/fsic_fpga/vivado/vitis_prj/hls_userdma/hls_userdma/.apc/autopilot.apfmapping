@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="userdma.cpp" path="/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma.cpp"/>
+    <originFiles name="userdma.h" path="/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/userdma.h"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

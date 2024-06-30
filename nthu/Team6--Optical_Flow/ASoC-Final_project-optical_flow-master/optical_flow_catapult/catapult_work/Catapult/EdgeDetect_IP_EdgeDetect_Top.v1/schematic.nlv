@@ -1,0 +1,855 @@
+
+# Program: Catapult Ultra Synthesis
+# Version: 2023.1/1033555
+#    File: Nlview netlist
+
+module new "EdgeDetect_IP::EdgeDetect_Top" "orig" \
+ -symlib {57af06a6-c182-47db-aca9-04e559b686ed-5 run__Q2_13EdgeDetect_IP14EdgeDetect_TopFR52ac_channel__tm__34_31ac_int__tm__17_XCiL_1_8XCbL_1_0R32ac_int__tm__18_XCiL_2_11XCbL_1_0R32ac_int__tm__18_XCiL_2_10XCbL_1_0R52ac_channel__tm__34_31ac_int__tm__17_XCiL_1_9XCbL_1_0R96ac_channel__tm__78_75ac_fixed__tm__59_XCiL_1_8XCiL_1_3XCbL_1_1XC9ac_q_modeL_1_0XC9ac_o_modeL_1_0 v1} \
+
+load symbol left_portin noname DEF \
+   port p output -loc 0 0 0 0 \
+   attrdsp @name -cr -25 0 12 \
+   fpath 0 0 -7 -7 -21 -7 -21 7 -7 7 0 0 \
+   place input_port
+load symbol right_portin noname DEF \
+   port p input -loc 0 0 0 0 \
+   attrdsp @name -cl  25 0 12 \
+   fpath 0 0 7 -7 21 -7 21 7 7 7 0 0 \
+   place output_port
+load symbol right_portout noname DEF \
+   port p input -loc 0 0 0 0 \
+   attrdsp @name -cl  25 0 12 \
+   fpath 0 0 0 -7 14 -7 21 0 14 7 0 7 0 0 \
+   place output_port
+load symbol left_portout noname DEF \
+   port p output -loc 0 0 0 0 \
+   attrdsp @name -cr -25 0 12 \
+   fpath 0 0 0 -7 -14 -7 -21 0 -14 7 0 7 0 0 \
+   place input_port
+load symbol probe_out noname DEF \
+   port p input -loc 0 0 0 0 \
+   attrdsp @name -cl  25 0 12 \
+   fpath 0 0 7 -7 14 0 7 7 0 0 \
+   place output_port fillcolor 3
+load port {clk} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-3 -attr oid 1 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/clk}
+load port {rst} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-4 -attr oid 2 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/rst}
+load port {arst_n} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-5 -attr oid 3 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/arst_n}
+load portBus dat_in:rsc.dat(7:0) input 8 {dat_in:rsc.dat(7)} {dat_in:rsc.dat(6)} {dat_in:rsc.dat(5)} {dat_in:rsc.dat(4)} {dat_in:rsc.dat(3)} {dat_in:rsc.dat(2)} {dat_in:rsc.dat(1)} {dat_in:rsc.dat(0)} -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-6 -attr oid 4 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load port {dat_in:rsc.vld} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-7 -attr oid 5 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.vld}
+load port {dat_in:rsc.rdy} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-8 -attr oid 6 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.rdy}
+load portBus widthIn(10:0) input 11 {widthIn(10)} {widthIn(9)} {widthIn(8)} {widthIn(7)} {widthIn(6)} {widthIn(5)} {widthIn(4)} {widthIn(3)} {widthIn(2)} {widthIn(1)} {widthIn(0)} -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-9 -attr oid 7 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load portBus heightIn(9:0) input 10 {heightIn(9)} {heightIn(8)} {heightIn(7)} {heightIn(6)} {heightIn(5)} {heightIn(4)} {heightIn(3)} {heightIn(2)} {heightIn(1)} {heightIn(0)} -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-10 -attr oid 8 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load portBus magn:rsc.dat(8:0) output 9 {magn:rsc.dat(8)} {magn:rsc.dat(7)} {magn:rsc.dat(6)} {magn:rsc.dat(5)} {magn:rsc.dat(4)} {magn:rsc.dat(3)} {magn:rsc.dat(2)} {magn:rsc.dat(1)} {magn:rsc.dat(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-11 -attr oid 9 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load port {magn:rsc.vld} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-12 -attr oid 10 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.vld}
+load port {magn:rsc.rdy} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-13 -attr oid 11 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.rdy}
+load portBus angle:rsc.dat(7:0) output 8 {angle:rsc.dat(7)} {angle:rsc.dat(6)} {angle:rsc.dat(5)} {angle:rsc.dat(4)} {angle:rsc.dat(3)} {angle:rsc.dat(2)} {angle:rsc.dat(1)} {angle:rsc.dat(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-14 -attr oid 12 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load port {angle:rsc.vld} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-15 -attr oid 13 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.vld}
+load port {angle:rsc.rdy} input -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-16 -attr oid 14 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.rdy}
+load port {line_buf0:rsc.en} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-17 -attr oid 15 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.en}
+load portBus line_buf0:rsc.q(15:0) input 16 {line_buf0:rsc.q(15)} {line_buf0:rsc.q(14)} {line_buf0:rsc.q(13)} {line_buf0:rsc.q(12)} {line_buf0:rsc.q(11)} {line_buf0:rsc.q(10)} {line_buf0:rsc.q(9)} {line_buf0:rsc.q(8)} {line_buf0:rsc.q(7)} {line_buf0:rsc.q(6)} {line_buf0:rsc.q(5)} {line_buf0:rsc.q(4)} {line_buf0:rsc.q(3)} {line_buf0:rsc.q(2)} {line_buf0:rsc.q(1)} {line_buf0:rsc.q(0)} -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-18 -attr oid 16 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load port {line_buf0:rsc.we} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-19 -attr oid 17 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.we}
+load portBus line_buf0:rsc.d(15:0) output 16 {line_buf0:rsc.d(15)} {line_buf0:rsc.d(14)} {line_buf0:rsc.d(13)} {line_buf0:rsc.d(12)} {line_buf0:rsc.d(11)} {line_buf0:rsc.d(10)} {line_buf0:rsc.d(9)} {line_buf0:rsc.d(8)} {line_buf0:rsc.d(7)} {line_buf0:rsc.d(6)} {line_buf0:rsc.d(5)} {line_buf0:rsc.d(4)} {line_buf0:rsc.d(3)} {line_buf0:rsc.d(2)} {line_buf0:rsc.d(1)} {line_buf0:rsc.d(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-20 -attr oid 18 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load portBus line_buf0:rsc.adr(9:0) output 10 {line_buf0:rsc.adr(9)} {line_buf0:rsc.adr(8)} {line_buf0:rsc.adr(7)} {line_buf0:rsc.adr(6)} {line_buf0:rsc.adr(5)} {line_buf0:rsc.adr(4)} {line_buf0:rsc.adr(3)} {line_buf0:rsc.adr(2)} {line_buf0:rsc.adr(1)} {line_buf0:rsc.adr(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-21 -attr oid 19 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load port {line_buf1:rsc.en} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-22 -attr oid 20 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.en}
+load portBus line_buf1:rsc.q(15:0) input 16 {line_buf1:rsc.q(15)} {line_buf1:rsc.q(14)} {line_buf1:rsc.q(13)} {line_buf1:rsc.q(12)} {line_buf1:rsc.q(11)} {line_buf1:rsc.q(10)} {line_buf1:rsc.q(9)} {line_buf1:rsc.q(8)} {line_buf1:rsc.q(7)} {line_buf1:rsc.q(6)} {line_buf1:rsc.q(5)} {line_buf1:rsc.q(4)} {line_buf1:rsc.q(3)} {line_buf1:rsc.q(2)} {line_buf1:rsc.q(1)} {line_buf1:rsc.q(0)} -symbol left_portin noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-23 -attr oid 21 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load port {line_buf1:rsc.we} output -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-24 -attr oid 22 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.we}
+load portBus line_buf1:rsc.d(15:0) output 16 {line_buf1:rsc.d(15)} {line_buf1:rsc.d(14)} {line_buf1:rsc.d(13)} {line_buf1:rsc.d(12)} {line_buf1:rsc.d(11)} {line_buf1:rsc.d(10)} {line_buf1:rsc.d(9)} {line_buf1:rsc.d(8)} {line_buf1:rsc.d(7)} {line_buf1:rsc.d(6)} {line_buf1:rsc.d(5)} {line_buf1:rsc.d(4)} {line_buf1:rsc.d(3)} {line_buf1:rsc.d(2)} {line_buf1:rsc.d(1)} {line_buf1:rsc.d(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-25 -attr oid 23 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load portBus line_buf1:rsc.adr(9:0) output 10 {line_buf1:rsc.adr(9)} {line_buf1:rsc.adr(8)} {line_buf1:rsc.adr(7)} {line_buf1:rsc.adr(6)} {line_buf1:rsc.adr(5)} {line_buf1:rsc.adr(4)} {line_buf1:rsc.adr(3)} {line_buf1:rsc.adr(2)} {line_buf1:rsc.adr(1)} {line_buf1:rsc.adr(0)} -symbol right_portout noname -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-26 -attr oid 24 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load symbol "ccs_ioport.ccs_pipe" "ccs_ioport.ccs_pipe(26,9,1,2,1,1,0,0,1)" EXT boxcolor 0 \
+     port {clk} input \
+     port {en} input \
+     port {arst} input \
+     port {srst} input \
+     port {din_rdy} output \
+     port {din_vld} input \
+     portBus din input 9 {din(8)} {din(7)} {din(6)} {din(5)} {din(4)} {din(3)} {din(2)} {din(1)} {din(0)} \
+     port {dout_rdy} input \
+     port {dout_vld} output \
+     portBus dout output 9 {dout(8)} {dout(7)} {dout(6)} {dout(5)} {dout(4)} {dout(3)} {dout(2)} {dout(1)} {dout(0)} \
+     portBus sz output 1 {sz(0)} \
+     port {sz_req} input \
+     port {is_idle} output \
+
+load symbol "EdgeDetect_IP::EdgeDetect_VerDer" "orig" GEN \
+ fillcolor 1 \
+     port {clk} input \
+     port {rst} input \
+     port {arst_n} input \
+     portBus dat_in:rsc.dat input 8 {dat_in:rsc.dat(7)} {dat_in:rsc.dat(6)} {dat_in:rsc.dat(5)} {dat_in:rsc.dat(4)} {dat_in:rsc.dat(3)} {dat_in:rsc.dat(2)} {dat_in:rsc.dat(1)} {dat_in:rsc.dat(0)} \
+     port {dat_in:rsc.vld} input \
+     port {dat_in:rsc.rdy} output \
+     portBus widthIn input 11 {widthIn(10)} {widthIn(9)} {widthIn(8)} {widthIn(7)} {widthIn(6)} {widthIn(5)} {widthIn(4)} {widthIn(3)} {widthIn(2)} {widthIn(1)} {widthIn(0)} \
+     portBus heightIn input 10 {heightIn(9)} {heightIn(8)} {heightIn(7)} {heightIn(6)} {heightIn(5)} {heightIn(4)} {heightIn(3)} {heightIn(2)} {heightIn(1)} {heightIn(0)} \
+     portBus dat_out:rsc.dat output 8 {dat_out:rsc.dat(7)} {dat_out:rsc.dat(6)} {dat_out:rsc.dat(5)} {dat_out:rsc.dat(4)} {dat_out:rsc.dat(3)} {dat_out:rsc.dat(2)} {dat_out:rsc.dat(1)} {dat_out:rsc.dat(0)} \
+     port {dat_out:rsc.vld} output \
+     port {dat_out:rsc.rdy} input \
+     portBus dy:rsc.dat output 9 {dy:rsc.dat(8)} {dy:rsc.dat(7)} {dy:rsc.dat(6)} {dy:rsc.dat(5)} {dy:rsc.dat(4)} {dy:rsc.dat(3)} {dy:rsc.dat(2)} {dy:rsc.dat(1)} {dy:rsc.dat(0)} \
+     port {dy:rsc.vld} output \
+     port {dy:rsc.rdy} input \
+     port {line_buf0:rsc.en} output \
+     portBus line_buf0:rsc.q input 16 {line_buf0:rsc.q(15)} {line_buf0:rsc.q(14)} {line_buf0:rsc.q(13)} {line_buf0:rsc.q(12)} {line_buf0:rsc.q(11)} {line_buf0:rsc.q(10)} {line_buf0:rsc.q(9)} {line_buf0:rsc.q(8)} {line_buf0:rsc.q(7)} {line_buf0:rsc.q(6)} {line_buf0:rsc.q(5)} {line_buf0:rsc.q(4)} {line_buf0:rsc.q(3)} {line_buf0:rsc.q(2)} {line_buf0:rsc.q(1)} {line_buf0:rsc.q(0)} \
+     port {line_buf0:rsc.we} output \
+     portBus line_buf0:rsc.d output 16 {line_buf0:rsc.d(15)} {line_buf0:rsc.d(14)} {line_buf0:rsc.d(13)} {line_buf0:rsc.d(12)} {line_buf0:rsc.d(11)} {line_buf0:rsc.d(10)} {line_buf0:rsc.d(9)} {line_buf0:rsc.d(8)} {line_buf0:rsc.d(7)} {line_buf0:rsc.d(6)} {line_buf0:rsc.d(5)} {line_buf0:rsc.d(4)} {line_buf0:rsc.d(3)} {line_buf0:rsc.d(2)} {line_buf0:rsc.d(1)} {line_buf0:rsc.d(0)} \
+     portBus line_buf0:rsc.adr output 10 {line_buf0:rsc.adr(9)} {line_buf0:rsc.adr(8)} {line_buf0:rsc.adr(7)} {line_buf0:rsc.adr(6)} {line_buf0:rsc.adr(5)} {line_buf0:rsc.adr(4)} {line_buf0:rsc.adr(3)} {line_buf0:rsc.adr(2)} {line_buf0:rsc.adr(1)} {line_buf0:rsc.adr(0)} \
+     port {line_buf1:rsc.en} output \
+     portBus line_buf1:rsc.q input 16 {line_buf1:rsc.q(15)} {line_buf1:rsc.q(14)} {line_buf1:rsc.q(13)} {line_buf1:rsc.q(12)} {line_buf1:rsc.q(11)} {line_buf1:rsc.q(10)} {line_buf1:rsc.q(9)} {line_buf1:rsc.q(8)} {line_buf1:rsc.q(7)} {line_buf1:rsc.q(6)} {line_buf1:rsc.q(5)} {line_buf1:rsc.q(4)} {line_buf1:rsc.q(3)} {line_buf1:rsc.q(2)} {line_buf1:rsc.q(1)} {line_buf1:rsc.q(0)} \
+     port {line_buf1:rsc.we} output \
+     portBus line_buf1:rsc.d output 16 {line_buf1:rsc.d(15)} {line_buf1:rsc.d(14)} {line_buf1:rsc.d(13)} {line_buf1:rsc.d(12)} {line_buf1:rsc.d(11)} {line_buf1:rsc.d(10)} {line_buf1:rsc.d(9)} {line_buf1:rsc.d(8)} {line_buf1:rsc.d(7)} {line_buf1:rsc.d(6)} {line_buf1:rsc.d(5)} {line_buf1:rsc.d(4)} {line_buf1:rsc.d(3)} {line_buf1:rsc.d(2)} {line_buf1:rsc.d(1)} {line_buf1:rsc.d(0)} \
+     portBus line_buf1:rsc.adr output 10 {line_buf1:rsc.adr(9)} {line_buf1:rsc.adr(8)} {line_buf1:rsc.adr(7)} {line_buf1:rsc.adr(6)} {line_buf1:rsc.adr(5)} {line_buf1:rsc.adr(4)} {line_buf1:rsc.adr(3)} {line_buf1:rsc.adr(2)} {line_buf1:rsc.adr(1)} {line_buf1:rsc.adr(0)} \
+
+load symbol "EdgeDetect_IP::EdgeDetect_HorDer" "orig" GEN \
+ fillcolor 1 \
+     port {clk} input \
+     port {rst} input \
+     port {arst_n} input \
+     portBus dat_in:rsc.dat input 8 {dat_in:rsc.dat(7)} {dat_in:rsc.dat(6)} {dat_in:rsc.dat(5)} {dat_in:rsc.dat(4)} {dat_in:rsc.dat(3)} {dat_in:rsc.dat(2)} {dat_in:rsc.dat(1)} {dat_in:rsc.dat(0)} \
+     port {dat_in:rsc.vld} input \
+     port {dat_in:rsc.rdy} output \
+     portBus widthIn input 11 {widthIn(10)} {widthIn(9)} {widthIn(8)} {widthIn(7)} {widthIn(6)} {widthIn(5)} {widthIn(4)} {widthIn(3)} {widthIn(2)} {widthIn(1)} {widthIn(0)} \
+     portBus heightIn input 10 {heightIn(9)} {heightIn(8)} {heightIn(7)} {heightIn(6)} {heightIn(5)} {heightIn(4)} {heightIn(3)} {heightIn(2)} {heightIn(1)} {heightIn(0)} \
+     portBus dx:rsc.dat output 9 {dx:rsc.dat(8)} {dx:rsc.dat(7)} {dx:rsc.dat(6)} {dx:rsc.dat(5)} {dx:rsc.dat(4)} {dx:rsc.dat(3)} {dx:rsc.dat(2)} {dx:rsc.dat(1)} {dx:rsc.dat(0)} \
+     port {dx:rsc.vld} output \
+     port {dx:rsc.rdy} input \
+
+load symbol "EdgeDetect_IP::EdgeDetect_MagAng" "orig" GEN \
+ fillcolor 1 \
+     port {clk} input \
+     port {rst} input \
+     port {arst_n} input \
+     portBus dx_in:rsc.dat input 9 {dx_in:rsc.dat(8)} {dx_in:rsc.dat(7)} {dx_in:rsc.dat(6)} {dx_in:rsc.dat(5)} {dx_in:rsc.dat(4)} {dx_in:rsc.dat(3)} {dx_in:rsc.dat(2)} {dx_in:rsc.dat(1)} {dx_in:rsc.dat(0)} \
+     port {dx_in:rsc.vld} input \
+     port {dx_in:rsc.rdy} output \
+     portBus dy_in:rsc.dat input 9 {dy_in:rsc.dat(8)} {dy_in:rsc.dat(7)} {dy_in:rsc.dat(6)} {dy_in:rsc.dat(5)} {dy_in:rsc.dat(4)} {dy_in:rsc.dat(3)} {dy_in:rsc.dat(2)} {dy_in:rsc.dat(1)} {dy_in:rsc.dat(0)} \
+     port {dy_in:rsc.vld} input \
+     port {dy_in:rsc.rdy} output \
+     portBus widthIn:rsc.dat input 11 {widthIn:rsc.dat(10)} {widthIn:rsc.dat(9)} {widthIn:rsc.dat(8)} {widthIn:rsc.dat(7)} {widthIn:rsc.dat(6)} {widthIn:rsc.dat(5)} {widthIn:rsc.dat(4)} {widthIn:rsc.dat(3)} {widthIn:rsc.dat(2)} {widthIn:rsc.dat(1)} {widthIn:rsc.dat(0)} \
+     port {widthIn.triosy.lz} output \
+     portBus heightIn:rsc.dat input 10 {heightIn:rsc.dat(9)} {heightIn:rsc.dat(8)} {heightIn:rsc.dat(7)} {heightIn:rsc.dat(6)} {heightIn:rsc.dat(5)} {heightIn:rsc.dat(4)} {heightIn:rsc.dat(3)} {heightIn:rsc.dat(2)} {heightIn:rsc.dat(1)} {heightIn:rsc.dat(0)} \
+     port {heightIn.triosy.lz} output \
+     portBus magn:rsc.dat output 9 {magn:rsc.dat(8)} {magn:rsc.dat(7)} {magn:rsc.dat(6)} {magn:rsc.dat(5)} {magn:rsc.dat(4)} {magn:rsc.dat(3)} {magn:rsc.dat(2)} {magn:rsc.dat(1)} {magn:rsc.dat(0)} \
+     port {magn:rsc.vld} output \
+     port {magn:rsc.rdy} input \
+     portBus angle:rsc.dat output 8 {angle:rsc.dat(7)} {angle:rsc.dat(6)} {angle:rsc.dat(5)} {angle:rsc.dat(4)} {angle:rsc.dat(3)} {angle:rsc.dat(2)} {angle:rsc.dat(1)} {angle:rsc.dat(0)} \
+     port {angle:rsc.vld} output \
+     port {angle:rsc.rdy} input \
+
+load net {dat_out:rsc.dat:-:VerDer_inst(0)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(1)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(2)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(3)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(4)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(5)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(6)} -attr vt d
+load net {dat_out:rsc.dat:-:VerDer_inst(7)} -attr vt d
+load netBundle {dat_out:rsc.dat:-:VerDer_inst} 8 {dat_out:rsc.dat:-:VerDer_inst(0)} {dat_out:rsc.dat:-:VerDer_inst(1)} {dat_out:rsc.dat:-:VerDer_inst(2)} {dat_out:rsc.dat:-:VerDer_inst(3)} {dat_out:rsc.dat:-:VerDer_inst(4)} {dat_out:rsc.dat:-:VerDer_inst(5)} {dat_out:rsc.dat:-:VerDer_inst(6)} {dat_out:rsc.dat:-:VerDer_inst(7)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-27 -attr oid 25 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(0)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(1)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(2)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(3)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(4)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(5)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(6)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(7)} -attr vt d
+load net {dy:rsc.dat:-:VerDer_inst(8)} -attr vt d
+load netBundle {dy:rsc.dat:-:VerDer_inst} 9 {dy:rsc.dat:-:VerDer_inst(0)} {dy:rsc.dat:-:VerDer_inst(1)} {dy:rsc.dat:-:VerDer_inst(2)} {dy:rsc.dat:-:VerDer_inst(3)} {dy:rsc.dat:-:VerDer_inst(4)} {dy:rsc.dat:-:VerDer_inst(5)} {dy:rsc.dat:-:VerDer_inst(6)} {dy:rsc.dat:-:VerDer_inst(7)} {dy:rsc.dat:-:VerDer_inst(8)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-28 -attr oid 26 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.rdy:-:VerDer_inst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-29 -attr oid 27 -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(0)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(1)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(2)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(3)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(4)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(5)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(6)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(7)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(8)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(9)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(10)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(11)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(12)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(13)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(14)} -attr vt d
+load net {line_buf0:rsc.d:-:VerDer_inst(15)} -attr vt d
+load netBundle {line_buf0:rsc.d:-:VerDer_inst} 16 {line_buf0:rsc.d:-:VerDer_inst(0)} {line_buf0:rsc.d:-:VerDer_inst(1)} {line_buf0:rsc.d:-:VerDer_inst(2)} {line_buf0:rsc.d:-:VerDer_inst(3)} {line_buf0:rsc.d:-:VerDer_inst(4)} {line_buf0:rsc.d:-:VerDer_inst(5)} {line_buf0:rsc.d:-:VerDer_inst(6)} {line_buf0:rsc.d:-:VerDer_inst(7)} {line_buf0:rsc.d:-:VerDer_inst(8)} {line_buf0:rsc.d:-:VerDer_inst(9)} {line_buf0:rsc.d:-:VerDer_inst(10)} {line_buf0:rsc.d:-:VerDer_inst(11)} {line_buf0:rsc.d:-:VerDer_inst(12)} {line_buf0:rsc.d:-:VerDer_inst(13)} {line_buf0:rsc.d:-:VerDer_inst(14)} {line_buf0:rsc.d:-:VerDer_inst(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-30 -attr oid 28 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(0)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(1)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(2)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(3)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(4)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(5)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(6)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(7)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(8)} -attr vt d
+load net {line_buf0:rsc.adr:-:VerDer_inst(9)} -attr vt d
+load netBundle {line_buf0:rsc.adr:-:VerDer_inst} 10 {line_buf0:rsc.adr:-:VerDer_inst(0)} {line_buf0:rsc.adr:-:VerDer_inst(1)} {line_buf0:rsc.adr:-:VerDer_inst(2)} {line_buf0:rsc.adr:-:VerDer_inst(3)} {line_buf0:rsc.adr:-:VerDer_inst(4)} {line_buf0:rsc.adr:-:VerDer_inst(5)} {line_buf0:rsc.adr:-:VerDer_inst(6)} {line_buf0:rsc.adr:-:VerDer_inst(7)} {line_buf0:rsc.adr:-:VerDer_inst(8)} {line_buf0:rsc.adr:-:VerDer_inst(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-31 -attr oid 29 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(0)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(1)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(2)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(3)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(4)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(5)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(6)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(7)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(8)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(9)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(10)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(11)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(12)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(13)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(14)} -attr vt d
+load net {line_buf1:rsc.d:-:VerDer_inst(15)} -attr vt d
+load netBundle {line_buf1:rsc.d:-:VerDer_inst} 16 {line_buf1:rsc.d:-:VerDer_inst(0)} {line_buf1:rsc.d:-:VerDer_inst(1)} {line_buf1:rsc.d:-:VerDer_inst(2)} {line_buf1:rsc.d:-:VerDer_inst(3)} {line_buf1:rsc.d:-:VerDer_inst(4)} {line_buf1:rsc.d:-:VerDer_inst(5)} {line_buf1:rsc.d:-:VerDer_inst(6)} {line_buf1:rsc.d:-:VerDer_inst(7)} {line_buf1:rsc.d:-:VerDer_inst(8)} {line_buf1:rsc.d:-:VerDer_inst(9)} {line_buf1:rsc.d:-:VerDer_inst(10)} {line_buf1:rsc.d:-:VerDer_inst(11)} {line_buf1:rsc.d:-:VerDer_inst(12)} {line_buf1:rsc.d:-:VerDer_inst(13)} {line_buf1:rsc.d:-:VerDer_inst(14)} {line_buf1:rsc.d:-:VerDer_inst(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-32 -attr oid 30 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(0)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(1)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(2)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(3)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(4)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(5)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(6)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(7)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(8)} -attr vt d
+load net {line_buf1:rsc.adr:-:VerDer_inst(9)} -attr vt d
+load netBundle {line_buf1:rsc.adr:-:VerDer_inst} 10 {line_buf1:rsc.adr:-:VerDer_inst(0)} {line_buf1:rsc.adr:-:VerDer_inst(1)} {line_buf1:rsc.adr:-:VerDer_inst(2)} {line_buf1:rsc.adr:-:VerDer_inst(3)} {line_buf1:rsc.adr:-:VerDer_inst(4)} {line_buf1:rsc.adr:-:VerDer_inst(5)} {line_buf1:rsc.adr:-:VerDer_inst(6)} {line_buf1:rsc.adr:-:VerDer_inst(7)} {line_buf1:rsc.adr:-:VerDer_inst(8)} {line_buf1:rsc.adr:-:VerDer_inst(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-33 -attr oid 31 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(0)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(1)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(2)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(3)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(4)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(5)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(6)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(7)} -attr vt d
+load net {dx:rsc.dat:-:HorDer_inst(8)} -attr vt d
+load netBundle {dx:rsc.dat:-:HorDer_inst} 9 {dx:rsc.dat:-:HorDer_inst(0)} {dx:rsc.dat:-:HorDer_inst(1)} {dx:rsc.dat:-:HorDer_inst(2)} {dx:rsc.dat:-:HorDer_inst(3)} {dx:rsc.dat:-:HorDer_inst(4)} {dx:rsc.dat:-:HorDer_inst(5)} {dx:rsc.dat:-:HorDer_inst(6)} {dx:rsc.dat:-:HorDer_inst(7)} {dx:rsc.dat:-:HorDer_inst(8)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-34 -attr oid 32 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(0)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(1)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(2)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(3)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(4)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(5)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(6)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(7)} -attr vt d
+load net {dy_in:rsc.dat:-:MagAng_inst(8)} -attr vt d
+load netBundle {dy_in:rsc.dat:-:MagAng_inst} 9 {dy_in:rsc.dat:-:MagAng_inst(0)} {dy_in:rsc.dat:-:MagAng_inst(1)} {dy_in:rsc.dat:-:MagAng_inst(2)} {dy_in:rsc.dat:-:MagAng_inst(3)} {dy_in:rsc.dat:-:MagAng_inst(4)} {dy_in:rsc.dat:-:MagAng_inst(5)} {dy_in:rsc.dat:-:MagAng_inst(6)} {dy_in:rsc.dat:-:MagAng_inst(7)} {dy_in:rsc.dat:-:MagAng_inst(8)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-35 -attr oid 33 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.vld:-:MagAng_inst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-36 -attr oid 34 -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(0)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(1)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(2)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(3)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(4)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(5)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(6)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(7)} -attr vt d
+load net {magn:rsc.dat:-:MagAng_inst(8)} -attr vt d
+load netBundle {magn:rsc.dat:-:MagAng_inst} 9 {magn:rsc.dat:-:MagAng_inst(0)} {magn:rsc.dat:-:MagAng_inst(1)} {magn:rsc.dat:-:MagAng_inst(2)} {magn:rsc.dat:-:MagAng_inst(3)} {magn:rsc.dat:-:MagAng_inst(4)} {magn:rsc.dat:-:MagAng_inst(5)} {magn:rsc.dat:-:MagAng_inst(6)} {magn:rsc.dat:-:MagAng_inst(7)} {magn:rsc.dat:-:MagAng_inst(8)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-37 -attr oid 35 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(0)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(1)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(2)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(3)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(4)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(5)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(6)} -attr vt d
+load net {angle:rsc.dat:-:MagAng_inst(7)} -attr vt d
+load netBundle {angle:rsc.dat:-:MagAng_inst} 8 {angle:rsc.dat:-:MagAng_inst(0)} {angle:rsc.dat:-:MagAng_inst(1)} {angle:rsc.dat:-:MagAng_inst(2)} {angle:rsc.dat:-:MagAng_inst(3)} {angle:rsc.dat:-:MagAng_inst(4)} {angle:rsc.dat:-:MagAng_inst(5)} {angle:rsc.dat:-:MagAng_inst(6)} {angle:rsc.dat:-:MagAng_inst(7)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-38 -attr oid 36 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {dat_out:rsc.vld:-:VerDer_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-39 -attr oid 37 -attr vt d
+load net {dat_in:rsc.rdy:-:HorDer_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-40 -attr oid 38 -attr vt d
+load net {dy:rsc.vld:-:VerDer_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-41 -attr oid 39 -attr vt d
+load net {dy_in:rsc.rdy:-:MagAng_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-42 -attr oid 40 -attr vt d
+load net {dx:rsc.vld:-:HorDer_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-43 -attr oid 41 -attr vt d
+load net {dx_in:rsc.rdy:-:MagAng_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-44 -attr oid 42 -attr vt d
+load net {widthIn.triosy.lz:-:MagAng_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-45 -attr oid 43
+load net {heightIn.triosy.lz:-:MagAng_inst.bud} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-46 -attr oid 44
+load net {dy.unc#1} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-47 -attr oid 45
+load net {dy.idle} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-48 -attr oid 46
+load net {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-49 -attr oid 47 -attr vt d
+load net {clk} -port {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-50 -attr oid 48 -attr vt d
+load net {rst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-51 -attr oid 49 -attr vt d
+load net {rst} -port {rst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-52 -attr oid 50 -attr vt d
+load net {arst_n} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-53 -attr oid 51 -attr vt d
+load net {arst_n} -port {arst_n} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-54 -attr oid 52 -attr vt d
+load net {dat_in:rsc.dat(0)} -attr vt d
+load net {dat_in:rsc.dat(1)} -attr vt d
+load net {dat_in:rsc.dat(2)} -attr vt d
+load net {dat_in:rsc.dat(3)} -attr vt d
+load net {dat_in:rsc.dat(4)} -attr vt d
+load net {dat_in:rsc.dat(5)} -attr vt d
+load net {dat_in:rsc.dat(6)} -attr vt d
+load net {dat_in:rsc.dat(7)} -attr vt d
+load netBundle {dat_in:rsc.dat} 8 {dat_in:rsc.dat(0)} {dat_in:rsc.dat(1)} {dat_in:rsc.dat(2)} {dat_in:rsc.dat(3)} {dat_in:rsc.dat(4)} {dat_in:rsc.dat(5)} {dat_in:rsc.dat(6)} {dat_in:rsc.dat(7)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-55 -attr oid 53 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(0)} -port {dat_in:rsc.dat(0)} -attr vt d
+load net {dat_in:rsc.dat(1)} -port {dat_in:rsc.dat(1)} -attr vt d
+load net {dat_in:rsc.dat(2)} -port {dat_in:rsc.dat(2)} -attr vt d
+load net {dat_in:rsc.dat(3)} -port {dat_in:rsc.dat(3)} -attr vt d
+load net {dat_in:rsc.dat(4)} -port {dat_in:rsc.dat(4)} -attr vt d
+load net {dat_in:rsc.dat(5)} -port {dat_in:rsc.dat(5)} -attr vt d
+load net {dat_in:rsc.dat(6)} -port {dat_in:rsc.dat(6)} -attr vt d
+load net {dat_in:rsc.dat(7)} -port {dat_in:rsc.dat(7)} -attr vt d
+load netBundle {dat_in:rsc.dat} 8 {dat_in:rsc.dat(0)} {dat_in:rsc.dat(1)} {dat_in:rsc.dat(2)} {dat_in:rsc.dat(3)} {dat_in:rsc.dat(4)} {dat_in:rsc.dat(5)} {dat_in:rsc.dat(6)} {dat_in:rsc.dat(7)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-56 -attr oid 54 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-57 -attr oid 55 -attr vt d
+load net {dat_in:rsc.vld} -port {dat_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-58 -attr oid 56 -attr vt d
+load net {dat_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-59 -attr oid 57 -attr vt d
+load net {dat_in:rsc.rdy:-:VerDer_inst.bud} -port {dat_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-60 -attr oid 58 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.rdy}
+load net {widthIn(0)} -attr vt d
+load net {widthIn(1)} -attr vt d
+load net {widthIn(2)} -attr vt d
+load net {widthIn(3)} -attr vt d
+load net {widthIn(4)} -attr vt d
+load net {widthIn(5)} -attr vt d
+load net {widthIn(6)} -attr vt d
+load net {widthIn(7)} -attr vt d
+load net {widthIn(8)} -attr vt d
+load net {widthIn(9)} -attr vt d
+load net {widthIn(10)} -attr vt d
+load netBundle {widthIn} 11 {widthIn(0)} {widthIn(1)} {widthIn(2)} {widthIn(3)} {widthIn(4)} {widthIn(5)} {widthIn(6)} {widthIn(7)} {widthIn(8)} {widthIn(9)} {widthIn(10)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-61 -attr oid 59 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(0)} -port {widthIn(0)} -attr vt d
+load net {widthIn(1)} -port {widthIn(1)} -attr vt d
+load net {widthIn(2)} -port {widthIn(2)} -attr vt d
+load net {widthIn(3)} -port {widthIn(3)} -attr vt d
+load net {widthIn(4)} -port {widthIn(4)} -attr vt d
+load net {widthIn(5)} -port {widthIn(5)} -attr vt d
+load net {widthIn(6)} -port {widthIn(6)} -attr vt d
+load net {widthIn(7)} -port {widthIn(7)} -attr vt d
+load net {widthIn(8)} -port {widthIn(8)} -attr vt d
+load net {widthIn(9)} -port {widthIn(9)} -attr vt d
+load net {widthIn(10)} -port {widthIn(10)} -attr vt d
+load netBundle {widthIn} 11 {widthIn(0)} {widthIn(1)} {widthIn(2)} {widthIn(3)} {widthIn(4)} {widthIn(5)} {widthIn(6)} {widthIn(7)} {widthIn(8)} {widthIn(9)} {widthIn(10)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-62 -attr oid 60 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {heightIn(0)} -attr vt d
+load net {heightIn(1)} -attr vt d
+load net {heightIn(2)} -attr vt d
+load net {heightIn(3)} -attr vt d
+load net {heightIn(4)} -attr vt d
+load net {heightIn(5)} -attr vt d
+load net {heightIn(6)} -attr vt d
+load net {heightIn(7)} -attr vt d
+load net {heightIn(8)} -attr vt d
+load net {heightIn(9)} -attr vt d
+load netBundle {heightIn} 10 {heightIn(0)} {heightIn(1)} {heightIn(2)} {heightIn(3)} {heightIn(4)} {heightIn(5)} {heightIn(6)} {heightIn(7)} {heightIn(8)} {heightIn(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-63 -attr oid 61 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(0)} -port {heightIn(0)} -attr vt d
+load net {heightIn(1)} -port {heightIn(1)} -attr vt d
+load net {heightIn(2)} -port {heightIn(2)} -attr vt d
+load net {heightIn(3)} -port {heightIn(3)} -attr vt d
+load net {heightIn(4)} -port {heightIn(4)} -attr vt d
+load net {heightIn(5)} -port {heightIn(5)} -attr vt d
+load net {heightIn(6)} -port {heightIn(6)} -attr vt d
+load net {heightIn(7)} -port {heightIn(7)} -attr vt d
+load net {heightIn(8)} -port {heightIn(8)} -attr vt d
+load net {heightIn(9)} -port {heightIn(9)} -attr vt d
+load netBundle {heightIn} 10 {heightIn(0)} {heightIn(1)} {heightIn(2)} {heightIn(3)} {heightIn(4)} {heightIn(5)} {heightIn(6)} {heightIn(7)} {heightIn(8)} {heightIn(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-64 -attr oid 62 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {magn:rsc.dat(0)} -attr vt d
+load net {magn:rsc.dat(1)} -attr vt d
+load net {magn:rsc.dat(2)} -attr vt d
+load net {magn:rsc.dat(3)} -attr vt d
+load net {magn:rsc.dat(4)} -attr vt d
+load net {magn:rsc.dat(5)} -attr vt d
+load net {magn:rsc.dat(6)} -attr vt d
+load net {magn:rsc.dat(7)} -attr vt d
+load net {magn:rsc.dat(8)} -attr vt d
+load netBundle {magn:rsc.dat} 9 {magn:rsc.dat(0)} {magn:rsc.dat(1)} {magn:rsc.dat(2)} {magn:rsc.dat(3)} {magn:rsc.dat(4)} {magn:rsc.dat(5)} {magn:rsc.dat(6)} {magn:rsc.dat(7)} {magn:rsc.dat(8)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-65 -attr oid 63 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(0)} -port {magn:rsc.dat(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(1)} -port {magn:rsc.dat(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(2)} -port {magn:rsc.dat(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(3)} -port {magn:rsc.dat(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(4)} -port {magn:rsc.dat(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(5)} -port {magn:rsc.dat(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(6)} -port {magn:rsc.dat(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(7)} -port {magn:rsc.dat(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.dat:-:MagAng_inst(8)} -port {magn:rsc.dat(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat}
+load net {magn:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-66 -attr oid 64 -attr vt d
+load net {magn:rsc.vld:-:MagAng_inst.bud} -port {magn:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-67 -attr oid 65 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.vld}
+load net {magn:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-68 -attr oid 66 -attr vt d
+load net {magn:rsc.rdy} -port {magn:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-69 -attr oid 67 -attr vt d
+load net {angle:rsc.dat(0)} -attr vt d
+load net {angle:rsc.dat(1)} -attr vt d
+load net {angle:rsc.dat(2)} -attr vt d
+load net {angle:rsc.dat(3)} -attr vt d
+load net {angle:rsc.dat(4)} -attr vt d
+load net {angle:rsc.dat(5)} -attr vt d
+load net {angle:rsc.dat(6)} -attr vt d
+load net {angle:rsc.dat(7)} -attr vt d
+load netBundle {angle:rsc.dat} 8 {angle:rsc.dat(0)} {angle:rsc.dat(1)} {angle:rsc.dat(2)} {angle:rsc.dat(3)} {angle:rsc.dat(4)} {angle:rsc.dat(5)} {angle:rsc.dat(6)} {angle:rsc.dat(7)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-70 -attr oid 68 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(0)} -port {angle:rsc.dat(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(1)} -port {angle:rsc.dat(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(2)} -port {angle:rsc.dat(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(3)} -port {angle:rsc.dat(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(4)} -port {angle:rsc.dat(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(5)} -port {angle:rsc.dat(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(6)} -port {angle:rsc.dat(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.dat:-:MagAng_inst(7)} -port {angle:rsc.dat(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat}
+load net {angle:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-71 -attr oid 69 -attr vt d
+load net {angle:rsc.vld:-:MagAng_inst.bud} -port {angle:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-72 -attr oid 70 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.vld}
+load net {angle:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-73 -attr oid 71 -attr vt d
+load net {angle:rsc.rdy} -port {angle:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-74 -attr oid 72 -attr vt d
+load net {line_buf0:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-75 -attr oid 73 -attr vt d
+load net {line_buf0:rsc.en:-:VerDer_inst} -port {line_buf0:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-76 -attr oid 74 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.en}
+load net {line_buf0:rsc.q(0)} -attr vt d
+load net {line_buf0:rsc.q(1)} -attr vt d
+load net {line_buf0:rsc.q(2)} -attr vt d
+load net {line_buf0:rsc.q(3)} -attr vt d
+load net {line_buf0:rsc.q(4)} -attr vt d
+load net {line_buf0:rsc.q(5)} -attr vt d
+load net {line_buf0:rsc.q(6)} -attr vt d
+load net {line_buf0:rsc.q(7)} -attr vt d
+load net {line_buf0:rsc.q(8)} -attr vt d
+load net {line_buf0:rsc.q(9)} -attr vt d
+load net {line_buf0:rsc.q(10)} -attr vt d
+load net {line_buf0:rsc.q(11)} -attr vt d
+load net {line_buf0:rsc.q(12)} -attr vt d
+load net {line_buf0:rsc.q(13)} -attr vt d
+load net {line_buf0:rsc.q(14)} -attr vt d
+load net {line_buf0:rsc.q(15)} -attr vt d
+load netBundle {line_buf0:rsc.q} 16 {line_buf0:rsc.q(0)} {line_buf0:rsc.q(1)} {line_buf0:rsc.q(2)} {line_buf0:rsc.q(3)} {line_buf0:rsc.q(4)} {line_buf0:rsc.q(5)} {line_buf0:rsc.q(6)} {line_buf0:rsc.q(7)} {line_buf0:rsc.q(8)} {line_buf0:rsc.q(9)} {line_buf0:rsc.q(10)} {line_buf0:rsc.q(11)} {line_buf0:rsc.q(12)} {line_buf0:rsc.q(13)} {line_buf0:rsc.q(14)} {line_buf0:rsc.q(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-77 -attr oid 75 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(0)} -port {line_buf0:rsc.q(0)} -attr vt d
+load net {line_buf0:rsc.q(1)} -port {line_buf0:rsc.q(1)} -attr vt d
+load net {line_buf0:rsc.q(2)} -port {line_buf0:rsc.q(2)} -attr vt d
+load net {line_buf0:rsc.q(3)} -port {line_buf0:rsc.q(3)} -attr vt d
+load net {line_buf0:rsc.q(4)} -port {line_buf0:rsc.q(4)} -attr vt d
+load net {line_buf0:rsc.q(5)} -port {line_buf0:rsc.q(5)} -attr vt d
+load net {line_buf0:rsc.q(6)} -port {line_buf0:rsc.q(6)} -attr vt d
+load net {line_buf0:rsc.q(7)} -port {line_buf0:rsc.q(7)} -attr vt d
+load net {line_buf0:rsc.q(8)} -port {line_buf0:rsc.q(8)} -attr vt d
+load net {line_buf0:rsc.q(9)} -port {line_buf0:rsc.q(9)} -attr vt d
+load net {line_buf0:rsc.q(10)} -port {line_buf0:rsc.q(10)} -attr vt d
+load net {line_buf0:rsc.q(11)} -port {line_buf0:rsc.q(11)} -attr vt d
+load net {line_buf0:rsc.q(12)} -port {line_buf0:rsc.q(12)} -attr vt d
+load net {line_buf0:rsc.q(13)} -port {line_buf0:rsc.q(13)} -attr vt d
+load net {line_buf0:rsc.q(14)} -port {line_buf0:rsc.q(14)} -attr vt d
+load net {line_buf0:rsc.q(15)} -port {line_buf0:rsc.q(15)} -attr vt d
+load netBundle {line_buf0:rsc.q} 16 {line_buf0:rsc.q(0)} {line_buf0:rsc.q(1)} {line_buf0:rsc.q(2)} {line_buf0:rsc.q(3)} {line_buf0:rsc.q(4)} {line_buf0:rsc.q(5)} {line_buf0:rsc.q(6)} {line_buf0:rsc.q(7)} {line_buf0:rsc.q(8)} {line_buf0:rsc.q(9)} {line_buf0:rsc.q(10)} {line_buf0:rsc.q(11)} {line_buf0:rsc.q(12)} {line_buf0:rsc.q(13)} {line_buf0:rsc.q(14)} {line_buf0:rsc.q(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-78 -attr oid 76 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-79 -attr oid 77 -attr vt d
+load net {line_buf0:rsc.we:-:VerDer_inst.bud} -port {line_buf0:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-80 -attr oid 78 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.we}
+load net {line_buf0:rsc.d(0)} -attr vt d
+load net {line_buf0:rsc.d(1)} -attr vt d
+load net {line_buf0:rsc.d(2)} -attr vt d
+load net {line_buf0:rsc.d(3)} -attr vt d
+load net {line_buf0:rsc.d(4)} -attr vt d
+load net {line_buf0:rsc.d(5)} -attr vt d
+load net {line_buf0:rsc.d(6)} -attr vt d
+load net {line_buf0:rsc.d(7)} -attr vt d
+load net {line_buf0:rsc.d(8)} -attr vt d
+load net {line_buf0:rsc.d(9)} -attr vt d
+load net {line_buf0:rsc.d(10)} -attr vt d
+load net {line_buf0:rsc.d(11)} -attr vt d
+load net {line_buf0:rsc.d(12)} -attr vt d
+load net {line_buf0:rsc.d(13)} -attr vt d
+load net {line_buf0:rsc.d(14)} -attr vt d
+load net {line_buf0:rsc.d(15)} -attr vt d
+load netBundle {line_buf0:rsc.d} 16 {line_buf0:rsc.d(0)} {line_buf0:rsc.d(1)} {line_buf0:rsc.d(2)} {line_buf0:rsc.d(3)} {line_buf0:rsc.d(4)} {line_buf0:rsc.d(5)} {line_buf0:rsc.d(6)} {line_buf0:rsc.d(7)} {line_buf0:rsc.d(8)} {line_buf0:rsc.d(9)} {line_buf0:rsc.d(10)} {line_buf0:rsc.d(11)} {line_buf0:rsc.d(12)} {line_buf0:rsc.d(13)} {line_buf0:rsc.d(14)} {line_buf0:rsc.d(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-81 -attr oid 79 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(0)} -port {line_buf0:rsc.d(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(1)} -port {line_buf0:rsc.d(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(2)} -port {line_buf0:rsc.d(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(3)} -port {line_buf0:rsc.d(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(4)} -port {line_buf0:rsc.d(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(5)} -port {line_buf0:rsc.d(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(6)} -port {line_buf0:rsc.d(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(7)} -port {line_buf0:rsc.d(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(8)} -port {line_buf0:rsc.d(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(9)} -port {line_buf0:rsc.d(9)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(10)} -port {line_buf0:rsc.d(10)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(11)} -port {line_buf0:rsc.d(11)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(12)} -port {line_buf0:rsc.d(12)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(13)} -port {line_buf0:rsc.d(13)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(14)} -port {line_buf0:rsc.d(14)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.d:-:VerDer_inst(15)} -port {line_buf0:rsc.d(15)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d}
+load net {line_buf0:rsc.adr(0)} -attr vt d
+load net {line_buf0:rsc.adr(1)} -attr vt d
+load net {line_buf0:rsc.adr(2)} -attr vt d
+load net {line_buf0:rsc.adr(3)} -attr vt d
+load net {line_buf0:rsc.adr(4)} -attr vt d
+load net {line_buf0:rsc.adr(5)} -attr vt d
+load net {line_buf0:rsc.adr(6)} -attr vt d
+load net {line_buf0:rsc.adr(7)} -attr vt d
+load net {line_buf0:rsc.adr(8)} -attr vt d
+load net {line_buf0:rsc.adr(9)} -attr vt d
+load netBundle {line_buf0:rsc.adr} 10 {line_buf0:rsc.adr(0)} {line_buf0:rsc.adr(1)} {line_buf0:rsc.adr(2)} {line_buf0:rsc.adr(3)} {line_buf0:rsc.adr(4)} {line_buf0:rsc.adr(5)} {line_buf0:rsc.adr(6)} {line_buf0:rsc.adr(7)} {line_buf0:rsc.adr(8)} {line_buf0:rsc.adr(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-82 -attr oid 80 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(0)} -port {line_buf0:rsc.adr(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(1)} -port {line_buf0:rsc.adr(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(2)} -port {line_buf0:rsc.adr(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(3)} -port {line_buf0:rsc.adr(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(4)} -port {line_buf0:rsc.adr(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(5)} -port {line_buf0:rsc.adr(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(6)} -port {line_buf0:rsc.adr(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(7)} -port {line_buf0:rsc.adr(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(8)} -port {line_buf0:rsc.adr(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf0:rsc.adr:-:VerDer_inst(9)} -port {line_buf0:rsc.adr(9)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr}
+load net {line_buf1:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-83 -attr oid 81 -attr vt d
+load net {line_buf1:rsc.en:-:VerDer_inst} -port {line_buf1:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-84 -attr oid 82 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.en}
+load net {line_buf1:rsc.q(0)} -attr vt d
+load net {line_buf1:rsc.q(1)} -attr vt d
+load net {line_buf1:rsc.q(2)} -attr vt d
+load net {line_buf1:rsc.q(3)} -attr vt d
+load net {line_buf1:rsc.q(4)} -attr vt d
+load net {line_buf1:rsc.q(5)} -attr vt d
+load net {line_buf1:rsc.q(6)} -attr vt d
+load net {line_buf1:rsc.q(7)} -attr vt d
+load net {line_buf1:rsc.q(8)} -attr vt d
+load net {line_buf1:rsc.q(9)} -attr vt d
+load net {line_buf1:rsc.q(10)} -attr vt d
+load net {line_buf1:rsc.q(11)} -attr vt d
+load net {line_buf1:rsc.q(12)} -attr vt d
+load net {line_buf1:rsc.q(13)} -attr vt d
+load net {line_buf1:rsc.q(14)} -attr vt d
+load net {line_buf1:rsc.q(15)} -attr vt d
+load netBundle {line_buf1:rsc.q} 16 {line_buf1:rsc.q(0)} {line_buf1:rsc.q(1)} {line_buf1:rsc.q(2)} {line_buf1:rsc.q(3)} {line_buf1:rsc.q(4)} {line_buf1:rsc.q(5)} {line_buf1:rsc.q(6)} {line_buf1:rsc.q(7)} {line_buf1:rsc.q(8)} {line_buf1:rsc.q(9)} {line_buf1:rsc.q(10)} {line_buf1:rsc.q(11)} {line_buf1:rsc.q(12)} {line_buf1:rsc.q(13)} {line_buf1:rsc.q(14)} {line_buf1:rsc.q(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-85 -attr oid 83 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(0)} -port {line_buf1:rsc.q(0)} -attr vt d
+load net {line_buf1:rsc.q(1)} -port {line_buf1:rsc.q(1)} -attr vt d
+load net {line_buf1:rsc.q(2)} -port {line_buf1:rsc.q(2)} -attr vt d
+load net {line_buf1:rsc.q(3)} -port {line_buf1:rsc.q(3)} -attr vt d
+load net {line_buf1:rsc.q(4)} -port {line_buf1:rsc.q(4)} -attr vt d
+load net {line_buf1:rsc.q(5)} -port {line_buf1:rsc.q(5)} -attr vt d
+load net {line_buf1:rsc.q(6)} -port {line_buf1:rsc.q(6)} -attr vt d
+load net {line_buf1:rsc.q(7)} -port {line_buf1:rsc.q(7)} -attr vt d
+load net {line_buf1:rsc.q(8)} -port {line_buf1:rsc.q(8)} -attr vt d
+load net {line_buf1:rsc.q(9)} -port {line_buf1:rsc.q(9)} -attr vt d
+load net {line_buf1:rsc.q(10)} -port {line_buf1:rsc.q(10)} -attr vt d
+load net {line_buf1:rsc.q(11)} -port {line_buf1:rsc.q(11)} -attr vt d
+load net {line_buf1:rsc.q(12)} -port {line_buf1:rsc.q(12)} -attr vt d
+load net {line_buf1:rsc.q(13)} -port {line_buf1:rsc.q(13)} -attr vt d
+load net {line_buf1:rsc.q(14)} -port {line_buf1:rsc.q(14)} -attr vt d
+load net {line_buf1:rsc.q(15)} -port {line_buf1:rsc.q(15)} -attr vt d
+load netBundle {line_buf1:rsc.q} 16 {line_buf1:rsc.q(0)} {line_buf1:rsc.q(1)} {line_buf1:rsc.q(2)} {line_buf1:rsc.q(3)} {line_buf1:rsc.q(4)} {line_buf1:rsc.q(5)} {line_buf1:rsc.q(6)} {line_buf1:rsc.q(7)} {line_buf1:rsc.q(8)} {line_buf1:rsc.q(9)} {line_buf1:rsc.q(10)} {line_buf1:rsc.q(11)} {line_buf1:rsc.q(12)} {line_buf1:rsc.q(13)} {line_buf1:rsc.q(14)} {line_buf1:rsc.q(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-86 -attr oid 84 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-87 -attr oid 85 -attr vt d
+load net {line_buf1:rsc.we:-:VerDer_inst.bud} -port {line_buf1:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-88 -attr oid 86 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.we}
+load net {line_buf1:rsc.d(0)} -attr vt d
+load net {line_buf1:rsc.d(1)} -attr vt d
+load net {line_buf1:rsc.d(2)} -attr vt d
+load net {line_buf1:rsc.d(3)} -attr vt d
+load net {line_buf1:rsc.d(4)} -attr vt d
+load net {line_buf1:rsc.d(5)} -attr vt d
+load net {line_buf1:rsc.d(6)} -attr vt d
+load net {line_buf1:rsc.d(7)} -attr vt d
+load net {line_buf1:rsc.d(8)} -attr vt d
+load net {line_buf1:rsc.d(9)} -attr vt d
+load net {line_buf1:rsc.d(10)} -attr vt d
+load net {line_buf1:rsc.d(11)} -attr vt d
+load net {line_buf1:rsc.d(12)} -attr vt d
+load net {line_buf1:rsc.d(13)} -attr vt d
+load net {line_buf1:rsc.d(14)} -attr vt d
+load net {line_buf1:rsc.d(15)} -attr vt d
+load netBundle {line_buf1:rsc.d} 16 {line_buf1:rsc.d(0)} {line_buf1:rsc.d(1)} {line_buf1:rsc.d(2)} {line_buf1:rsc.d(3)} {line_buf1:rsc.d(4)} {line_buf1:rsc.d(5)} {line_buf1:rsc.d(6)} {line_buf1:rsc.d(7)} {line_buf1:rsc.d(8)} {line_buf1:rsc.d(9)} {line_buf1:rsc.d(10)} {line_buf1:rsc.d(11)} {line_buf1:rsc.d(12)} {line_buf1:rsc.d(13)} {line_buf1:rsc.d(14)} {line_buf1:rsc.d(15)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-89 -attr oid 87 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(0)} -port {line_buf1:rsc.d(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(1)} -port {line_buf1:rsc.d(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(2)} -port {line_buf1:rsc.d(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(3)} -port {line_buf1:rsc.d(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(4)} -port {line_buf1:rsc.d(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(5)} -port {line_buf1:rsc.d(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(6)} -port {line_buf1:rsc.d(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(7)} -port {line_buf1:rsc.d(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(8)} -port {line_buf1:rsc.d(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(9)} -port {line_buf1:rsc.d(9)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(10)} -port {line_buf1:rsc.d(10)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(11)} -port {line_buf1:rsc.d(11)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(12)} -port {line_buf1:rsc.d(12)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(13)} -port {line_buf1:rsc.d(13)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(14)} -port {line_buf1:rsc.d(14)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.d:-:VerDer_inst(15)} -port {line_buf1:rsc.d(15)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d}
+load net {line_buf1:rsc.adr(0)} -attr vt d
+load net {line_buf1:rsc.adr(1)} -attr vt d
+load net {line_buf1:rsc.adr(2)} -attr vt d
+load net {line_buf1:rsc.adr(3)} -attr vt d
+load net {line_buf1:rsc.adr(4)} -attr vt d
+load net {line_buf1:rsc.adr(5)} -attr vt d
+load net {line_buf1:rsc.adr(6)} -attr vt d
+load net {line_buf1:rsc.adr(7)} -attr vt d
+load net {line_buf1:rsc.adr(8)} -attr vt d
+load net {line_buf1:rsc.adr(9)} -attr vt d
+load netBundle {line_buf1:rsc.adr} 10 {line_buf1:rsc.adr(0)} {line_buf1:rsc.adr(1)} {line_buf1:rsc.adr(2)} {line_buf1:rsc.adr(3)} {line_buf1:rsc.adr(4)} {line_buf1:rsc.adr(5)} {line_buf1:rsc.adr(6)} {line_buf1:rsc.adr(7)} {line_buf1:rsc.adr(8)} {line_buf1:rsc.adr(9)} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-90 -attr oid 88 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(0)} -port {line_buf1:rsc.adr(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(1)} -port {line_buf1:rsc.adr(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(2)} -port {line_buf1:rsc.adr(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(3)} -port {line_buf1:rsc.adr(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(4)} -port {line_buf1:rsc.adr(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(5)} -port {line_buf1:rsc.adr(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(6)} -port {line_buf1:rsc.adr(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(7)} -port {line_buf1:rsc.adr(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(8)} -port {line_buf1:rsc.adr(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load net {line_buf1:rsc.adr:-:VerDer_inst(9)} -port {line_buf1:rsc.adr(9)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr}
+load inst "VerDer_inst" "EdgeDetect_IP::EdgeDetect_VerDer" "orig" -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-91 -attr oid 89 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/VerDer_inst} -attr area 1505.325205 -attr delay 1.577921 -attr hier "/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_VerDer" -attr @fillcolor {#BBBBAA} 
+load net {clk} -pin  "VerDer_inst" {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-92 -attr oid 90 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/clk}
+load net {rst} -pin  "VerDer_inst" {rst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-93 -attr oid 91 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/rst}
+load net {arst_n} -pin  "VerDer_inst" {arst_n} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-94 -attr oid 92 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/arst_n}
+load net {dat_in:rsc.dat(0)} -pin  "VerDer_inst" {dat_in:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(1)} -pin  "VerDer_inst" {dat_in:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(2)} -pin  "VerDer_inst" {dat_in:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(3)} -pin  "VerDer_inst" {dat_in:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(4)} -pin  "VerDer_inst" {dat_in:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(5)} -pin  "VerDer_inst" {dat_in:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(6)} -pin  "VerDer_inst" {dat_in:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.dat(7)} -pin  "VerDer_inst" {dat_in:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.dat}
+load net {dat_in:rsc.vld} -pin  "VerDer_inst" {dat_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-95 -attr oid 93 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.vld}
+load net {dat_in:rsc.rdy:-:VerDer_inst.bud} -pin  "VerDer_inst" {dat_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-96 -attr oid 94 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.rdy:-:VerDer_inst.bud}
+load net {widthIn(0)} -pin  "VerDer_inst" {widthIn(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(1)} -pin  "VerDer_inst" {widthIn(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(2)} -pin  "VerDer_inst" {widthIn(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(3)} -pin  "VerDer_inst" {widthIn(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(4)} -pin  "VerDer_inst" {widthIn(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(5)} -pin  "VerDer_inst" {widthIn(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(6)} -pin  "VerDer_inst" {widthIn(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(7)} -pin  "VerDer_inst" {widthIn(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(8)} -pin  "VerDer_inst" {widthIn(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(9)} -pin  "VerDer_inst" {widthIn(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(10)} -pin  "VerDer_inst" {widthIn(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {heightIn(0)} -pin  "VerDer_inst" {heightIn(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(1)} -pin  "VerDer_inst" {heightIn(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(2)} -pin  "VerDer_inst" {heightIn(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(3)} -pin  "VerDer_inst" {heightIn(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(4)} -pin  "VerDer_inst" {heightIn(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(5)} -pin  "VerDer_inst" {heightIn(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(6)} -pin  "VerDer_inst" {heightIn(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(7)} -pin  "VerDer_inst" {heightIn(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(8)} -pin  "VerDer_inst" {heightIn(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(9)} -pin  "VerDer_inst" {heightIn(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {dat_out:rsc.dat:-:VerDer_inst(0)} -pin  "VerDer_inst" {dat_out:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(1)} -pin  "VerDer_inst" {dat_out:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(2)} -pin  "VerDer_inst" {dat_out:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(3)} -pin  "VerDer_inst" {dat_out:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(4)} -pin  "VerDer_inst" {dat_out:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(5)} -pin  "VerDer_inst" {dat_out:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(6)} -pin  "VerDer_inst" {dat_out:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(7)} -pin  "VerDer_inst" {dat_out:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.vld:-:VerDer_inst.bud} -pin  "VerDer_inst" {dat_out:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-97 -attr oid 95 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.vld:-:VerDer_inst.bud}
+load net {dat_in:rsc.rdy:-:HorDer_inst.bud} -pin  "VerDer_inst" {dat_out:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-98 -attr oid 96 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.rdy:-:HorDer_inst.bud}
+load net {dy:rsc.dat:-:VerDer_inst(0)} -pin  "VerDer_inst" {dy:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(1)} -pin  "VerDer_inst" {dy:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(2)} -pin  "VerDer_inst" {dy:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(3)} -pin  "VerDer_inst" {dy:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(4)} -pin  "VerDer_inst" {dy:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(5)} -pin  "VerDer_inst" {dy:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(6)} -pin  "VerDer_inst" {dy:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(7)} -pin  "VerDer_inst" {dy:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(8)} -pin  "VerDer_inst" {dy:rsc.dat(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.vld:-:VerDer_inst.bud} -pin  "VerDer_inst" {dy:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-99 -attr oid 97 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.vld:-:VerDer_inst.bud}
+load net {dy:rsc.rdy:-:VerDer_inst} -pin  "VerDer_inst" {dy:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-100 -attr oid 98 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.rdy:-:VerDer_inst}
+load net {line_buf0:rsc.en:-:VerDer_inst} -pin  "VerDer_inst" {line_buf0:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-101 -attr oid 99 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.en:-:VerDer_inst}
+load net {line_buf0:rsc.q(0)} -pin  "VerDer_inst" {line_buf0:rsc.q(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(1)} -pin  "VerDer_inst" {line_buf0:rsc.q(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(2)} -pin  "VerDer_inst" {line_buf0:rsc.q(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(3)} -pin  "VerDer_inst" {line_buf0:rsc.q(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(4)} -pin  "VerDer_inst" {line_buf0:rsc.q(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(5)} -pin  "VerDer_inst" {line_buf0:rsc.q(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(6)} -pin  "VerDer_inst" {line_buf0:rsc.q(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(7)} -pin  "VerDer_inst" {line_buf0:rsc.q(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(8)} -pin  "VerDer_inst" {line_buf0:rsc.q(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(9)} -pin  "VerDer_inst" {line_buf0:rsc.q(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(10)} -pin  "VerDer_inst" {line_buf0:rsc.q(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(11)} -pin  "VerDer_inst" {line_buf0:rsc.q(11)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(12)} -pin  "VerDer_inst" {line_buf0:rsc.q(12)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(13)} -pin  "VerDer_inst" {line_buf0:rsc.q(13)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(14)} -pin  "VerDer_inst" {line_buf0:rsc.q(14)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.q(15)} -pin  "VerDer_inst" {line_buf0:rsc.q(15)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.q}
+load net {line_buf0:rsc.we:-:VerDer_inst.bud} -pin  "VerDer_inst" {line_buf0:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-102 -attr oid 100 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.we:-:VerDer_inst.bud}
+load net {line_buf0:rsc.d:-:VerDer_inst(0)} -pin  "VerDer_inst" {line_buf0:rsc.d(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(1)} -pin  "VerDer_inst" {line_buf0:rsc.d(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(2)} -pin  "VerDer_inst" {line_buf0:rsc.d(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(3)} -pin  "VerDer_inst" {line_buf0:rsc.d(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(4)} -pin  "VerDer_inst" {line_buf0:rsc.d(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(5)} -pin  "VerDer_inst" {line_buf0:rsc.d(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(6)} -pin  "VerDer_inst" {line_buf0:rsc.d(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(7)} -pin  "VerDer_inst" {line_buf0:rsc.d(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(8)} -pin  "VerDer_inst" {line_buf0:rsc.d(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(9)} -pin  "VerDer_inst" {line_buf0:rsc.d(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(10)} -pin  "VerDer_inst" {line_buf0:rsc.d(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(11)} -pin  "VerDer_inst" {line_buf0:rsc.d(11)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(12)} -pin  "VerDer_inst" {line_buf0:rsc.d(12)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(13)} -pin  "VerDer_inst" {line_buf0:rsc.d(13)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(14)} -pin  "VerDer_inst" {line_buf0:rsc.d(14)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.d:-:VerDer_inst(15)} -pin  "VerDer_inst" {line_buf0:rsc.d(15)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.d:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(0)} -pin  "VerDer_inst" {line_buf0:rsc.adr(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(1)} -pin  "VerDer_inst" {line_buf0:rsc.adr(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(2)} -pin  "VerDer_inst" {line_buf0:rsc.adr(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(3)} -pin  "VerDer_inst" {line_buf0:rsc.adr(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(4)} -pin  "VerDer_inst" {line_buf0:rsc.adr(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(5)} -pin  "VerDer_inst" {line_buf0:rsc.adr(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(6)} -pin  "VerDer_inst" {line_buf0:rsc.adr(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(7)} -pin  "VerDer_inst" {line_buf0:rsc.adr(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(8)} -pin  "VerDer_inst" {line_buf0:rsc.adr(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf0:rsc.adr:-:VerDer_inst(9)} -pin  "VerDer_inst" {line_buf0:rsc.adr(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf0:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.en:-:VerDer_inst} -pin  "VerDer_inst" {line_buf1:rsc.en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-103 -attr oid 101 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.en:-:VerDer_inst}
+load net {line_buf1:rsc.q(0)} -pin  "VerDer_inst" {line_buf1:rsc.q(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(1)} -pin  "VerDer_inst" {line_buf1:rsc.q(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(2)} -pin  "VerDer_inst" {line_buf1:rsc.q(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(3)} -pin  "VerDer_inst" {line_buf1:rsc.q(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(4)} -pin  "VerDer_inst" {line_buf1:rsc.q(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(5)} -pin  "VerDer_inst" {line_buf1:rsc.q(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(6)} -pin  "VerDer_inst" {line_buf1:rsc.q(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(7)} -pin  "VerDer_inst" {line_buf1:rsc.q(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(8)} -pin  "VerDer_inst" {line_buf1:rsc.q(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(9)} -pin  "VerDer_inst" {line_buf1:rsc.q(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(10)} -pin  "VerDer_inst" {line_buf1:rsc.q(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(11)} -pin  "VerDer_inst" {line_buf1:rsc.q(11)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(12)} -pin  "VerDer_inst" {line_buf1:rsc.q(12)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(13)} -pin  "VerDer_inst" {line_buf1:rsc.q(13)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(14)} -pin  "VerDer_inst" {line_buf1:rsc.q(14)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.q(15)} -pin  "VerDer_inst" {line_buf1:rsc.q(15)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.q}
+load net {line_buf1:rsc.we:-:VerDer_inst.bud} -pin  "VerDer_inst" {line_buf1:rsc.we} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-104 -attr oid 102 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.we:-:VerDer_inst.bud}
+load net {line_buf1:rsc.d:-:VerDer_inst(0)} -pin  "VerDer_inst" {line_buf1:rsc.d(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(1)} -pin  "VerDer_inst" {line_buf1:rsc.d(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(2)} -pin  "VerDer_inst" {line_buf1:rsc.d(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(3)} -pin  "VerDer_inst" {line_buf1:rsc.d(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(4)} -pin  "VerDer_inst" {line_buf1:rsc.d(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(5)} -pin  "VerDer_inst" {line_buf1:rsc.d(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(6)} -pin  "VerDer_inst" {line_buf1:rsc.d(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(7)} -pin  "VerDer_inst" {line_buf1:rsc.d(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(8)} -pin  "VerDer_inst" {line_buf1:rsc.d(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(9)} -pin  "VerDer_inst" {line_buf1:rsc.d(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(10)} -pin  "VerDer_inst" {line_buf1:rsc.d(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(11)} -pin  "VerDer_inst" {line_buf1:rsc.d(11)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(12)} -pin  "VerDer_inst" {line_buf1:rsc.d(12)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(13)} -pin  "VerDer_inst" {line_buf1:rsc.d(13)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(14)} -pin  "VerDer_inst" {line_buf1:rsc.d(14)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.d:-:VerDer_inst(15)} -pin  "VerDer_inst" {line_buf1:rsc.d(15)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.d:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(0)} -pin  "VerDer_inst" {line_buf1:rsc.adr(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(1)} -pin  "VerDer_inst" {line_buf1:rsc.adr(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(2)} -pin  "VerDer_inst" {line_buf1:rsc.adr(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(3)} -pin  "VerDer_inst" {line_buf1:rsc.adr(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(4)} -pin  "VerDer_inst" {line_buf1:rsc.adr(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(5)} -pin  "VerDer_inst" {line_buf1:rsc.adr(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(6)} -pin  "VerDer_inst" {line_buf1:rsc.adr(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(7)} -pin  "VerDer_inst" {line_buf1:rsc.adr(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(8)} -pin  "VerDer_inst" {line_buf1:rsc.adr(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load net {line_buf1:rsc.adr:-:VerDer_inst(9)} -pin  "VerDer_inst" {line_buf1:rsc.adr(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/line_buf1:rsc.adr:-:VerDer_inst}
+load inst "HorDer_inst" "EdgeDetect_IP::EdgeDetect_HorDer" "orig" -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-105 -attr oid 103 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/HorDer_inst} -attr area 853.051370 -attr delay 1.326554 -attr hier "/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_HorDer" -attr @fillcolor {#BBBBAA} 
+load net {clk} -pin  "HorDer_inst" {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-106 -attr oid 104 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/clk}
+load net {rst} -pin  "HorDer_inst" {rst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-107 -attr oid 105 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/rst}
+load net {arst_n} -pin  "HorDer_inst" {arst_n} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-108 -attr oid 106 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/arst_n}
+load net {dat_out:rsc.dat:-:VerDer_inst(0)} -pin  "HorDer_inst" {dat_in:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(1)} -pin  "HorDer_inst" {dat_in:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(2)} -pin  "HorDer_inst" {dat_in:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(3)} -pin  "HorDer_inst" {dat_in:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(4)} -pin  "HorDer_inst" {dat_in:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(5)} -pin  "HorDer_inst" {dat_in:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(6)} -pin  "HorDer_inst" {dat_in:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.dat:-:VerDer_inst(7)} -pin  "HorDer_inst" {dat_in:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.dat:-:VerDer_inst}
+load net {dat_out:rsc.vld:-:VerDer_inst.bud} -pin  "HorDer_inst" {dat_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-109 -attr oid 107 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_out:rsc.vld:-:VerDer_inst.bud}
+load net {dat_in:rsc.rdy:-:HorDer_inst.bud} -pin  "HorDer_inst" {dat_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-110 -attr oid 108 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dat_in:rsc.rdy:-:HorDer_inst.bud}
+load net {widthIn(0)} -pin  "HorDer_inst" {widthIn(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(1)} -pin  "HorDer_inst" {widthIn(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(2)} -pin  "HorDer_inst" {widthIn(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(3)} -pin  "HorDer_inst" {widthIn(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(4)} -pin  "HorDer_inst" {widthIn(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(5)} -pin  "HorDer_inst" {widthIn(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(6)} -pin  "HorDer_inst" {widthIn(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(7)} -pin  "HorDer_inst" {widthIn(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(8)} -pin  "HorDer_inst" {widthIn(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(9)} -pin  "HorDer_inst" {widthIn(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {widthIn(10)} -pin  "HorDer_inst" {widthIn(10)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn}
+load net {heightIn(0)} -pin  "HorDer_inst" {heightIn(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(1)} -pin  "HorDer_inst" {heightIn(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(2)} -pin  "HorDer_inst" {heightIn(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(3)} -pin  "HorDer_inst" {heightIn(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(4)} -pin  "HorDer_inst" {heightIn(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(5)} -pin  "HorDer_inst" {heightIn(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(6)} -pin  "HorDer_inst" {heightIn(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(7)} -pin  "HorDer_inst" {heightIn(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(8)} -pin  "HorDer_inst" {heightIn(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {heightIn(9)} -pin  "HorDer_inst" {heightIn(9)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn}
+load net {dx:rsc.dat:-:HorDer_inst(0)} -pin  "HorDer_inst" {dx:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(1)} -pin  "HorDer_inst" {dx:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(2)} -pin  "HorDer_inst" {dx:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(3)} -pin  "HorDer_inst" {dx:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(4)} -pin  "HorDer_inst" {dx:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(5)} -pin  "HorDer_inst" {dx:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(6)} -pin  "HorDer_inst" {dx:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(7)} -pin  "HorDer_inst" {dx:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(8)} -pin  "HorDer_inst" {dx:rsc.dat(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.vld:-:HorDer_inst.bud} -pin  "HorDer_inst" {dx:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-111 -attr oid 109 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.vld:-:HorDer_inst.bud}
+load net {dx_in:rsc.rdy:-:MagAng_inst.bud} -pin  "HorDer_inst" {dx:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-112 -attr oid 110 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx_in:rsc.rdy:-:MagAng_inst.bud}
+load inst "MagAng_inst" "EdgeDetect_IP::EdgeDetect_MagAng" "orig" -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-113 -attr oid 111 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/MagAng_inst} -attr area 6699.037394 -attr delay 9.997032 -attr hier "/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_MagAng" -attr @fillcolor {#BBBBAA} 
+load net {clk} -pin  "MagAng_inst" {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-114 -attr oid 112 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/clk}
+load net {rst} -pin  "MagAng_inst" {rst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-115 -attr oid 113 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/rst}
+load net {arst_n} -pin  "MagAng_inst" {arst_n} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-116 -attr oid 114 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/arst_n}
+load net {dx:rsc.dat:-:HorDer_inst(0)} -pin  "MagAng_inst" {dx_in:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(1)} -pin  "MagAng_inst" {dx_in:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(2)} -pin  "MagAng_inst" {dx_in:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(3)} -pin  "MagAng_inst" {dx_in:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(4)} -pin  "MagAng_inst" {dx_in:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(5)} -pin  "MagAng_inst" {dx_in:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(6)} -pin  "MagAng_inst" {dx_in:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(7)} -pin  "MagAng_inst" {dx_in:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.dat:-:HorDer_inst(8)} -pin  "MagAng_inst" {dx_in:rsc.dat(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.dat:-:HorDer_inst}
+load net {dx:rsc.vld:-:HorDer_inst.bud} -pin  "MagAng_inst" {dx_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-117 -attr oid 115 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx:rsc.vld:-:HorDer_inst.bud}
+load net {dx_in:rsc.rdy:-:MagAng_inst.bud} -pin  "MagAng_inst" {dx_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-118 -attr oid 116 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dx_in:rsc.rdy:-:MagAng_inst.bud}
+load net {dy_in:rsc.dat:-:MagAng_inst(0)} -pin  "MagAng_inst" {dy_in:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(1)} -pin  "MagAng_inst" {dy_in:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(2)} -pin  "MagAng_inst" {dy_in:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(3)} -pin  "MagAng_inst" {dy_in:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(4)} -pin  "MagAng_inst" {dy_in:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(5)} -pin  "MagAng_inst" {dy_in:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(6)} -pin  "MagAng_inst" {dy_in:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(7)} -pin  "MagAng_inst" {dy_in:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(8)} -pin  "MagAng_inst" {dy_in:rsc.dat(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.vld:-:MagAng_inst} -pin  "MagAng_inst" {dy_in:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-119 -attr oid 117 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.vld:-:MagAng_inst}
+load net {dy_in:rsc.rdy:-:MagAng_inst.bud} -pin  "MagAng_inst" {dy_in:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-120 -attr oid 118 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.rdy:-:MagAng_inst.bud}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(0)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(1)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(2)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(3)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(4)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(5)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(6)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(7)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(8)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(9)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {DC} -pin  "MagAng_inst" {widthIn:rsc.dat(10)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<11>=-----------}
+load net {widthIn.triosy.lz:-:MagAng_inst.bud} -pin  "MagAng_inst" {widthIn.triosy.lz} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-121 -attr oid 119 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/widthIn.triosy.lz:-:MagAng_inst.bud}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(0)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(1)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(2)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(3)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(4)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(5)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(6)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(7)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(8)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {DC} -pin  "MagAng_inst" {heightIn:rsc.dat(9)} -attr @path {/EdgeDetect_IP::EdgeDetect_Top/C<10>=----------}
+load net {heightIn.triosy.lz:-:MagAng_inst.bud} -pin  "MagAng_inst" {heightIn.triosy.lz} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-122 -attr oid 120 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/heightIn.triosy.lz:-:MagAng_inst.bud}
+load net {magn:rsc.dat:-:MagAng_inst(0)} -pin  "MagAng_inst" {magn:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(1)} -pin  "MagAng_inst" {magn:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(2)} -pin  "MagAng_inst" {magn:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(3)} -pin  "MagAng_inst" {magn:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(4)} -pin  "MagAng_inst" {magn:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(5)} -pin  "MagAng_inst" {magn:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(6)} -pin  "MagAng_inst" {magn:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(7)} -pin  "MagAng_inst" {magn:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.dat:-:MagAng_inst(8)} -pin  "MagAng_inst" {magn:rsc.dat(8)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.dat:-:MagAng_inst}
+load net {magn:rsc.vld:-:MagAng_inst.bud} -pin  "MagAng_inst" {magn:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-123 -attr oid 121 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.vld:-:MagAng_inst.bud}
+load net {magn:rsc.rdy} -pin  "MagAng_inst" {magn:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-124 -attr oid 122 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/magn:rsc.rdy}
+load net {angle:rsc.dat:-:MagAng_inst(0)} -pin  "MagAng_inst" {angle:rsc.dat(0)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(1)} -pin  "MagAng_inst" {angle:rsc.dat(1)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(2)} -pin  "MagAng_inst" {angle:rsc.dat(2)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(3)} -pin  "MagAng_inst" {angle:rsc.dat(3)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(4)} -pin  "MagAng_inst" {angle:rsc.dat(4)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(5)} -pin  "MagAng_inst" {angle:rsc.dat(5)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(6)} -pin  "MagAng_inst" {angle:rsc.dat(6)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.dat:-:MagAng_inst(7)} -pin  "MagAng_inst" {angle:rsc.dat(7)} -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.dat:-:MagAng_inst}
+load net {angle:rsc.vld:-:MagAng_inst.bud} -pin  "MagAng_inst" {angle:rsc.vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-125 -attr oid 123 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.vld:-:MagAng_inst.bud}
+load net {angle:rsc.rdy} -pin  "MagAng_inst" {angle:rsc.rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-126 -attr oid 124 -attr vt dc -attr @path {/EdgeDetect_IP::EdgeDetect_Top/angle:rsc.rdy}
+load inst "dy:cns.pipe" "ccs_ioport.ccs_pipe" "ccs_ioport.ccs_pipe(26,9,1,2,1,1,0,0,1)" -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-127 -attr oid 125 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:cns.pipe} -attr area 175.058409 -attr qmod "ccs_ioport.ccs_pipe(26,9,1,2,1,1,0,0,1)"
+load net {clk} -pin  "dy:cns.pipe" {clk} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-128 -attr oid 126 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/clk}
+load net {GND} -pin  "dy:cns.pipe" {en} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-129 -attr oid 127 -attr @path {/EdgeDetect_IP::EdgeDetect_Top/0}
+load net {arst_n} -pin  "dy:cns.pipe" {arst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-130 -attr oid 128 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/arst_n}
+load net {rst} -pin  "dy:cns.pipe" {srst} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-131 -attr oid 129 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/rst}
+load net {dy:rsc.rdy:-:VerDer_inst} -pin  "dy:cns.pipe" {din_rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-132 -attr oid 130 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.rdy:-:VerDer_inst}
+load net {dy:rsc.vld:-:VerDer_inst.bud} -pin  "dy:cns.pipe" {din_vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-133 -attr oid 131 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.vld:-:VerDer_inst.bud}
+load net {dy:rsc.dat:-:VerDer_inst(0)} -pin  "dy:cns.pipe" {din(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(1)} -pin  "dy:cns.pipe" {din(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(2)} -pin  "dy:cns.pipe" {din(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(3)} -pin  "dy:cns.pipe" {din(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(4)} -pin  "dy:cns.pipe" {din(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(5)} -pin  "dy:cns.pipe" {din(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(6)} -pin  "dy:cns.pipe" {din(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(7)} -pin  "dy:cns.pipe" {din(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy:rsc.dat:-:VerDer_inst(8)} -pin  "dy:cns.pipe" {din(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy:rsc.dat:-:VerDer_inst}
+load net {dy_in:rsc.rdy:-:MagAng_inst.bud} -pin  "dy:cns.pipe" {dout_rdy} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-134 -attr oid 132 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.rdy:-:MagAng_inst.bud}
+load net {dy_in:rsc.vld:-:MagAng_inst} -pin  "dy:cns.pipe" {dout_vld} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-135 -attr oid 133 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.vld:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(0)} -pin  "dy:cns.pipe" {dout(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(1)} -pin  "dy:cns.pipe" {dout(1)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(2)} -pin  "dy:cns.pipe" {dout(2)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(3)} -pin  "dy:cns.pipe" {dout(3)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(4)} -pin  "dy:cns.pipe" {dout(4)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(5)} -pin  "dy:cns.pipe" {dout(5)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(6)} -pin  "dy:cns.pipe" {dout(6)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(7)} -pin  "dy:cns.pipe" {dout(7)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy_in:rsc.dat:-:MagAng_inst(8)} -pin  "dy:cns.pipe" {dout(8)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy_in:rsc.dat:-:MagAng_inst}
+load net {dy.unc#1} -pin  "dy:cns.pipe" {sz(0)} -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy.unc#1}
+load net {GND} -pin  "dy:cns.pipe" {sz_req} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-136 -attr oid 134 -attr @path {/EdgeDetect_IP::EdgeDetect_Top/0}
+load net {dy.idle} -pin  "dy:cns.pipe" {is_idle} -attr xrf 57af06a6-c182-47db-aca9-04e559b686ed-137 -attr oid 135 -attr vt d -attr @path {/EdgeDetect_IP::EdgeDetect_Top/dy.idle}
+### END MODULE 
+

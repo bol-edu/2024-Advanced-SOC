@@ -1,0 +1,16 @@
+---
+MainSourceFile:  /home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1/.autopilot/db/userdma.pp.0.cpp
+Diagnostics:     
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '176:52'
+    FilePath:        userdma.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '177:60'
+    FilePath:        userdma.cpp
+  - DiagnosticName:  clang-diagnostic-warning
+    Message:         '[xlx-df-check-10] Either use an argument of the function or declare the variable inside the dataflow loop body'
+    FileOffset:      '179:40'
+    FilePath:        userdma.cpp
+...

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Jun 22 00:01:45 2024
+# Process ID: 4261
+# Current directory: /home/ubuntu/final_fpga/vivado
+# Command line: vivado -source vvd_caravel_fpga_fsic.tcl -mode tcl
+# Log file: /home/ubuntu/final_fpga/vivado/vivado.log
+# Journal file: /home/ubuntu/final_fpga/vivado/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.690 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+source vvd_caravel_fpga_fsic.tcl

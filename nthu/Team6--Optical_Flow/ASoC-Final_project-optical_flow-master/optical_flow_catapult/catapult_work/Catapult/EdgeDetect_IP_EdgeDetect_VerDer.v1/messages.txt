@@ -1,0 +1,250 @@
+
+# Messages from "go new"
+
+# Info: Branching solution 'solution.v2' at state 'initial' (PRJ-2)
+
+# Messages from "go analyze"
+
+solution.v2
+solution options defaults
+solution options set /Input/CppStandard c++11
+c++11
+solution options set /Input/TargetPlatform x86_64
+x86_64
+solution options set /Input/SearchPath {../hls_c/inc ../cmodel/inc ../bmpUtil/inc} 
+../hls_c/inc ../cmodel/inc ../bmpUtil/inc
+solution options set /Output/GenerateCycleNetlist false
+false
+solution options set /Flows/SCVerify/INVOKE_ARGS {./image/people_gray.bmp out_algorithm.bmp out_hw.bmp}
+./image/people_gray.bmp out_algorithm.bmp out_hw.bmp
+solution options set /Flows/SCVerify/INCL_DIRS {../hls_c/inc ../cmodel/inc ../bmpUtil/inc}
+../hls_c/inc ../cmodel/inc ../bmpUtil/inc
+solution options set /Flows/VSCode/INSTALL /bin
+/bin
+flow package require /VSCode
+10.6a
+solution file add ../hls_c/inc/EdgeDetect.h -type CHEADER
+/INPUTFILES/1
+solution file add ../hls_c/src/EdgeDetect_tb.cpp -type C++ -exclude true
+/INPUTFILES/2
+solution file add {../bmpUtil/src/bmp_io.cpp} -type C++ -exclude true
+/INPUTFILES/3
+options set Output/OutputVHDL false
+false
+go new
+solution design set EdgeDetect_IP::EdgeDetect_VerDer -top
+solution design set EdgeDetect_IP::EdgeDetect_VerDer -top (HC-8)
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Creating project directory '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/'. (PRJ-1)
+Moving session transcript to file "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/catapult.log"
+Front End called with arguments: -I../hls_c/inc -I../cmodel/inc -I../bmpUtil/inc -- /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/hls_c/inc/EdgeDetect.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'EdgeDetect_IP::EdgeDetect_Top' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 3.97 seconds, memory usage 1351060kB, peak memory usage 1351060kB (SOL-9)
+
+# Messages from "go compile"
+
+# Info: Starting transformation 'compile' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'EdgeDetect_IP::EdgeDetect_VerDer' specified by directive (CIN-52)
+# Warning: Instantiating global variable 'kernel' which may be accessed outside this scope (CIN-18)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_VerDer::EdgeDetect_VerDer' on object '' (CIN-64)
+Synthesizing method 'EdgeDetect_IP::EdgeDetect_VerDer::run' (CIN-13)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_VerDer::run' on object '' (CIN-64)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/EdgeDetect_IP::EdgeDetect_VerDer/run/VCOL' (CIN-203)
+Inlining routine 'operator-<10, false>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator==<10, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator!=<10, false>' (CIN-14)
+Inlining routine 'operator-<11, false>' (CIN-14)
+Optimizing block '/EdgeDetect_IP::EdgeDetect_VerDer' ... (CIN-4)
+INOUT port 'dat_in' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'dat_out' is only used as an output. (OPT-11)
+INOUT port 'dy' is only used as an output. (OPT-11)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_VerDer/constructor' is found empty and is optimized away. (OPT-12)
+Design 'EdgeDetect_IP::EdgeDetect_VerDer' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Toplevel found in header $PROJECT_HOME/../hls_c/inc/EdgeDetect_VerDer.h, using $PROJECT_HOME/../hls_c/inc/EdgeDetect.h for header dependencies.
+# Info: CDesignChecker Shell script written to '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_VerDer.v1/CDesignChecker/design_checker.sh'
+# Info: Completed transformation 'compile' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 2.81 seconds, memory usage 1351060kB, peak memory usage 1351060kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 44, Real ops = 10, Vars = 16 (SOL-21)
+
+# Messages from "go libraries"
+
+solution library add nangate-45nm_beh -- -rtlsyntool OasysRTL -vendor Nangate -technology 045nm
+solution library add ccs_sample_mem
+go libraries
+# Info: Starting transformation 'libraries' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/fpops.lib' [FPOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_connections.lib' [ccs_connections]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/nangate-45nm_beh.lib' [nangate-45nm_beh]... (LIB-49)
+# Warning: Component library 'nangate-45nm_beh' created with a newer version of Catapult Library Builder, 2023.2/1033219 > 2023.1/1033555 (LIB-83)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_mem.lib' [ccs_sample_mem]... (LIB-49)
+# Info: Completed transformation 'libraries' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.39 seconds, memory usage 1351060kB, peak memory usage 1351060kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 44, Real ops = 10, Vars = 16 (SOL-21)
+
+# Messages from "go assembly"
+
+directive set -CLOCKS {clk {-CLOCK_PERIOD 10.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 5.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND both -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
+/CLOCKS {clk {-CLOCK_PERIOD 10.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 5.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND both -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
+go assembly
+# Info: Starting transformation 'assembly' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+# Info: Completed transformation 'assembly' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.12 seconds, memory usage 1359292kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 45, Real ops = 11, Vars = 19 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/dat_in:rsc -MAP_TO_MODULE ccs_ioport.ccs_in_wait_coupled
+/EdgeDetect_IP::EdgeDetect_VerDer/dat_in:rsc/MAP_TO_MODULE ccs_ioport.ccs_in_wait_coupled
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/widthIn:rsc -MAP_TO_MODULE {[DirectInput]}
+/EdgeDetect_IP::EdgeDetect_VerDer/widthIn:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/heightIn:rsc -MAP_TO_MODULE {[DirectInput]}
+/EdgeDetect_IP::EdgeDetect_VerDer/heightIn:rsc/MAP_TO_MODULE {[DirectInput]}
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc -MAP_TO_MODULE ccs_sample_mem.ccs_ram_sync_singleport
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc/MAP_TO_MODULE ccs_sample_mem.ccs_ram_sync_singleport
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc -EXTERNAL_MEMORY true
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc/EXTERNAL_MEMORY true
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc -GEN_EXTERNAL_ENABLE true
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc/GEN_EXTERNAL_ENABLE true
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc -MAP_TO_MODULE ccs_sample_mem.ccs_ram_sync_singleport
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc/MAP_TO_MODULE ccs_sample_mem.ccs_ram_sync_singleport
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc -EXTERNAL_MEMORY true
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc/EXTERNAL_MEMORY true
+directive set /EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc -GEN_EXTERNAL_ENABLE true
+/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc/GEN_EXTERNAL_ENABLE true
+directive set /EdgeDetect_IP::EdgeDetect_VerDer -RESET_CLEARS_ALL_REGS no
+/EdgeDetect_IP::EdgeDetect_VerDer/RESET_CLEARS_ALL_REGS no
+go architect
+# Info: Starting transformation 'loops' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Loop '/EdgeDetect_IP::EdgeDetect_VerDer/run/VCOL' is left rolled. (LOOP-4)
+Loop '/EdgeDetect_IP::EdgeDetect_VerDer/run/VROW' is left rolled. (LOOP-4)
+Loop '/EdgeDetect_IP::EdgeDetect_VerDer/run/main' is left rolled. (LOOP-4)
+# Info: Completed transformation 'loops' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.05 seconds, memory usage 1359292kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 49, Real ops = 11, Vars = 21 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Memory Resource '/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf0:rsc' (from var: line_buf0) mapped to 'ccs_sample_mem.ccs_ram_sync_singleport' (size: 963 x 16). (MEM-4)
+Memory Resource '/EdgeDetect_IP::EdgeDetect_VerDer/run/line_buf1:rsc' (from var: line_buf1) mapped to 'ccs_sample_mem.ccs_ram_sync_singleport' (size: 963 x 16). (MEM-4)
+# Info: Completed transformation 'memories' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.12 seconds, memory usage 1359292kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 43, Real ops = 11, Vars = 21 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+# Info: Completed transformation 'cluster' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.02 seconds, memory usage 1359292kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 43, Real ops = 11, Vars = 21 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Design 'EdgeDetect_IP::EdgeDetect_VerDer' contains '25' real operations. (SOL-11)
+# Warning: Extrapolation detected. Script '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_VerDer.v1/adjust_char_library.tcl' generated. (LIB-142)
+# Info: Completed transformation 'architect' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.19 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 132, Real ops = 25, Vars = 36 (SOL-21)
+
+# Messages from "go allocate"
+
+go extract
+# Info: Starting transformation 'allocate' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/EdgeDetect_IP::EdgeDetect_VerDer/run' (CRAAS-1)
+# Info: Select qualified components for data operations ... (CRAAS-3)
+# Info: Apply resource constraints on data operations ... (CRAAS-4)
+Prescheduled LOOP '/EdgeDetect_IP::EdgeDetect_VerDer/run/VCOL' (3 c-steps) (SCHD-7)
+Prescheduled LOOP '/EdgeDetect_IP::EdgeDetect_VerDer/run/VROW' (1 c-steps) (SCHD-7)
+Prescheduled LOOP '/EdgeDetect_IP::EdgeDetect_VerDer/run/main' (2 c-steps) (SCHD-7)
+Prescheduled LOOP '/EdgeDetect_IP::EdgeDetect_VerDer/run/run:rlp' (0 c-steps) (SCHD-7)
+Prescheduled SEQUENTIAL '/EdgeDetect_IP::EdgeDetect_VerDer/run' (total length 6 c-steps) (SCHD-8)
+# Info: Initial schedule of SEQUENTIAL '/EdgeDetect_IP::EdgeDetect_VerDer/run': Latency = 4, Area (Datapath, Register, Total) = 859.29, 614.99, 1474.29 (CRAAS-11)
+At least one feasible schedule exists. (CRAAS-9)
+Input operation 'VCOL:if#4:asn#1' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+Input operation 'VCOL:if#4:asn#1' moved from c-step 1 to c-step 3 to save registers (SCHD-49)
+Input operation 'operator-<11,false>:asn' moved from c-step 1 to c-step 2 to save registers (SCHD-49)
+# Info: Final schedule of SEQUENTIAL '/EdgeDetect_IP::EdgeDetect_VerDer/run': Latency = 3, Area (Datapath, Register, Total) = 514.18, 605.95, 1120.13 (CRAAS-12)
+Resource allocation and scheduling done. (CRAAS-2)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.21 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 132, Real ops = 25, Vars = 36 (SOL-21)
+
+# Messages from "go schedule"
+
+# Info: Starting transformation 'schedule' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Performing concurrent resource allocation and scheduling on '/EdgeDetect_IP::EdgeDetect_VerDer/run' (CRAAS-1)
+Global signal 'dat_in:rsc.rdy' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_in:rsci' (LIB-3)
+Global signal 'dat_in:rsc.vld' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_in:rsci' (LIB-3)
+Global signal 'dat_in:rsc.dat' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_in:rsci' (LIB-3)
+# Info: Creating buffer for wait controller for component 'dat_in:rsc' (SCHD-46)
+Global signal 'dat_out:rsc.rdy' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_out:rsci' (LIB-3)
+Global signal 'dat_out:rsc.vld' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_out:rsci' (LIB-3)
+Global signal 'dat_out:rsc.dat' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dat_out:rsci' (LIB-3)
+Global signal 'dy:rsc.rdy' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dy:rsci' (LIB-3)
+Global signal 'dy:rsc.vld' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dy:rsci' (LIB-3)
+Global signal 'dy:rsc.dat' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'dy:rsci' (LIB-3)
+Global signal 'line_buf0:rsc.en' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf0:rsci' (LIB-3)
+Global signal 'line_buf0:rsc.q' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf0:rsci' (LIB-3)
+Global signal 'line_buf0:rsc.we' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf0:rsci' (LIB-3)
+Global signal 'line_buf0:rsc.d' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf0:rsci' (LIB-3)
+Global signal 'line_buf0:rsc.adr' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf0:rsci' (LIB-3)
+Global signal 'line_buf1:rsc.en' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf1:rsci' (LIB-3)
+Global signal 'line_buf1:rsc.q' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf1:rsci' (LIB-3)
+Global signal 'line_buf1:rsc.we' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf1:rsci' (LIB-3)
+Global signal 'line_buf1:rsc.d' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf1:rsci' (LIB-3)
+Global signal 'line_buf1:rsc.adr' added to design 'EdgeDetect_IP::EdgeDetect_VerDer' for component 'line_buf1:rsci' (LIB-3)
+# Info: Loop '/EdgeDetect_IP::EdgeDetect_VerDer/run/VCOL' is pipelined with initiation interval 1 and no flushing (SCHD-43)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 2.48 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 425, Real ops = 53, Vars = 226 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Performing FSM extraction... (FSM-1)
+# Info: Completed transformation 'dpfsm' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.61 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 464, Real ops = 197, Vars = 207 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 0.71 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 449, Real ops = 172, Vars = 404 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1' (SOL-8)
+Report written to file 'rtl.rpt'
+Generating scverify_top.cpp ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_coupled_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_VerDer.v1/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_coupled_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_VerDer.v1/concat_sim_rtl.v
+Generating SCVerify testbench files
+# Warning: Toplevel found in header $PROJECT_HOME/../hls_c/inc/EdgeDetect_VerDer.h, using $PROJECT_HOME/../hls_c/inc/EdgeDetect.h for header dependencies.
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+# Info: Completed transformation 'extract' on solution 'EdgeDetect_IP::EdgeDetect_VerDer.v1': elapsed time 2.70 seconds, memory usage 1351100kB, peak memory usage 1359292kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 458, Real ops = 176, Vars = 202 (SOL-21)

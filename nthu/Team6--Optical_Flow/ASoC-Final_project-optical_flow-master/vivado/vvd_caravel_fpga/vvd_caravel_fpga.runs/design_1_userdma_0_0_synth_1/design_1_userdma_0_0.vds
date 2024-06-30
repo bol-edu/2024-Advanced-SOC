@@ -1,0 +1,773 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Jun 17 13:19:43 2024
+# Process ID: 620777
+# Current directory: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1
+# Command line: vivado -log design_1_userdma_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_userdma_0_0.tcl
+# Log file: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.vds
+# Journal file: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/vivado.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 3393.628 MHz, CPU Physical cores: 4, Host memory: 12538 MB
+#-----------------------------------------------------------
+source design_1_userdma_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 2874.359 ; gain = 0.023 ; free physical = 950 ; free virtual = 2439
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_caravel_ps'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_output_pin'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/userdma_fir'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+Command: synth_design -top design_1_userdma_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 620912
+WARNING: [Synth 8-9501] generate block is allowed only inside loop and conditional generate in SystemVerilog mode [/tools/Xilinx/Vivado/2022.1/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:4023]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:01:29 . Memory (MB): peak = 2874.359 ; gain = 0.000 ; free physical = 4093 ; free virtual = 4653
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_userdma_0_0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/synth/design_1_userdma_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'userdma' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_control_s_axi' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_control_s_axi.v:302]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_control_s_axi' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_store' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_mem' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_mem' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_store' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_load' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized3' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_mem__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_mem__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized3' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_load' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_write' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized4' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized4' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_throttle' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized5' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized3' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized3' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized5' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized6' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_srl__parameterized4' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_srl__parameterized4' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_fifo__parameterized6' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_throttle' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_write' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_read' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_reg_slice__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi_read' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem0_m_axi' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem0_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_store' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_mem' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_mem' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_store' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:780]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_load' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized3' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_mem__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_mem__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2918]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized3' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_load' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:324]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_write' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized4' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized4' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_throttle' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized5' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized3' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized3' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized5' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized6' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_srl__parameterized4' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_srl__parameterized4' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2864]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_fifo__parameterized6' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2686]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_throttle' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2360]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2352]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2355]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_write' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:1852]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_read' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:1468]
+INFO: [Synth 8-6157] synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_reg_slice__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:2584]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:1844]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi_read' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:1468]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_gmem1_m_axi' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_gmem1_m_axi.v:11]
+INFO: [Synth 8-6157] synthesizing module 'userdma_entry_proc' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_entry_proc.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_entry_proc' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_entry_proc.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_getinstream' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_getinstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_getinstream_Pipeline_VITIS_LOOP_50_1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_getinstream_Pipeline_VITIS_LOOP_50_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_flow_control_loop_pipe_sequential_init' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_flow_control_loop_pipe_sequential_init' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_getinstream_Pipeline_VITIS_LOOP_50_1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_getinstream_Pipeline_VITIS_LOOP_50_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized1' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized1' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'userdma_regslice_both__parameterized2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_regslice_both__parameterized2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_getinstream' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_getinstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_streamtoparallelwithburst' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_streamtoparallelwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_streamtoparallelwithburst_Pipeline_VITIS_LOOP_23_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_streamtoparallelwithburst' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_streamtoparallelwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_paralleltostreamwithburst' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_paralleltostreamwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_paralleltostreamwithburst' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_paralleltostreamwithburst.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_sendoutstream' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_sendoutstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_sendoutstream' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_sendoutstream.v:10]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d3_S' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d3_S_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d3_S_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d3_S' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w64_d3_S' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w64_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w64_d3_S_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w64_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w64_d3_S_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w64_d3_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w64_d3_S' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w64_d3_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w33_d1024_A' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w33_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w33_d1024_A_ram' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w33_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w33_d1024_A_ram' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w33_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w33_d1024_A' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w33_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d64_A' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d64_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d64_A_ram' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d64_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d64_A_ram' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d64_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d64_A' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d64_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d2_S' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w32_d2_S_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d2_S_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w32_d2_S' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w32_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d2_S' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w1_d2_S_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d2_S_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d2_S.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w1_d2_S' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w1_d2_S.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w40_d1024_A' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w40_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_fifo_w40_d1024_A_ram' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w40_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w40_d1024_A_ram' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w40_d1024_A.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_fifo_w40_d1024_A' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_fifo_w40_d1024_A.v:52]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_streamtoparallelwithburst_U0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_streamtoparallelwithburst_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_sendoutstream_U0' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_sendoutstream_U0.v:43]
+INFO: [Synth 8-6157] synthesizing module 'userdma_start_for_sendoutstream_U0_shiftReg' [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_sendoutstream_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_sendoutstream_U0_shiftReg' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_sendoutstream_U0.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'userdma_start_for_sendoutstream_U0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_start_for_sendoutstream_U0.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'userdma' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_userdma_0_0' (0#1) [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/synth/design_1_userdma_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ipshared/a6bd/hdl/verilog/userdma_control_s_axi.v:419]
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[0] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[10] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[9] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[8] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[7] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[6] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[5] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[4] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[3] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[2] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[1] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[0] in module userdma_sendoutstream_Pipeline_VITIS_LOOP_155_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[10] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[9] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[8] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[7] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[6] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[5] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[4] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[3] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outcount48_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_en_clrsts_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_num_data_valid[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[2] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[1] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sts_clear_fifo_cap[0] in module userdma_sendoutstream is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_AWREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_WREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_ARREADY in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RLAST in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RID[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[8] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[7] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[6] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[5] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[4] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[3] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[2] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RFIFONUM[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RUSER[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_RRESP[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BVALID in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BRESP[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BID[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_gmem1_BUSER[0] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[10] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[9] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[8] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[7] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[6] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[5] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[4] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[3] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[2] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port outbuf_num_data_valid[1] in module userdma_paralleltostreamwithburst_Pipeline_VITIS_LOOP_110_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:01:36 . Memory (MB): peak = 2874.359 ; gain = 0.000 ; free physical = 5218 ; free virtual = 6493
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:01:36 . Memory (MB): peak = 2874.359 ; gain = 0.000 ; free physical = 5183 ; free virtual = 6470
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:01:36 . Memory (MB): peak = 2874.359 ; gain = 0.000 ; free physical = 5183 ; free virtual = 6470
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.46 ; elapsed = 00:00:00.46 . Memory (MB): peak = 2874.359 ; gain = 0.000 ; free physical = 5064 ; free virtual = 6356
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/constraints/userdma_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/ip/design_1_userdma_0_0/constraints/userdma_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2906.375 ; gain = 0.000 ; free physical = 5212 ; free virtual = 6526
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.64 ; elapsed = 00:00:00.55 . Memory (MB): peak = 2906.375 ; gain = 0.000 ; free physical = 5172 ; free virtual = 6486
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:01:52 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4814 ; free virtual = 6189
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:01:52 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4812 ; free virtual = 6187
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:01:52 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4804 ; free virtual = 6178
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'userdma_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'userdma_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem0_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'userdma_gmem1_m_axi_reg_slice__parameterized2'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'userdma_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'userdma_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem0_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                               00 |                               10
+                     ONE |                               10 |                               11
+                     TWO |                               01 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'userdma_gmem1_m_axi_reg_slice__parameterized2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:34 ; elapsed = 00:01:58 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4390 ; free virtual = 5810
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 10    
+	   2 Input   52 Bit       Adders := 4     
+	   2 Input   33 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 9     
+	   2 Input   31 Bit       Adders := 3     
+	   2 Input   12 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 4     
+	   2 Input    9 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 6     
+	   2 Input    7 Bit       Adders := 12    
+	   3 Input    7 Bit       Adders := 2     
+	   2 Input    6 Bit       Adders := 12    
+	   2 Input    5 Bit       Adders := 36    
+	   2 Input    4 Bit       Adders := 20    
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 8     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               96 Bit    Registers := 12    
+	               72 Bit    Registers := 6     
+	               64 Bit    Registers := 21    
+	               62 Bit    Registers := 2     
+	               52 Bit    Registers := 4     
+	               40 Bit    Registers := 1     
+	               37 Bit    Registers := 2     
+	               36 Bit    Registers := 2     
+	               34 Bit    Registers := 2     
+	               33 Bit    Registers := 7     
+	               32 Bit    Registers := 35    
+	               31 Bit    Registers := 5     
+	               22 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	               11 Bit    Registers := 4     
+	               10 Bit    Registers := 12    
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 13    
+	                7 Bit    Registers := 14    
+	                6 Bit    Registers := 12    
+	                5 Bit    Registers := 19    
+	                4 Bit    Registers := 32    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 26    
+	                1 Bit    Registers := 268   
++---RAMs : 
+	              39K Bit	(1023 X 40 bit)          RAMs := 1     
+	              32K Bit	(1023 X 33 bit)          RAMs := 1     
+	               8K Bit	(255 X 34 bit)          RAMs := 2     
+	               2K Bit	(63 X 36 bit)          RAMs := 2     
+	               1K Bit	(63 X 32 bit)          RAMs := 2     
++---Muxes : 
+	   2 Input   96 Bit        Muxes := 4     
+	   2 Input   72 Bit        Muxes := 2     
+	   2 Input   64 Bit        Muxes := 18    
+	   2 Input   52 Bit        Muxes := 4     
+	   2 Input   33 Bit        Muxes := 2     
+	  22 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 18    
+	   3 Input   22 Bit        Muxes := 2     
+	   2 Input   22 Bit        Muxes := 1     
+	  23 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	  22 Input   21 Bit        Muxes := 1     
+	   3 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   4 Input   12 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 12    
+	   2 Input    9 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 12    
+	   4 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 10    
+	   2 Input    6 Bit        Muxes := 19    
+	   2 Input    5 Bit        Muxes := 41    
+	   3 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 20    
+	   5 Input    4 Bit        Muxes := 1     
+	   3 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 10    
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 155   
+	   3 Input    2 Bit        Muxes := 30    
+	   4 Input    2 Bit        Muxes := 20    
+	   2 Input    1 Bit        Muxes := 292   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-5784] Optimized 36 bits of RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Old ram width 36 bits, new ram width 0 bits.
+WARNING: [Synth 8-5785] Removed RAM "store_unit/buff_wdata/U_fifo_mem/mem_reg" due to constant propagation. Write data stuck at zero 
+INFO: [Synth 8-5784] Optimized 5 bits of RAM "U_userdma_fifo_w40_d1024_A_ram/mem_reg" due to constant propagation. Old ram width 40 bits, new ram width 35 bits.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module userdma_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module userdma_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem0_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_read/rs_rreq/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem0_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/rs_wreq/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[1]) is unused and will be removed from module userdma_gmem1_m_axi.
+WARNING: [Synth 8-3332] Sequential element (bus_write/wreq_throttle/rs_req/FSM_sequential_state_reg[0]) is unused and will be removed from module userdma_gmem1_m_axi.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:07 ; elapsed = 00:02:46 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 5342 ; free virtual = 7041
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U      | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 36(READ_FIRST)    | W |   | 63 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U      | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/inbuf_U            | U_userdma_fifo_w33_d1024_A_ram/mem_reg   | 0 K x 33(READ_FIRST)   | W |   | 0 K x 33(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/outbuf_U           | U_userdma_fifo_w40_d1024_A_ram/mem_reg   | 0 K x 40(READ_FIRST)   | W |   | 0 K x 40(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:15 ; elapsed = 00:03:00 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4769 ; free virtual = 6505
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:03:06 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4485 ; free virtual = 6231
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object                               | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst/gmem0_m_axi_U      | store_unit/buff_wdata/U_fifo_mem/mem_reg | 63 x 36(READ_FIRST)    | W |   | 63 x 36(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/gmem1_m_axi_U      | load_unit/buff_rdata/U_fifo_mem/mem_reg  | 255 x 34(READ_FIRST)   | W |   | 255 x 34(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|inst/inbuf_U            | U_userdma_fifo_w33_d1024_A_ram/mem_reg   | 0 K x 33(READ_FIRST)   | W |   | 0 K x 33(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
+|inst/outbuf_U           | U_userdma_fifo_w40_d1024_A_ram/mem_reg   | 0 K x 40(READ_FIRST)   | W |   | 0 K x 40(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|userdma_fifo_w32_d64_A: | U_userdma_fifo_w32_d64_A_ram/mem_reg     | 63 x 32(READ_FIRST)    | W |   | 63 x 32(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------------------+------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/gmem1_m_axi_U/load_unit/buff_rdata/U_fifo_mem/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/incount_U/U_userdma_fifo_w32_d64_A_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/outbuf_U/U_userdma_fifo_w40_d1024_A_ram/mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:03:14 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4084 ; free virtual = 5834
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:33 ; elapsed = 00:03:25 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4222 ; free virtual = 5993
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:33 ; elapsed = 00:03:25 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4221 ; free virtual = 5992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:34 ; elapsed = 00:03:26 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4215 ; free virtual = 5986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:34 ; elapsed = 00:03:26 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4216 ; free virtual = 5987
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:34 ; elapsed = 00:03:26 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4378 ; free virtual = 6149
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:34 ; elapsed = 00:03:26 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4414 ; free virtual = 6186
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name       | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | mem_reg[13]    | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__2     | mem_reg[13]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | mem_reg[14]    | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | mem_reg[14]    | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__5     | mem_reg[62]    | 37     | 37         | 0      | 74      | 37     | 0      | 0      | 
+|dsrl__6     | mem_reg[13]    | 96     | 96         | 96     | 0       | 0      | 0      | 0      | 
+|dsrl__7     | mem_reg[14]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | mem_reg[13]    | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__9     | mem_reg[14]    | 8      | 8          | 8      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | mem_reg[14]    | 72     | 72         | 72     | 0       | 0      | 0      | 0      | 
+|dsrl__11    | mem_reg[62]    | 37     | 37         | 0      | 74      | 37     | 0      | 0      | 
+|dsrl__12    | SRL_SIG_reg[2] | 1      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__13    | SRL_SIG_reg[2] | 64     | 64         | 64     | 0       | 0      | 0      | 0      | 
++------------+----------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   387|
+|2     |LUT1     |   198|
+|3     |LUT2     |   710|
+|4     |LUT3     |  1016|
+|5     |LUT4     |   667|
+|6     |LUT5     |   380|
+|7     |LUT6     |   683|
+|8     |MUXF7    |    37|
+|9     |RAMB18E1 |     4|
+|12    |RAMB36E1 |     2|
+|14    |SRL16E   |   330|
+|15    |SRLC32E  |    74|
+|16    |FDRE     |  3794|
+|17    |FDSE     |    30|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:34 ; elapsed = 00:03:26 . Memory (MB): peak = 2906.375 ; gain = 32.016 ; free physical = 4416 ; free virtual = 6187
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 286 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:03:19 . Memory (MB): peak = 2906.375 ; gain = 0.000 ; free physical = 4733 ; free virtual = 6505
+Synthesis Optimization Complete : Time (s): cpu = 00:01:34 ; elapsed = 00:03:27 . Memory (MB): peak = 2906.383 ; gain = 32.016 ; free physical = 4756 ; free virtual = 6528
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.21 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2906.383 ; gain = 0.000 ; free physical = 5479 ; free virtual = 7250
+INFO: [Netlist 29-17] Analyzing 430 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2906.383 ; gain = 0.000 ; free physical = 5613 ; free virtual = 7385
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: e1c50aaa
+INFO: [Common 17-83] Releasing license: Synthesis
+226 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:48 ; elapsed = 00:03:41 . Memory (MB): peak = 2906.383 ; gain = 32.023 ; free physical = 5842 ; free virtual = 7614
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_userdma_0_0, cache-ID = 794bd7bcae9d41c7
+INFO: [Coretcl 2-1174] Renamed 82 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/design_1_userdma_0_0_synth_1/design_1_userdma_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_userdma_0_0_utilization_synth.rpt -pb design_1_userdma_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 17 13:24:05 2024...

@@ -1,0 +1,189 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version R-2020.09-SP3 for linux64 - Jan 19, 2021
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+ 
+source ../../common/common.tcl
+/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/work/../../results/user_prj0.pt.v.gz
+################################################################################Set_Library
+set link_library          "$Std_cell_lib $Ram_lib"
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db 
+set target_library        "$Std_cell_lib $Ram_lib"
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db 
+################################################################################Open_Lib
+#[AJ] LEF + DB + TF flow
+#set_app_var search_path $search_path
+#set physical_lib "$Std_cell_lef $Ram_lef"
+#set ref_lib "$Std_cell_lib $Ram_lib"
+#create_lib $ARC_TOP #		-technology $Tech_file  #		-ref_libs $physical_lib
+#[AJ] NDM + DB + TF flow
+create_lib $ARC_TOP 		-technology $Tech_file  		-ref_libs $REFERENCE_LIB
+Warning: Pitch 0.074000 for layer M4 is less than sum(0.100000) of minSpacing(0.040000) and minWidth(0.060000).(saed14nm_1p9m_mw.tf line:727) (TECH-223)
+Warning: Pitch 0.600000 for layer MRDL is less than sum(4.000000) of minSpacing(2.000000) and minWidth(2.000000).(saed14nm_1p9m_mw.tf line:1356) (TECH-223)
+Warning: Layer 'M2' is missing the attribute 'maskEndMaxWidthThresholdTbl'. (saed14nm_1p9m_mw.tf line 618) (TECH-026)
+Warning: Layer 'M2' is missing the attribute 'maskEndToEndKeepoutLengthTbl'. (saed14nm_1p9m_mw.tf line 618) (TECH-026)
+Warning: Layer 'M2' is missing the attribute 'maskEndToSideKeepoutLengthTbl'. (saed14nm_1p9m_mw.tf line 618) (TECH-026)
+Warning: Layer 'M2' is missing the attribute 'maskEndToEndMinSpacingTbl'. (saed14nm_1p9m_mw.tf line 618) (TECH-026)
+Warning: Layer 'M2' is missing the attribute 'maskEndToSideMinSpacingTbl'. (saed14nm_1p9m_mw.tf line 618) (TECH-026)
+Warning: The value of the pitch attribute of layer M4 is invalid. Attribute pitch should not be less than sum of attribute minWidth and minSpacing. (saed14nm_1p9m_mw.tf line 727) (TECH-050)
+Warning: The value of the pitch attribute of layer MRDL is invalid. Attribute pitch should not be less than sum of attribute minWidth and minSpacing. (saed14nm_1p9m_mw.tf line 1356) (TECH-050)
+Information: ContactCode 'VIA12SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1652) (TECH-084)
+Information: ContactCode 'VIA12BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1670) (TECH-084)
+Information: ContactCode 'VIA12BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1689) (TECH-084)
+Information: ContactCode 'VIA12LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1708) (TECH-084)
+Information: ContactCode 'VIA12SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1727) (TECH-084)
+Information: ContactCode 'VIA12BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1746) (TECH-084)
+Information: ContactCode 'VIA12BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1765) (TECH-084)
+Information: ContactCode 'VIA12LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1784) (TECH-084)
+Information: ContactCode 'VIA1_32SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1803) (TECH-084)
+Information: ContactCode 'VIA1_32BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1822) (TECH-084)
+Information: ContactCode 'VIA1_32BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1841) (TECH-084)
+Information: ContactCode 'VIA1_32LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1860) (TECH-084)
+Information: ContactCode 'VIA1_32SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1879) (TECH-084)
+Information: ContactCode 'VIA1_32BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1898) (TECH-084)
+Information: ContactCode 'VIA1_32BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1917) (TECH-084)
+Information: ContactCode 'VIA1_32LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1936) (TECH-084)
+Information: ContactCode 'VIA12_3SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1955) (TECH-084)
+Information: ContactCode 'VIA12_3BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1974) (TECH-084)
+Information: ContactCode 'VIA12_3BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 1993) (TECH-084)
+Information: ContactCode 'VIA12_3LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2012) (TECH-084)
+Information: ContactCode 'VIA12_3SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2031) (TECH-084)
+Information: ContactCode 'VIA12_3BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2050) (TECH-084)
+Information: ContactCode 'VIA12_3BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2069) (TECH-084)
+Information: ContactCode 'VIA12_3LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2088) (TECH-084)
+Information: ContactCode 'VIA1_32_3SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2107) (TECH-084)
+Information: ContactCode 'VIA1_32_3BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2126) (TECH-084)
+Information: ContactCode 'VIA1_32_3BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2145) (TECH-084)
+Information: ContactCode 'VIA1_32_3LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2164) (TECH-084)
+Information: ContactCode 'VIA1_32_3SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2183) (TECH-084)
+Information: ContactCode 'VIA1_32_3BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2202) (TECH-084)
+Information: ContactCode 'VIA1_32_3BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2221) (TECH-084)
+Information: ContactCode 'VIA1_32_3LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.04. (line 2240) (TECH-084)
+Information: ContactCode 'VIA23SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2260) (TECH-084)
+Information: ContactCode 'VIA23BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2280) (TECH-084)
+Information: ContactCode 'VIA23BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2299) (TECH-084)
+Information: ContactCode 'VIA23LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2318) (TECH-084)
+Information: ContactCode 'VIA23SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2337) (TECH-084)
+Information: ContactCode 'VIA23BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2356) (TECH-084)
+Information: ContactCode 'VIA23BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2375) (TECH-084)
+Information: ContactCode 'VIA23LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2394) (TECH-084)
+Information: ContactCode 'VIA2_33SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2413) (TECH-084)
+Information: ContactCode 'VIA2_33BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2432) (TECH-084)
+Information: ContactCode 'VIA2_33BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2451) (TECH-084)
+Information: ContactCode 'VIA2_33LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2470) (TECH-084)
+Information: ContactCode 'VIA2_33SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2489) (TECH-084)
+Information: ContactCode 'VIA2_33BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2508) (TECH-084)
+Information: ContactCode 'VIA2_33BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2527) (TECH-084)
+Information: ContactCode 'VIA2_33LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2546) (TECH-084)
+Information: ContactCode 'VIA23_3SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2565) (TECH-084)
+Information: ContactCode 'VIA23_3BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2584) (TECH-084)
+Information: ContactCode 'VIA23_3BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2603) (TECH-084)
+Information: ContactCode 'VIA23_3LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2622) (TECH-084)
+Information: ContactCode 'VIA23_3SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2641) (TECH-084)
+Information: ContactCode 'VIA23_3BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2660) (TECH-084)
+Information: ContactCode 'VIA23_3BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2679) (TECH-084)
+Information: ContactCode 'VIA23_3LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2697) (TECH-084)
+Information: ContactCode 'VIA2_33_3SQ_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2716) (TECH-084)
+Information: ContactCode 'VIA2_33_3BAR1_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2735) (TECH-084)
+Information: ContactCode 'VIA2_33_3BAR2_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2754) (TECH-084)
+Information: ContactCode 'VIA2_33_3LG_C' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2773) (TECH-084)
+Information: ContactCode 'VIA2_33_3SQ' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2792) (TECH-084)
+Information: ContactCode 'VIA2_33_3BAR1' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2811) (TECH-084)
+Information: ContactCode 'VIA2_33_3BAR2' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2830) (TECH-084)
+Information: ContactCode 'VIA2_33_3LG' has a minimum cut spacing 0.026 that is less than the cut layer minimum spacing 0.05. (line 2849) (TECH-084)
+Information: Loading technology file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/tech/milkyway/saed14nm_1p9m_mw.tf' (FILE-007)
+...Created 3 lib groups
+
+... 3 cell libraries to build.
+
+
+... checking whether need to build cell library: saed14rvt_tt0p8v25c.ndm (1/3)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed14rvt_tt0p8v25c.ndm under output directory: library not exists
+
+... checking whether need to build cell library: saed14rvt_tt0p8v25c_physical_only.ndm (2/3)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/saed14rvt_tt0p8v25c_physical_only.ndm under output directory: library not exists
+
+... checking whether need to build cell library: EXPLORE_physical_only.ndm (3/3)
+... checking whether can reuse library under output directory
+cannot reuse CLIBs/EXPLORE_physical_only.ndm under output directory: library not exists
+
+... processing cell library: saed14rvt_tt0p8v25c.ndm (1/3)
+... run lm_shell to build the cell library
+............
+created new cell library under output directory: CLIBs/saed14rvt_tt0p8v25c.ndm
+
+... processing cell library: saed14rvt_tt0p8v25c_physical_only.ndm (2/3)
+... run lm_shell to build the cell library
+....................
+created new cell library under output directory: CLIBs/saed14rvt_tt0p8v25c_physical_only.ndm
+
+... processing cell library: EXPLORE_physical_only.ndm (3/3)
+... run lm_shell to build the cell library
+...............................................................................
+..............................................................................
+..................
+created new cell library under output directory: CLIBs/EXPLORE_physical_only.ndm
+
+
+Information: Successfully built 3 reference libraries: saed14rvt_tt0p8v25c.ndm saed14rvt_tt0p8v25c_physical_only.ndm EXPLORE_physical_only.ndm. (LIB-093)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14rvt_tt0p8v25c', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14rvt_tt0p8v25c_physical_only', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'EXPLORE_physical_only', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+{user_prj0}
+################################################################################Set_Tluplus_Files
+read_parasitic_tech -tlup "$Tlup_max_file $Tlup_min_file"                     -layermap $Map_file 
+1
+################################################################################Import_Design
+read_verilog "$Core_compile"
+Loading verilog file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/input/user_prj0.v'
+Warning: Net name '*Logic0*' is reserved and has been renamed to '*Logic0*1' in module 'AES128_EN_run'. (VR-017)
+Information: Reading Verilog into new design 'user_prj0' in library 'user_prj0'. (VR-012)
+Number of modules read: 39
+Top level ports: 223
+Total ports in all modules: 3695
+Total nets in all modules: 10323
+Total instances in all modules: 6446
+Elapsed = 00:00:00.13, CPU = 00:00:00.10
+1
+current_design ${DESIGN_NAME}
+{user_prj0:user_prj0.design}
+source $Constraints_file
+Using libraries: user_prj0 saed14rvt_tt0p8v25c saed14rvt_tt0p8v25c_physical_only EXPLORE_physical_only
+Linking block user_prj0:user_prj0.design
+Information: User units loaded from library 'saed14rvt_tt0p8v25c' (LNK-040)
+Design 'user_prj0' was successfully linked.
+1
+################################################################################Save_Block
+save_block -as ${DESIGN_NAME}_1_data_setup
+Information: Saving 'user_prj0:user_prj0.design' to 'user_prj0:user_prj0_1_data_setup.design'. (DES-028)
+1
+save_lib
+Saving library 'user_prj0'
+1
+close_block
+Closing block 'user_prj0:user_prj0.design'
+1
+close_lib
+Closing library 'user_prj0'
+1
+exit
+Maximum memory usage for this session: 359.57 MB
+Maximum memory usage for this session including child processes: 711.46 MB
+CPU usage for this session:     25 seconds (  0.01 hours)
+Elapsed time for this session:    443 seconds (  0.12 hours)
+Thank you for using IC Compiler II.

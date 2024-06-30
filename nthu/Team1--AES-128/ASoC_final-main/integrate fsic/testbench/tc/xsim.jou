@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Fri Jun 21 22:54:41 2024
+# Process ID: 5391
+# Current directory: /home/ubuntu/soc2_final/fsic/testbench/tc
+# Command line: xsim -mode tcl -source {xsim.dir/tb_fsic_xelab/xsim_script.tcl}
+# Log file: /home/ubuntu/soc2_final/fsic/testbench/tc/xsim.log
+# Journal file: /home/ubuntu/soc2_final/fsic/testbench/tc/xsim.jou
+# Running On: ubuntu2004, OS: Linux, CPU Frequency: 2295.690 MHz, CPU Physical cores: 2, Host memory: 10425 MB
+#-----------------------------------------------------------
+source xsim.dir/tb_fsic_xelab/xsim_script.tcl
+open_wave_config /home/ubuntu/soc2_final/fsic/testbench/tc/tb_fsic_xelab.wcfg
+source log_wave.tcl

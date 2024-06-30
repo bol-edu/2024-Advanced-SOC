@@ -1,0 +1,1823 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.1 (lin64) Build 3526262 Mon Apr 18 15:47:01 MDT 2022
+| Date         : Sat Jun 22 00:27:33 2024
+| Host         : ubuntu2004 running 64-bit Ubuntu 20.04.4 LTS
+| Command      : report_timing_summary -file timing_report.log
+| Design       : design_1_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (7153)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (3262)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (7153)
+---------------------------
+ There are 689 register/latch pins with no clock driven by root clock pin: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/RATIO_NOT_EQUAL_4_GENERATE.SCK_O_NQ_4_NO_STARTUP_USED.SCK_O_NE_4_FDRE_INST/Q (HIGH)
+
+ There are 571 register/latch pins with no clock driven by root clock pin: design_1_i/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/LOGIC_FOR_MD_0_GEN.SPI_MODULE_I/SS_O_reg[0]/Q (HIGH)
+
+ There are 74 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/hkspi/pass_thru_mgmt_reg/Q (HIGH)
+
+ There are 300 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/serial_bb_clock_reg/Q (HIGH)
+
+ There are 421 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/serial_bb_enable_reg/Q (HIGH)
+
+ There are 121 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/serial_bb_load_reg/Q (HIGH)
+
+ There are 300 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/serial_clock_pre_reg/Q (HIGH)
+
+ There are 121 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/serial_load_pre_reg/Q (HIGH)
+
+ There are 571 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/wbbd_busy_reg/Q (HIGH)
+
+ There are 571 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/housekeeping/wbbd_sck_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_onehot_sm_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_onehot_sm_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_onehot_sm_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_sequential_axi_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_sequential_axi_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_sequential_axi_state_reg[2]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_sequential_ss_secnd_state_reg[0]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/FSM_sequential_ss_secnd_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/axi_interrupt_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/do_nothing_reg/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[10]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[11]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[12]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[13]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[14]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[15]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[16]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[17]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[18]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[19]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[20]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[21]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[22]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[23]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[24]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[25]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[26]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[27]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[5]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[6]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[7]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[8]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tdata_reg[9]/Q (HIGH)
+
+ There are 83 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tuser_reg[0]/Q (HIGH)
+
+ There are 83 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/first_ss_tuser_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/ls_rd_data_bk_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/ls_wr_data_done_reg/Q (HIGH)
+
+ There are 99 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/next_ss_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/rd_aa_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/rd_mb_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/rd_ss_complete_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/rd_unsupp_reg/Q (HIGH)
+
+ There are 78 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/secnd_data_ss_valid_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/send_bk_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/ss_wr_data_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/sync_trig_int_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/sync_trig_sm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/sync_trig_sm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/trig_lm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/trig_lm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/trig_sm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/trig_sm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/wr_aa_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/wr_mb_reg/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[10]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[11]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[12]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[13]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[14]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[4]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[5]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[6]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[7]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[8]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_raddr_reg[9]/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_rdone_reg/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_rstart_reg/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[10]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[11]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[12]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[13]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[14]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[4]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[5]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[6]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[7]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[8]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_waddr_reg[9]/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_wdone_reg/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ls/cache_wstart_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/sm/FSM_onehot_axis_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/sm/FSM_onehot_axis_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ss/FSM_onehot_axis_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ss/FSM_onehot_axis_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/ss/bk_valid_reg/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[10]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[11]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[2]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[3]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[4]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[5]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[6]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[7]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[8]/Q (HIGH)
+
+ There are 32 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/axi_araddr_o_reg[9]/Q (HIGH)
+
+ There are 74 register/latch pins with no clock driven by root clock pin: design_1_i/caravel_0/inst/soc/core/flash_clk_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_onehot_sm_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_onehot_sm_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_onehot_sm_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_sequential_axi_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_sequential_axi_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_sequential_axi_state_reg[2]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_sequential_ss_secnd_state_reg[0]/Q (HIGH)
+
+ There are 34 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/FSM_sequential_ss_secnd_state_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/axi_interrupt_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/do_nothing_reg/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[10]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[11]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[12]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[13]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[14]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[15]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[16]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[17]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[18]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[19]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[20]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[21]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[22]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[23]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[24]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[25]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[26]/Q (HIGH)
+
+ There are 15 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[27]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[5]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[6]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[7]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[8]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tdata_reg[9]/Q (HIGH)
+
+ There are 83 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tuser_reg[0]/Q (HIGH)
+
+ There are 83 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/first_ss_tuser_reg[1]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/ls_rd_data_bk_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/ls_wr_data_done_reg/Q (HIGH)
+
+ There are 99 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/next_ss_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/rd_aa_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/rd_mb_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/rd_ss_complete_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/rd_unsupp_reg/Q (HIGH)
+
+ There are 78 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/secnd_data_ss_valid_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/send_bk_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/ss_wr_data_done_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/sync_trig_int_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/sync_trig_sm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/sync_trig_sm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/trig_lm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/trig_lm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/trig_sm_rd_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/trig_sm_wr_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/wr_aa_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/axi_ctrl_logic/wr_mb_reg/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[10]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[11]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[12]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[13]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[14]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[4]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[5]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[6]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[7]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[8]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_raddr_reg[9]/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_rdone_reg/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_rstart_reg/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[10]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[11]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[12]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[13]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[14]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[3]/Q (HIGH)
+
+ There are 14 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[4]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[5]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[6]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[7]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[8]/Q (HIGH)
+
+ There are 28 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_waddr_reg[9]/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_wdone_reg/Q (HIGH)
+
+ There are 29 register/latch pins with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ls/cache_wstart_reg/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/sm/FSM_onehot_axis_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/sm/FSM_onehot_axis_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ss/FSM_onehot_axis_state_reg[0]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ss/FSM_onehot_axis_state_reg[2]/Q (HIGH)
+
+ There is 1 register/latch pin with no clock driven by root clock pin: design_1_i/ps_axil_0/inst/PL_AA/ss/bk_valid_reg/Q (HIGH)
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (3262)
+---------------------------------------------------
+ There are 3262 pins that are not constrained for maximum delay. (HIGH)
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+     13.907        0.000                      0                41664        0.052        0.000                      0                41664        0.000        0.000                       0                 16888  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock                              Waveform(ns)         Period(ns)      Frequency(MHz)
+-----                              ------------         ----------      --------------
+clk_fpga_0                         {0.000 2.000}        4.000           250.000         
+design_1_i/clk_wiz_0/inst/clk_in1  {0.000 2.000}        4.000           250.000         
+  clk_out1_design_1_clk_wiz_0_0    {0.000 100.000}      200.000         5.000           
+  clk_out2_design_1_clk_wiz_0_0    {0.000 25.000}       50.000          20.000          
+  clkfbout_design_1_clk_wiz_0_0    {0.000 50.000}       100.000         10.000          
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock                                  WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----                                  -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0                                                                                                                                                                           1.845        0.000                       0                     1  
+design_1_i/clk_wiz_0/inst/clk_in1                                                                                                                                                    0.833        0.000                       0                     1  
+  clk_out1_design_1_clk_wiz_0_0         94.566        0.000                      0                32753        0.052        0.000                      0                32753       13.360        0.000                       0                 16047  
+  clk_out2_design_1_clk_wiz_0_0         17.815        0.000                      0                 1170        0.060        0.000                      0                 1170       24.500        0.000                       0                   836  
+  clkfbout_design_1_clk_wiz_0_0                                                                                                                                                      0.000        0.000                       0                     3  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock                     To Clock                           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                     --------                           -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+clk_out2_design_1_clk_wiz_0_0  clk_out1_design_1_clk_wiz_0_0       13.907        0.000                      0                 3088        0.298        0.000                      0                 3088  
+clk_out1_design_1_clk_wiz_0_0  clk_out2_design_1_clk_wiz_0_0       20.584        0.000                      0                  120        0.078        0.000                      0                  120  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group                     From Clock                     To Clock                           WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------                     ----------                     --------                           -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+**async_default**              clk_out1_design_1_clk_wiz_0_0  clk_out1_design_1_clk_wiz_0_0       91.023        0.000                      0                 5270        0.427        0.000                      0                 5270  
+**async_default**              clk_out2_design_1_clk_wiz_0_0  clk_out1_design_1_clk_wiz_0_0       19.446        0.000                      0                  108       24.833        0.000                      0                  108  
+**async_default**              clk_out1_design_1_clk_wiz_0_0  clk_out2_design_1_clk_wiz_0_0       15.924        0.000                      0                  832        0.313        0.000                      0                  832  
+**async_default**              clk_out2_design_1_clk_wiz_0_0  clk_out2_design_1_clk_wiz_0_0       41.977        0.000                      0                  208        0.215        0.000                      0                  208  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        1.845ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 2.000 }
+Period(ns):         4.000
+Sources:            { design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type  Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period  n/a     BUFG/I   n/a            2.155         4.000       1.845      BUFGCTRL_X0Y26  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/I
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  design_1_i/clk_wiz_0/inst/clk_in1
+  To Clock:  design_1_i/clk_wiz_0/inst/clk_in1
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.833ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         design_1_i/clk_wiz_0/inst/clk_in1
+Waveform(ns):       { 0.000 2.000 }
+Period(ns):         4.000
+Sources:            { design_1_i/clk_wiz_0/inst/clk_in1 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     MMCME2_ADV/CLKIN1  n/a            1.249         4.000       2.751      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       4.000       96.000     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            1.167         2.000       0.833      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            1.167         2.000       0.833      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKIN1
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_design_1_clk_wiz_0_0
+  To Clock:  clk_out1_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       94.566ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.052ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       13.360ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             94.566ns  (required time - arrival time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/mem_reg/CLKARDCLK
+                            (falling edge-triggered cell RAMB18E1 clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg_reg[22]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            100.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@200.000ns - clk_out1_design_1_clk_wiz_0_0 fall@100.000ns)
+  Data Path Delay:        4.891ns  (logic 2.702ns (55.244%)  route 2.189ns (44.756%))
+  Logic Levels:           2  (LUT6=2)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.482ns = ( 201.482 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.697ns = ( 101.697 - 100.000 ) 
+    Clock Pessimism Removal (CPR):    0.105ns
+  Clock Uncertainty:      0.464ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 fall edge)
+                                                    100.000   100.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980   101.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.287    97.693 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.206    99.899    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.101   100.000 f  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.697   101.697    design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/mem_reg_0
+    RAMB18_X2Y10         RAMB18E1                                     r  design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/mem_reg/CLKARDCLK  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    RAMB18_X2Y10         RAMB18E1 (Prop_ramb18e1_CLKARDCLK_DOBDO[6])
+                                                      2.454   104.151 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/mem_reg/DOBDO[6]
+                         net (fo=2, routed)           1.381   105.532    design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/dout1[22]
+    SLICE_X41Y28         LUT6 (Prop_lut6_I2_O)        0.124   105.656 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/m_axis_tdata_reg[22]_i_3/O
+                         net (fo=1, routed)           0.808   106.465    design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg_reg[22]_1
+    SLICE_X44Y28         LUT6 (Prop_lut6_I5_O)        0.124   106.589 r  design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg[22]_i_1/O
+                         net (fo=1, routed)           0.000   106.589    design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/p_0_in[22]
+    SLICE_X44Y28         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000   200.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770   201.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.873   197.897 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.012   199.909    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.091   200.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.482   201.482    design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/clock
+    SLICE_X44Y28         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg_reg[22]/C
+                         clock pessimism              0.105   201.587    
+                         clock uncertainty           -0.464   201.123    
+    SLICE_X44Y28         FDCE (Setup_fdce_C_D)        0.031   201.154    design_1_i/caravel_0/inst/mprj/u_fsic/AXIS_SW0/m_axis_tdata_reg_reg[22]
+  -------------------------------------------------------------------
+                         required time                        201.154    
+                         arrival time                        -106.589    
+  -------------------------------------------------------------------
+                         slack                                 94.566    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.052ns  (arrival time - required time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/bk_lm_raddr_reg[23]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/cache_raddr_reg[23]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.310ns  (logic 0.128ns (41.252%)  route 0.182ns (58.748%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.826ns
+    Source Clock Delay      (SCD):    0.562ns
+    Clock Pessimism Removal (CPR):    0.005ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672     0.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.395    -0.722 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -0.026    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.026    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.562     0.562    design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/axi_clk
+    SLICE_X49Y48         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/bk_lm_raddr_reg[23]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X49Y48         FDCE (Prop_fdce_C_Q)         0.128     0.690 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/axi_ctrl_logic/bk_lm_raddr_reg[23]/Q
+                         net (fo=1, routed)           0.182     0.872    design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/D[23]
+    SLICE_X50Y48         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/cache_raddr_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945     0.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.726    -0.781 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -0.029    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.029     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.826     0.826    design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/axi_clk
+    SLICE_X50Y48         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/cache_raddr_reg[23]/C
+                         clock pessimism             -0.005     0.821    
+    SLICE_X50Y48         FDCE (Hold_fdce_C_D)        -0.001     0.820    design_1_i/caravel_0/inst/mprj/u_fsic/U_AXIL_AXIS0/lm/cache_raddr_reg[23]
+  -------------------------------------------------------------------
+                         required time                         -0.820    
+                         arrival time                           0.872    
+  -------------------------------------------------------------------
+                         slack                                  0.052    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out1_design_1_clk_wiz_0_0
+Waveform(ns):       { 0.000 100.000 }
+Period(ns):         200.000
+Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         200.000     197.056    RAMB18_X2Y10     design_1_i/caravel_0/inst/mprj/u_fsic/U_LOGIC_ANLZ0/captured_fifo/mem_reg/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       200.000     13.360     MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         100.000     98.750     SLICE_X10Y42     design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg_0_31_0_0/DP/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         100.000     98.750     SLICE_X10Y42     design_1_i/axi_mem_intercon/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.mem/gdm.dm_gen.dm/RAM_reg_0_31_0_0/DP/CLK
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_design_1_clk_wiz_0_0
+  To Clock:  clk_out2_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       17.815ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.060ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       24.500ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             17.815ns  (required time - arrival time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/RxFifo_reg[2]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out2_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out2_design_1_clk_wiz_0_0 rise@50.000ns - clk_out2_design_1_clk_wiz_0_0 fall@25.000ns)
+  Data Path Delay:        2.556ns  (logic 0.800ns (31.297%)  route 1.756ns (68.703%))
+  Logic Levels:           2  (LUT3=1 LUT6=1)
+  Clock Path Skew:        -4.365ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.524ns = ( 51.524 - 50.000 ) 
+    Source Clock Delay      (SCD):    5.878ns = ( 30.878 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.010ns
+  Clock Uncertainty:      0.382ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.761ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980    26.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.287    22.693 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.206    24.899    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.101    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         2.316    27.316    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X44Y50         LUT2 (Prop_lut2_I0_O)        0.124    27.440 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/serial_tclk_INST_0/O
+                         net (fo=1, routed)           0.799    28.239    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/serial_tclk
+    SLICE_X47Y50         LUT6 (Prop_lut6_I5_O)        0.124    28.363 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[35]_INST_0/O
+                         net (fo=1, routed)           0.717    29.079    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.101    29.180 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]_BUFG_inst/O
+                         net (fo=104, routed)         1.698    30.878    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/serial_rclk
+    SLICE_X66Y72         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/RxFifo_reg[2]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X66Y72         FDCE (Prop_fdce_C_Q)         0.524    31.402 r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/RxFifo_reg[2]/Q
+                         net (fo=2, routed)           0.945    32.347    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/RxFifo_reg_n_0_[2]
+    SLICE_X66Y73         LUT6 (Prop_lut6_I1_O)        0.124    32.471 r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg[3]_i_2__9/O
+                         net (fo=1, routed)           0.811    33.283    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg[3]_i_2__9_n_0
+    SLICE_X66Y74         LUT3 (Prop_lut3_I2_O)        0.152    33.435 r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg[3]_i_1__9/O
+                         net (fo=1, routed)           0.000    33.435    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg[3]_i_1__9_n_0
+    SLICE_X66Y74         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 rise edge)
+                                                     50.000    50.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000    50.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770    51.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.873    47.897 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.012    49.909    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.091    50.000 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.524    51.524    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/ioclk
+    SLICE_X66Y74         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg_reg[3]/C
+                         clock pessimism             -0.010    51.514    
+                         clock uncertainty           -0.382    51.132    
+    SLICE_X66Y74         FDCE (Setup_fdce_C_D)        0.118    51.250    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tid_tuser/rx_shift_reg_reg[3]
+  -------------------------------------------------------------------
+                         required time                         51.250    
+                         arrival time                         -33.435    
+  -------------------------------------------------------------------
+                         slack                                 17.815    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.060ns  (arrival time - required time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/w_ptr_reg[2]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo_reg[3]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out2_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_design_1_clk_wiz_0_0 fall@25.000ns - clk_out2_design_1_clk_wiz_0_0 fall@25.000ns)
+  Data Path Delay:        0.432ns  (logic 0.231ns (53.482%)  route 0.201ns (46.518%))
+  Logic Levels:           1  (LUT5=1)
+  Clock Path Skew:        0.273ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.531ns = ( 27.531 - 25.000 ) 
+    Source Clock Delay      (SCD):    1.878ns = ( 26.878 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    0.380ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672    25.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.395    24.277 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.696    24.974    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.026    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.707    25.707    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X55Y67         LUT2 (Prop_lut2_I0_O)        0.045    25.752 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_INST_0/O
+                         net (fo=1, routed)           0.543    26.295    design_1_i/ps_axil_0/inst/PL_IS/serial_tclk
+    BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.026    26.321 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_BUFG_inst/O
+                         net (fo=105, routed)         0.557    26.878    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/serial_rclk
+    SLICE_X39Y50         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/w_ptr_reg[2]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y50         FDCE (Prop_fdce_C_Q)         0.133    27.011 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/w_ptr_reg[2]/Q
+                         net (fo=7, routed)           0.201    27.212    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/w_ptr[2]
+    SLICE_X39Y49         LUT5 (Prop_lut5_I1_O)        0.098    27.310 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo[3]_i_1/O
+                         net (fo=1, routed)           0.000    27.310    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo[3]_i_1_n_0
+    SLICE_X39Y49         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945    25.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.726    24.219 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.752    24.971    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.029    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.005    26.005    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X55Y67         LUT2 (Prop_lut2_I0_O)        0.056    26.061 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_INST_0/O
+                         net (fo=1, routed)           0.612    26.672    design_1_i/ps_axil_0/inst/PL_IS/serial_tclk
+    BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.029    26.701 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_BUFG_inst/O
+                         net (fo=105, routed)         0.830    27.531    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/serial_rclk
+    SLICE_X39Y49         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo_reg[3]/C  (IS_INVERTED)
+                         clock pessimism             -0.380    27.151    
+    SLICE_X39Y49         FDCE (Hold_fdce_C_D)         0.099    27.250    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[3].fsic_io_serdes_rx_tdata/RxFifo_reg[3]
+  -------------------------------------------------------------------
+                         required time                        -27.250    
+                         arrival time                          27.310    
+  -------------------------------------------------------------------
+                         slack                                  0.060    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_out2_design_1_clk_wiz_0_0
+Waveform(ns):       { 0.000 25.000 }
+Period(ns):         50.000
+Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I              n/a            2.155         50.000      47.845     BUFGCTRL_X0Y17   design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]_BUFG_inst/I
+Max Period        n/a     MMCME2_ADV/CLKOUT1  n/a            213.360       50.000      163.360    MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+Low Pulse Width   Slow    FDCE/C              n/a            0.500         25.000      24.500     SLICE_X38Y29     design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[0]/C
+High Pulse Width  Slow    FDCE/C              n/a            0.500         25.000      24.500     SLICE_X38Y29     design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[0]/C
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clkfbout_design_1_clk_wiz_0_0
+  To Clock:  clkfbout_design_1_clk_wiz_0_0
+
+Setup :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+Hold  :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+PW    :            0  Failing Endpoints,  Worst Slack        0.000ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clkfbout_design_1_clk_wiz_0_0
+Waveform(ns):       { 0.000 50.000 }
+Period(ns):         100.000
+Sources:            { design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         100.000     97.845     BUFGCTRL_X0Y23   design_1_i/clk_wiz_0/inst/clkf_buf/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       100.000     0.000      MMCME2_ADV_X1Y2  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKFBIN
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out2_design_1_clk_wiz_0_0
+  To Clock:  clk_out1_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       13.907ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.298ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             13.907ns  (required time - arrival time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/txen_reg/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/caravel_0/inst/housekeeping/wb_dat_o_reg[5]/D
+                            (rising edge-triggered cell FDSE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@200.000ns - clk_out2_design_1_clk_wiz_0_0 fall@175.000ns)
+  Data Path Delay:        9.884ns  (logic 1.563ns (15.813%)  route 8.321ns (84.187%))
+  Logic Levels:           7  (BUFG=1 LUT2=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=1)
+  Clock Path Skew:        -0.363ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.541ns = ( 201.541 - 200.000 ) 
+    Source Clock Delay      (SCD):    1.700ns = ( 176.700 - 175.000 ) 
+    Clock Pessimism Removal (CPR):    -0.204ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                    175.000   175.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   175.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980   176.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.287   172.693 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.206   174.899    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.101   175.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.700   176.700    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X61Y78         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/txen_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y78         FDCE (Prop_fdce_C_Q)         0.459   177.159 r  design_1_i/ps_axil_0/inst/PL_IS/txen_reg/Q
+                         net (fo=18, routed)          2.702   179.861    design_1_i/ps_axil_0/inst/PL_IS/txen
+    SLICE_X55Y67         LUT2 (Prop_lut2_I1_O)        0.124   179.985 r  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_INST_0/O
+                         net (fo=1, routed)           1.244   181.229    design_1_i/ps_axil_0/inst/PL_IS/serial_tclk
+    BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.101   181.330 r  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_BUFG_inst/O
+                         net (fo=105, routed)         2.129   183.458    design_1_i/caravel_0/inst/housekeeping/hkspi/mprj_i[21]
+    SLICE_X52Y63         LUT4 (Prop_lut4_I0_O)        0.124   183.582 r  design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_21/O
+                         net (fo=1, routed)           0.000   183.582    design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_21_n_0
+    SLICE_X52Y63         MUXF7 (Prop_muxf7_I0_O)      0.212   183.794 r  design_1_i/caravel_0/inst/housekeeping/hkspi/ldata_reg[5]_i_11/O
+                         net (fo=1, routed)           0.436   184.231    design_1_i/caravel_0/inst/housekeeping/hkspi/ldata_reg[5]_i_11_n_0
+    SLICE_X52Y63         LUT6 (Prop_lut6_I0_O)        0.299   184.530 r  design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_6/O
+                         net (fo=1, routed)           0.280   184.809    design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_6_n_0
+    SLICE_X52Y63         LUT6 (Prop_lut6_I0_O)        0.124   184.933 r  design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_3/O
+                         net (fo=4, routed)           1.064   185.997    design_1_i/caravel_0/inst/housekeeping/hkspi/ldata[5]_i_3_n_0
+    SLICE_X61Y53         LUT5 (Prop_lut5_I3_O)        0.120   186.117 r  design_1_i/caravel_0/inst/housekeeping/hkspi/wb_dat_o[5]_i_1/O
+                         net (fo=1, routed)           0.467   186.584    design_1_i/caravel_0/inst/housekeeping/hkspi_n_159
+    SLICE_X63Y51         FDSE                                         r  design_1_i/caravel_0/inst/housekeeping/wb_dat_o_reg[5]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                    200.000   200.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000   200.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770   201.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.873   197.897 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.012   199.909    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.091   200.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.541   201.541    design_1_i/caravel_0/inst/housekeeping/clock
+    SLICE_X63Y51         FDSE                                         r  design_1_i/caravel_0/inst/housekeeping/wb_dat_o_reg[5]/C
+                         clock pessimism             -0.204   201.337    
+                         clock uncertainty           -0.584   200.753    
+    SLICE_X63Y51         FDSE (Setup_fdse_C_D)       -0.261   200.492    design_1_i/caravel_0/inst/housekeeping/wb_dat_o_reg[5]
+  -------------------------------------------------------------------
+                         required time                        200.492    
+                         arrival time                        -186.584    
+  -------------------------------------------------------------------
+                         slack                                 13.907    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.298ns  (arrival time - required time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/as_is_tdata_buf_reg[19]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/caravel_0/inst/soc/core/multiregimpl136_regs0_reg/D
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             clk_out1_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out2_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        1.308ns  (logic 0.341ns (26.067%)  route 0.967ns (73.933%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        0.334ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.847ns
+    Source Clock Delay      (SCD):    0.572ns
+    Clock Pessimism Removal (CPR):    -0.059ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672     0.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.395    -0.722 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.696    -0.026    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.026    -0.000 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.572     0.572    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X63Y81         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/as_is_tdata_buf_reg[19]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X63Y81         FDCE (Prop_fdce_C_Q)         0.141     0.713 r  design_1_i/ps_axil_0/inst/PL_IS/as_is_tdata_buf_reg[19]/Q
+                         net (fo=1, routed)           0.138     0.851    design_1_i/ps_axil_0/inst/PL_IS/as_is_tdata_buf_reg_n_0_[19]
+    SLICE_X63Y81         LUT6 (Prop_lut6_I2_O)        0.045     0.896 r  design_1_i/ps_axil_0/inst/PL_IS/serial_txd[4]_INST_0_i_1/O
+                         net (fo=1, routed)           0.493     1.388    design_1_i/ps_axil_0/inst/PL_IS/Serial_Data_Out_tdata18_in
+    SLICE_X59Y67         LUT2 (Prop_lut2_I0_O)        0.045     1.433 r  design_1_i/ps_axil_0/inst/PL_IS/serial_txd[4]_INST_0/O
+                         net (fo=7, routed)           0.336     1.770    design_1_i/caravel_0/inst/housekeeping/mprj_i[12]
+    SLICE_X59Y53         LUT2 (Prop_lut2_I1_O)        0.110     1.880 r  design_1_i/caravel_0/inst/housekeeping/multiregimpl136_regs0_i_1/O
+                         net (fo=1, routed)           0.000     1.880    design_1_i/caravel_0/inst/soc/core/user_irq[3]
+    SLICE_X59Y53         FDRE                                         r  design_1_i/caravel_0/inst/soc/core/multiregimpl136_regs0_reg/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945     0.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.726    -0.781 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -0.029    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.029     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.847     0.847    design_1_i/caravel_0/inst/soc/core/clock
+    SLICE_X59Y53         FDRE                                         r  design_1_i/caravel_0/inst/soc/core/multiregimpl136_regs0_reg/C
+                         clock pessimism              0.059     0.906    
+                         clock uncertainty            0.584     1.489    
+    SLICE_X59Y53         FDRE (Hold_fdre_C_D)         0.092     1.581    design_1_i/caravel_0/inst/soc/core/multiregimpl136_regs0_reg
+  -------------------------------------------------------------------
+                         required time                         -1.581    
+                         arrival time                           1.880    
+  -------------------------------------------------------------------
+                         slack                                  0.298    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_out1_design_1_clk_wiz_0_0
+  To Clock:  clk_out2_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       20.584ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.078ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             20.584ns  (required time - arrival time)
+  Source:                 design_1_i/caravel_0/inst/soc/core/spi_enabled_storage_reg/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo_reg[3]/D
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out2_design_1_clk_wiz_0_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out2_design_1_clk_wiz_0_0 fall@25.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        7.032ns  (logic 1.196ns (17.007%)  route 5.836ns (82.993%))
+  Logic Levels:           3  (LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        3.166ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    5.104ns = ( 30.104 - 25.000 ) 
+    Source Clock Delay      (SCD):    1.734ns
+    Clock Pessimism Removal (CPR):    -0.204ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980     1.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.287    -2.307 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.206    -0.101    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.734     1.734    design_1_i/caravel_0/inst/soc/core/clock
+    SLICE_X75Y43         FDRE                                         r  design_1_i/caravel_0/inst/soc/core/spi_enabled_storage_reg/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X75Y43         FDRE (Prop_fdre_C_Q)         0.419     2.153 r  design_1_i/caravel_0/inst/soc/core/spi_enabled_storage_reg/Q
+                         net (fo=7, routed)           2.202     4.355    design_1_i/caravel_0/inst/gpio_control_in_2[14]/spi_enabled
+    SLICE_X40Y60         LUT6 (Prop_lut6_I4_O)        0.299     4.654 r  design_1_i/caravel_0/inst/gpio_control_in_2[14]/mprj_o[33]_INST_0_i_1/O
+                         net (fo=1, routed)           0.957     5.611    design_1_i/caravel_0/inst/gpio_control_in_2[14]/mprj_o[33]_INST_0_i_1_n_0
+    SLICE_X40Y61         LUT3 (Prop_lut3_I0_O)        0.152     5.763 r  design_1_i/caravel_0/inst/gpio_control_in_2[14]/mprj_o[33]_INST_0/O
+                         net (fo=5, routed)           2.678     8.440    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/serial_rxd[0]
+    SLICE_X57Y75         LUT5 (Prop_lut5_I0_O)        0.326     8.766 r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo[3]_i_1/O
+                         net (fo=1, routed)           0.000     8.766    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo[3]_i_1_n_0
+    SLICE_X57Y75         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770    26.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.873    22.897 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.012    24.909    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.091    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         2.010    27.010    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X44Y50         LUT2 (Prop_lut2_I0_O)        0.100    27.110 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/serial_tclk_INST_0/O
+                         net (fo=1, routed)           0.653    27.763    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/serial_tclk
+    SLICE_X47Y50         LUT6 (Prop_lut6_I5_O)        0.100    27.863 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[35]_INST_0/O
+                         net (fo=1, routed)           0.630    28.493    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.091    28.584 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]_BUFG_inst/O
+                         net (fo=104, routed)         1.520    30.104    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/serial_rclk
+    SLICE_X57Y75         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo_reg[3]/C  (IS_INVERTED)
+                         clock pessimism             -0.204    29.900    
+                         clock uncertainty           -0.584    29.316    
+    SLICE_X57Y75         FDCE (Setup_fdce_C_D)        0.034    29.350    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/RxFifo_reg[3]
+  -------------------------------------------------------------------
+                         required time                         29.350    
+                         arrival time                          -8.766    
+  -------------------------------------------------------------------
+                         slack                                 20.584    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.078ns  (arrival time - required time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tkeep_buf_reg[3]/C
+                            (falling edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/as_is_tkeep_buf_reg[3]/D
+                            (rising edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             clk_out2_design_1_clk_wiz_0_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_design_1_clk_wiz_0_0 rise@100.000ns - clk_out1_design_1_clk_wiz_0_0 fall@100.000ns)
+  Data Path Delay:        1.042ns  (logic 0.146ns (14.012%)  route 0.896ns (85.988%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.327ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.837ns = ( 100.837 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.569ns = ( 100.569 - 100.000 ) 
+    Clock Pessimism Removal (CPR):    -0.058ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 fall edge)
+                                                    100.000   100.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672   100.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.395    99.277 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    99.974    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.026   100.000 f  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.569   100.569    design_1_i/ps_axil_0/inst/PL_IS/axis_clk
+    SLICE_X59Y80         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tkeep_buf_reg[3]/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y80         FDCE (Prop_fdce_C_Q)         0.146   100.715 r  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tkeep_buf_reg[3]/Q
+                         net (fo=1, routed)           0.896   101.611    design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tkeep_buf[3]
+    SLICE_X58Y80         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/as_is_tkeep_buf_reg[3]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 rise edge)
+                                                    100.000   100.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945   100.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.726    99.219 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.752    99.971    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.029   100.000 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.837   100.837    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X58Y80         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/as_is_tkeep_buf_reg[3]/C
+                         clock pessimism              0.058   100.895    
+                         clock uncertainty            0.584   101.479    
+    SLICE_X58Y80         FDCE (Hold_fdce_C_D)         0.053   101.532    design_1_i/ps_axil_0/inst/PL_IS/as_is_tkeep_buf_reg[3]
+  -------------------------------------------------------------------
+                         required time                       -101.532    
+                         arrival time                         101.611    
+  -------------------------------------------------------------------
+                         slack                                  0.078    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_out1_design_1_clk_wiz_0_0
+  To Clock:  clk_out1_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       91.023ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.427ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             91.023ns  (required time - arrival time)
+  Source:                 design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[3]/CLR
+                            (recovery check against rising-edge clock clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            100.000ns  (clk_out1_design_1_clk_wiz_0_0 fall@100.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        7.718ns  (logic 0.608ns (7.878%)  route 7.110ns (92.122%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.215ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.533ns = ( 101.533 - 100.000 ) 
+    Source Clock Delay      (SCD):    1.738ns
+    Clock Pessimism Removal (CPR):    -0.010ns
+  Clock Uncertainty:      0.464ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980     1.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.287    -2.307 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.206    -0.101    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.738     1.738    design_1_i/rst_ps7_0_10M/U0/slowest_sync_clk
+    SLICE_X24Y18         FDRE                                         r  design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y18         FDRE (Prop_fdre_C_Q)         0.456     2.194 r  design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=95, routed)          5.977     8.171    design_1_i/ps_axil_0/inst/PL_IS/axis_rst_n
+    SLICE_X58Y79         LUT2 (Prop_lut2_I0_O)        0.152     8.323 f  design_1_i/ps_axil_0/inst/PL_IS/is_as_tready_out_i_2/O
+                         net (fo=54, routed)          1.133     9.456    design_1_i/ps_axil_0/inst/PL_IS/is_as_tready_out_i_2_n_0
+    SLICE_X66Y82         FDCE                                         f  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[3]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 fall edge)
+                                                    100.000   100.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770   101.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.873    97.897 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.012    99.909    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.091   100.000 f  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.533   101.533    design_1_i/ps_axil_0/inst/PL_IS/axis_clk
+    SLICE_X66Y82         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[3]/C  (IS_INVERTED)
+                         clock pessimism             -0.010   101.523    
+                         clock uncertainty           -0.464   101.059    
+    SLICE_X66Y82         FDCE (Recov_fdce_C_CLR)     -0.580   100.479    design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[3]
+  -------------------------------------------------------------------
+                         required time                        100.479    
+                         arrival time                          -9.456    
+  -------------------------------------------------------------------
+                         slack                                 91.023    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.427ns  (arrival time - required time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/f_axi_request_add_reg[7]/CLR
+                            (removal check against rising-edge clock clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out1_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        0.593ns  (logic 0.186ns (31.384%)  route 0.407ns (68.616%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.257ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.825ns
+    Source Clock Delay      (SCD):    0.563ns
+    Clock Pessimism Removal (CPR):    0.005ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672     0.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.395    -0.722 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -0.026    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.026    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.563     0.563    design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/clock
+    SLICE_X47Y47         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y47         FDCE (Prop_fdce_C_Q)         0.141     0.704 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/Q
+                         net (fo=23, routed)          0.132     0.835    design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_n
+    SLICE_X47Y46         LUT1 (Prop_lut1_I0_O)        0.045     0.880 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/FSM_sequential_m_axi_fsm_reg[2]_i_2/O
+                         net (fo=2904, routed)        0.275     1.155    design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/clear
+    SLICE_X53Y46         FDCE                                         f  design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/f_axi_request_add_reg[7]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945     0.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.726    -0.781 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    -0.029    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.029     0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.825     0.825    design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/clock
+    SLICE_X53Y46         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/f_axi_request_add_reg[7]/C
+                         clock pessimism             -0.005     0.820    
+    SLICE_X53Y46         FDCE (Remov_fdce_C_CLR)     -0.092     0.728    design_1_i/caravel_0/inst/mprj/u_fsic/U_CFG_CTRL0/f_axi_request_add_reg[7]
+  -------------------------------------------------------------------
+                         required time                         -0.728    
+                         arrival time                           1.155    
+  -------------------------------------------------------------------
+                         slack                                  0.427    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_out2_design_1_clk_wiz_0_0
+  To Clock:  clk_out1_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       19.446ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack       24.833ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             19.446ns  (required time - arrival time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/txen_reg/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/pre_as_is_tdata_buf_reg[10]/CLR
+                            (recovery check against rising-edge clock clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out1_design_1_clk_wiz_0_0 fall@100.000ns - clk_out2_design_1_clk_wiz_0_0 fall@75.000ns)
+  Data Path Delay:        3.990ns  (logic 0.575ns (14.411%)  route 3.415ns (85.590%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        -0.374ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.481ns = ( 101.481 - 100.000 ) 
+    Source Clock Delay      (SCD):    1.652ns = ( 76.652 - 75.000 ) 
+    Clock Pessimism Removal (CPR):    -0.204ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     75.000    75.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    75.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980    76.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.287    72.693 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.206    74.899    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.101    75.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.652    76.652    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X41Y51         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/txen_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X41Y51         FDCE (Prop_fdce_C_Q)         0.459    77.111 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/txen_reg/Q
+                         net (fo=18, routed)          1.604    78.715    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/txen
+    SLICE_X42Y47         LUT2 (Prop_lut2_I1_O)        0.116    78.831 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/is_as_tready_out_i_2/O
+                         net (fo=54, routed)          1.811    80.642    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/is_as_tready_out_i_2_n_0
+    SLICE_X37Y27         FDCE                                         f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/pre_as_is_tdata_buf_reg[10]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 fall edge)
+                                                    100.000   100.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770   101.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -3.873    97.897 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.012    99.909    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.091   100.000 f  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.481   101.481    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/axis_clk
+    SLICE_X37Y27         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/pre_as_is_tdata_buf_reg[10]/C  (IS_INVERTED)
+                         clock pessimism             -0.204   101.278    
+                         clock uncertainty           -0.584   100.694    
+    SLICE_X37Y27         FDCE (Recov_fdce_C_CLR)     -0.606   100.088    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/pre_as_is_tdata_buf_reg[10]
+  -------------------------------------------------------------------
+                         required time                        100.088    
+                         arrival time                         -80.642    
+  -------------------------------------------------------------------
+                         slack                                 19.446    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             24.833ns  (arrival time - required time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/txen_reg/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[25]/CLR
+                            (removal check against rising-edge clock clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            -25.000ns  (clk_out1_design_1_clk_wiz_0_0 fall@100.000ns - clk_out2_design_1_clk_wiz_0_0 fall@125.000ns)
+  Data Path Delay:        0.609ns  (logic 0.194ns (31.857%)  route 0.415ns (68.142%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.328ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.838ns = ( 100.838 - 100.000 ) 
+    Source Clock Delay      (SCD):    0.569ns = ( 125.569 - 125.000 ) 
+    Clock Pessimism Removal (CPR):    -0.059ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                    125.000   125.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   125.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672   125.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.395   124.277 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.696   124.974    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.026   125.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.569   125.569    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X61Y78         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/txen_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X61Y78         FDCE (Prop_fdce_C_Q)         0.146   125.715 r  design_1_i/ps_axil_0/inst/PL_IS/txen_reg/Q
+                         net (fo=18, routed)          0.173   125.887    design_1_i/ps_axil_0/inst/PL_IS/txen
+    SLICE_X58Y79         LUT2 (Prop_lut2_I1_O)        0.048   125.935 f  design_1_i/ps_axil_0/inst/PL_IS/is_as_tready_out_i_2/O
+                         net (fo=54, routed)          0.242   126.178    design_1_i/ps_axil_0/inst/PL_IS/is_as_tready_out_i_2_n_0
+    SLICE_X58Y81         FDCE                                         f  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[25]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out1_design_1_clk_wiz_0_0 fall edge)
+                                                    100.000   100.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000   100.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945   100.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.726    99.219 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.752    99.971    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.029   100.000 f  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.838   100.838    design_1_i/ps_axil_0/inst/PL_IS/axis_clk
+    SLICE_X58Y81         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[25]/C  (IS_INVERTED)
+                         clock pessimism              0.059   100.896    
+                         clock uncertainty            0.584   101.480    
+    SLICE_X58Y81         FDCE (Remov_fdce_C_CLR)     -0.136   101.344    design_1_i/ps_axil_0/inst/PL_IS/pre_as_is_tdata_buf_reg[25]
+  -------------------------------------------------------------------
+                         required time                       -101.344    
+                         arrival time                         126.178    
+  -------------------------------------------------------------------
+                         slack                                 24.833    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_out1_design_1_clk_wiz_0_0
+  To Clock:  clk_out2_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       15.924ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.313ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             15.924ns  (required time - arrival time)
+  Source:                 design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+                            (rising edge-triggered cell FDRE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/rx_sync_fifo_reg[0]/CLR
+                            (recovery check against rising-edge clock clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            25.000ns  (clk_out2_design_1_clk_wiz_0_0 fall@25.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        7.683ns  (logic 0.580ns (7.549%)  route 7.103ns (92.451%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        -0.407ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.535ns = ( 26.535 - 25.000 ) 
+    Source Clock Delay      (SCD):    1.738ns
+    Clock Pessimism Removal (CPR):    -0.204ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980     1.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -4.287    -2.307 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           2.206    -0.101    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.101    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       1.738     1.738    design_1_i/rst_ps7_0_10M/U0/slowest_sync_clk
+    SLICE_X24Y18         FDRE                                         r  design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X24Y18         FDRE (Prop_fdre_C_Q)         0.456     2.194 r  design_1_i/rst_ps7_0_10M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/Q
+                         net (fo=95, routed)          4.455     6.649    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/axis_rst_n
+    SLICE_X58Y67         LUT1 (Prop_lut1_I0_O)        0.124     6.773 f  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_fc/rx_sync_fifo[3]_i_1/O
+                         net (fo=313, routed)         2.648     9.421    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/rx_shift_reg_reg[0]_0
+    SLICE_X85Y69         FDCE                                         f  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/rx_sync_fifo_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770    26.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.873    22.897 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.012    24.909    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.091    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.535    26.535    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/ioclk
+    SLICE_X85Y69         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/rx_sync_fifo_reg[0]/C  (IS_INVERTED)
+                         clock pessimism             -0.204    26.331    
+                         clock uncertainty           -0.584    25.747    
+    SLICE_X85Y69         FDCE (Recov_fdce_C_CLR)     -0.402    25.345    design_1_i/ps_axil_0/inst/PL_IS/fsic_io_serdes_rx_tkeep/rx_sync_fifo_reg[0]
+  -------------------------------------------------------------------
+                         required time                         25.345    
+                         arrival time                          -9.421    
+  -------------------------------------------------------------------
+                         slack                                 15.924    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.313ns  (arrival time - required time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/C
+                            (rising edge-triggered cell FDCE clocked by clk_out1_design_1_clk_wiz_0_0  {rise@0.000ns fall@100.000ns period=200.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[12]/CLR
+                            (removal check against rising-edge clock clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_design_1_clk_wiz_0_0 rise@0.000ns - clk_out1_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        1.121ns  (logic 0.186ns (16.598%)  route 0.935ns (83.402%))
+  Logic Levels:           1  (LUT1=1)
+  Clock Path Skew:        0.316ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.820ns
+    Source Clock Delay      (SCD):    0.563ns
+    Clock Pessimism Removal (CPR):    -0.059ns
+  Clock Uncertainty:      0.584ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.925ns
+    Phase Error              (PE):    0.120ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out1_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672     0.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -1.395    -0.722 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           0.696    -0.026    design_1_i/clk_wiz_0/inst/clk_out1_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y24       BUFG (Prop_bufg_I_O)         0.026    -0.000 r  design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=16047, routed)       0.563     0.563    design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/clock
+    SLICE_X47Y47         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y47         FDCE (Prop_fdce_C_Q)         0.141     0.704 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_FSIC_CLKRST0/axi_reset_nr_reg[2]/Q
+                         net (fo=23, routed)          0.462     1.165    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/fsic_io_serdes_rx_fc/axis_rst_n
+    SLICE_X47Y40         LUT1 (Prop_lut1_I0_O)        0.045     1.210 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/fsic_io_serdes_rx_fc/rx_sync_fifo[3]_i_1/O
+                         net (fo=313, routed)         0.473     1.683    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/fsic_io_serdes_rx_fc_n_0
+    SLICE_X44Y31         FDCE                                         f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[12]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    BUFGCTRL_X0Y26       BUFG                         0.000     0.000 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945     0.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.726    -0.781 r  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.752    -0.029    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.029     0.000 r  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.820     0.820    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X44Y31         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[12]/C
+                         clock pessimism              0.059     0.879    
+                         clock uncertainty            0.584     1.462    
+    SLICE_X44Y31         FDCE (Remov_fdce_C_CLR)     -0.092     1.370    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/as_is_tdata_buf_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.370    
+                         arrival time                           1.683    
+  -------------------------------------------------------------------
+                         slack                                  0.313    
+
+
+
+
+
+---------------------------------------------------------------------------------------------------
+Path Group:  **async_default**
+From Clock:  clk_out2_design_1_clk_wiz_0_0
+  To Clock:  clk_out2_design_1_clk_wiz_0_0
+
+Setup :            0  Failing Endpoints,  Worst Slack       41.977ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.215ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             41.977ns  (required time - arrival time)
+  Source:                 design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/rxen_reg/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/RxFifo_reg[2]/CLR
+                            (recovery check against rising-edge clock clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             **async_default**
+  Path Type:              Recovery (Max at Slow Process Corner)
+  Requirement:            50.000ns  (clk_out2_design_1_clk_wiz_0_0 fall@75.000ns - clk_out2_design_1_clk_wiz_0_0 fall@25.000ns)
+  Data Path Delay:        10.069ns  (logic 0.578ns (5.741%)  route 9.491ns (94.259%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        3.037ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.713ns = ( 79.713 - 75.000 ) 
+    Source Clock Delay      (SCD):    1.666ns = ( 26.666 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.010ns
+  Clock Uncertainty:      0.382ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.761ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.980    26.980    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -4.287    22.693 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.206    24.899    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.101    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.666    26.666    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X47Y39         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/rxen_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X47Y39         FDCE (Prop_fdce_C_Q)         0.459    27.125 r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/rxen_reg/Q
+                         net (fo=2, routed)           3.983    31.108    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[7].fsic_io_serdes_rx_tdata/rxen
+    SLICE_X47Y40         LUT2 (Prop_lut2_I1_O)        0.119    31.227 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[7].fsic_io_serdes_rx_tdata/w_ptr[2]_i_2/O
+                         net (fo=104, routed)         5.507    36.735    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/RxFifo_reg[4]_0
+    SLICE_X27Y40         FDCE                                         f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/RxFifo_reg[2]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     75.000    75.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    75.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           1.770    76.770    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -3.873    72.897 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           2.012    74.909    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.091    75.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.871    76.871    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X55Y67         LUT2 (Prop_lut2_I0_O)        0.100    76.971 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_INST_0/O
+                         net (fo=1, routed)           1.081    78.052    design_1_i/ps_axil_0/inst/PL_IS/serial_tclk
+    BUFGCTRL_X0Y27       BUFG (Prop_bufg_I_O)         0.091    78.143 f  design_1_i/ps_axil_0/inst/PL_IS/serial_tclk_BUFG_inst/O
+                         net (fo=105, routed)         1.570    79.713    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/serial_rclk
+    SLICE_X27Y40         FDCE                                         r  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/RxFifo_reg[2]/C  (IS_INVERTED)
+                         clock pessimism             -0.010    79.703    
+                         clock uncertainty           -0.382    79.321    
+    SLICE_X27Y40         FDCE (Recov_fdce_C_CLR)     -0.610    78.711    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/genblk2[6].fsic_io_serdes_rx_tdata/RxFifo_reg[2]
+  -------------------------------------------------------------------
+                         required time                         78.711    
+                         arrival time                         -36.735    
+  -------------------------------------------------------------------
+                         slack                                 41.977    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.215ns  (arrival time - required time)
+  Source:                 design_1_i/ps_axil_0/inst/PL_IS/rxen_reg/C
+                            (falling edge-triggered cell FDCE clocked by clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Destination:            design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/RxFifo_reg[0]/CLR
+                            (removal check against rising-edge clock clk_out2_design_1_clk_wiz_0_0  {rise@0.000ns fall@25.000ns period=50.000ns})
+  Path Group:             **async_default**
+  Path Type:              Removal (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_out2_design_1_clk_wiz_0_0 fall@25.000ns - clk_out2_design_1_clk_wiz_0_0 fall@25.000ns)
+  Data Path Delay:        2.261ns  (logic 0.191ns (8.448%)  route 2.070ns (91.552%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        2.131ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.699ns = ( 27.699 - 25.000 ) 
+    Source Clock Delay      (SCD):    0.569ns = ( 25.569 - 25.000 ) 
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.672    25.672    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.395    24.277 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.696    24.974    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.026    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         0.569    25.569    design_1_i/ps_axil_0/inst/PL_IS/ioclk
+    SLICE_X60Y78         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/rxen_reg/C  (IS_INVERTED)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X60Y78         FDCE (Prop_fdce_C_Q)         0.146    25.715 r  design_1_i/ps_axil_0/inst/PL_IS/rxen_reg/Q
+                         net (fo=2, routed)           1.155    26.870    design_1_i/ps_axil_0/inst/PL_IS/genblk2[7].fsic_io_serdes_rx_tdata/rxen
+    SLICE_X60Y78         LUT2 (Prop_lut2_I1_O)        0.045    26.915 f  design_1_i/ps_axil_0/inst/PL_IS/genblk2[7].fsic_io_serdes_rx_tdata/w_ptr[2]_i_2/O
+                         net (fo=104, routed)         0.915    27.830    design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/RxFifo_reg[4]_0
+    SLICE_X61Y77         FDCE                                         f  design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/RxFifo_reg[0]/CLR
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_out2_design_1_clk_wiz_0_0 fall edge)
+                                                     25.000    25.000 f  
+    BUFGCTRL_X0Y26       BUFG                         0.000    25.000 f  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=1, routed)           0.945    25.945    design_1_i/clk_wiz_0/inst/clk_in1
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT1)
+                                                     -1.726    24.219 f  design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT1
+                         net (fo=1, routed)           0.752    24.971    design_1_i/clk_wiz_0/inst/clk_out2_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y25       BUFG (Prop_bufg_I_O)         0.029    25.000 f  design_1_i/clk_wiz_0/inst/clkout2_buf/O
+                         net (fo=627, routed)         1.099    26.099    design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/ioclk
+    SLICE_X44Y50         LUT2 (Prop_lut2_I0_O)        0.056    26.155 f  design_1_i/caravel_0/inst/mprj/u_fsic/U_IO_SERDES0/serial_tclk_INST_0/O
+                         net (fo=1, routed)           0.325    26.480    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/serial_tclk
+    SLICE_X47Y50         LUT6 (Prop_lut6_I5_O)        0.056    26.536 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[35]_INST_0/O
+                         net (fo=1, routed)           0.300    26.835    design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]
+    BUFGCTRL_X0Y17       BUFG (Prop_bufg_I_O)         0.029    26.864 f  design_1_i/caravel_0/inst/gpio_control_bidir_2[0]/mprj_o[0]_BUFG_inst/O
+                         net (fo=104, routed)         0.835    27.699    design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/serial_rclk
+    SLICE_X61Y77         FDCE                                         r  design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/RxFifo_reg[0]/C  (IS_INVERTED)
+                         clock pessimism              0.000    27.699    
+    SLICE_X61Y77         FDCE (Remov_fdce_C_CLR)     -0.085    27.614    design_1_i/ps_axil_0/inst/PL_IS/genblk2[0].fsic_io_serdes_rx_tdata/RxFifo_reg[0]
+  -------------------------------------------------------------------
+                         required time                        -27.614    
+                         arrival time                          27.830    
+  -------------------------------------------------------------------
+                         slack                                  0.215    
+
+
+
+
+

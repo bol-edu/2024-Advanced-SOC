@@ -1,0 +1,1 @@
+./SCVerify_HDRISP.exe ../cmodel/inc/cfgs/isp_config_dsc.json

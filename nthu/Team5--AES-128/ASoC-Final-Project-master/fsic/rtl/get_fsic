@@ -1,0 +1,27 @@
+cp ../../../fsic_asic/dsn/rtl/axis_switch.v .
+cp ../../../fsic_asic/dsn/rtl/config_ctrl.v .
+cp ../../../fsic_asic/dsn/rtl/fsic_clkrst.v .
+# cp ../../../fsic_asic/dsn/rtl/fsic_clock.v .
+cp ../../../fsic_asic/dsn/rtl/fsic_coreclk_phase_cnt.v .
+cp ../../../fsic_asic/dsn/rtl/fsic_io_serdes_rx.v .
+# cp ../../../fsic_asic/dsn/rtl/fsic.v .
+cp ../../../fsic_asic/dsn/rtl/io_serdes.v .
+# cp ../../../fsic_asic/dsn/rtl/logic_anlz.dummy_io.v .
+# cp ../../../fsic_asic/dsn/rtl/mprj_io.dummy_io.v .
+cp ../../../fsic_asic/dsn/rtl/user_subsys.all.v .
+cp ../../../fsic_asic/dsn/rtl/user_prj0.v .
+cp ../../../fsic_asic/dsn/rtl/user_prj1.v .
+cp ../../../fsic_asic/dsn/rtl/user_prj2.v .
+cp ../../../fsic_asic/dsn/rtl/user_prj3.v .
+cp ../../../fsic_asic/dsn/rtl/axi_ctrl_logic.sv .
+cp ../../../fsic_asic/dsn/rtl/axil_axis.sv .
+cp ../../../fsic_asic/dsn/rtl/axilite_master.sv .
+cp ../../../fsic_asic/dsn/rtl/axilite_slave.sv .
+cp ../../../fsic_asic/dsn/rtl/axil_slav.dummy_io.vd .
+cp ../../../fsic_asic/dsn/rtl/axis_master.sv .
+cp ../../../fsic_asic/dsn/rtl/axis_mstr.dummy_io.vd .
+cp ../../../fsic_asic/dsn/rtl/axis_slav.dummy_io.vd .
+cp ../../../fsic_asic/dsn/rtl/axis_slave.sv .
+# cp ../../../fsic_asic/dsn/rtl/axis_switch.v .
+cp ../../../fsic_asic/dsn/rtl/sw_caravel.v .
+

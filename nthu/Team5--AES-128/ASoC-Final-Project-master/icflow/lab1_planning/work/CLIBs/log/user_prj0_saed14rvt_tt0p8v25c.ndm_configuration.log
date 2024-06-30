@@ -1,0 +1,113 @@
+ 
+                              Library Manager (TM)
+
+                Version R-2020.09-SP3 for linux64 - Jan 19, 2021
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+
+set search_path {/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/tech/star_rc /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/sram/logic_synth/single .}
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/tech/star_rc /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/sram/logic_synth/single .
+setenv RUN_RESULT /tmp/.tARL9456/_rrnZnyoT
+/tmp/.tARL9456/_rrnZnyoT
+set_current_mismatch_config auto_fix
+1
+set_app_options -name lib.workspace.build_script -value CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+lib.workspace.build_script CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+#suppress_messages
+source -echo -verbose CLIBs/.scripts/saed14rvt_tt0p8v25c.tcl
+set NDM_LIBS {}
+set FRAME_LIBS {/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/ndm/saed14rvt_frame_only.ndm}
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/ndm/saed14rvt_frame_only.ndm
+set LEF_FILES {}
+set DB_FILES {/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db}
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db
+set TECH_FILE "/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/tech/milkyway/saed14nm_1p9m_mw.tf"
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/tech/milkyway/saed14nm_1p9m_mw.tf
+set_app_options -name lib.workspace.create_cached_lib -value true
+lib.workspace.create_cached_lib true
+#suppress_messages
+set_app_options -name lib.workspace.allow_read_aggregate_lib -value true
+lib.workspace.allow_read_aggregate_lib true
+create_workspace saed14rvt_tt0p8v25c -scale_factor 10000
+... created workspace saed14rvt_tt0p8v25c
+foreach frame $FRAME_LIBS {
+  read_ndm $frame
+}
+Information: Loading library file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/ndm/saed14rvt_frame_only.ndm' (FILE-007)
+read_db $DB_FILES
+Information: Loading db file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db' (FILE-007)
+{saed14rvt_tt0p8v25c}
+process_workspaces -check_options {-allow_missing} -force -directory CLIBs -output saed14rvt_tt0p8v25c.ndm
+Checking libraries...
+Information: Only one logical library loaded - internal checks only (LM-005)
+Using saed14rvt_tt0p8v25c as the base library.
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTNLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_12. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_16. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_20. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_24. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_3. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_4. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_6. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPLT_V5_8. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_0P5. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_1. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_2. (LM-175)
+Information: Deriving related power/ground pin for cell SAEDRVT14_CKGTPL_V5_4. (LM-175)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_4:  - Extra DB/power  :  VDD. (LM-033)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_ISOFSDPQ_PECO_8:  - Extra DB/ground :  VSS. (LM-033)
+Warning: More than one power pin or ground pin of the antenna diode for design SAEDRVT14_TIEDIN_PV1ECO_6 (LM-107)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_DCAP_PV1ECO_12:  - Extra DB/power  :  VDD VDDR - Extra DB/ground :  VSS. (LM-033)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_0P5/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_0P5. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_1/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_1. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_2/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_2. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_4/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_4. (LM-175)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_AOINV_IW_6/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Deriving related power/ground pin for cell SAEDRVT14_AOINV_IW_6. (LM-175)
+Warning: Mismatched PG pins between the logic library and FRAME for block saed14rvt_tt0p8v25c/SAEDRVT14_FILL_NNWVDDBRKY2_3:  - Extra DB/power  :  VDD. (LM-033)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP2/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_FILLP3/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_TAPPP10/VDDR' from physical source (was missing in logical source) (LM-109)
+Update rail of port VDDR to 2
+Warning: Copied PG pin 'saed14rvt_tt0p8v25c/SAEDRVT14_CAPTTAPP6/VDDR' from physical source (was missing in logical source) (LM-109)
+Information: Combined 922 physical designs:922 with a frame view (896 had ports reordered); (LM-034)
+Information: Skipped 131 physical designs (LM-052)
+
+Workspace check succeeded!
+... wrote CLIBs/saed14rvt_tt0p8v25c.ndm
+... removing library 'saed14rvt_tt0p8v25c'
+... removing library 'saed14rvt_frame_only'
+... lib workspace removed!
+Maximum memory usage for this session: 409.09 MB
+CPU usage for this session:     14 seconds (  0.00 hours)
+Elapsed time for this session:    107 seconds (  0.03 hours)
+Thank you for using Library Manager.
+

@@ -1,0 +1,149 @@
+{
+    "1": {
+        "name": "sendoutstream",
+        "file": "userdma.cpp",
+        "fileloc": "123",
+        "instructions": "10",
+        "total_instructions": "22",
+        "calls": "2",
+        "basicblocks": "1"
+    },
+    "2": {
+        "name": "sendoutstream_Pipeline_VITIS_LOOP_128_1",
+        "file": "userdma.cpp",
+        "fileloc": "126",
+        "instructions": "12",
+        "total_instructions": "12",
+        "calls": "",
+        "basicblocks": "3",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "getinstream",
+        "file": "userdma.cpp",
+        "fileloc": "38",
+        "instructions": "36",
+        "total_instructions": "79",
+        "calls": "9",
+        "basicblocks": "3",
+        "loads": {
+            "G": "1",
+            "L": "1"
+        },
+        "stores": {
+            "G": "2"
+        }
+    },
+    "0": {
+        "name": "userdma",
+        "file": "userdma.cpp",
+        "fileloc": "142",
+        "instructions": "83",
+        "total_instructions": "349",
+        "calls": "4 3 5 8 1",
+        "basicblocks": "1"
+    },
+    "4": {
+        "name": "entry_proc",
+        "file": "userdma.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1"
+    },
+    "5": {
+        "name": "streamtoparallelwithburst",
+        "file": "userdma.cpp",
+        "fileloc": "4",
+        "instructions": "53",
+        "total_instructions": "75",
+        "calls": "6",
+        "basicblocks": "7",
+        "loads": {
+            "G": "3",
+            "L": "1"
+        },
+        "stores": {
+            "G": "3",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "6": {
+        "name": "streamtoparallelwithburst_Pipeline_VITIS_LOOP_21_2",
+        "file": "userdma.cpp",
+        "fileloc": "7",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "7": {
+        "name": "paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2",
+        "file": "userdma.cpp",
+        "fileloc": "81",
+        "instructions": "39",
+        "total_instructions": "39",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
+        "name": "paralleltostreamwithburst",
+        "file": "userdma.cpp",
+        "fileloc": "80",
+        "instructions": "47",
+        "total_instructions": "86",
+        "calls": "7",
+        "basicblocks": "3",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "4"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "getinstream_Pipeline_VITIS_LOOP_49_1",
+        "file": "userdma.cpp",
+        "fileloc": "39",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "6",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

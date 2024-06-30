@@ -1,0 +1,2618 @@
+2024-05-29 21:58:51,277 INFO [default] Sensor Name: cannon
+2024-05-29 21:58:51,277 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 21:58:51,277 INFO [default] Sensor DT: "RAW16"
+2024-05-29 21:58:51,277 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 21:58:51,277 INFO [default] parse exit
+2024-05-29 21:58:51,278 ERROR [default] ./../data/connan_raw14.raw open failed
+2024-05-29 22:03:10,535 INFO [default] Sensor Name: cannon
+2024-05-29 22:03:10,536 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:03:10,536 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:03:10,536 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:03:10,536 INFO [default] parse exit
+2024-05-29 22:03:10,536 ERROR [default] ./../data/connan_raw14.raw open failed
+2024-05-29 22:07:02,171 INFO [default] Sensor Name: cannon
+2024-05-29 22:07:02,171 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:07:02,171 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:07:02,171 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:07:02,172 INFO [default] parse exit
+2024-05-29 22:07:02,172 ERROR [default] ./../data/connan_raw14.raw open failed
+2024-05-29 22:09:53,818 INFO [default] Sensor Name: cannon
+2024-05-29 22:09:53,818 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:09:53,818 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:09:53,819 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:09:53,819 INFO [default] parse exit
+2024-05-29 22:18:21,466 INFO [default] Sensor Name: cannon
+2024-05-29 22:18:21,466 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:18:21,466 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:18:21,466 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:18:21,466 INFO [default] parse exit
+2024-05-29 22:24:02,106 INFO [default] Sensor Name: cannon
+2024-05-29 22:24:02,106 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:24:02,106 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:24:02,106 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:24:02,106 INFO [default] parse exit
+2024-05-29 22:29:14,985 INFO [default] Sensor Name: cannon
+2024-05-29 22:29:14,985 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:29:14,985 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:29:14,985 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:29:14,985 INFO [default] parse exit
+2024-05-29 22:40:12,744 INFO [default] Sensor Name: cannon
+2024-05-29 22:40:12,745 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:40:12,745 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:40:12,745 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:40:12,745 INFO [default] parse exit
+2024-05-29 22:41:16,125 INFO [default] Sensor Name: cannon
+2024-05-29 22:41:16,125 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:41:16,125 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:41:16,126 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:41:16,126 INFO [default] parse exit
+2024-05-29 22:42:06,188 INFO [default] Sensor Name: cannon
+2024-05-29 22:42:06,188 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:42:06,188 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:42:06,188 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:42:06,188 INFO [default] parse exit
+2024-05-29 22:44:01,456 INFO [default] Sensor Name: cannon
+2024-05-29 22:44:01,456 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:44:01,456 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:44:01,456 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:44:01,456 INFO [default] parse exit
+2024-05-29 22:47:38,214 INFO [default] Sensor Name: cannon
+2024-05-29 22:47:38,215 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:47:38,215 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:47:38,215 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:47:38,215 INFO [default] parse exit
+2024-05-29 22:49:44,794 INFO [default] Sensor Name: cannon
+2024-05-29 22:49:44,794 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:49:44,795 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:49:44,795 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:49:44,795 INFO [default] parse exit
+2024-05-29 22:54:35,615 INFO [default] Sensor Name: cannon
+2024-05-29 22:54:35,615 INFO [default] Sensor CFA: "RGGB"
+2024-05-29 22:54:35,615 INFO [default] Sensor DT: "RAW16"
+2024-05-29 22:54:35,615 INFO [default] Sensor Resolution: 6080*4044
+2024-05-29 22:54:35,615 INFO [default] parse exit
+2024-05-31 00:37:39,551 INFO [default] Sensor Name: cannon
+2024-05-31 00:37:39,551 INFO [default] Sensor CFA: "RGGB"
+2024-05-31 00:37:39,551 INFO [default] Sensor DT: "RAW16"
+2024-05-31 00:37:39,551 INFO [default] Sensor Resolution: 6080*4044
+2024-05-31 00:37:39,551 INFO [default] parse exit
+2024-05-31 00:46:34,022 INFO [default] Sensor Name: cannon
+2024-05-31 00:46:34,023 INFO [default] Sensor CFA: "RGGB"
+2024-05-31 00:46:34,023 INFO [default] Sensor DT: "RAW16"
+2024-05-31 00:46:34,023 INFO [default] Sensor Resolution: 6080*4044
+2024-05-31 00:46:34,023 INFO [default] parse exit
+2024-05-31 00:48:52,853 INFO [default] Sensor Name: cannon
+2024-05-31 00:48:52,853 INFO [default] Sensor CFA: "RGGB"
+2024-05-31 00:48:52,853 INFO [default] Sensor DT: "RAW16"
+2024-05-31 00:48:52,853 INFO [default] Sensor Resolution: 6080*4044
+2024-05-31 00:48:52,853 INFO [default] parse exit
+2024-05-31 00:51:32,938 INFO [default] Sensor Name: cannon
+2024-05-31 00:51:32,939 INFO [default] Sensor CFA: "RGGB"
+2024-05-31 00:51:32,939 INFO [default] Sensor DT: "RAW16"
+2024-05-31 00:51:32,939 INFO [default] Sensor Resolution: 6080*4044
+2024-05-31 00:51:32,939 INFO [default] parse exit
+2024-06-01 15:02:43,490 INFO [default] Sensor Name: cannon
+2024-06-01 15:02:43,490 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:02:43,490 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:02:43,490 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:02:43,490 INFO [default] parse exit
+2024-06-01 15:05:17,005 INFO [default] Sensor Name: cannon
+2024-06-01 15:05:17,006 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:05:17,006 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:05:17,006 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:05:17,006 INFO [default] parse exit
+2024-06-01 15:06:29,135 INFO [default] Sensor Name: cannon
+2024-06-01 15:06:29,135 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:06:29,135 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:06:29,135 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:06:29,135 INFO [default] parse exit
+2024-06-01 15:07:56,124 INFO [default] Sensor Name: cannon
+2024-06-01 15:07:56,124 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:07:56,124 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:07:56,124 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:07:56,124 INFO [default] parse exit
+2024-06-01 15:09:56,504 INFO [default] Sensor Name: cannon
+2024-06-01 15:09:56,504 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:09:56,505 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:09:56,505 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:09:56,505 INFO [default] parse exit
+2024-06-01 15:11:21,115 INFO [default] Sensor Name: cannon
+2024-06-01 15:11:21,115 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:11:21,115 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:11:21,115 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:11:21,116 INFO [default] parse exit
+2024-06-01 15:12:30,917 INFO [default] Sensor Name: cannon
+2024-06-01 15:12:30,917 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:12:30,917 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:12:30,917 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:12:30,917 INFO [default] parse exit
+2024-06-01 15:13:44,711 INFO [default] Sensor Name: cannon
+2024-06-01 15:13:44,711 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:13:44,711 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:13:44,711 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:13:44,711 INFO [default] parse exit
+2024-06-01 15:15:27,846 INFO [default] Sensor Name: cannon
+2024-06-01 15:15:27,846 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:15:27,846 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:15:27,846 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:15:27,846 INFO [default] parse exit
+2024-06-01 15:17:05,075 INFO [default] Sensor Name: cannon
+2024-06-01 15:17:05,075 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:17:05,075 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:17:05,075 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:17:05,075 INFO [default] parse exit
+2024-06-01 15:19:17,033 INFO [default] Sensor Name: cannon
+2024-06-01 15:19:17,033 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:19:17,033 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:19:17,033 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:19:17,033 INFO [default] parse exit
+2024-06-01 15:24:44,473 INFO [default] Sensor Name: cannon
+2024-06-01 15:24:44,473 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:24:44,473 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:24:44,473 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:24:44,473 INFO [default] parse exit
+2024-06-01 15:27:14,857 INFO [default] Sensor Name: cannon
+2024-06-01 15:27:14,858 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:27:14,858 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:27:14,858 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:27:14,858 INFO [default] parse exit
+2024-06-01 15:29:51,206 INFO [default] Sensor Name: cannon
+2024-06-01 15:29:51,207 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:29:51,207 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:29:51,207 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:29:51,207 INFO [default] parse exit
+2024-06-01 15:34:25,647 INFO [default] Sensor Name: cannon
+2024-06-01 15:34:25,647 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:34:25,647 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:34:25,648 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:34:25,648 INFO [default] parse exit
+2024-06-01 15:34:47,846 INFO [default] Sensor Name: cannon
+2024-06-01 15:34:47,847 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:34:47,847 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:34:47,847 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:34:47,847 INFO [default] parse exit
+2024-06-01 15:37:21,356 INFO [default] Sensor Name: cannon
+2024-06-01 15:37:21,356 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:37:21,356 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:37:21,356 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:37:21,356 INFO [default] parse exit
+2024-06-01 15:39:28,726 INFO [default] Sensor Name: cannon
+2024-06-01 15:39:28,726 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:39:28,726 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:39:28,726 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:39:28,726 INFO [default] parse exit
+2024-06-01 15:42:26,529 INFO [default] Sensor Name: cannon
+2024-06-01 15:42:26,529 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:42:26,529 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:42:26,529 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:42:26,529 INFO [default] parse exit
+2024-06-01 15:46:56,517 INFO [default] Sensor Name: cannon
+2024-06-01 15:46:56,517 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:46:56,517 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:46:56,517 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:46:56,518 INFO [default] parse exit
+2024-06-01 15:55:56,027 INFO [default] Sensor Name: cannon
+2024-06-01 15:55:56,027 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:55:56,027 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:55:56,027 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:55:56,027 INFO [default] parse exit
+2024-06-01 15:58:19,331 INFO [default] Sensor Name: cannon
+2024-06-01 15:58:19,331 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 15:58:19,331 INFO [default] Sensor DT: "RAW16"
+2024-06-01 15:58:19,331 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 15:58:19,331 INFO [default] parse exit
+2024-06-01 16:02:12,555 INFO [default] Sensor Name: cannon
+2024-06-01 16:02:12,555 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:02:12,555 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:02:12,555 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:02:12,556 INFO [default] parse exit
+2024-06-01 16:05:21,184 INFO [default] Sensor Name: cannon
+2024-06-01 16:05:21,184 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:05:21,184 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:05:21,184 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:05:21,184 INFO [default] parse exit
+2024-06-01 16:06:29,935 INFO [default] Sensor Name: cannon
+2024-06-01 16:06:29,935 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:06:29,935 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:06:29,935 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:06:29,936 INFO [default] parse exit
+2024-06-01 16:13:36,019 INFO [default] Sensor Name: cannon
+2024-06-01 16:13:36,020 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:13:36,020 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:13:36,020 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:13:36,020 INFO [default] parse exit
+2024-06-01 16:17:03,738 INFO [default] Sensor Name: cannon
+2024-06-01 16:17:03,739 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:17:03,739 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:17:03,739 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:17:03,739 INFO [default] parse exit
+2024-06-01 16:23:22,785 INFO [default] Sensor Name: cannon
+2024-06-01 16:23:22,785 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:23:22,785 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:23:22,785 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:23:22,785 INFO [default] parse exit
+2024-06-01 16:26:24,995 INFO [default] Sensor Name: cannon
+2024-06-01 16:26:24,996 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:26:24,996 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:26:24,996 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:26:24,996 INFO [default] parse exit
+2024-06-01 16:28:44,227 INFO [default] Sensor Name: cannon
+2024-06-01 16:28:44,228 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:28:44,228 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:28:44,228 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:28:44,228 INFO [default] parse exit
+2024-06-01 16:31:11,015 INFO [default] Sensor Name: cannon
+2024-06-01 16:31:11,015 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:31:11,015 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:31:11,015 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:31:11,016 INFO [default] parse exit
+2024-06-01 16:35:19,121 INFO [default] Sensor Name: cannon
+2024-06-01 16:35:19,121 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:35:19,121 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:35:19,122 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:35:19,122 INFO [default] parse exit
+2024-06-01 16:44:49,093 INFO [default] Sensor Name: cannon
+2024-06-01 16:44:49,094 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:44:49,094 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:44:49,094 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:44:49,094 INFO [default] parse exit
+2024-06-01 16:47:15,758 INFO [default] Sensor Name: cannon
+2024-06-01 16:47:15,758 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:47:15,758 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:47:15,758 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:47:15,759 INFO [default] parse exit
+2024-06-01 16:51:42,596 INFO [default] Sensor Name: cannon
+2024-06-01 16:51:42,596 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:51:42,596 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:51:42,596 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:51:42,597 INFO [default] parse exit
+2024-06-01 16:59:24,746 INFO [default] Sensor Name: cannon
+2024-06-01 16:59:24,746 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 16:59:24,746 INFO [default] Sensor DT: "RAW16"
+2024-06-01 16:59:24,746 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 16:59:24,747 INFO [default] parse exit
+2024-06-01 17:07:59,881 INFO [default] Sensor Name: cannon
+2024-06-01 17:07:59,881 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:07:59,882 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:07:59,882 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:07:59,882 INFO [default] parse exit
+2024-06-01 17:17:10,384 INFO [default] Sensor Name: cannon
+2024-06-01 17:17:10,384 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:17:10,384 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:17:10,384 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:17:10,384 INFO [default] parse exit
+2024-06-01 17:20:42,985 INFO [default] Sensor Name: cannon
+2024-06-01 17:20:42,985 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:20:42,985 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:20:42,985 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:20:42,986 INFO [default] parse exit
+2024-06-01 17:23:14,477 INFO [default] Sensor Name: cannon
+2024-06-01 17:23:14,477 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:23:14,477 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:23:14,477 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:23:14,477 INFO [default] parse exit
+2024-06-01 17:25:32,395 INFO [default] Sensor Name: cannon
+2024-06-01 17:25:32,396 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:25:32,396 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:25:32,396 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:25:32,396 INFO [default] parse exit
+2024-06-01 17:27:46,154 INFO [default] Sensor Name: cannon
+2024-06-01 17:27:46,154 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:27:46,154 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:27:46,154 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:27:46,154 INFO [default] parse exit
+2024-06-01 17:37:39,796 INFO [default] Sensor Name: cannon
+2024-06-01 17:37:39,796 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:37:39,796 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:37:39,796 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:37:39,796 INFO [default] parse exit
+2024-06-01 17:39:01,000 INFO [default] Sensor Name: cannon
+2024-06-01 17:39:01,000 INFO [default] Sensor CFA: "RGGB"
+2024-06-01 17:39:01,000 INFO [default] Sensor DT: "RAW16"
+2024-06-01 17:39:01,000 INFO [default] Sensor Resolution: 6080*4044
+2024-06-01 17:39:01,000 INFO [default] parse exit
+2024-06-02 14:23:32,088 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 14:23:32,089 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 14:24:02,400 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 14:24:02,400 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 14:25:18,663 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 14:25:18,663 ERROR [default] ../../cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 14:25:36,225 INFO [default] Sensor Name: cannon
+2024-06-02 14:25:36,225 INFO [default] Sensor CFA: "RGGB"
+2024-06-02 14:25:36,225 INFO [default] Sensor DT: "RAW16"
+2024-06-02 14:25:36,225 INFO [default] Sensor Resolution: 6080*4044
+2024-06-02 14:25:36,226 INFO [default] parse exit
+2024-06-02 23:02:59,847 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 23:02:59,847 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 23:05:43,689 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 23:05:43,689 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 23:06:06,603 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 23:06:06,603 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 23:06:31,729 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json open failed
+2024-06-02 23:06:31,730 ERROR [default] /home/course/ee525201/final_project/ISP1/cmodel/inc/cfgs/isp_config_cannon.json parse failed
+
+2024-06-02 23:07:52,482 INFO [default] Sensor Name: cannon
+2024-06-02 23:07:52,482 INFO [default] Sensor CFA: "RGGB"
+2024-06-02 23:07:52,482 INFO [default] Sensor DT: "RAW16"
+2024-06-02 23:07:52,482 INFO [default] Sensor Resolution: 6080*4044
+2024-06-02 23:07:52,482 INFO [default] parse exit
+2024-06-02 23:08:15,293 INFO [default] Sensor Name: cannon
+2024-06-02 23:08:15,293 INFO [default] Sensor CFA: "RGGB"
+2024-06-02 23:08:15,293 INFO [default] Sensor DT: "RAW16"
+2024-06-02 23:08:15,293 INFO [default] Sensor Resolution: 6080*4044
+2024-06-02 23:08:15,294 INFO [default] parse exit
+2024-06-03 00:35:10,370 INFO [default] Sensor Name: cannon
+2024-06-03 00:35:10,370 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:35:10,370 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:35:10,370 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:35:10,370 INFO [default] parse exit
+2024-06-03 00:37:07,456 INFO [default] Sensor Name: cannon
+2024-06-03 00:37:07,456 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:37:07,456 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:37:07,457 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:37:07,457 INFO [default] parse exit
+2024-06-03 00:39:11,278 INFO [default] Sensor Name: cannon
+2024-06-03 00:39:11,278 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:39:11,278 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:39:11,278 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:39:11,278 INFO [default] parse exit
+2024-06-03 00:43:02,439 INFO [default] Sensor Name: cannon
+2024-06-03 00:43:02,439 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:43:02,439 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:43:02,439 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:43:02,439 INFO [default] parse exit
+2024-06-03 00:45:26,823 INFO [default] Sensor Name: cannon
+2024-06-03 00:45:26,824 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:45:26,824 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:45:26,824 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:45:26,824 INFO [default] parse exit
+2024-06-03 00:50:23,942 INFO [default] Sensor Name: cannon
+2024-06-03 00:50:23,942 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:50:23,942 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:50:23,942 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:50:23,943 INFO [default] parse exit
+2024-06-03 00:55:38,608 INFO [default] Sensor Name: cannon
+2024-06-03 00:55:38,608 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:55:38,608 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:55:38,608 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:55:38,609 INFO [default] parse exit
+2024-06-03 00:56:54,418 INFO [default] Sensor Name: cannon
+2024-06-03 00:56:54,418 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:56:54,418 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:56:54,419 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:56:54,419 INFO [default] parse exit
+2024-06-03 00:58:36,609 INFO [default] Sensor Name: cannon
+2024-06-03 00:58:36,609 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 00:58:36,609 INFO [default] Sensor DT: "RAW16"
+2024-06-03 00:58:36,609 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 00:58:36,610 INFO [default] parse exit
+2024-06-03 01:00:38,386 INFO [default] Sensor Name: cannon
+2024-06-03 01:00:38,387 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:00:38,387 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:00:38,387 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:00:38,387 INFO [default] parse exit
+2024-06-03 01:05:29,720 INFO [default] Sensor Name: cannon
+2024-06-03 01:05:29,720 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:05:29,720 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:05:29,720 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:05:29,720 INFO [default] parse exit
+2024-06-03 01:07:14,488 INFO [default] Sensor Name: cannon
+2024-06-03 01:07:14,488 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:07:14,488 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:07:14,488 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:07:14,488 INFO [default] parse exit
+2024-06-03 01:09:47,198 INFO [default] Sensor Name: cannon
+2024-06-03 01:09:47,198 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:09:47,198 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:09:47,198 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:09:47,198 INFO [default] parse exit
+2024-06-03 01:14:02,568 INFO [default] Sensor Name: cannon
+2024-06-03 01:14:02,568 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:14:02,568 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:14:02,568 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:14:02,568 INFO [default] parse exit
+2024-06-03 01:16:03,381 INFO [default] Sensor Name: cannon
+2024-06-03 01:16:03,382 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:16:03,382 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:16:03,382 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:16:03,382 INFO [default] parse exit
+2024-06-03 01:20:45,781 INFO [default] Sensor Name: cannon
+2024-06-03 01:20:45,781 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:20:45,781 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:20:45,781 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:20:45,782 INFO [default] parse exit
+2024-06-03 01:22:56,920 INFO [default] Sensor Name: cannon
+2024-06-03 01:22:56,920 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:22:56,920 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:22:56,920 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:22:56,920 INFO [default] parse exit
+2024-06-03 01:24:38,749 INFO [default] Sensor Name: cannon
+2024-06-03 01:24:38,749 INFO [default] Sensor CFA: "RGGB"
+2024-06-03 01:24:38,749 INFO [default] Sensor DT: "RAW16"
+2024-06-03 01:24:38,749 INFO [default] Sensor Resolution: 6080*4044
+2024-06-03 01:24:38,749 INFO [default] parse exit
+2024-06-04 22:51:23,485 INFO [default] Sensor Name: cannon
+2024-06-04 22:51:23,485 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 22:51:23,485 INFO [default] Sensor DT: "RAW16"
+2024-06-04 22:51:23,485 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 22:51:23,486 INFO [default] parse exit
+2024-06-04 22:54:39,396 INFO [default] Sensor Name: cannon
+2024-06-04 22:54:39,397 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 22:54:39,397 INFO [default] Sensor DT: "RAW16"
+2024-06-04 22:54:39,397 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 22:54:39,397 INFO [default] parse exit
+2024-06-04 22:57:07,138 INFO [default] Sensor Name: cannon
+2024-06-04 22:57:07,138 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 22:57:07,138 INFO [default] Sensor DT: "RAW16"
+2024-06-04 22:57:07,138 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 22:57:07,138 INFO [default] parse exit
+2024-06-04 23:04:34,318 INFO [default] Sensor Name: cannon
+2024-06-04 23:04:34,318 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:04:34,318 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:04:34,318 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:04:34,318 INFO [default] parse exit
+2024-06-04 23:06:02,241 INFO [default] Sensor Name: cannon
+2024-06-04 23:06:02,241 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:06:02,241 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:06:02,241 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:06:02,241 INFO [default] parse exit
+2024-06-04 23:11:24,057 INFO [default] Sensor Name: cannon
+2024-06-04 23:11:24,058 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:11:24,058 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:11:24,058 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:11:24,058 INFO [default] parse exit
+2024-06-04 23:12:35,696 INFO [default] Sensor Name: cannon
+2024-06-04 23:12:35,696 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:12:35,696 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:12:35,696 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:12:35,696 INFO [default] parse exit
+2024-06-04 23:14:31,591 INFO [default] Sensor Name: cannon
+2024-06-04 23:14:31,592 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:14:31,592 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:14:31,592 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:14:31,592 INFO [default] parse exit
+2024-06-04 23:15:42,492 INFO [default] Sensor Name: cannon
+2024-06-04 23:15:42,492 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:15:42,492 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:15:42,492 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:15:42,492 INFO [default] parse exit
+2024-06-04 23:17:42,109 INFO [default] Sensor Name: cannon
+2024-06-04 23:17:42,109 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:17:42,109 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:17:42,109 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:17:42,110 INFO [default] parse exit
+2024-06-04 23:18:59,001 INFO [default] Sensor Name: cannon
+2024-06-04 23:18:59,002 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:18:59,002 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:18:59,002 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:18:59,002 INFO [default] parse exit
+2024-06-04 23:20:04,622 INFO [default] Sensor Name: cannon
+2024-06-04 23:20:04,622 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:20:04,622 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:20:04,622 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:20:04,622 INFO [default] parse exit
+2024-06-04 23:23:25,220 INFO [default] Sensor Name: cannon
+2024-06-04 23:23:25,220 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:23:25,220 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:23:25,221 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:23:25,221 INFO [default] parse exit
+2024-06-04 23:47:24,562 INFO [default] Sensor Name: cannon
+2024-06-04 23:47:24,562 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:47:24,562 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:47:24,562 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:47:24,563 INFO [default] parse exit
+2024-06-04 23:51:31,061 INFO [default] Sensor Name: cannon
+2024-06-04 23:51:31,061 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:51:31,061 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:51:31,062 INFO [default] Sensor Resolution: 6080*4044
+2024-06-04 23:51:31,062 INFO [default] parse exit
+2024-06-04 23:58:16,278 INFO [default] Sensor Name: dsc
+2024-06-04 23:58:16,278 INFO [default] Sensor CFA: "RGGB"
+2024-06-04 23:58:16,278 INFO [default] Sensor DT: "RAW16"
+2024-06-04 23:58:16,278 INFO [default] Sensor Resolution: 768*512
+2024-06-04 23:58:16,278 INFO [default] parse exit
+2024-06-04 23:58:16,279 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-04 23:58:16,286 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-04 23:58:16,292 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:00:40,699 INFO [default] Sensor Name: dsc
+2024-06-05 00:00:40,699 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:00:40,699 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:00:40,699 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:00:40,699 INFO [default] parse exit
+2024-06-05 00:00:40,699 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:00:40,706 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:00:40,712 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:01:55,253 INFO [default] Sensor Name: dsc
+2024-06-05 00:01:55,254 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:01:55,254 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:01:55,254 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:01:55,254 INFO [default] parse exit
+2024-06-05 00:01:55,254 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:01:55,261 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:01:55,267 ERROR [default] ./../data/DSC_1339_768x512_rggb.raw open failed
+2024-06-05 00:03:24,014 INFO [default] Sensor Name: dsc
+2024-06-05 00:03:24,014 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:03:24,014 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:03:24,014 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:03:24,014 INFO [default] parse exit
+2024-06-05 00:04:18,222 INFO [default] Sensor Name: dsc
+2024-06-05 00:04:18,222 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:04:18,222 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:04:18,222 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:04:18,223 INFO [default] parse exit
+2024-06-05 00:09:34,363 INFO [default] Sensor Name: dsc
+2024-06-05 00:09:34,363 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:09:34,363 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:09:34,363 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:09:34,363 INFO [default] parse exit
+2024-06-05 00:11:56,593 INFO [default] Sensor Name: dsc
+2024-06-05 00:11:56,593 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:11:56,594 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:11:56,594 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:11:56,594 INFO [default] parse exit
+2024-06-05 00:13:27,333 INFO [default] Sensor Name: dsc
+2024-06-05 00:13:27,333 INFO [default] Sensor CFA: "RGGB"
+2024-06-05 00:13:27,333 INFO [default] Sensor DT: "RAW16"
+2024-06-05 00:13:27,333 INFO [default] Sensor Resolution: 768*512
+2024-06-05 00:13:27,333 INFO [default] parse exit
+2024-06-08 17:37:42,128 INFO [default] Sensor Name: dsc
+2024-06-08 17:37:42,128 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 17:37:42,128 INFO [default] Sensor DT: "RAW16"
+2024-06-08 17:37:42,128 INFO [default] Sensor Resolution: 768*512
+2024-06-08 17:37:42,128 INFO [default] parse exit
+2024-06-08 17:39:48,771 INFO [default] Sensor Name: dsc
+2024-06-08 17:39:48,771 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 17:39:48,771 INFO [default] Sensor DT: "RAW16"
+2024-06-08 17:39:48,771 INFO [default] Sensor Resolution: 768*512
+2024-06-08 17:39:48,771 INFO [default] parse exit
+2024-06-08 21:18:30,379 INFO [default] Sensor Name: dsc
+2024-06-08 21:18:30,379 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:18:30,379 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:18:30,379 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:18:30,379 INFO [default] parse exit
+2024-06-08 21:35:30,359 INFO [default] Sensor Name: dsc
+2024-06-08 21:35:30,359 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:35:30,359 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:35:30,359 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:35:30,360 INFO [default] parse exit
+2024-06-08 21:41:17,608 INFO [default] Sensor Name: dsc
+2024-06-08 21:41:17,608 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:41:17,608 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:41:17,608 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:41:17,608 INFO [default] parse exit
+2024-06-08 21:45:03,007 INFO [default] Sensor Name: dsc
+2024-06-08 21:45:03,007 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:45:03,007 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:45:03,008 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:45:03,008 INFO [default] parse exit
+2024-06-08 21:46:07,149 INFO [default] Sensor Name: dsc
+2024-06-08 21:46:07,149 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:46:07,149 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:46:07,149 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:46:07,149 INFO [default] parse exit
+2024-06-08 21:48:31,846 INFO [default] Sensor Name: dsc
+2024-06-08 21:48:31,846 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:48:31,846 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:48:31,846 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:48:31,846 INFO [default] parse exit
+2024-06-08 21:49:02,528 INFO [default] Sensor Name: dsc
+2024-06-08 21:49:02,528 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 21:49:02,528 INFO [default] Sensor DT: "RAW16"
+2024-06-08 21:49:02,528 INFO [default] Sensor Resolution: 768*512
+2024-06-08 21:49:02,528 INFO [default] parse exit
+2024-06-08 23:17:01,965 INFO [default] Sensor Name: dsc
+2024-06-08 23:17:01,965 INFO [default] Sensor CFA: "RGGB"
+2024-06-08 23:17:01,965 INFO [default] Sensor DT: "RAW16"
+2024-06-08 23:17:01,965 INFO [default] Sensor Resolution: 768*512
+2024-06-08 23:17:01,965 INFO [default] parse exit
+2024-06-09 00:19:06,138 INFO [default] Sensor Name: dsc
+2024-06-09 00:19:06,138 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:19:06,138 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:19:06,138 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:19:06,138 INFO [default] parse exit
+2024-06-09 00:21:07,377 INFO [default] Sensor Name: dsc
+2024-06-09 00:21:07,378 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:21:07,378 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:21:07,378 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:21:07,378 INFO [default] parse exit
+2024-06-09 00:36:40,390 INFO [default] Sensor Name: dsc
+2024-06-09 00:36:40,390 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:36:40,390 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:36:40,390 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:36:40,390 INFO [default] parse exit
+2024-06-09 00:37:10,685 INFO [default] Sensor Name: dsc
+2024-06-09 00:37:10,686 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:37:10,686 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:37:10,686 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:37:10,686 INFO [default] parse exit
+2024-06-09 00:41:53,265 INFO [default] Sensor Name: dsc
+2024-06-09 00:41:53,265 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:41:53,265 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:41:53,265 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:41:53,265 INFO [default] parse exit
+2024-06-09 00:42:13,356 INFO [default] Sensor Name: dsc
+2024-06-09 00:42:13,356 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:42:13,356 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:42:13,356 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:42:13,356 INFO [default] parse exit
+2024-06-09 00:46:18,967 INFO [default] Sensor Name: dsc
+2024-06-09 00:46:18,967 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:46:18,967 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:46:18,968 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:46:18,968 INFO [default] parse exit
+2024-06-09 00:49:27,578 INFO [default] Sensor Name: dsc
+2024-06-09 00:49:27,578 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:49:27,578 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:49:27,578 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:49:27,579 INFO [default] parse exit
+2024-06-09 00:51:31,358 INFO [default] Sensor Name: dsc
+2024-06-09 00:51:31,359 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:51:31,359 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:51:31,359 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:51:31,359 INFO [default] parse exit
+2024-06-09 00:55:46,507 INFO [default] Sensor Name: dsc
+2024-06-09 00:55:46,508 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:55:46,508 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:55:46,508 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:55:46,508 INFO [default] parse exit
+2024-06-09 00:58:12,115 INFO [default] Sensor Name: dsc
+2024-06-09 00:58:12,115 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 00:58:12,116 INFO [default] Sensor DT: "RAW16"
+2024-06-09 00:58:12,116 INFO [default] Sensor Resolution: 768*512
+2024-06-09 00:58:12,116 INFO [default] parse exit
+2024-06-09 01:03:26,961 INFO [default] Sensor Name: dsc
+2024-06-09 01:03:26,961 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:03:26,961 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:03:26,961 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:03:26,961 INFO [default] parse exit
+2024-06-09 01:07:37,799 INFO [default] Sensor Name: dsc
+2024-06-09 01:07:37,799 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:07:37,799 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:07:37,799 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:07:37,799 INFO [default] parse exit
+2024-06-09 01:09:08,872 INFO [default] Sensor Name: dsc
+2024-06-09 01:09:08,873 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:09:08,873 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:09:08,873 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:09:08,873 INFO [default] parse exit
+2024-06-09 01:11:30,149 INFO [default] Sensor Name: dsc
+2024-06-09 01:11:30,149 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:11:30,149 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:11:30,149 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:11:30,149 INFO [default] parse exit
+2024-06-09 01:11:44,924 INFO [default] Sensor Name: dsc
+2024-06-09 01:11:44,924 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:11:44,924 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:11:44,924 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:11:44,924 INFO [default] parse exit
+2024-06-09 01:13:37,985 INFO [default] Sensor Name: dsc
+2024-06-09 01:13:37,985 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:13:37,985 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:13:37,985 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:13:37,985 INFO [default] parse exit
+2024-06-09 01:15:59,467 INFO [default] Sensor Name: dsc
+2024-06-09 01:15:59,467 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:15:59,467 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:15:59,467 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:15:59,468 INFO [default] parse exit
+2024-06-09 01:23:31,075 INFO [default] Sensor Name: dsc
+2024-06-09 01:23:31,075 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 01:23:31,075 INFO [default] Sensor DT: "RAW16"
+2024-06-09 01:23:31,075 INFO [default] Sensor Resolution: 768*512
+2024-06-09 01:23:31,075 INFO [default] parse exit
+2024-06-09 05:53:33,884 INFO [default] Sensor Name: dsc
+2024-06-09 05:53:33,884 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 05:53:33,884 INFO [default] Sensor DT: "RAW16"
+2024-06-09 05:53:33,884 INFO [default] Sensor Resolution: 768*512
+2024-06-09 05:53:33,884 INFO [default] parse exit
+2024-06-09 05:53:45,812 INFO [default] Sensor Name: dsc
+2024-06-09 05:53:45,812 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 05:53:45,812 INFO [default] Sensor DT: "RAW16"
+2024-06-09 05:53:45,812 INFO [default] Sensor Resolution: 768*512
+2024-06-09 05:53:45,813 INFO [default] parse exit
+2024-06-09 05:58:48,894 INFO [default] Sensor Name: dsc
+2024-06-09 05:58:48,894 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 05:58:48,894 INFO [default] Sensor DT: "RAW16"
+2024-06-09 05:58:48,894 INFO [default] Sensor Resolution: 768*512
+2024-06-09 05:58:48,894 INFO [default] parse exit
+2024-06-09 06:03:12,800 INFO [default] Sensor Name: dsc
+2024-06-09 06:03:12,800 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:03:12,800 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:03:12,800 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:03:12,800 INFO [default] parse exit
+2024-06-09 06:07:42,944 INFO [default] Sensor Name: dsc
+2024-06-09 06:07:42,944 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:07:42,944 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:07:42,944 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:07:42,944 INFO [default] parse exit
+2024-06-09 06:08:01,308 INFO [default] Sensor Name: dsc
+2024-06-09 06:08:01,308 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:08:01,308 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:08:01,308 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:08:01,308 INFO [default] parse exit
+2024-06-09 06:11:02,923 INFO [default] Sensor Name: dsc
+2024-06-09 06:11:02,923 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:11:02,923 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:11:02,923 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:11:02,923 INFO [default] parse exit
+2024-06-09 06:19:16,005 INFO [default] Sensor Name: dsc
+2024-06-09 06:19:16,005 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:19:16,005 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:19:16,005 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:19:16,005 INFO [default] parse exit
+2024-06-09 06:22:44,181 INFO [default] Sensor Name: dsc
+2024-06-09 06:22:44,181 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:22:44,181 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:22:44,181 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:22:44,181 INFO [default] parse exit
+2024-06-09 06:24:53,140 INFO [default] Sensor Name: dsc
+2024-06-09 06:24:53,140 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:24:53,140 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:24:53,140 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:24:53,140 INFO [default] parse exit
+2024-06-09 06:35:36,620 INFO [default] Sensor Name: dsc
+2024-06-09 06:35:36,620 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:35:36,620 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:35:36,620 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:35:36,620 INFO [default] parse exit
+2024-06-09 06:39:22,284 INFO [default] Sensor Name: dsc
+2024-06-09 06:39:22,284 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:39:22,284 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:39:22,284 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:39:22,284 INFO [default] parse exit
+2024-06-09 06:40:01,581 INFO [default] Sensor Name: dsc
+2024-06-09 06:40:01,582 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:40:01,582 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:40:01,582 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:40:01,582 INFO [default] parse exit
+2024-06-09 06:43:58,869 INFO [default] Sensor Name: dsc
+2024-06-09 06:43:58,869 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:43:58,869 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:43:58,869 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:43:58,870 INFO [default] parse exit
+2024-06-09 06:47:40,008 INFO [default] Sensor Name: dsc
+2024-06-09 06:47:40,008 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:47:40,008 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:47:40,009 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:47:40,009 INFO [default] parse exit
+2024-06-09 06:49:14,636 INFO [default] Sensor Name: dsc
+2024-06-09 06:49:14,637 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:49:14,637 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:49:14,637 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:49:14,637 INFO [default] parse exit
+2024-06-09 06:50:56,909 INFO [default] Sensor Name: dsc
+2024-06-09 06:50:56,909 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:50:56,909 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:50:56,910 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:50:56,910 INFO [default] parse exit
+2024-06-09 06:54:01,603 INFO [default] Sensor Name: dsc
+2024-06-09 06:54:01,603 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:54:01,603 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:54:01,603 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:54:01,603 INFO [default] parse exit
+2024-06-09 06:56:04,640 INFO [default] Sensor Name: dsc
+2024-06-09 06:56:04,640 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:56:04,641 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:56:04,641 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:56:04,641 INFO [default] parse exit
+2024-06-09 06:59:13,234 INFO [default] Sensor Name: dsc
+2024-06-09 06:59:13,234 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 06:59:13,234 INFO [default] Sensor DT: "RAW16"
+2024-06-09 06:59:13,234 INFO [default] Sensor Resolution: 768*512
+2024-06-09 06:59:13,234 INFO [default] parse exit
+2024-06-09 07:02:07,883 INFO [default] Sensor Name: dsc
+2024-06-09 07:02:07,883 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 07:02:07,883 INFO [default] Sensor DT: "RAW16"
+2024-06-09 07:02:07,883 INFO [default] Sensor Resolution: 768*512
+2024-06-09 07:02:07,883 INFO [default] parse exit
+2024-06-09 07:10:16,357 INFO [default] Sensor Name: dsc
+2024-06-09 07:10:16,357 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 07:10:16,358 INFO [default] Sensor DT: "RAW16"
+2024-06-09 07:10:16,358 INFO [default] Sensor Resolution: 768*512
+2024-06-09 07:10:16,358 INFO [default] parse exit
+2024-06-09 09:34:59,149 INFO [default] Sensor Name: dsc
+2024-06-09 09:34:59,149 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 09:34:59,149 INFO [default] Sensor DT: "RAW16"
+2024-06-09 09:34:59,149 INFO [default] Sensor Resolution: 768*512
+2024-06-09 09:34:59,149 INFO [default] parse exit
+2024-06-09 10:12:04,473 INFO [default] Sensor Name: dsc
+2024-06-09 10:12:04,473 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:12:04,473 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:12:04,473 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:12:04,473 INFO [default] parse exit
+2024-06-09 10:22:36,362 INFO [default] Sensor Name: dsc
+2024-06-09 10:22:36,363 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:22:36,363 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:22:36,363 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:22:36,363 INFO [default] parse exit
+2024-06-09 10:25:20,708 INFO [default] Sensor Name: dsc
+2024-06-09 10:25:20,709 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:25:20,709 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:25:20,709 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:25:20,709 INFO [default] parse exit
+2024-06-09 10:28:30,988 INFO [default] Sensor Name: dsc
+2024-06-09 10:28:30,988 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:28:30,988 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:28:30,988 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:28:30,988 INFO [default] parse exit
+2024-06-09 10:32:47,725 INFO [default] Sensor Name: dsc
+2024-06-09 10:32:47,725 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:32:47,725 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:32:47,725 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:32:47,726 INFO [default] parse exit
+2024-06-09 10:34:01,556 INFO [default] Sensor Name: dsc
+2024-06-09 10:34:01,556 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:34:01,556 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:34:01,556 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:34:01,556 INFO [default] parse exit
+2024-06-09 10:37:19,257 INFO [default] Sensor Name: dsc
+2024-06-09 10:37:19,257 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:37:19,257 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:37:19,257 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:37:19,258 INFO [default] parse exit
+2024-06-09 10:38:02,624 INFO [default] Sensor Name: dsc
+2024-06-09 10:38:02,624 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:38:02,624 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:38:02,624 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:38:02,625 INFO [default] parse exit
+2024-06-09 10:39:44,579 INFO [default] Sensor Name: dsc
+2024-06-09 10:39:44,580 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:39:44,580 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:39:44,580 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:39:44,580 INFO [default] parse exit
+2024-06-09 10:47:35,505 INFO [default] Sensor Name: dsc
+2024-06-09 10:47:35,505 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:47:35,505 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:47:35,506 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:47:35,506 INFO [default] parse exit
+2024-06-09 10:50:20,228 INFO [default] Sensor Name: dsc
+2024-06-09 10:50:20,228 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:50:20,228 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:50:20,228 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:50:20,229 INFO [default] parse exit
+2024-06-09 10:58:42,465 INFO [default] Sensor Name: dsc
+2024-06-09 10:58:42,465 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 10:58:42,466 INFO [default] Sensor DT: "RAW16"
+2024-06-09 10:58:42,466 INFO [default] Sensor Resolution: 768*512
+2024-06-09 10:58:42,466 INFO [default] parse exit
+2024-06-09 11:01:43,944 INFO [default] Sensor Name: dsc
+2024-06-09 11:01:43,945 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:01:43,945 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:01:43,945 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:01:43,945 INFO [default] parse exit
+2024-06-09 11:02:52,515 INFO [default] Sensor Name: dsc
+2024-06-09 11:02:52,515 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:02:52,515 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:02:52,515 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:02:52,515 INFO [default] parse exit
+2024-06-09 11:03:03,425 INFO [default] Sensor Name: dsc
+2024-06-09 11:03:03,425 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:03:03,425 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:03:03,425 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:03:03,425 INFO [default] parse exit
+2024-06-09 11:04:06,837 INFO [default] Sensor Name: dsc
+2024-06-09 11:04:06,838 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:04:06,838 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:04:06,838 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:04:06,838 INFO [default] parse exit
+2024-06-09 11:06:11,099 INFO [default] Sensor Name: dsc
+2024-06-09 11:06:11,100 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:06:11,100 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:06:11,100 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:06:11,100 INFO [default] parse exit
+2024-06-09 11:12:55,467 INFO [default] Sensor Name: dsc
+2024-06-09 11:12:55,467 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:12:55,467 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:12:55,467 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:12:55,468 INFO [default] parse exit
+2024-06-09 11:31:12,475 INFO [default] Sensor Name: dsc
+2024-06-09 11:31:12,476 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:31:12,476 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:31:12,476 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:31:12,476 INFO [default] parse exit
+2024-06-09 11:37:11,528 INFO [default] Sensor Name: dsc
+2024-06-09 11:37:11,528 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:37:11,528 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:37:11,528 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:37:11,528 INFO [default] parse exit
+2024-06-09 11:37:54,165 INFO [default] Sensor Name: dsc
+2024-06-09 11:37:54,166 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 11:37:54,166 INFO [default] Sensor DT: "RAW16"
+2024-06-09 11:37:54,166 INFO [default] Sensor Resolution: 768*512
+2024-06-09 11:37:54,166 INFO [default] parse exit
+2024-06-09 12:02:17,663 INFO [default] Sensor Name: dsc
+2024-06-09 12:02:17,663 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:02:17,663 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:02:17,663 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:02:17,663 INFO [default] parse exit
+2024-06-09 12:22:22,469 INFO [default] Sensor Name: dsc
+2024-06-09 12:22:22,470 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:22:22,470 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:22:22,470 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:22:22,470 INFO [default] parse exit
+2024-06-09 12:37:34,775 INFO [default] Sensor Name: dsc
+2024-06-09 12:37:34,775 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:37:34,775 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:37:34,775 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:37:34,776 INFO [default] parse exit
+2024-06-09 12:40:33,203 INFO [default] Sensor Name: dsc
+2024-06-09 12:40:33,203 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:40:33,203 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:40:33,203 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:40:33,203 INFO [default] parse exit
+2024-06-09 12:42:05,493 INFO [default] Sensor Name: dsc
+2024-06-09 12:42:05,493 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:42:05,493 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:42:05,493 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:42:05,494 INFO [default] parse exit
+2024-06-09 12:47:41,484 INFO [default] Sensor Name: dsc
+2024-06-09 12:47:41,485 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:47:41,485 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:47:41,485 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:47:41,485 INFO [default] parse exit
+2024-06-09 12:48:40,439 INFO [default] Sensor Name: dsc
+2024-06-09 12:48:40,439 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:48:40,439 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:48:40,439 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:48:40,439 INFO [default] parse exit
+2024-06-09 12:49:32,535 INFO [default] Sensor Name: dsc
+2024-06-09 12:49:32,535 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:49:32,535 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:49:32,535 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:49:32,535 INFO [default] parse exit
+2024-06-09 12:52:22,551 INFO [default] Sensor Name: dsc
+2024-06-09 12:52:22,551 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:52:22,551 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:52:22,551 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:52:22,551 INFO [default] parse exit
+2024-06-09 12:54:02,536 INFO [default] Sensor Name: dsc
+2024-06-09 12:54:02,536 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:54:02,536 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:54:02,536 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:54:02,536 INFO [default] parse exit
+2024-06-09 12:54:50,842 INFO [default] Sensor Name: dsc
+2024-06-09 12:54:50,842 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 12:54:50,842 INFO [default] Sensor DT: "RAW16"
+2024-06-09 12:54:50,842 INFO [default] Sensor Resolution: 768*512
+2024-06-09 12:54:50,843 INFO [default] parse exit
+2024-06-09 13:08:27,935 INFO [default] Sensor Name: dsc
+2024-06-09 13:08:27,935 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 13:08:27,935 INFO [default] Sensor DT: "RAW16"
+2024-06-09 13:08:27,936 INFO [default] Sensor Resolution: 768*512
+2024-06-09 13:08:27,936 INFO [default] parse exit
+2024-06-09 13:13:56,407 INFO [default] Sensor Name: dsc
+2024-06-09 13:13:56,407 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 13:13:56,407 INFO [default] Sensor DT: "RAW16"
+2024-06-09 13:13:56,407 INFO [default] Sensor Resolution: 768*512
+2024-06-09 13:13:56,407 INFO [default] parse exit
+2024-06-09 15:03:18,066 INFO [default] Sensor Name: dsc
+2024-06-09 15:03:18,066 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:03:18,066 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:03:18,066 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:03:18,066 INFO [default] parse exit
+2024-06-09 15:04:45,805 INFO [default] Sensor Name: dsc
+2024-06-09 15:04:45,805 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:04:45,805 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:04:45,805 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:04:45,806 INFO [default] parse exit
+2024-06-09 15:07:20,337 INFO [default] Sensor Name: dsc
+2024-06-09 15:07:20,337 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:07:20,337 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:07:20,337 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:07:20,337 INFO [default] parse exit
+2024-06-09 15:18:19,416 INFO [default] Sensor Name: dsc
+2024-06-09 15:18:19,416 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:18:19,416 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:18:19,416 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:18:19,416 INFO [default] parse exit
+2024-06-09 15:19:58,335 INFO [default] Sensor Name: dsc
+2024-06-09 15:19:58,335 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:19:58,335 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:19:58,335 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:19:58,335 INFO [default] parse exit
+2024-06-09 15:23:18,118 INFO [default] Sensor Name: dsc
+2024-06-09 15:23:18,118 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:23:18,118 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:23:18,118 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:23:18,118 INFO [default] parse exit
+2024-06-09 15:42:28,240 INFO [default] Sensor Name: dsc
+2024-06-09 15:42:28,240 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:42:28,240 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:42:28,240 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:42:28,240 INFO [default] parse exit
+2024-06-09 15:44:05,283 INFO [default] Sensor Name: dsc
+2024-06-09 15:44:05,283 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:44:05,283 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:44:05,283 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:44:05,283 INFO [default] parse exit
+2024-06-09 15:45:47,000 INFO [default] Sensor Name: dsc
+2024-06-09 15:45:47,000 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 15:45:47,000 INFO [default] Sensor DT: "RAW16"
+2024-06-09 15:45:47,000 INFO [default] Sensor Resolution: 768*512
+2024-06-09 15:45:47,001 INFO [default] parse exit
+2024-06-09 18:07:04,267 INFO [default] Sensor Name: dsc
+2024-06-09 18:07:04,267 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:07:04,267 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:07:04,267 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:07:04,267 INFO [default] parse exit
+2024-06-09 18:08:15,410 INFO [default] Sensor Name: dsc
+2024-06-09 18:08:15,410 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:08:15,410 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:08:15,410 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:08:15,410 INFO [default] parse exit
+2024-06-09 18:08:58,364 INFO [default] Sensor Name: dsc
+2024-06-09 18:08:58,364 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:08:58,364 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:08:58,364 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:08:58,364 INFO [default] parse exit
+2024-06-09 18:13:25,828 INFO [default] Sensor Name: dsc
+2024-06-09 18:13:25,828 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:13:25,828 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:13:25,828 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:13:25,828 INFO [default] parse exit
+2024-06-09 18:16:16,488 INFO [default] Sensor Name: dsc
+2024-06-09 18:16:16,488 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:16:16,488 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:16:16,488 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:16:16,488 INFO [default] parse exit
+2024-06-09 18:18:06,521 INFO [default] Sensor Name: dsc
+2024-06-09 18:18:06,521 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:18:06,521 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:18:06,521 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:18:06,521 INFO [default] parse exit
+2024-06-09 18:22:34,919 INFO [default] Sensor Name: dsc
+2024-06-09 18:22:34,919 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:22:34,919 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:22:34,919 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:22:34,919 INFO [default] parse exit
+2024-06-09 18:23:54,168 INFO [default] Sensor Name: dsc
+2024-06-09 18:23:54,168 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:23:54,168 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:23:54,168 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:23:54,169 INFO [default] parse exit
+2024-06-09 18:25:04,522 INFO [default] Sensor Name: dsc
+2024-06-09 18:25:04,522 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:25:04,522 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:25:04,522 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:25:04,523 INFO [default] parse exit
+2024-06-09 18:25:58,549 INFO [default] Sensor Name: dsc
+2024-06-09 18:25:58,549 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:25:58,549 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:25:58,549 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:25:58,549 INFO [default] parse exit
+2024-06-09 18:27:14,230 INFO [default] Sensor Name: dsc
+2024-06-09 18:27:14,230 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:27:14,230 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:27:14,230 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:27:14,230 INFO [default] parse exit
+2024-06-09 18:28:07,309 INFO [default] Sensor Name: dsc
+2024-06-09 18:28:07,309 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:28:07,309 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:28:07,309 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:28:07,309 INFO [default] parse exit
+2024-06-09 18:29:30,431 INFO [default] Sensor Name: dsc
+2024-06-09 18:29:30,431 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:29:30,431 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:29:30,431 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:29:30,431 INFO [default] parse exit
+2024-06-09 18:30:03,110 INFO [default] Sensor Name: dsc
+2024-06-09 18:30:03,110 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:30:03,110 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:30:03,110 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:30:03,110 INFO [default] parse exit
+2024-06-09 18:31:28,959 INFO [default] Sensor Name: dsc
+2024-06-09 18:31:28,959 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:31:28,959 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:31:28,959 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:31:28,960 INFO [default] parse exit
+2024-06-09 18:32:32,709 INFO [default] Sensor Name: dsc
+2024-06-09 18:32:32,709 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:32:32,709 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:32:32,709 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:32:32,709 INFO [default] parse exit
+2024-06-09 18:33:06,020 INFO [default] Sensor Name: dsc
+2024-06-09 18:33:06,020 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:33:06,020 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:33:06,020 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:33:06,020 INFO [default] parse exit
+2024-06-09 18:34:35,841 INFO [default] Sensor Name: dsc
+2024-06-09 18:34:35,841 INFO [default] Sensor CFA: "RGGB"
+2024-06-09 18:34:35,841 INFO [default] Sensor DT: "RAW16"
+2024-06-09 18:34:35,841 INFO [default] Sensor Resolution: 768*512
+2024-06-09 18:34:35,841 INFO [default] parse exit
+2024-06-10 12:29:09,632 INFO [default] Sensor Name: dsc
+2024-06-10 12:29:09,633 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:29:09,633 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:29:09,633 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:29:09,633 INFO [default] parse exit
+2024-06-10 12:30:56,845 INFO [default] Sensor Name: dsc
+2024-06-10 12:30:56,845 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:30:56,845 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:30:56,845 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:30:56,845 INFO [default] parse exit
+2024-06-10 12:32:33,542 INFO [default] Sensor Name: dsc
+2024-06-10 12:32:33,542 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:32:33,542 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:32:33,542 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:32:33,542 INFO [default] parse exit
+2024-06-10 12:33:42,644 INFO [default] Sensor Name: dsc
+2024-06-10 12:33:42,644 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:33:42,644 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:33:42,644 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:33:42,644 INFO [default] parse exit
+2024-06-10 12:36:12,564 INFO [default] Sensor Name: dsc
+2024-06-10 12:36:12,564 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:36:12,564 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:36:12,564 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:36:12,565 INFO [default] parse exit
+2024-06-10 12:38:48,044 INFO [default] Sensor Name: dsc
+2024-06-10 12:38:48,045 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:38:48,045 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:38:48,045 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:38:48,045 INFO [default] parse exit
+2024-06-10 12:41:11,172 INFO [default] Sensor Name: dsc
+2024-06-10 12:41:11,172 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:41:11,172 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:41:11,172 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:41:11,173 INFO [default] parse exit
+2024-06-10 12:42:12,073 INFO [default] Sensor Name: dsc
+2024-06-10 12:42:12,073 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:42:12,073 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:42:12,074 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:42:12,074 INFO [default] parse exit
+2024-06-10 12:45:05,054 INFO [default] Sensor Name: dsc
+2024-06-10 12:45:05,054 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:45:05,054 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:45:05,054 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:45:05,054 INFO [default] parse exit
+2024-06-10 12:52:03,727 INFO [default] Sensor Name: dsc
+2024-06-10 12:52:03,727 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 12:52:03,727 INFO [default] Sensor DT: "RAW16"
+2024-06-10 12:52:03,727 INFO [default] Sensor Resolution: 768*512
+2024-06-10 12:52:03,727 INFO [default] parse exit
+2024-06-10 13:12:09,123 INFO [default] Sensor Name: dsc
+2024-06-10 13:12:09,123 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:12:09,123 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:12:09,123 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:12:09,123 INFO [default] parse exit
+2024-06-10 13:12:55,501 INFO [default] Sensor Name: dsc
+2024-06-10 13:12:55,502 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:12:55,502 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:12:55,502 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:12:55,502 INFO [default] parse exit
+2024-06-10 13:14:00,005 INFO [default] Sensor Name: dsc
+2024-06-10 13:14:00,005 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:14:00,006 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:14:00,006 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:14:00,006 INFO [default] parse exit
+2024-06-10 13:14:51,081 INFO [default] Sensor Name: dsc
+2024-06-10 13:14:51,082 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:14:51,082 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:14:51,082 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:14:51,082 INFO [default] parse exit
+2024-06-10 13:15:45,195 INFO [default] Sensor Name: dsc
+2024-06-10 13:15:45,196 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:15:45,196 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:15:45,196 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:15:45,196 INFO [default] parse exit
+2024-06-10 13:17:05,155 INFO [default] Sensor Name: dsc
+2024-06-10 13:17:05,156 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:17:05,156 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:17:05,156 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:17:05,156 INFO [default] parse exit
+2024-06-10 13:17:24,562 INFO [default] Sensor Name: dsc
+2024-06-10 13:17:24,563 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:17:24,563 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:17:24,563 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:17:24,563 INFO [default] parse exit
+2024-06-10 13:19:22,023 INFO [default] Sensor Name: dsc
+2024-06-10 13:19:22,024 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:19:22,024 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:19:22,024 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:19:22,024 INFO [default] parse exit
+2024-06-10 13:22:09,786 INFO [default] Sensor Name: dsc
+2024-06-10 13:22:09,787 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:22:09,787 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:22:09,787 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:22:09,787 INFO [default] parse exit
+2024-06-10 13:23:45,833 INFO [default] Sensor Name: dsc
+2024-06-10 13:23:45,833 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:23:45,833 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:23:45,833 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:23:45,833 INFO [default] parse exit
+2024-06-10 13:27:36,413 INFO [default] Sensor Name: dsc
+2024-06-10 13:27:36,413 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:27:36,413 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:27:36,413 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:27:36,414 INFO [default] parse exit
+2024-06-10 13:33:08,803 INFO [default] Sensor Name: dsc
+2024-06-10 13:33:08,804 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:33:08,804 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:33:08,804 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:33:08,804 INFO [default] parse exit
+2024-06-10 13:36:44,883 INFO [default] Sensor Name: dsc
+2024-06-10 13:36:44,884 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:36:44,884 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:36:44,884 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:36:44,884 INFO [default] parse exit
+2024-06-10 13:38:36,781 INFO [default] Sensor Name: dsc
+2024-06-10 13:38:36,781 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:38:36,781 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:38:36,781 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:38:36,781 INFO [default] parse exit
+2024-06-10 13:41:15,120 INFO [default] Sensor Name: dsc
+2024-06-10 13:41:15,120 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:41:15,120 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:41:15,120 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:41:15,120 INFO [default] parse exit
+2024-06-10 13:42:48,422 INFO [default] Sensor Name: dsc
+2024-06-10 13:42:48,423 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:42:48,423 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:42:48,423 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:42:48,423 INFO [default] parse exit
+2024-06-10 13:44:04,433 INFO [default] Sensor Name: dsc
+2024-06-10 13:44:04,434 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:44:04,434 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:44:04,434 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:44:04,434 INFO [default] parse exit
+2024-06-10 13:48:50,902 INFO [default] Sensor Name: dsc
+2024-06-10 13:48:50,902 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:48:50,902 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:48:50,902 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:48:50,902 INFO [default] parse exit
+2024-06-10 13:49:44,080 INFO [default] Sensor Name: dsc
+2024-06-10 13:49:44,080 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 13:49:44,080 INFO [default] Sensor DT: "RAW16"
+2024-06-10 13:49:44,080 INFO [default] Sensor Resolution: 768*512
+2024-06-10 13:49:44,080 INFO [default] parse exit
+2024-06-10 15:52:04,966 INFO [default] Sensor Name: dsc
+2024-06-10 15:52:04,966 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 15:52:04,966 INFO [default] Sensor DT: "RAW16"
+2024-06-10 15:52:04,966 INFO [default] Sensor Resolution: 768*512
+2024-06-10 15:52:04,966 INFO [default] parse exit
+2024-06-10 17:24:02,712 INFO [default] Sensor Name: dsc
+2024-06-10 17:24:02,712 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 17:24:02,712 INFO [default] Sensor DT: "RAW16"
+2024-06-10 17:24:02,712 INFO [default] Sensor Resolution: 768*512
+2024-06-10 17:24:02,712 INFO [default] parse exit
+2024-06-10 17:25:29,173 INFO [default] Sensor Name: dsc
+2024-06-10 17:25:29,173 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 17:25:29,173 INFO [default] Sensor DT: "RAW16"
+2024-06-10 17:25:29,173 INFO [default] Sensor Resolution: 768*512
+2024-06-10 17:25:29,173 INFO [default] parse exit
+2024-06-10 17:39:19,353 INFO [default] Sensor Name: dsc
+2024-06-10 17:39:19,353 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 17:39:19,353 INFO [default] Sensor DT: "RAW16"
+2024-06-10 17:39:19,353 INFO [default] Sensor Resolution: 768*512
+2024-06-10 17:39:19,353 INFO [default] parse exit
+2024-06-10 17:41:21,492 INFO [default] Sensor Name: dsc
+2024-06-10 17:41:21,493 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 17:41:21,493 INFO [default] Sensor DT: "RAW16"
+2024-06-10 17:41:21,493 INFO [default] Sensor Resolution: 768*512
+2024-06-10 17:41:21,493 INFO [default] parse exit
+2024-06-10 17:59:25,782 INFO [default] Sensor Name: dsc
+2024-06-10 17:59:25,782 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 17:59:25,783 INFO [default] Sensor DT: "RAW16"
+2024-06-10 17:59:25,783 INFO [default] Sensor Resolution: 768*512
+2024-06-10 17:59:25,783 INFO [default] parse exit
+2024-06-10 18:00:29,203 INFO [default] Sensor Name: dsc
+2024-06-10 18:00:29,203 INFO [default] Sensor CFA: "RGGB"
+2024-06-10 18:00:29,203 INFO [default] Sensor DT: "RAW16"
+2024-06-10 18:00:29,203 INFO [default] Sensor Resolution: 768*512
+2024-06-10 18:00:29,203 INFO [default] parse exit
+2024-06-11 01:27:03,937 INFO [default] Sensor Name: dsc
+2024-06-11 01:27:03,937 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 01:27:03,937 INFO [default] Sensor DT: "RAW16"
+2024-06-11 01:27:03,937 INFO [default] Sensor Resolution: 768*512
+2024-06-11 01:27:03,937 INFO [default] parse exit
+2024-06-11 01:29:21,227 INFO [default] Sensor Name: dsc
+2024-06-11 01:29:21,227 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 01:29:21,227 INFO [default] Sensor DT: "RAW16"
+2024-06-11 01:29:21,227 INFO [default] Sensor Resolution: 768*512
+2024-06-11 01:29:21,227 INFO [default] parse exit
+2024-06-11 01:32:10,750 INFO [default] Sensor Name: dsc
+2024-06-11 01:32:10,750 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 01:32:10,750 INFO [default] Sensor DT: "RAW16"
+2024-06-11 01:32:10,750 INFO [default] Sensor Resolution: 768*512
+2024-06-11 01:32:10,750 INFO [default] parse exit
+2024-06-11 01:38:21,180 INFO [default] Sensor Name: dsc
+2024-06-11 01:38:21,180 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 01:38:21,180 INFO [default] Sensor DT: "RAW16"
+2024-06-11 01:38:21,180 INFO [default] Sensor Resolution: 768*512
+2024-06-11 01:38:21,180 INFO [default] parse exit
+2024-06-11 18:01:49,745 INFO [default] Sensor Name: dsc
+2024-06-11 18:01:49,746 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:01:49,746 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:01:49,746 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:01:49,746 INFO [default] parse exit
+2024-06-11 18:03:27,443 INFO [default] Sensor Name: dsc
+2024-06-11 18:03:27,443 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:03:27,443 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:03:27,444 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:03:27,444 INFO [default] parse exit
+2024-06-11 18:05:26,723 INFO [default] Sensor Name: dsc
+2024-06-11 18:05:26,723 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:05:26,724 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:05:26,724 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:05:26,724 INFO [default] parse exit
+2024-06-11 18:06:58,415 INFO [default] Sensor Name: dsc
+2024-06-11 18:06:58,415 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:06:58,415 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:06:58,415 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:06:58,415 INFO [default] parse exit
+2024-06-11 18:08:26,384 INFO [default] Sensor Name: dsc
+2024-06-11 18:08:26,384 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:08:26,384 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:08:26,384 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:08:26,384 INFO [default] parse exit
+2024-06-11 18:09:50,383 INFO [default] Sensor Name: dsc
+2024-06-11 18:09:50,383 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:09:50,383 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:09:50,383 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:09:50,384 INFO [default] parse exit
+2024-06-11 18:12:12,324 INFO [default] Sensor Name: dsc
+2024-06-11 18:12:12,324 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:12:12,324 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:12:12,324 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:12:12,324 INFO [default] parse exit
+2024-06-11 18:14:39,102 INFO [default] Sensor Name: dsc
+2024-06-11 18:14:39,103 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:14:39,103 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:14:39,103 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:14:39,103 INFO [default] parse exit
+2024-06-11 18:15:32,986 INFO [default] Sensor Name: dsc
+2024-06-11 18:15:32,986 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:15:32,986 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:15:32,986 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:15:32,987 INFO [default] parse exit
+2024-06-11 18:16:29,384 INFO [default] Sensor Name: dsc
+2024-06-11 18:16:29,384 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:16:29,384 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:16:29,384 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:16:29,384 INFO [default] parse exit
+2024-06-11 18:18:21,944 INFO [default] Sensor Name: dsc
+2024-06-11 18:18:21,944 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:18:21,944 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:18:21,944 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:18:21,945 INFO [default] parse exit
+2024-06-11 18:18:37,710 INFO [default] Sensor Name: dsc
+2024-06-11 18:18:37,711 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:18:37,711 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:18:37,711 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:18:37,711 INFO [default] parse exit
+2024-06-11 18:21:05,412 INFO [default] Sensor Name: dsc
+2024-06-11 18:21:05,412 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:21:05,412 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:21:05,412 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:21:05,412 INFO [default] parse exit
+2024-06-11 18:24:19,572 INFO [default] Sensor Name: dsc
+2024-06-11 18:24:19,573 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:24:19,573 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:24:19,573 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:24:19,573 INFO [default] parse exit
+2024-06-11 18:29:47,740 INFO [default] Sensor Name: dsc
+2024-06-11 18:29:47,740 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 18:29:47,740 INFO [default] Sensor DT: "RAW16"
+2024-06-11 18:29:47,740 INFO [default] Sensor Resolution: 768*512
+2024-06-11 18:29:47,741 INFO [default] parse exit
+2024-06-11 20:21:24,696 INFO [default] Sensor Name: dsc
+2024-06-11 20:21:24,696 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:21:24,696 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:21:24,697 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:21:24,697 INFO [default] parse exit
+2024-06-11 20:24:47,636 INFO [default] Sensor Name: dsc
+2024-06-11 20:24:47,636 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:24:47,636 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:24:47,636 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:24:47,636 INFO [default] parse exit
+2024-06-11 20:25:21,164 INFO [default] Sensor Name: dsc
+2024-06-11 20:25:21,165 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:25:21,165 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:25:21,165 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:25:21,165 INFO [default] parse exit
+2024-06-11 20:25:54,206 INFO [default] Sensor Name: dsc
+2024-06-11 20:25:54,206 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:25:54,206 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:25:54,206 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:25:54,206 INFO [default] parse exit
+2024-06-11 20:26:28,495 INFO [default] Sensor Name: dsc
+2024-06-11 20:26:28,495 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:26:28,495 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:26:28,495 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:26:28,495 INFO [default] parse exit
+2024-06-11 20:27:02,896 INFO [default] Sensor Name: dsc
+2024-06-11 20:27:02,896 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:27:02,896 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:27:02,896 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:27:02,896 INFO [default] parse exit
+2024-06-11 20:27:35,594 INFO [default] Sensor Name: dsc
+2024-06-11 20:27:35,594 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:27:35,594 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:27:35,594 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:27:35,594 INFO [default] parse exit
+2024-06-11 20:34:18,736 INFO [default] Sensor Name: dsc
+2024-06-11 20:34:18,736 INFO [default] Sensor CFA: "RGGB"
+2024-06-11 20:34:18,736 INFO [default] Sensor DT: "RAW16"
+2024-06-11 20:34:18,736 INFO [default] Sensor Resolution: 768*512
+2024-06-11 20:34:18,736 INFO [default] parse exit
+2024-06-12 01:25:27,674 INFO [default] Sensor Name: dsc
+2024-06-12 01:25:27,675 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:25:27,675 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:25:27,675 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:25:27,675 INFO [default] parse exit
+2024-06-12 01:26:56,697 INFO [default] Sensor Name: dsc
+2024-06-12 01:26:56,697 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:26:56,697 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:26:56,697 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:26:56,697 INFO [default] parse exit
+2024-06-12 01:29:09,717 INFO [default] Sensor Name: dsc
+2024-06-12 01:29:09,717 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:29:09,717 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:29:09,717 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:29:09,717 INFO [default] parse exit
+2024-06-12 01:31:10,736 INFO [default] Sensor Name: dsc
+2024-06-12 01:31:10,736 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:31:10,736 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:31:10,736 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:31:10,736 INFO [default] parse exit
+2024-06-12 01:38:45,217 INFO [default] Sensor Name: dsc
+2024-06-12 01:38:45,217 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:38:45,217 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:38:45,217 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:38:45,217 INFO [default] parse exit
+2024-06-12 01:39:51,953 INFO [default] Sensor Name: dsc
+2024-06-12 01:39:51,953 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:39:51,953 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:39:51,953 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:39:51,954 INFO [default] parse exit
+2024-06-12 01:40:47,335 INFO [default] Sensor Name: dsc
+2024-06-12 01:40:47,335 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:40:47,335 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:40:47,335 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:40:47,335 INFO [default] parse exit
+2024-06-12 01:41:52,996 INFO [default] Sensor Name: dsc
+2024-06-12 01:41:52,996 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:41:52,996 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:41:52,996 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:41:52,997 INFO [default] parse exit
+2024-06-12 01:43:30,946 INFO [default] Sensor Name: dsc
+2024-06-12 01:43:30,946 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:43:30,946 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:43:30,946 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:43:30,946 INFO [default] parse exit
+2024-06-12 01:46:03,476 INFO [default] Sensor Name: dsc
+2024-06-12 01:46:03,476 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:46:03,476 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:46:03,476 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:46:03,476 INFO [default] parse exit
+2024-06-12 01:46:59,593 INFO [default] Sensor Name: dsc
+2024-06-12 01:46:59,593 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:46:59,593 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:46:59,593 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:46:59,593 INFO [default] parse exit
+2024-06-12 01:49:12,166 INFO [default] Sensor Name: dsc
+2024-06-12 01:49:12,166 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:49:12,166 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:49:12,166 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:49:12,166 INFO [default] parse exit
+2024-06-12 01:54:47,134 INFO [default] Sensor Name: dsc
+2024-06-12 01:54:47,134 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 01:54:47,134 INFO [default] Sensor DT: "RAW16"
+2024-06-12 01:54:47,134 INFO [default] Sensor Resolution: 768*512
+2024-06-12 01:54:47,134 INFO [default] parse exit
+2024-06-12 02:02:51,652 INFO [default] Sensor Name: dsc
+2024-06-12 02:02:51,653 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:02:51,653 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:02:51,653 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:02:51,653 INFO [default] parse exit
+2024-06-12 02:05:46,314 INFO [default] Sensor Name: dsc
+2024-06-12 02:05:46,315 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:05:46,315 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:05:46,315 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:05:46,315 INFO [default] parse exit
+2024-06-12 02:06:26,840 INFO [default] Sensor Name: dsc
+2024-06-12 02:06:26,840 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:06:26,840 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:06:26,840 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:06:26,840 INFO [default] parse exit
+2024-06-12 02:10:33,892 INFO [default] Sensor Name: dsc
+2024-06-12 02:10:33,892 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:10:33,892 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:10:33,892 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:10:33,893 INFO [default] parse exit
+2024-06-12 02:24:19,704 INFO [default] Sensor Name: dsc
+2024-06-12 02:24:19,704 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:24:19,704 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:24:19,704 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:24:19,704 INFO [default] parse exit
+2024-06-12 02:28:37,991 INFO [default] Sensor Name: dsc
+2024-06-12 02:28:37,992 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:28:37,992 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:28:37,992 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:28:37,992 INFO [default] parse exit
+2024-06-12 02:36:52,515 INFO [default] Sensor Name: dsc
+2024-06-12 02:36:52,515 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:36:52,515 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:36:52,515 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:36:52,515 INFO [default] parse exit
+2024-06-12 02:41:34,143 INFO [default] Sensor Name: dsc
+2024-06-12 02:41:34,143 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:41:34,143 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:41:34,143 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:41:34,143 INFO [default] parse exit
+2024-06-12 02:43:59,803 INFO [default] Sensor Name: dsc
+2024-06-12 02:43:59,804 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:43:59,804 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:43:59,804 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:43:59,804 INFO [default] parse exit
+2024-06-12 02:46:43,113 INFO [default] Sensor Name: dsc
+2024-06-12 02:46:43,113 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:46:43,113 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:46:43,113 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:46:43,114 INFO [default] parse exit
+2024-06-12 02:52:03,814 INFO [default] Sensor Name: dsc
+2024-06-12 02:52:03,815 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:52:03,815 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:52:03,815 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:52:03,815 INFO [default] parse exit
+2024-06-12 02:54:12,433 INFO [default] Sensor Name: dsc
+2024-06-12 02:54:12,433 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:54:12,433 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:54:12,433 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:54:12,433 INFO [default] parse exit
+2024-06-12 02:56:17,131 INFO [default] Sensor Name: dsc
+2024-06-12 02:56:17,131 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:56:17,131 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:56:17,131 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:56:17,132 INFO [default] parse exit
+2024-06-12 02:57:19,161 INFO [default] Sensor Name: dsc
+2024-06-12 02:57:19,161 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:57:19,161 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:57:19,161 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:57:19,162 INFO [default] parse exit
+2024-06-12 02:58:33,014 INFO [default] Sensor Name: dsc
+2024-06-12 02:58:33,014 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 02:58:33,014 INFO [default] Sensor DT: "RAW16"
+2024-06-12 02:58:33,014 INFO [default] Sensor Resolution: 768*512
+2024-06-12 02:58:33,015 INFO [default] parse exit
+2024-06-12 03:03:45,960 INFO [default] Sensor Name: dsc
+2024-06-12 03:03:45,960 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 03:03:45,960 INFO [default] Sensor DT: "RAW16"
+2024-06-12 03:03:45,961 INFO [default] Sensor Resolution: 768*512
+2024-06-12 03:03:45,961 INFO [default] parse exit
+2024-06-12 03:07:30,905 INFO [default] Sensor Name: dsc
+2024-06-12 03:07:30,905 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 03:07:30,905 INFO [default] Sensor DT: "RAW16"
+2024-06-12 03:07:30,905 INFO [default] Sensor Resolution: 768*512
+2024-06-12 03:07:30,905 INFO [default] parse exit
+2024-06-12 03:07:47,161 INFO [default] Sensor Name: dsc
+2024-06-12 03:07:47,161 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 03:07:47,161 INFO [default] Sensor DT: "RAW16"
+2024-06-12 03:07:47,162 INFO [default] Sensor Resolution: 768*512
+2024-06-12 03:07:47,162 INFO [default] parse exit
+2024-06-12 11:49:37,726 INFO [default] Sensor Name: dsc
+2024-06-12 11:49:37,727 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 11:49:37,727 INFO [default] Sensor DT: "RAW16"
+2024-06-12 11:49:37,727 INFO [default] Sensor Resolution: 768*512
+2024-06-12 11:49:37,727 INFO [default] parse exit
+2024-06-12 11:52:30,146 INFO [default] Sensor Name: dsc
+2024-06-12 11:52:30,146 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 11:52:30,146 INFO [default] Sensor DT: "RAW16"
+2024-06-12 11:52:30,146 INFO [default] Sensor Resolution: 768*512
+2024-06-12 11:52:30,146 INFO [default] parse exit
+2024-06-12 11:55:04,825 INFO [default] Sensor Name: dsc
+2024-06-12 11:55:04,825 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 11:55:04,825 INFO [default] Sensor DT: "RAW16"
+2024-06-12 11:55:04,825 INFO [default] Sensor Resolution: 768*512
+2024-06-12 11:55:04,825 INFO [default] parse exit
+2024-06-12 11:59:00,029 INFO [default] Sensor Name: dsc
+2024-06-12 11:59:00,029 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 11:59:00,029 INFO [default] Sensor DT: "RAW16"
+2024-06-12 11:59:00,029 INFO [default] Sensor Resolution: 768*512
+2024-06-12 11:59:00,029 INFO [default] parse exit
+2024-06-12 12:00:00,982 INFO [default] Sensor Name: dsc
+2024-06-12 12:00:00,982 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:00:00,982 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:00:00,982 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:00:00,982 INFO [default] parse exit
+2024-06-12 12:01:41,465 INFO [default] Sensor Name: dsc
+2024-06-12 12:01:41,465 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:01:41,465 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:01:41,465 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:01:41,465 INFO [default] parse exit
+2024-06-12 12:04:29,455 INFO [default] Sensor Name: dsc
+2024-06-12 12:04:29,455 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:04:29,455 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:04:29,455 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:04:29,455 INFO [default] parse exit
+2024-06-12 12:04:58,504 INFO [default] Sensor Name: dsc
+2024-06-12 12:04:58,504 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:04:58,504 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:04:58,504 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:04:58,504 INFO [default] parse exit
+2024-06-12 12:05:57,848 INFO [default] Sensor Name: dsc
+2024-06-12 12:05:57,848 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:05:57,848 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:05:57,848 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:05:57,848 INFO [default] parse exit
+2024-06-12 12:09:04,821 INFO [default] Sensor Name: dsc
+2024-06-12 12:09:04,821 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:09:04,821 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:09:04,821 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:09:04,821 INFO [default] parse exit
+2024-06-12 12:10:57,886 INFO [default] Sensor Name: dsc
+2024-06-12 12:10:57,886 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:10:57,886 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:10:57,886 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:10:57,886 INFO [default] parse exit
+2024-06-12 12:17:37,065 INFO [default] Sensor Name: dsc
+2024-06-12 12:17:37,065 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:17:37,065 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:17:37,065 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:17:37,065 INFO [default] parse exit
+2024-06-12 12:19:10,962 INFO [default] Sensor Name: dsc
+2024-06-12 12:19:10,962 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:19:10,962 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:19:10,962 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:19:10,962 INFO [default] parse exit
+2024-06-12 12:19:23,903 INFO [default] Sensor Name: dsc
+2024-06-12 12:19:23,903 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:19:23,903 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:19:23,903 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:19:23,904 INFO [default] parse exit
+2024-06-12 12:23:03,085 INFO [default] Sensor Name: dsc
+2024-06-12 12:23:03,085 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:23:03,085 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:23:03,085 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:23:03,086 INFO [default] parse exit
+2024-06-12 12:25:58,173 INFO [default] Sensor Name: dsc
+2024-06-12 12:25:58,173 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:25:58,173 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:25:58,173 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:25:58,173 INFO [default] parse exit
+2024-06-12 12:26:30,341 INFO [default] Sensor Name: dsc
+2024-06-12 12:26:30,341 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:26:30,341 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:26:30,341 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:26:30,341 INFO [default] parse exit
+2024-06-12 12:27:46,543 INFO [default] Sensor Name: dsc
+2024-06-12 12:27:46,543 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:27:46,543 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:27:46,543 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:27:46,543 INFO [default] parse exit
+2024-06-12 12:29:20,414 INFO [default] Sensor Name: dsc
+2024-06-12 12:29:20,414 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:29:20,414 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:29:20,414 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:29:20,414 INFO [default] parse exit
+2024-06-12 12:31:37,202 INFO [default] Sensor Name: dsc
+2024-06-12 12:31:37,202 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:31:37,202 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:31:37,203 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:31:37,203 INFO [default] parse exit
+2024-06-12 12:32:49,042 INFO [default] Sensor Name: dsc
+2024-06-12 12:32:49,042 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:32:49,042 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:32:49,042 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:32:49,042 INFO [default] parse exit
+2024-06-12 12:33:52,072 INFO [default] Sensor Name: dsc
+2024-06-12 12:33:52,073 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:33:52,073 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:33:52,073 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:33:52,073 INFO [default] parse exit
+2024-06-12 12:40:40,712 INFO [default] Sensor Name: dsc
+2024-06-12 12:40:40,712 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:40:40,712 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:40:40,712 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:40:40,712 INFO [default] parse exit
+2024-06-12 12:41:30,340 INFO [default] Sensor Name: dsc
+2024-06-12 12:41:30,340 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:41:30,340 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:41:30,340 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:41:30,340 INFO [default] parse exit
+2024-06-12 12:41:43,511 INFO [default] Sensor Name: dsc
+2024-06-12 12:41:43,512 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:41:43,512 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:41:43,512 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:41:43,512 INFO [default] parse exit
+2024-06-12 12:42:30,943 INFO [default] Sensor Name: dsc
+2024-06-12 12:42:30,943 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:42:30,943 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:42:30,943 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:42:30,943 INFO [default] parse exit
+2024-06-12 12:49:26,930 INFO [default] Sensor Name: dsc
+2024-06-12 12:49:26,930 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:49:26,930 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:49:26,930 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:49:26,930 INFO [default] parse exit
+2024-06-12 12:50:43,750 INFO [default] Sensor Name: dsc
+2024-06-12 12:50:43,750 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:50:43,750 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:50:43,750 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:50:43,750 INFO [default] parse exit
+2024-06-12 12:51:59,690 INFO [default] Sensor Name: dsc
+2024-06-12 12:51:59,690 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:51:59,690 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:51:59,691 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:51:59,691 INFO [default] parse exit
+2024-06-12 12:59:15,580 INFO [default] Sensor Name: dsc
+2024-06-12 12:59:15,581 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 12:59:15,581 INFO [default] Sensor DT: "RAW16"
+2024-06-12 12:59:15,581 INFO [default] Sensor Resolution: 768*512
+2024-06-12 12:59:15,581 INFO [default] parse exit
+2024-06-12 13:01:01,140 INFO [default] Sensor Name: dsc
+2024-06-12 13:01:01,140 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 13:01:01,140 INFO [default] Sensor DT: "RAW16"
+2024-06-12 13:01:01,141 INFO [default] Sensor Resolution: 768*512
+2024-06-12 13:01:01,141 INFO [default] parse exit
+2024-06-12 13:03:46,359 INFO [default] Sensor Name: dsc
+2024-06-12 13:03:46,359 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 13:03:46,359 INFO [default] Sensor DT: "RAW16"
+2024-06-12 13:03:46,359 INFO [default] Sensor Resolution: 768*512
+2024-06-12 13:03:46,360 INFO [default] parse exit
+2024-06-12 13:04:45,226 INFO [default] Sensor Name: dsc
+2024-06-12 13:04:45,227 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 13:04:45,227 INFO [default] Sensor DT: "RAW16"
+2024-06-12 13:04:45,227 INFO [default] Sensor Resolution: 768*512
+2024-06-12 13:04:45,227 INFO [default] parse exit
+2024-06-12 13:05:05,979 INFO [default] Sensor Name: dsc
+2024-06-12 13:05:05,979 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 13:05:05,979 INFO [default] Sensor DT: "RAW16"
+2024-06-12 13:05:05,979 INFO [default] Sensor Resolution: 768*512
+2024-06-12 13:05:05,979 INFO [default] parse exit
+2024-06-12 14:35:42,343 INFO [default] Sensor Name: dsc
+2024-06-12 14:35:42,343 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 14:35:42,343 INFO [default] Sensor DT: "RAW16"
+2024-06-12 14:35:42,343 INFO [default] Sensor Resolution: 768*512
+2024-06-12 14:35:42,343 INFO [default] parse exit
+2024-06-12 15:01:10,507 INFO [default] Sensor Name: dsc
+2024-06-12 15:01:10,507 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:01:10,507 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:01:10,507 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:01:10,507 INFO [default] parse exit
+2024-06-12 15:04:39,250 INFO [default] Sensor Name: dsc
+2024-06-12 15:04:39,251 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:04:39,251 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:04:39,251 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:04:39,251 INFO [default] parse exit
+2024-06-12 15:07:11,717 INFO [default] Sensor Name: dsc
+2024-06-12 15:07:11,718 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:07:11,718 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:07:11,718 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:07:11,718 INFO [default] parse exit
+2024-06-12 15:07:36,009 INFO [default] Sensor Name: dsc
+2024-06-12 15:07:36,009 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:07:36,009 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:07:36,009 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:07:36,009 INFO [default] parse exit
+2024-06-12 15:09:29,540 INFO [default] Sensor Name: dsc
+2024-06-12 15:09:29,540 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:09:29,540 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:09:29,540 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:09:29,540 INFO [default] parse exit
+2024-06-12 15:12:57,885 INFO [default] Sensor Name: dsc
+2024-06-12 15:12:57,885 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:12:57,885 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:12:57,885 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:12:57,885 INFO [default] parse exit
+2024-06-12 15:14:42,250 INFO [default] Sensor Name: dsc
+2024-06-12 15:14:42,250 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:14:42,250 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:14:42,250 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:14:42,251 INFO [default] parse exit
+2024-06-12 15:19:19,455 INFO [default] Sensor Name: dsc
+2024-06-12 15:19:19,455 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:19:19,455 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:19:19,455 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:19:19,455 INFO [default] parse exit
+2024-06-12 15:28:38,316 INFO [default] Sensor Name: dsc
+2024-06-12 15:28:38,316 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:28:38,316 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:28:38,316 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:28:38,317 INFO [default] parse exit
+2024-06-12 15:31:11,396 INFO [default] Sensor Name: dsc
+2024-06-12 15:31:11,396 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:31:11,396 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:31:11,396 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:31:11,396 INFO [default] parse exit
+2024-06-12 15:31:21,344 INFO [default] Sensor Name: dsc
+2024-06-12 15:31:21,345 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:31:21,345 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:31:21,345 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:31:21,345 INFO [default] parse exit
+2024-06-12 15:32:34,443 INFO [default] Sensor Name: dsc
+2024-06-12 15:32:34,443 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:32:34,443 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:32:34,443 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:32:34,443 INFO [default] parse exit
+2024-06-12 15:32:42,471 INFO [default] Sensor Name: dsc
+2024-06-12 15:32:42,472 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:32:42,472 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:32:42,472 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:32:42,472 INFO [default] parse exit
+2024-06-12 15:37:30,033 INFO [default] Sensor Name: dsc
+2024-06-12 15:37:30,033 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:37:30,033 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:37:30,033 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:37:30,033 INFO [default] parse exit
+2024-06-12 15:39:01,004 INFO [default] Sensor Name: dsc
+2024-06-12 15:39:01,004 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:39:01,004 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:39:01,004 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:39:01,004 INFO [default] parse exit
+2024-06-12 15:39:30,173 INFO [default] Sensor Name: dsc
+2024-06-12 15:39:30,174 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:39:30,174 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:39:30,174 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:39:30,174 INFO [default] parse exit
+2024-06-12 15:44:11,652 INFO [default] Sensor Name: dsc
+2024-06-12 15:44:11,652 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:44:11,652 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:44:11,652 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:44:11,652 INFO [default] parse exit
+2024-06-12 15:44:59,520 INFO [default] Sensor Name: dsc
+2024-06-12 15:44:59,520 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:44:59,520 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:44:59,520 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:44:59,520 INFO [default] parse exit
+2024-06-12 15:46:17,192 INFO [default] Sensor Name: dsc
+2024-06-12 15:46:17,192 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:46:17,192 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:46:17,192 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:46:17,192 INFO [default] parse exit
+2024-06-12 15:46:45,740 INFO [default] Sensor Name: dsc
+2024-06-12 15:46:45,740 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:46:45,740 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:46:45,740 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:46:45,740 INFO [default] parse exit
+2024-06-12 15:50:58,765 INFO [default] Sensor Name: dsc
+2024-06-12 15:50:58,765 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:50:58,765 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:50:58,765 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:50:58,765 INFO [default] parse exit
+2024-06-12 15:51:53,920 INFO [default] Sensor Name: dsc
+2024-06-12 15:51:53,920 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:51:53,920 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:51:53,920 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:51:53,921 INFO [default] parse exit
+2024-06-12 15:53:10,323 INFO [default] Sensor Name: dsc
+2024-06-12 15:53:10,324 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 15:53:10,324 INFO [default] Sensor DT: "RAW16"
+2024-06-12 15:53:10,324 INFO [default] Sensor Resolution: 768*512
+2024-06-12 15:53:10,324 INFO [default] parse exit
+2024-06-12 16:03:09,964 INFO [default] Sensor Name: dsc
+2024-06-12 16:03:09,964 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 16:03:09,964 INFO [default] Sensor DT: "RAW16"
+2024-06-12 16:03:09,964 INFO [default] Sensor Resolution: 768*512
+2024-06-12 16:03:09,964 INFO [default] parse exit
+2024-06-12 16:34:17,682 INFO [default] Sensor Name: dsc
+2024-06-12 16:34:17,682 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 16:34:17,682 INFO [default] Sensor DT: "RAW16"
+2024-06-12 16:34:17,682 INFO [default] Sensor Resolution: 768*512
+2024-06-12 16:34:17,682 INFO [default] parse exit
+2024-06-12 16:35:11,045 INFO [default] Sensor Name: dsc
+2024-06-12 16:35:11,045 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 16:35:11,045 INFO [default] Sensor DT: "RAW16"
+2024-06-12 16:35:11,045 INFO [default] Sensor Resolution: 768*512
+2024-06-12 16:35:11,046 INFO [default] parse exit
+2024-06-12 16:36:25,412 INFO [default] Sensor Name: dsc
+2024-06-12 16:36:25,412 INFO [default] Sensor CFA: "RGGB"
+2024-06-12 16:36:25,412 INFO [default] Sensor DT: "RAW16"
+2024-06-12 16:36:25,412 INFO [default] Sensor Resolution: 768*512
+2024-06-12 16:36:25,413 INFO [default] parse exit
+2024-06-16 12:32:30,522 INFO [default] Sensor Name: dsc
+2024-06-16 12:32:30,523 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 12:32:30,523 INFO [default] Sensor DT: "RAW16"
+2024-06-16 12:32:30,523 INFO [default] Sensor Resolution: 768*512
+2024-06-16 12:32:30,523 INFO [default] parse exit
+2024-06-16 12:35:06,004 INFO [default] Sensor Name: dsc
+2024-06-16 12:35:06,004 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 12:35:06,004 INFO [default] Sensor DT: "RAW16"
+2024-06-16 12:35:06,004 INFO [default] Sensor Resolution: 768*512
+2024-06-16 12:35:06,004 INFO [default] parse exit
+2024-06-16 12:40:27,947 INFO [default] Sensor Name: dsc
+2024-06-16 12:40:27,947 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 12:40:27,947 INFO [default] Sensor DT: "RAW16"
+2024-06-16 12:40:27,947 INFO [default] Sensor Resolution: 768*512
+2024-06-16 12:40:27,948 INFO [default] parse exit
+2024-06-16 12:57:58,923 INFO [default] Sensor Name: dsc
+2024-06-16 12:57:58,923 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 12:57:58,924 INFO [default] Sensor DT: "RAW16"
+2024-06-16 12:57:58,924 INFO [default] Sensor Resolution: 768*512
+2024-06-16 12:57:58,924 INFO [default] parse exit
+2024-06-16 13:00:58,173 INFO [default] Sensor Name: dsc
+2024-06-16 13:00:58,173 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:00:58,173 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:00:58,173 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:00:58,173 INFO [default] parse exit
+2024-06-16 13:01:11,232 INFO [default] Sensor Name: dsc
+2024-06-16 13:01:11,233 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:01:11,233 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:01:11,233 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:01:11,233 INFO [default] parse exit
+2024-06-16 13:50:39,046 INFO [default] Sensor Name: dsc
+2024-06-16 13:50:39,046 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:50:39,046 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:50:39,046 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:50:39,046 INFO [default] parse exit
+2024-06-16 13:52:10,947 INFO [default] Sensor Name: dsc
+2024-06-16 13:52:10,947 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:52:10,947 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:52:10,947 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:52:10,947 INFO [default] parse exit
+2024-06-16 13:52:59,403 INFO [default] Sensor Name: dsc
+2024-06-16 13:52:59,403 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:52:59,403 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:52:59,403 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:52:59,403 INFO [default] parse exit
+2024-06-16 13:53:54,632 INFO [default] Sensor Name: dsc
+2024-06-16 13:53:54,632 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 13:53:54,632 INFO [default] Sensor DT: "RAW16"
+2024-06-16 13:53:54,632 INFO [default] Sensor Resolution: 768*512
+2024-06-16 13:53:54,632 INFO [default] parse exit
+2024-06-16 14:11:11,616 INFO [default] Sensor Name: dsc
+2024-06-16 14:11:11,617 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:11:11,617 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:11:11,617 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:11:11,617 INFO [default] parse exit
+2024-06-16 14:12:13,619 INFO [default] Sensor Name: dsc
+2024-06-16 14:12:13,619 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:12:13,619 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:12:13,619 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:12:13,619 INFO [default] parse exit
+2024-06-16 14:16:53,495 INFO [default] Sensor Name: dsc
+2024-06-16 14:16:53,495 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:16:53,495 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:16:53,495 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:16:53,495 INFO [default] parse exit
+2024-06-16 14:19:16,042 INFO [default] Sensor Name: dsc
+2024-06-16 14:19:16,042 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:19:16,042 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:19:16,042 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:19:16,043 INFO [default] parse exit
+2024-06-16 14:21:54,289 INFO [default] Sensor Name: dsc
+2024-06-16 14:21:54,289 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:21:54,289 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:21:54,290 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:21:54,290 INFO [default] parse exit
+2024-06-16 14:25:11,309 INFO [default] Sensor Name: dsc
+2024-06-16 14:25:11,310 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:25:11,310 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:25:11,310 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:25:11,310 INFO [default] parse exit
+2024-06-16 14:27:38,235 INFO [default] Sensor Name: dsc
+2024-06-16 14:27:38,235 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:27:38,235 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:27:38,235 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:27:38,235 INFO [default] parse exit
+2024-06-16 14:28:37,795 INFO [default] Sensor Name: dsc
+2024-06-16 14:28:37,796 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:28:37,796 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:28:37,796 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:28:37,796 INFO [default] parse exit
+2024-06-16 14:28:50,708 INFO [default] Sensor Name: dsc
+2024-06-16 14:28:50,708 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:28:50,708 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:28:50,708 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:28:50,708 INFO [default] parse exit
+2024-06-16 14:29:33,156 INFO [default] Sensor Name: dsc
+2024-06-16 14:29:33,156 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:29:33,156 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:29:33,156 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:29:33,156 INFO [default] parse exit
+2024-06-16 14:30:43,260 INFO [default] Sensor Name: dsc
+2024-06-16 14:30:43,260 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:30:43,260 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:30:43,260 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:30:43,260 INFO [default] parse exit
+2024-06-16 14:30:56,655 INFO [default] Sensor Name: dsc
+2024-06-16 14:30:56,655 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:30:56,655 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:30:56,655 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:30:56,656 INFO [default] parse exit
+2024-06-16 14:32:33,404 INFO [default] Sensor Name: dsc
+2024-06-16 14:32:33,404 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:32:33,405 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:32:33,405 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:32:33,405 INFO [default] parse exit
+2024-06-16 14:33:55,414 INFO [default] Sensor Name: dsc
+2024-06-16 14:33:55,415 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:33:55,415 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:33:55,415 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:33:55,415 INFO [default] parse exit
+2024-06-16 14:35:44,987 INFO [default] Sensor Name: dsc
+2024-06-16 14:35:44,987 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:35:44,987 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:35:44,987 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:35:44,987 INFO [default] parse exit
+2024-06-16 14:39:48,717 INFO [default] Sensor Name: dsc
+2024-06-16 14:39:48,718 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:39:48,718 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:39:48,718 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:39:48,718 INFO [default] parse exit
+2024-06-16 14:45:40,152 INFO [default] Sensor Name: dsc
+2024-06-16 14:45:40,152 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:45:40,152 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:45:40,152 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:45:40,152 INFO [default] parse exit
+2024-06-16 14:46:52,247 INFO [default] Sensor Name: dsc
+2024-06-16 14:46:52,248 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:46:52,248 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:46:52,248 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:46:52,248 INFO [default] parse exit
+2024-06-16 14:47:51,653 INFO [default] Sensor Name: dsc
+2024-06-16 14:47:51,654 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:47:51,654 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:47:51,654 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:47:51,654 INFO [default] parse exit
+2024-06-16 14:49:47,020 INFO [default] Sensor Name: dsc
+2024-06-16 14:49:47,020 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:49:47,020 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:49:47,020 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:49:47,020 INFO [default] parse exit
+2024-06-16 14:50:27,464 INFO [default] Sensor Name: dsc
+2024-06-16 14:50:27,464 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:50:27,464 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:50:27,464 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:50:27,464 INFO [default] parse exit
+2024-06-16 14:53:56,982 INFO [default] Sensor Name: dsc
+2024-06-16 14:53:56,982 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:53:56,983 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:53:56,983 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:53:56,983 INFO [default] parse exit
+2024-06-16 14:55:04,452 INFO [default] Sensor Name: dsc
+2024-06-16 14:55:04,452 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:55:04,452 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:55:04,452 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:55:04,452 INFO [default] parse exit
+2024-06-16 14:56:17,849 INFO [default] Sensor Name: dsc
+2024-06-16 14:56:17,849 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:56:17,849 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:56:17,849 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:56:17,850 INFO [default] parse exit
+2024-06-16 14:57:12,671 INFO [default] Sensor Name: dsc
+2024-06-16 14:57:12,672 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 14:57:12,672 INFO [default] Sensor DT: "RAW16"
+2024-06-16 14:57:12,672 INFO [default] Sensor Resolution: 768*512
+2024-06-16 14:57:12,672 INFO [default] parse exit
+2024-06-16 15:04:46,541 INFO [default] Sensor Name: dsc
+2024-06-16 15:04:46,541 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:04:46,541 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:04:46,541 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:04:46,542 INFO [default] parse exit
+2024-06-16 15:20:25,666 INFO [default] Sensor Name: dsc
+2024-06-16 15:20:25,666 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:20:25,666 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:20:25,666 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:20:25,667 INFO [default] parse exit
+2024-06-16 15:24:04,904 INFO [default] Sensor Name: dsc
+2024-06-16 15:24:04,904 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:24:04,904 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:24:04,904 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:24:04,904 INFO [default] parse exit
+2024-06-16 15:29:18,196 INFO [default] Sensor Name: dsc
+2024-06-16 15:29:18,196 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:29:18,196 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:29:18,197 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:29:18,197 INFO [default] parse exit
+2024-06-16 15:32:07,919 INFO [default] Sensor Name: dsc
+2024-06-16 15:32:07,919 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:32:07,919 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:32:07,919 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:32:07,919 INFO [default] parse exit
+2024-06-16 15:34:18,619 INFO [default] Sensor Name: dsc
+2024-06-16 15:34:18,619 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:34:18,619 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:34:18,619 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:34:18,619 INFO [default] parse exit
+2024-06-16 15:36:17,684 INFO [default] Sensor Name: dsc
+2024-06-16 15:36:17,684 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:36:17,684 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:36:17,684 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:36:17,684 INFO [default] parse exit
+2024-06-16 15:39:51,539 INFO [default] Sensor Name: dsc
+2024-06-16 15:39:51,539 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:39:51,539 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:39:51,539 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:39:51,539 INFO [default] parse exit
+2024-06-16 15:43:59,377 INFO [default] Sensor Name: dsc
+2024-06-16 15:43:59,378 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:43:59,378 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:43:59,378 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:43:59,378 INFO [default] parse exit
+2024-06-16 15:50:42,200 INFO [default] Sensor Name: dsc
+2024-06-16 15:50:42,200 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:50:42,201 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:50:42,201 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:50:42,201 INFO [default] parse exit
+2024-06-16 15:59:09,567 INFO [default] Sensor Name: dsc
+2024-06-16 15:59:09,567 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 15:59:09,567 INFO [default] Sensor DT: "RAW16"
+2024-06-16 15:59:09,568 INFO [default] Sensor Resolution: 768*512
+2024-06-16 15:59:09,568 INFO [default] parse exit
+2024-06-16 16:01:24,399 INFO [default] Sensor Name: dsc
+2024-06-16 16:01:24,399 INFO [default] Sensor CFA: "RGGB"
+2024-06-16 16:01:24,400 INFO [default] Sensor DT: "RAW16"
+2024-06-16 16:01:24,400 INFO [default] Sensor Resolution: 768*512
+2024-06-16 16:01:24,400 INFO [default] parse exit
+2024-06-18 10:37:41,404 INFO [default] Sensor Name: dsc
+2024-06-18 10:37:41,404 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:37:41,404 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:37:41,404 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:37:41,405 INFO [default] parse exit
+2024-06-18 10:41:55,265 INFO [default] Sensor Name: dsc
+2024-06-18 10:41:55,265 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:41:55,265 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:41:55,265 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:41:55,265 INFO [default] parse exit
+2024-06-18 10:42:58,113 INFO [default] Sensor Name: dsc
+2024-06-18 10:42:58,113 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:42:58,113 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:42:58,113 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:42:58,114 INFO [default] parse exit
+2024-06-18 10:46:01,827 INFO [default] Sensor Name: dsc
+2024-06-18 10:46:01,827 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:46:01,827 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:46:01,827 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:46:01,827 INFO [default] parse exit
+2024-06-18 10:47:56,294 INFO [default] Sensor Name: dsc
+2024-06-18 10:47:56,295 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:47:56,295 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:47:56,295 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:47:56,296 INFO [default] parse exit
+2024-06-18 10:51:53,235 INFO [default] Sensor Name: dsc
+2024-06-18 10:51:53,235 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:51:53,235 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:51:53,235 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:51:53,235 INFO [default] parse exit
+2024-06-18 10:57:29,484 INFO [default] Sensor Name: dsc
+2024-06-18 10:57:29,485 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:57:29,485 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:57:29,485 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:57:29,485 INFO [default] parse exit
+2024-06-18 10:57:51,721 INFO [default] Sensor Name: dsc
+2024-06-18 10:57:51,722 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:57:51,722 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:57:51,722 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:57:51,722 INFO [default] parse exit
+2024-06-18 10:59:28,168 INFO [default] Sensor Name: dsc
+2024-06-18 10:59:28,168 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 10:59:28,169 INFO [default] Sensor DT: "RAW16"
+2024-06-18 10:59:28,169 INFO [default] Sensor Resolution: 768*512
+2024-06-18 10:59:28,169 INFO [default] parse exit
+2024-06-18 11:02:45,652 INFO [default] Sensor Name: dsc
+2024-06-18 11:02:45,652 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:02:45,652 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:02:45,652 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:02:45,653 INFO [default] parse exit
+2024-06-18 11:05:23,638 INFO [default] Sensor Name: dsc
+2024-06-18 11:05:23,638 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:05:23,638 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:05:23,638 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:05:23,638 INFO [default] parse exit
+2024-06-18 11:10:53,109 INFO [default] Sensor Name: dsc
+2024-06-18 11:10:53,109 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:10:53,109 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:10:53,109 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:10:53,109 INFO [default] parse exit
+2024-06-18 11:15:45,826 INFO [default] Sensor Name: dsc
+2024-06-18 11:15:45,826 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:15:45,827 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:15:45,827 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:15:45,827 INFO [default] parse exit
+2024-06-18 11:33:32,876 INFO [default] Sensor Name: dsc
+2024-06-18 11:33:32,876 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:33:32,876 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:33:32,876 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:33:32,877 INFO [default] parse exit
+2024-06-18 11:37:00,053 INFO [default] Sensor Name: dsc
+2024-06-18 11:37:00,053 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:37:00,053 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:37:00,053 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:37:00,053 INFO [default] parse exit
+2024-06-18 11:39:09,467 INFO [default] Sensor Name: dsc
+2024-06-18 11:39:09,467 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:39:09,467 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:39:09,467 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:39:09,467 INFO [default] parse exit
+2024-06-18 11:42:18,924 INFO [default] Sensor Name: dsc
+2024-06-18 11:42:18,925 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 11:42:18,925 INFO [default] Sensor DT: "RAW16"
+2024-06-18 11:42:18,925 INFO [default] Sensor Resolution: 768*512
+2024-06-18 11:42:18,925 INFO [default] parse exit
+2024-06-18 12:50:48,849 INFO [default] Sensor Name: dsc
+2024-06-18 12:50:48,849 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 12:50:48,849 INFO [default] Sensor DT: "RAW16"
+2024-06-18 12:50:48,849 INFO [default] Sensor Resolution: 768*512
+2024-06-18 12:50:48,849 INFO [default] parse exit
+2024-06-18 14:31:33,830 INFO [default] Sensor Name: dsc
+2024-06-18 14:31:33,830 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:31:33,830 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:31:33,830 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:31:33,831 INFO [default] parse exit
+2024-06-18 14:35:29,645 INFO [default] Sensor Name: dsc
+2024-06-18 14:35:29,645 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:35:29,645 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:35:29,645 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:35:29,645 INFO [default] parse exit
+2024-06-18 14:38:10,430 INFO [default] Sensor Name: dsc
+2024-06-18 14:38:10,430 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:38:10,430 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:38:10,430 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:38:10,430 INFO [default] parse exit
+2024-06-18 14:40:42,780 INFO [default] Sensor Name: dsc
+2024-06-18 14:40:42,780 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:40:42,780 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:40:42,781 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:40:42,781 INFO [default] parse exit
+2024-06-18 14:43:05,284 INFO [default] Sensor Name: dsc
+2024-06-18 14:43:05,284 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:43:05,284 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:43:05,284 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:43:05,284 INFO [default] parse exit
+2024-06-18 14:57:47,912 INFO [default] Sensor Name: dsc
+2024-06-18 14:57:47,912 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 14:57:47,912 INFO [default] Sensor DT: "RAW16"
+2024-06-18 14:57:47,912 INFO [default] Sensor Resolution: 768*512
+2024-06-18 14:57:47,912 INFO [default] parse exit
+2024-06-18 15:01:45,178 INFO [default] Sensor Name: dsc
+2024-06-18 15:01:45,179 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:01:45,179 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:01:45,179 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:01:45,179 INFO [default] parse exit
+2024-06-18 15:03:53,758 INFO [default] Sensor Name: dsc
+2024-06-18 15:03:53,758 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:03:53,758 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:03:53,758 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:03:53,759 INFO [default] parse exit
+2024-06-18 15:06:20,803 INFO [default] Sensor Name: dsc
+2024-06-18 15:06:20,803 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:06:20,803 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:06:20,803 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:06:20,803 INFO [default] parse exit
+2024-06-18 15:07:50,962 INFO [default] Sensor Name: dsc
+2024-06-18 15:07:50,962 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:07:50,962 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:07:50,962 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:07:50,962 INFO [default] parse exit
+2024-06-18 15:09:12,460 INFO [default] Sensor Name: dsc
+2024-06-18 15:09:12,460 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:09:12,460 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:09:12,460 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:09:12,460 INFO [default] parse exit
+2024-06-18 15:19:18,711 INFO [default] Sensor Name: dsc
+2024-06-18 15:19:18,712 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:19:18,712 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:19:18,712 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:19:18,712 INFO [default] parse exit
+2024-06-18 15:21:26,409 INFO [default] Sensor Name: dsc
+2024-06-18 15:21:26,409 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:21:26,409 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:21:26,409 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:21:26,409 INFO [default] parse exit
+2024-06-18 15:24:50,297 INFO [default] Sensor Name: dsc
+2024-06-18 15:24:50,297 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:24:50,298 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:24:50,298 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:24:50,298 INFO [default] parse exit
+2024-06-18 15:27:29,239 INFO [default] Sensor Name: dsc
+2024-06-18 15:27:29,240 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:27:29,240 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:27:29,240 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:27:29,241 INFO [default] parse exit
+2024-06-18 15:28:54,868 INFO [default] Sensor Name: dsc
+2024-06-18 15:28:54,868 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:28:54,868 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:28:54,868 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:28:54,868 INFO [default] parse exit
+2024-06-18 15:36:19,084 INFO [default] Sensor Name: dsc
+2024-06-18 15:36:19,084 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:36:19,084 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:36:19,085 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:36:19,085 INFO [default] parse exit
+2024-06-18 15:39:43,386 INFO [default] Sensor Name: dsc
+2024-06-18 15:39:43,387 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:39:43,387 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:39:43,387 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:39:43,387 INFO [default] parse exit
+2024-06-18 15:41:28,343 INFO [default] Sensor Name: dsc
+2024-06-18 15:41:28,343 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:41:28,343 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:41:28,343 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:41:28,343 INFO [default] parse exit
+2024-06-18 15:43:48,356 INFO [default] Sensor Name: dsc
+2024-06-18 15:43:48,356 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:43:48,357 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:43:48,357 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:43:48,357 INFO [default] parse exit
+2024-06-18 15:45:14,941 INFO [default] Sensor Name: dsc
+2024-06-18 15:45:14,941 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:45:14,941 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:45:14,941 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:45:14,941 INFO [default] parse exit
+2024-06-18 15:45:55,317 INFO [default] Sensor Name: dsc
+2024-06-18 15:45:55,317 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:45:55,317 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:45:55,318 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:45:55,318 INFO [default] parse exit
+2024-06-18 15:46:43,772 INFO [default] Sensor Name: dsc
+2024-06-18 15:46:43,772 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:46:43,772 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:46:43,772 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:46:43,772 INFO [default] parse exit
+2024-06-18 15:50:56,080 INFO [default] Sensor Name: dsc
+2024-06-18 15:50:56,080 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:50:56,080 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:50:56,080 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:50:56,080 INFO [default] parse exit
+2024-06-18 15:51:56,798 INFO [default] Sensor Name: dsc
+2024-06-18 15:51:56,798 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:51:56,798 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:51:56,798 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:51:56,798 INFO [default] parse exit
+2024-06-18 15:52:45,967 INFO [default] Sensor Name: dsc
+2024-06-18 15:52:45,967 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:52:45,967 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:52:45,967 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:52:45,967 INFO [default] parse exit
+2024-06-18 15:53:28,338 INFO [default] Sensor Name: dsc
+2024-06-18 15:53:28,338 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:53:28,338 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:53:28,338 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:53:28,338 INFO [default] parse exit
+2024-06-18 15:55:49,624 INFO [default] Sensor Name: dsc
+2024-06-18 15:55:49,624 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:55:49,624 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:55:49,624 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:55:49,624 INFO [default] parse exit
+2024-06-18 15:57:01,199 INFO [default] Sensor Name: dsc
+2024-06-18 15:57:01,200 INFO [default] Sensor CFA: "RGGB"
+2024-06-18 15:57:01,200 INFO [default] Sensor DT: "RAW16"
+2024-06-18 15:57:01,200 INFO [default] Sensor Resolution: 768*512
+2024-06-18 15:57:01,200 INFO [default] parse exit
+2024-06-23 01:11:01,043 INFO [default] Sensor Name: dsc
+2024-06-23 01:11:01,043 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:11:01,043 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:11:01,043 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:11:01,044 INFO [default] parse exit
+2024-06-23 01:12:50,670 INFO [default] Sensor Name: dsc
+2024-06-23 01:12:50,670 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:12:50,670 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:12:50,670 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:12:50,671 INFO [default] parse exit
+2024-06-23 01:14:26,859 INFO [default] Sensor Name: dsc
+2024-06-23 01:14:26,860 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:14:26,860 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:14:26,860 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:14:26,860 INFO [default] parse exit
+2024-06-23 01:16:29,164 INFO [default] Sensor Name: dsc
+2024-06-23 01:16:29,164 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:16:29,165 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:16:29,165 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:16:29,165 INFO [default] parse exit
+2024-06-23 01:18:24,424 INFO [default] Sensor Name: dsc
+2024-06-23 01:18:24,424 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:18:24,424 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:18:24,424 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:18:24,424 INFO [default] parse exit
+2024-06-23 01:27:27,224 INFO [default] Sensor Name: dsc
+2024-06-23 01:27:27,224 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:27:27,224 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:27:27,224 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:27:27,224 INFO [default] parse exit
+2024-06-23 01:32:38,253 INFO [default] Sensor Name: dsc
+2024-06-23 01:32:38,253 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:32:38,253 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:32:38,253 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:32:38,253 INFO [default] parse exit
+2024-06-23 01:34:07,083 INFO [default] Sensor Name: dsc
+2024-06-23 01:34:07,083 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:34:07,083 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:34:07,083 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:34:07,084 INFO [default] parse exit
+2024-06-23 01:38:30,214 INFO [default] Sensor Name: dsc
+2024-06-23 01:38:30,214 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:38:30,214 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:38:30,214 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:38:30,214 INFO [default] parse exit
+2024-06-23 01:42:49,667 INFO [default] Sensor Name: dsc
+2024-06-23 01:42:49,668 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:42:49,668 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:42:49,668 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:42:49,668 INFO [default] parse exit
+2024-06-23 01:45:45,061 INFO [default] Sensor Name: dsc
+2024-06-23 01:45:45,061 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:45:45,061 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:45:45,061 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:45:45,061 INFO [default] parse exit
+2024-06-23 01:46:04,784 INFO [default] Sensor Name: dsc
+2024-06-23 01:46:04,784 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:46:04,785 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:46:04,785 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:46:04,785 INFO [default] parse exit
+2024-06-23 01:51:54,911 INFO [default] Sensor Name: dsc
+2024-06-23 01:51:54,911 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:51:54,912 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:51:54,912 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:51:54,912 INFO [default] parse exit
+2024-06-23 01:53:57,707 INFO [default] Sensor Name: dsc
+2024-06-23 01:53:57,707 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:53:57,707 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:53:57,707 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:53:57,707 INFO [default] parse exit
+2024-06-23 01:55:56,559 INFO [default] Sensor Name: dsc
+2024-06-23 01:55:56,559 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:55:56,559 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:55:56,559 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:55:56,559 INFO [default] parse exit
+2024-06-23 01:58:10,230 INFO [default] Sensor Name: dsc
+2024-06-23 01:58:10,231 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 01:58:10,231 INFO [default] Sensor DT: "RAW16"
+2024-06-23 01:58:10,231 INFO [default] Sensor Resolution: 768*512
+2024-06-23 01:58:10,231 INFO [default] parse exit
+2024-06-23 02:00:16,400 INFO [default] Sensor Name: dsc
+2024-06-23 02:00:16,400 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:00:16,400 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:00:16,400 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:00:16,400 INFO [default] parse exit
+2024-06-23 02:03:44,315 INFO [default] Sensor Name: dsc
+2024-06-23 02:03:44,315 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:03:44,315 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:03:44,315 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:03:44,315 INFO [default] parse exit
+2024-06-23 02:11:29,912 INFO [default] Sensor Name: dsc
+2024-06-23 02:11:29,912 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:11:29,912 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:11:29,912 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:11:29,912 INFO [default] parse exit
+2024-06-23 02:13:44,391 INFO [default] Sensor Name: dsc
+2024-06-23 02:13:44,392 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:13:44,392 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:13:44,392 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:13:44,392 INFO [default] parse exit
+2024-06-23 02:19:21,206 INFO [default] Sensor Name: dsc
+2024-06-23 02:19:21,206 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:19:21,206 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:19:21,206 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:19:21,207 INFO [default] parse exit
+2024-06-23 02:21:31,210 INFO [default] Sensor Name: dsc
+2024-06-23 02:21:31,211 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:21:31,211 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:21:31,211 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:21:31,211 INFO [default] parse exit
+2024-06-23 02:22:48,297 INFO [default] Sensor Name: dsc
+2024-06-23 02:22:48,297 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:22:48,297 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:22:48,297 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:22:48,297 INFO [default] parse exit
+2024-06-23 02:25:34,523 INFO [default] Sensor Name: dsc
+2024-06-23 02:25:34,523 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:25:34,523 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:25:34,523 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:25:34,523 INFO [default] parse exit
+2024-06-23 02:28:24,470 INFO [default] Sensor Name: dsc
+2024-06-23 02:28:24,470 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:28:24,470 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:28:24,470 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:28:24,470 INFO [default] parse exit
+2024-06-23 02:29:35,222 INFO [default] Sensor Name: dsc
+2024-06-23 02:29:35,223 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:29:35,223 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:29:35,223 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:29:35,223 INFO [default] parse exit
+2024-06-23 02:30:48,387 INFO [default] Sensor Name: dsc
+2024-06-23 02:30:48,387 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:30:48,387 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:30:48,387 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:30:48,387 INFO [default] parse exit
+2024-06-23 02:50:08,209 INFO [default] Sensor Name: dsc
+2024-06-23 02:50:08,209 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:50:08,210 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:50:08,210 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:50:08,210 INFO [default] parse exit
+2024-06-23 02:53:08,295 INFO [default] Sensor Name: dsc
+2024-06-23 02:53:08,295 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:53:08,295 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:53:08,295 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:53:08,295 INFO [default] parse exit
+2024-06-23 02:53:29,029 INFO [default] Sensor Name: dsc
+2024-06-23 02:53:29,030 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:53:29,030 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:53:29,030 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:53:29,030 INFO [default] parse exit
+2024-06-23 02:55:15,780 INFO [default] Sensor Name: dsc
+2024-06-23 02:55:15,780 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:55:15,780 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:55:15,780 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:55:15,780 INFO [default] parse exit
+2024-06-23 02:59:13,156 INFO [default] Sensor Name: dsc
+2024-06-23 02:59:13,156 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 02:59:13,157 INFO [default] Sensor DT: "RAW16"
+2024-06-23 02:59:13,157 INFO [default] Sensor Resolution: 768*512
+2024-06-23 02:59:13,157 INFO [default] parse exit
+2024-06-23 03:01:23,246 INFO [default] Sensor Name: dsc
+2024-06-23 03:01:23,246 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:01:23,246 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:01:23,246 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:01:23,246 INFO [default] parse exit
+2024-06-23 03:03:25,464 INFO [default] Sensor Name: dsc
+2024-06-23 03:03:25,464 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:03:25,464 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:03:25,464 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:03:25,464 INFO [default] parse exit
+2024-06-23 03:07:46,391 INFO [default] Sensor Name: dsc
+2024-06-23 03:07:46,392 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:07:46,392 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:07:46,392 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:07:46,392 INFO [default] parse exit
+2024-06-23 03:14:24,111 INFO [default] Sensor Name: dsc
+2024-06-23 03:14:24,112 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:14:24,112 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:14:24,112 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:14:24,112 INFO [default] parse exit
+2024-06-23 03:26:08,323 INFO [default] Sensor Name: dsc
+2024-06-23 03:26:08,324 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:26:08,324 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:26:08,324 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:26:08,324 INFO [default] parse exit
+2024-06-23 03:27:40,643 INFO [default] Sensor Name: dsc
+2024-06-23 03:27:40,643 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:27:40,643 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:27:40,643 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:27:40,643 INFO [default] parse exit
+2024-06-23 03:36:26,463 INFO [default] Sensor Name: dsc
+2024-06-23 03:36:26,463 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:36:26,463 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:36:26,463 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:36:26,464 INFO [default] parse exit
+2024-06-23 03:39:03,350 INFO [default] Sensor Name: dsc
+2024-06-23 03:39:03,350 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:39:03,351 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:39:03,351 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:39:03,351 INFO [default] parse exit
+2024-06-23 03:44:58,083 INFO [default] Sensor Name: dsc
+2024-06-23 03:44:58,083 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:44:58,083 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:44:58,083 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:44:58,084 INFO [default] parse exit
+2024-06-23 03:47:14,008 INFO [default] Sensor Name: dsc
+2024-06-23 03:47:14,008 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:47:14,008 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:47:14,008 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:47:14,008 INFO [default] parse exit
+2024-06-23 03:48:51,427 INFO [default] Sensor Name: dsc
+2024-06-23 03:48:51,428 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 03:48:51,428 INFO [default] Sensor DT: "RAW16"
+2024-06-23 03:48:51,428 INFO [default] Sensor Resolution: 768*512
+2024-06-23 03:48:51,428 INFO [default] parse exit
+2024-06-23 10:46:45,756 INFO [default] Sensor Name: dsc
+2024-06-23 10:46:45,756 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 10:46:45,756 INFO [default] Sensor DT: "RAW16"
+2024-06-23 10:46:45,756 INFO [default] Sensor Resolution: 768*512
+2024-06-23 10:46:45,756 INFO [default] parse exit
+2024-06-23 10:54:02,647 INFO [default] Sensor Name: dsc
+2024-06-23 10:54:02,647 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 10:54:02,647 INFO [default] Sensor DT: "RAW16"
+2024-06-23 10:54:02,647 INFO [default] Sensor Resolution: 768*512
+2024-06-23 10:54:02,647 INFO [default] parse exit
+2024-06-23 10:56:00,358 INFO [default] Sensor Name: dsc
+2024-06-23 10:56:00,358 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 10:56:00,358 INFO [default] Sensor DT: "RAW16"
+2024-06-23 10:56:00,358 INFO [default] Sensor Resolution: 768*512
+2024-06-23 10:56:00,359 INFO [default] parse exit
+2024-06-23 10:56:55,298 INFO [default] Sensor Name: dsc
+2024-06-23 10:56:55,298 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 10:56:55,298 INFO [default] Sensor DT: "RAW16"
+2024-06-23 10:56:55,298 INFO [default] Sensor Resolution: 768*512
+2024-06-23 10:56:55,298 INFO [default] parse exit
+2024-06-23 10:58:08,877 INFO [default] Sensor Name: dsc
+2024-06-23 10:58:08,877 INFO [default] Sensor CFA: "RGGB"
+2024-06-23 10:58:08,877 INFO [default] Sensor DT: "RAW16"
+2024-06-23 10:58:08,877 INFO [default] Sensor Resolution: 768*512
+2024-06-23 10:58:08,877 INFO [default] parse exit

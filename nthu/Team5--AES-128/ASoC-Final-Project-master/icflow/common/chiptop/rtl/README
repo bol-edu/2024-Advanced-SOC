@@ -1,0 +1,11 @@
+DATED: 1/16/08
+Updated power controller
+
+2/04/08 : 
+Created hierarchies around RAMs in top_odyssey.v
+
+6/10/08:
+Several updates to the RTL
+
+6/16/08:
+Power controller updated to invert sense of switch controls

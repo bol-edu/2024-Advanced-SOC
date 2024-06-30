@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun 23 16:57:20 2024
+# Process ID: 2574046
+# Current directory: /home/ricky/asoc/final_project/fsic_fpga/vivado
+# Command line: vivado -source vvd_caravel_fpga.tcl -mode tcl
+# Log file: /home/ricky/asoc/final_project/fsic_fpga/vivado/vivado.log
+# Journal file: /home/ricky/asoc/final_project/fsic_fpga/vivado/vivado.jou
+# Running On: ricky-lab, OS: Linux, CPU Frequency: 4600.000 MHz, CPU Physical cores: 14, Host memory: 33393 MB
+#-----------------------------------------------------------
+source vvd_caravel_fpga.tcl

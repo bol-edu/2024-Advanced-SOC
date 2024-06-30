@@ -1,0 +1,72 @@
+
+
+
+                              IC Compiler II (TM)
+
+                Version R-2020.09-SP3 for linux64 - Jan 19, 2021
+  This release has significant feature enhancements. Please review the Release
+                       Notes associated with this release.
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+            or distribution of this software is strictly prohibited.
+ 
+source ../../common/common.tcl
+/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/work/../../results/user_prj0.pt.v.gz
+open_lib $ARC_TOP
+Information: Loading library file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/results/user_prj0' (FILE-007)
+Information: Loading library file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/work/CLIBs/saed14rvt_tt0p8v25c.ndm' (FILE-007)
+Information: Loading library file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/work/CLIBs/saed14rvt_tt0p8v25c_physical_only.ndm' (FILE-007)
+Information: Loading library file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/work/CLIBs/EXPLORE_physical_only.ndm' (FILE-007)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14rvt_tt0p8v25c', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'saed14rvt_tt0p8v25c_physical_only', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+Warning: Technology used to create frame-view and current technology have inconsistency: Min spacings are different for layer 'M1'. (FRAM-054)
+Warning: Technology 'saed14rvt_1p9m.tf' used for frame-view creation in library 'EXPLORE_physical_only', is inconsistent with the current technology 'saed14nm_1p9m_mw.tf' of library 'user_prj0'. (NDM-102)
+Information: Auto created reference libraries are up-to-date, no need to rebuild. (LIB-084)
+{user_prj0}
+copy_block -from_block ${DESIGN_NAME}_2_floorplan_ends -to temp_floorplan_ends
+Information: User units loaded from library 'saed14rvt_tt0p8v25c' (LNK-040)
+{user_prj0:temp_floorplan_ends.design}
+open_block temp_floorplan_ends
+Information: Incrementing open_count of block 'user_prj0:temp_floorplan_ends.design' to 2. (DES-021)
+{user_prj0:temp_floorplan_ends.design}
+################################################################################Power_Planing
+set_attribute -objects [get_nets VDD] -name net_type -value power
+Using libraries: user_prj0 saed14rvt_tt0p8v25c saed14rvt_tt0p8v25c_physical_only EXPLORE_physical_only
+Visiting block user_prj0:temp_floorplan_ends.design
+Design 'user_prj0' was successfully linked.
+Warning: No net objects matched 'VDD' (SEL-004)
+set_attribute -objects [get_nets VSS] -name net_type -value ground
+Warning: No net objects matched 'VSS' (SEL-004)
+connect_pg_net -net VDD [get_pins -physical_context */VDD]
+Warning: Nothing implicitly matched 'VDD' (SEL-003)
+Error: Nothing matched for -net (SEL-005)
+Error: bad value specified for option -net
+      	Use error_info for more info. (CMD-013)
+Information: script '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/scripts/step3_powerplan.tcl'
+            	stopped at line 11 due to error. (CMD-081)
+Extended error info:
+bad value specified for option -net
+    while executing
+"connect_pg_net -net VDD [get_pins -physical_context */VDD]"
+    (file "/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/scripts/step3_powerplan.tcl" line 11)
+ -- End Extended Error Info
+icc2_shell> error_info
+Extended error info:
+bad value specified for option -net
+    while executing
+"connect_pg_net -net VDD [get_pins -physical_context */VDD]"
+    (file "/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab1_planning/scripts/step3_powerplan.tcl" line 11)
+    invoked from within
+"source -echo -verbose ./../scripts/step3_powerplan.tcl"
+ -- End Extended Error Info
+icc2_shell> exit
+Maximum memory usage for this session: 293.50 MB
+Maximum memory usage for this session including child processes: 293.50 MB
+CPU usage for this session:     20 seconds (  0.01 hours)
+Elapsed time for this session:    339 seconds (  0.09 hours)
+Thank you for using IC Compiler II.

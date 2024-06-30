@@ -1,0 +1,362 @@
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: userdma.cpp, Line: 172, Column: 32 }
+Function:        _Z7userdmaRN3hls6streamINS_4axisI7ap_uintILi32EELm7ELm0ELm0ELh56ELb0EEELi0EEEPbS3_S2_ILi1EEPS3_PS2_ILi2EES9_S7_iS8_S6_b
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            inbuf
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '33'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+DebugLoc:        { File: userdma.cpp, Line: 174, Column: 32 }
+Function:        _Z7userdmaRN3hls6streamINS_4axisI7ap_uintILi32EELm7ELm0ELm0ELh56ELb0EEELi0EEEPbS3_S2_ILi1EEPS3_PS2_ILi2EES9_S7_iS8_S6_b
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        'fifo (hls::stream)'
+  - String:          ' variable '''
+  - Name:            outbuf
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=bit'
+  - String:          ' mode in '
+  - Bitwidth:        '33'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_userdma_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            m2sbuf
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Passed
+Pass:            reflow-aggr
+Name:            AggrSucc
+Function:        apatb_userdma_ir
+Args:            
+  - String:          'Aggregating '
+  - HwTyName:        maxi
+  - String:          ' variable '''
+  - Name:            s2mbuf
+  - String:          ''' with '
+  - AggregateTypeName: 'compact=none'
+  - String:          ' mode in '
+  - Bitwidth:        '32'
+  - String:          '-bits'
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: userdma.cpp, Line: 128, Column: 23 }
+Function:        _Z13sendoutstreamRN3hls6streamI4dataLi0EEE7ap_uintILi1EERbRNS0_INS_4axisIS4_ILi32EELm7ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_128_1
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:128:23'
+  - String:          ' '
+  - Function:        'sendoutstream(hls::stream<data, 0>&, ap_uint<1>, bool&, hls::stream<hls::axis<ap_uint<32>, 7ul, 0ul, 0ul, (unsigned char)56, false>, 0>&)'
+    DebugLoc:        { File: userdma.cpp, Line: 123, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: userdma.cpp, Line: 21, Column: 20 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_
+Args:            
+  - String:          'Sequential '
+  - Direction:       write
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       out_memory
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:21:20'
+  - String:          ' '
+  - Function:        'streamtoparallelwithburst(hls::stream<data, 0>&, hls::stream<int, 0>&, ap_uint<1>, bool&, ap_uint<32>, ap_uint<32>*)'
+    DebugLoc:        { File: userdma.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      store
+    DebugLoc:        { File: userdma.cpp, Line: 24, Column: 18 }
+  - OrigDirection:   write
+  - OrigID:          for.inc.store.13
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: userdma.cpp, Line: 18, Column: 19 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:18:19'
+  - String:          ' '
+  - Function:        'streamtoparallelwithburst(hls::stream<data, 0>&, hls::stream<int, 0>&, ap_uint<1>, bool&, ap_uint<32>, ap_uint<32>*)'
+    DebugLoc:        { File: userdma.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-inference
+Name:            BurstInferred
+DebugLoc:        { File: userdma.cpp, Line: 100, Column: 21 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb
+Args:            
+  - String:          'Sequential '
+  - Direction:       read
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length'
+  - String:          ' has been inferred'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        scevgepseq
+  - ArrayName:       in_memory
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_100_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:100:21'
+  - String:          ' '
+  - Function:        'paralleltostreamwithburst(ap_uint<32>*, ap_uint<1>, int, hls::stream<data, 0>&, bool)'
+    DebugLoc:        { File: userdma.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      load
+    DebugLoc:        { File: userdma.cpp, Line: 103, Column: 10 }
+  - OrigDirection:   read
+  - OrigID:          for.body.load.5
+...
+--- !Missed
+Pass:            reflow-burst-inference
+Name:            CouldNotAnalyzeBoundsPattern
+DebugLoc:        { File: userdma.cpp, Line: 93, Column: 19 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb
+Args:            
+  - String:          Could not analyze the loop bounds
+  - String:          ' _XLX_SEP_ '
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:93:19'
+  - String:          ' '
+  - Function:        'paralleltostreamwithburst(ap_uint<32>*, ap_uint<1>, int, hls::stream<data, 0>&, bool)'
+    DebugLoc:        { File: userdma.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: userdma.cpp, Line: 21, Column: 20 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: userdma.cpp, Line: 21, Column: 20 }
+  - OrigDirection:   write
+  - OrigID:          scevgepseq
+  - ArrayName:       out_memory
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:21:20'
+  - String:          ' '
+  - Function:        'streamtoparallelwithburst(hls::stream<data, 0>&, hls::stream<int, 0>&, ap_uint<1>, bool&, ap_uint<32>, ap_uint<32>*)'
+    DebugLoc:        { File: userdma.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Missed
+Pass:            reflow-burst-widen
+Name:            GreaterOrEqualThreshold
+DebugLoc:        { File: userdma.cpp, Line: 100, Column: 21 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb
+Args:            
+  - String:          'Could not widen since type '
+  - Type:            i32
+  - String:          ' size is greater than or equal to the max_widen_bitwidth threshold of '
+  - Threshold:       '0'
+  - String:          ' _XLX_SEP_ '
+  - OrigAccess:      call
+    DebugLoc:        { File: userdma.cpp, Line: 100, Column: 21 }
+  - OrigDirection:   read
+  - OrigID:          scevgepseq
+  - ArrayName:       in_memory
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_100_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:100:21'
+  - String:          ' '
+  - Function:        'paralleltostreamwithburst(ap_uint<32>*, ap_uint<1>, int, hls::stream<data, 0>&, bool)'
+    DebugLoc:        { File: userdma.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: userdma.cpp, Line: 128, Column: 23 }
+Function:        _Z13sendoutstreamRN3hls6streamI4dataLi0EEE7ap_uintILi1EERbRNS0_INS_4axisIS4_ILi32EELm7ELm0ELm0ELh56ELb0EEELi0EEE
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_128_1
+  - String:          '''('
+  - LoopLoc:         'userdma.cpp:128:23'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: userdma.cpp, Line: 18, Column: 19 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_18_1
+  - String:          '''('
+  - LoopLoc:         'userdma.cpp:18:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Failure
+Pass:            reflow-occurrence-inference
+Name:            NonComputableLoopForm
+DebugLoc:        { File: userdma.cpp, Line: 93, Column: 19 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb
+Args:            
+  - String:          'Could not analyze occurrence information within '''
+  - LoopName:        VITIS_LOOP_93_1
+  - String:          '''('
+  - LoopLoc:         'userdma.cpp:93:19'
+  - String:          ') . Requires loop in simplify form and with single exit.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: userdma.cpp, Line: 21, Column: 20 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem0
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:21:20'
+  - String:          ' '
+  - Function:        'streamtoparallelwithburst(hls::stream<data, 0>&, hls::stream<int, 0>&, ap_uint<1>, bool&, ap_uint<32>, ap_uint<32>*) (.1)'
+    DebugLoc:        { File: userdma.cpp, Line: 5, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: userdma.cpp, Line: 21, Column: 20 }
+Function:        _Z25streamtoparallelwithburstRN3hls6streamI4dataLi0EEERNS0_IiLi0EEE7ap_uintILi1EERbS6_ILi32EEPS9_.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       writes
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_21_2
+  - String:          '''('
+  - LoopLoc:         'userdma.cpp:21:20'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem0
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredVerboseSummary
+DebugLoc:        { File: userdma.cpp, Line: 100, Column: 21 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' has been inferred.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+  - String:          ' _XLX_SEP_ '
+  - AccessID:        seq
+  - ArrayName:       ''
+  - String:          ' '
+  - BundleName:      gmem1
+  - String:          ' '
+  - LoopName:        VITIS_LOOP_100_2
+  - String:          ' '
+  - LoopLoc:         'userdma.cpp:100:21'
+  - String:          ' '
+  - Function:        'paralleltostreamwithburst(ap_uint<32>*, ap_uint<1>, int, hls::stream<data, 0>&, bool) (.1)'
+    DebugLoc:        { File: userdma.cpp, Line: 81, Column: 0 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-burst-summary
+Name:            BurstInferredSummary
+DebugLoc:        { File: userdma.cpp, Line: 100, Column: 21 }
+Function:        _Z25paralleltostreamwithburstP7ap_uintILi32EES_ILi1EEiRN3hls6streamI4dataLi0EEEb.1
+Args:            
+  - String:          'Multiple burst '
+  - Direction:       reads
+  - String:          ' of '
+  - Length:          variable
+  - String:          ' length and bit width '
+  - Width:           '32'
+  - String:          ' in loop '''
+  - LoopName:        VITIS_LOOP_100_2
+  - String:          '''('
+  - LoopLoc:         'userdma.cpp:100:21'
+  - String:          ')'
+  - String:          ' has been inferred on bundle '''
+  - BundleName:      gmem1
+  - String:          '''.'
+  - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
+...

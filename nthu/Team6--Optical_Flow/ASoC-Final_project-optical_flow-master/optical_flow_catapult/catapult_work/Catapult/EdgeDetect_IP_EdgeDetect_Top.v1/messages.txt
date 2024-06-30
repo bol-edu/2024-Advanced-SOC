@@ -1,0 +1,296 @@
+
+# Messages from "go new"
+
+# Info: Branching solution 'solution.v2' at state 'initial' (PRJ-2)
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+solution design set EdgeDetect_IP::EdgeDetect_VerDer -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_HorDer -block
+solution design set EdgeDetect_IP::EdgeDetect_HorDer -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_MagAng -block
+solution design set EdgeDetect_IP::EdgeDetect_MagAng -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_Top -top
+solution design set EdgeDetect_IP::EdgeDetect_Top -top (HC-8)
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Front End called with arguments: -I../hls_c/inc -I../cmodel/inc -I../bmpUtil/inc -- /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/hls_c/inc/EdgeDetect.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'EdgeDetect_IP::EdgeDetect_Top' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 3.78 seconds, memory usage 1514940kB, peak memory usage 1514944kB (SOL-9)
+
+# Messages from "go compile"
+
+# Info: Starting transformation 'compile' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Generating synthesis internal form... (CIN-3)
+Found top design routine 'EdgeDetect_IP::EdgeDetect_Top' specified by directive (CIN-52)
+# Warning: Instantiating global variable 'kernel' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'atan_pow2_table' which may be accessed outside this scope (CIN-18)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_Top::EdgeDetect_Top' on object '' (CIN-64)
+# Warning: Instantiating global variable 'kernel' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'atan_pow2_table' which may be accessed outside this scope (CIN-18)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_VerDer::EdgeDetect_VerDer' on object '' (CIN-64)
+Synthesizing method 'EdgeDetect_IP::EdgeDetect_VerDer::run' (CIN-13)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_VerDer::run' on object '' (CIN-64)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/EdgeDetect_IP::EdgeDetect_VerDer/run/VCOL' (CIN-203)
+Inlining routine 'operator-<10, false>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator/<11, false>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator&<11, false>' (CIN-14)
+Inlining routine 'operator==<32, true>' (CIN-14)
+Inlining routine 'operator==<10, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator!=<10, false>' (CIN-14)
+Inlining routine 'operator-<11, false>' (CIN-14)
+Optimizing block '/EdgeDetect_IP::EdgeDetect_VerDer' ... (CIN-4)
+INOUT port 'dat_in' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'dat_out' is only used as an output. (OPT-11)
+INOUT port 'dy' is only used as an output. (OPT-11)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_VerDer/constructor' is found empty and is optimized away. (OPT-12)
+Creating instance '/EdgeDetect_IP::EdgeDetect_Top/VerDer_inst' of C Hierarchy 'EdgeDetect_IP::EdgeDetect_VerDer' (CIN-204)
+# Warning: Instantiating global variable 'kernel' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'atan_pow2_table' which may be accessed outside this scope (CIN-18)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_HorDer::EdgeDetect_HorDer' on object '' (CIN-64)
+Synthesizing method 'EdgeDetect_IP::EdgeDetect_HorDer::run' (CIN-13)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_HorDer::run' on object '' (CIN-64)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/EdgeDetect_IP::EdgeDetect_HorDer/run/HCOL' (CIN-203)
+Inlining routine 'operator-<11, false>' (CIN-14)
+Inlining routine 'operator==<11, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator*<8, false>' (CIN-14)
+Inlining routine 'operator!=<11, false>' (CIN-14)
+Inlining routine 'operator-<10, false>' (CIN-14)
+Optimizing block '/EdgeDetect_IP::EdgeDetect_HorDer' ... (CIN-4)
+INOUT port 'dat_in' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'dx' is only used as an output. (OPT-11)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_HorDer/constructor' is found empty and is optimized away. (OPT-12)
+Creating instance '/EdgeDetect_IP::EdgeDetect_Top/HorDer_inst' of C Hierarchy 'EdgeDetect_IP::EdgeDetect_HorDer' (CIN-204)
+# Warning: Instantiating global variable 'kernel' which may be accessed outside this scope (CIN-18)
+# Warning: Instantiating global variable 'atan_pow2_table' which may be accessed outside this scope (CIN-18)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_MagAng::EdgeDetect_MagAng' on object '' (CIN-64)
+Synthesizing method 'EdgeDetect_IP::EdgeDetect_MagAng::run' (CIN-13)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_MagAng::run' on object '' (CIN-64)
+Pragma 'hls_pipeline_init_interval<1>' detected on '/EdgeDetect_IP::EdgeDetect_MagAng/run/MCOL' (CIN-203)
+Inlining routine 'ac_math::ac_sqrt_pwl<AC_TRN, 19, 19, AC_TRN, AC_WRAP, 16, 9, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_normalize<19, 19, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<=<19, 0, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator!=<19, 19, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_shift_left<25, 1, AC_TRN, AC_WRAP, 16, 9, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<<33, 9, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator==<19, 19, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::ac_atan2_cordic<9, 9, AC_TRN, AC_WRAP, 9, 9, AC_TRN, AC_WRAP, 8, 3, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<9, 9, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'ac_math::atan_2mi' (CIN-14)
+Inlining routine 'operator>><26, 10, false, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator>><27, 11, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<27, 11, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<9, 9, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator<<9, 9, true, AC_TRN, AC_WRAP>' (CIN-14)
+Inlining routine 'operator-<11, false>' (CIN-14)
+Inlining routine 'operator-<10, false>' (CIN-14)
+Optimizing block '/EdgeDetect_IP::EdgeDetect_MagAng' ... (CIN-4)
+INOUT port 'dx_in' is only used as an input. (OPT-10)
+INOUT port 'dy_in' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'magn' is only used as an output. (OPT-11)
+INOUT port 'angle' is only used as an output. (OPT-11)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_MagAng/constructor' is found empty and is optimized away. (OPT-12)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,19,19,AC_TRN,AC_WRAP,16,9,AC_TRN,AC_WRAP>:m_lut.rom', from '10' bits to '6' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::ac_sqrt_pwl<AC_TRN,19,19,AC_TRN,AC_WRAP,16,9,AC_TRN,AC_WRAP>:c_lut.rom', from '13' bits to '10' bits. (MEM-87)
+# Warning: Reducing the number of bits used to represent array elements of 'ac_math::atan_pow2_table', from '71' bits to '12' bits. (MEM-87)
+Loop '/EdgeDetect_IP::EdgeDetect_MagAng/run/ac_math::ac_atan2_cordic<9,9,AC_TRN,AC_WRAP,9,9,AC_TRN,AC_WRAP,8,3,AC_TRN,AC_WRAP>:for' iterated at most 8 times. (LOOP-2)
+Creating instance '/EdgeDetect_IP::EdgeDetect_Top/MagAng_inst' of C Hierarchy 'EdgeDetect_IP::EdgeDetect_MagAng' (CIN-204)
+Synthesizing method 'EdgeDetect_IP::EdgeDetect_Top::run' (CIN-13)
+Inlining member function 'EdgeDetect_IP::EdgeDetect_Top::run' on object '' (CIN-64)
+Optimizing block '/EdgeDetect_IP::EdgeDetect_Top' ... (CIN-4)
+INOUT port 'dat_in' is only used as an input. (OPT-10)
+INOUT port 'widthIn' is only used as an input. (OPT-10)
+INOUT port 'heightIn' is only used as an input. (OPT-10)
+INOUT port 'magn' is only used as an output. (OPT-11)
+INOUT port 'angle' is only used as an output. (OPT-11)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_Top/constructor' is found empty and is optimized away. (OPT-12)
+Design 'EdgeDetect_IP::EdgeDetect_Top' was read (SOL-1)
+Makefile for Original Design + Testbench written to file './scverify/Verify_orig_cxx_osci.mk'
+# Warning: Hierarchical design detected - SLEC-CPC does not support design with hierarchy
+# Info: CDesignChecker Shell script written to '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_Top.v1/CDesignChecker/design_checker.sh'
+# Warning: VSCode workspace '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/.vscode' exists - overwriting files
+# Info: Completed transformation 'compile' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 3.94 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'compile': Total ops = 309, Real ops = 109, Vars = 90 (SOL-21)
+
+# Messages from "go libraries"
+
+solution library add nangate-45nm_beh -- -rtlsyntool OasysRTL -vendor Nangate -technology 045nm
+solution library add ccs_sample_mem
+solution library add {[Block] EdgeDetect_IP::EdgeDetect_HorDer.v1}
+solution library add {[Block] EdgeDetect_IP::EdgeDetect_MagAng.v1}
+solution library add {[Block] EdgeDetect_IP::EdgeDetect_VerDer.v1}
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/td_ccore_solutions/leading_sign_19_0_db8a43ecf0ceb544432782a6d06851306744_0/.sif/solIndex_2_97186cad-d3ca-4d67-aabc-bc5483f5c79c.xml' ... (LIB-129)
+go libraries
+# Info: Starting transformation 'libraries' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+# Info: Please set ComponentLibs/TechLibSearchPath to enable flows that use downstream synthesis tools (LIB-220)
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/td_ccore_solutions/leading_sign_19_0_db8a43ecf0ceb544432782a6d06851306744_0/.sif/solIndex_2_97186cad-d3ca-4d67-aabc-bc5483f5c79c.xml' ... (LIB-129)
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_HorDer.v1/.sif/solIndex_2_a17939d7-9af9-4f41-a725-a5ae01ea825a.xml' ... (LIB-129)
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_MagAng.v1/.sif/solIndex_2_b7690838-aa88-47e7-8b3a-9f55241f6137.xml' ... (LIB-129)
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_VerDer.v1/.sif/solIndex_2_6db3212a-cc3f-4689-9b18-5ac1b9912830.xml' ... (LIB-129)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_busdefs.lib' [mgc_busdefs]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/stdops.lib' [STDOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/fpops.lib' [FPOPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_ioport.lib' [ccs_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/mgc_ioport.lib' [mgc_ioport]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_ops.lib' [ASSERT_OPS]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/cds_assert/assert_mods.lib' [assert_mods]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_connections.lib' [ccs_connections]... (LIB-49)
+Reading component library '$MGC_HOME/pkgs/siflibs/nangate/nangate-45nm_beh.lib' [nangate-45nm_beh]... (LIB-49)
+# Warning: Component library 'nangate-45nm_beh' created with a newer version of Catapult Library Builder, 2023.2/1033219 > 2023.1/1033555 (LIB-83)
+Reading component library '$MGC_HOME/pkgs/siflibs/ccs_sample_mem.lib' [ccs_sample_mem]... (LIB-49)
+# Info: Completed transformation 'libraries' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.61 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'libraries': Total ops = 309, Real ops = 109, Vars = 90 (SOL-21)
+
+# Messages from "go assembly"
+
+directive set -CLOCKS {clk {-CLOCK_PERIOD 10.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 5.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND both -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
+/CLOCKS {clk {-CLOCK_PERIOD 10.0 -CLOCK_EDGE rising -CLOCK_UNCERTAINTY 0.0 -CLOCK_HIGH_TIME 5.0 -RESET_SYNC_NAME rst -RESET_ASYNC_NAME arst_n -RESET_KIND both -RESET_SYNC_ACTIVE high -RESET_ASYNC_ACTIVE low -ENABLE_ACTIVE high}}
+directive set /EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_MagAng -MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_MagAng.v1}
+/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_MagAng/MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_MagAng.v1}
+directive set /EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_HorDer -MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_HorDer.v1}
+/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_HorDer/MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_HorDer.v1}
+directive set /EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_VerDer -MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_VerDer.v1}
+/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_VerDer/MAP_TO_MODULE {[Block] EdgeDetect_IP::EdgeDetect_VerDer.v1}
+go assembly
+# Info: Starting transformation 'assembly' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Mapping instance '/EdgeDetect_IP::EdgeDetect_Top/VerDer_inst' to library module '[Block] EdgeDetect_IP::EdgeDetect_VerDer.v1' (ASM-4)
+Mapping instance '/EdgeDetect_IP::EdgeDetect_Top/HorDer_inst' to library module '[Block] EdgeDetect_IP::EdgeDetect_HorDer.v1' (ASM-4)
+Mapping instance '/EdgeDetect_IP::EdgeDetect_Top/MagAng_inst' to library module '[Block] EdgeDetect_IP::EdgeDetect_MagAng.v1' (ASM-4)
+# Info: Partition '/EdgeDetect_IP::EdgeDetect_Top/run' is found empty and is optimized away. (OPT-12)
+Variable '/EdgeDetect_IP::EdgeDetect_Top/widthIn' connected to multiple blocks (ASM-35)
+Variable '/EdgeDetect_IP::EdgeDetect_Top/widthIn' connected to multiple blocks (ASM-35)
+Variable '/EdgeDetect_IP::EdgeDetect_Top/heightIn' connected to multiple blocks (ASM-35)
+Variable '/EdgeDetect_IP::EdgeDetect_Top/heightIn' connected to multiple blocks (ASM-35)
+# Info: Completed transformation 'assembly' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.12 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'assembly': Total ops = 61, Real ops = 13, Vars = 11 (SOL-21)
+
+# Messages from "go architect"
+
+directive set /EdgeDetect_IP::EdgeDetect_Top/dat:cns -FIFO_DEPTH 0
+/EdgeDetect_IP::EdgeDetect_Top/dat:cns/FIFO_DEPTH 0
+directive set /EdgeDetect_IP::EdgeDetect_Top/dy:cns -FIFO_DEPTH 2
+/EdgeDetect_IP::EdgeDetect_Top/dy:cns/FIFO_DEPTH 2
+directive set /EdgeDetect_IP::EdgeDetect_Top/dx:cns -FIFO_DEPTH 0
+/EdgeDetect_IP::EdgeDetect_Top/dx:cns/FIFO_DEPTH 0
+directive set /EdgeDetect_IP::EdgeDetect_Top -RESET_CLEARS_ALL_REGS no
+/EdgeDetect_IP::EdgeDetect_Top/RESET_CLEARS_ALL_REGS no
+go architect
+# Info: Starting transformation 'loops' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+# Info: Completed transformation 'loops' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.06 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'loops': Total ops = 67, Real ops = 13, Vars = 13 (SOL-21)
+# Info: Starting transformation 'memories' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Memory Resource '/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_VerDer/line_buf0:rsc' (from var: line_buf0) mapped to 'ccs_sample_mem.ccs_ram_sync_singleport' (size: 963 x 16). (MEM-4)
+Memory Resource '/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_VerDer/line_buf1:rsc' (from var: line_buf1) mapped to 'ccs_sample_mem.ccs_ram_sync_singleport' (size: 963 x 16). (MEM-4)
+I/O-Port Resource '/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_MagAng/widthIn:rsc' (from var: widthIn) mapped to 'ccs_ioport.ccs_in' (size: 11). (MEM-2)
+I/O-Port Resource '/EdgeDetect_IP::EdgeDetect_Top/EdgeDetect_IP::EdgeDetect_MagAng/heightIn:rsc' (from var: heightIn) mapped to 'ccs_ioport.ccs_in' (size: 10). (MEM-2)
+# Info: Completed transformation 'memories' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.11 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'memories': Total ops = 73, Real ops = 13, Vars = 13 (SOL-21)
+# Info: Starting transformation 'cluster' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+# Info: Completed transformation 'cluster' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.07 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'cluster': Total ops = 73, Real ops = 13, Vars = 13 (SOL-21)
+# Info: Starting transformation 'architect' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Design 'EdgeDetect_IP::EdgeDetect_Top' contains '13' real operations. (SOL-11)
+# Info: Completed transformation 'architect' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.07 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'architect': Total ops = 73, Real ops = 13, Vars = 13 (SOL-21)
+
+# Messages from "go allocate"
+
+go extract
+# Info: Starting transformation 'allocate' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+# Info: Applying user-supplied FIFO_DEPTH constraint of 2 to channel 'dy' (HIER-22)
+# Info: Applying user-supplied FIFO_DEPTH constraint of 0 to channel 'dx' (HIER-22)
+# Info: Applying user-supplied FIFO_DEPTH constraint of 0 to channel 'dat' (HIER-22)
+Netlist written to file 'schedule.gnt' (NET-4)
+# Info: Completed transformation 'allocate' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.16 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'allocate': Total ops = 73, Real ops = 13, Vars = 13 (SOL-21)
+
+# Messages from "go schedule"
+
+# Info: Starting transformation 'schedule' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Report written to file 'cycle.rpt'
+# Info: Completed transformation 'schedule' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.30 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'schedule': Total ops = 215, Real ops = 13, Vars = 53 (SOL-21)
+
+# Messages from "go dpfsm"
+
+# Info: Starting transformation 'dpfsm' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Performing FSM extraction... (FSM-1)
+# Info: Completed transformation 'dpfsm' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.17 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'dpfsm': Total ops = 215, Real ops = 13, Vars = 53 (SOL-21)
+
+# Messages from "go extract"
+
+# Info: Starting transformation 'instance' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Netlist written to file 'schematic.nlv' (NET-4)
+# Info: Completed transformation 'instance' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 0.24 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'instance': Total ops = 215, Real ops = 13, Vars = 53 (SOL-21)
+# Info: Starting transformation 'extract' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1' (SOL-8)
+Report written to file 'rtl.rpt'
+Generating scverify_top.cpp ()
+Netlist written to file 'rtl.v' (NET-4)
+generate concat
+order file name is: rtl.v_order.txt
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_19_0_db8a43ecf0ceb544432782a6d06851306744_0/rtl.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_MagAng.v1/rtl.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_coupled_v1.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_HorDer.v1/rtl.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_VerDer.v1/rtl.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_pipe_v6.v
+Add dependent file: ./rtl.v
+Finished writing concatenated file: /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_Top.v1/concat_rtl.v
+order file name is: rtl.v_order_sim.txt
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_out_wait_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_io_sync_v2.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_shift_bl_beh_v5.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/mgc_shift_l_beh_v5.v
+Add dependent file: ../td_ccore_solutions/leading_sign_19_0_db8a43ecf0ceb544432782a6d06851306744_0/rtl.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_MagAng.v1/rtl.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_in_wait_coupled_v1.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_HorDer.v1/rtl.v
+Add dependent file: ../EdgeDetect_IP_EdgeDetect_VerDer.v1/rtl.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_genreg_v1.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_fifo_wait_core_v5.v
+Add dependent file: /usr/cadtool/mentor/Catapult/2023.1/Mgc_home/pkgs/siflibs/ccs_pipe_v6.v
+Add dependent file: ./rtl.v
+Finished writing concatenated simulation file: /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/EdgeDetect_IP_EdgeDetect_Top.v1/concat_sim_rtl.v
+Generating SCVerify testbench files
+Makefile for RTL Verilog output 'rtl.v' vs Untimed C++ written to file './scverify/Verify_rtl_v_msim.mk'
+Makefile for Concat RTL Verilog output 'concat_sim_rtl.v' vs Untimed C++ written to file './scverify/Verify_concat_sim_rtl_v_msim.mk'
+Reading solution library '/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/Catapult/td_ccore_solutions/leading_sign_19_0_db8a43ecf0ceb544432782a6d06851306744_0/.sif/solIndex_2_97186cad-d3ca-4d67-aabc-bc5483f5c79c.xml' ... (LIB-129)
+# Info: Completed transformation 'extract' on solution 'EdgeDetect_IP::EdgeDetect_Top.v1': elapsed time 3.49 seconds, memory usage 1580476kB, peak memory usage 1580476kB (SOL-9)
+# Info: Design complexity at end of 'extract': Total ops = 215, Real ops = 13, Vars = 53 (SOL-21)

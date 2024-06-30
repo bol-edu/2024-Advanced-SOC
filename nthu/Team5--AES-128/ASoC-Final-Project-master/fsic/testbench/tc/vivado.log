@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Jun  9 02:27:26 2024
+# Process ID: 2990330
+# Current directory: /home/ricky/asoc/final_project/fsic/testbench/tc
+# Command line: vivado -source open_wave.tcl
+# Log file: /home/ricky/asoc/final_project/fsic/testbench/tc/vivado.log
+# Journal file: /home/ricky/asoc/final_project/fsic/testbench/tc/vivado.jou
+# Running On: ricky-lab, OS: Linux, CPU Frequency: 4597.448 MHz, CPU Physical cores: 14, Host memory: 33393 MB
+#-----------------------------------------------------------
+start_gui
+INFO: [Common 17-1460] Use of init.tcl in /home/ricky/.Xilinx/Vivado/init.tcl is deprecated. Please use Vivado_init.tcl 
+Sourcing tcl script '/home/ricky/.Xilinx/Vivado/init.tcl'
+source open_wave.tcl
+# current_fileset
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2023.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2023.2/data/ip'.
+# open_wave_database tb_fsic_xelab.wdb
+open_wave_config /home/ricky/asoc/final_project/fsic/testbench/tc/tb_fsic_xelab.wcfg
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_edgedetect_done was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/edgedetect_done was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/rd_state was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/rd_next_state was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/RegisterData was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_widthIn was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_heightIn was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_sw_in was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/crc32_stream_in was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/crc32_stream_out was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_crc32_stream_in was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/reg_crc32_stream_out was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/awvalid_in was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/wvalid_in was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/awready_out was not found in the design.
+WARNING: Simulation object /tb_fsic/dut/U_USER_SUBSYS0/U_USRPRJ0/wready_out was not found in the design.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  9 02:29:19 2024...

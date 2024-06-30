@@ -1,0 +1,35 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "userdma",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/home\/ubuntu\/SoC_Design\/homework\/ASOC\/ASoC-Final_project-optical_flow\/vivado\/vitis_prj\/userdma_fir\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "userdma"
+              }]
+          }
+        },
+        {
+          "functionName": "userdma",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/home\/ubuntu\/SoC_Design\/homework\/ASOC\/ASoC-Final_project-optical_flow\/vivado\/vitis_prj\/userdma_fir\/solution1\/csynth.tcl",
+          "sourceLine": "16",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "userdma"
+              }]
+          }
+        }
+      ]
+    }]}

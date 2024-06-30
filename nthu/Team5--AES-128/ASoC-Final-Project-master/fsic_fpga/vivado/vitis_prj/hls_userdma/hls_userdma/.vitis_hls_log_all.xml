@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.980+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARUSER' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.834+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARREGION' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.832+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARQOS' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.830+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARPROT' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.829+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARCACHE' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.826+0800" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'paralleltostreamwithburst_Pipeline_VITIS_LOOP_100_2/m_axi_gmem1_ARLOCK' to 0." projectName="hls_userdma" solutionName="solution1" date="2024-06-15T17:11:13.825+0800" type="Warning"/>
+      </synLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

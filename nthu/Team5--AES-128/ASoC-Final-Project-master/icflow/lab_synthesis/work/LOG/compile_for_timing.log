@@ -1,0 +1,1259 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version R-2020.09-SP5 for linux64 - Apr 23, 2021 
+
+                    Copyright (c) 1988 - 2021 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+source ../../common/common.tcl
+/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../results/user_prj0.pt.v.gz
+set link_library          "$Std_cell_lib $Ram_lib"
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db 
+set target_library        "$Std_cell_lib $Ram_lib"
+/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db 
+set dc_allow_rtl_pg	  true
+true
+source $analyze_script
+Running PRESTO HDLC
+Compiling source file /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v
+Opening include file /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/timescale.v
+Opening include file /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v
+Warning:  /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v:127: The statements in initial blocks are ignored. (VER-281)
+Warning:  /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v:432: The statements in initial blocks are ignored. (VER-281)
+Presto compilation completed successfully.
+Loading db file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db'
+1
+elaborate ${DESIGN_NAME} -architecture verilog -library WORK
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+  Loading link library 'saed14rvt_tt0p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  /home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v:141: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 120 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           121            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 129 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           130            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 154 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           164            |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+	in routine user_prj0 line 91 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     sm_cnt_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     ss_cnt_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine user_prj0 line 104 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       pt2_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       pt0_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       pt1_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine user_prj0 line 129 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|      rdata_reg      | Latch |  32   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+
+Inferred memory devices in process
+	in routine user_prj0 line 144 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  reg_data_idx_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine user_prj0 line 154 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/user_prj0.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      key3_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     reg_rst_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| reg_data_length_reg | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      key0_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      key1_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      key2_reg       | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (user_prj0)
+Elaborated 1 design.
+Current design is now 'user_prj0'.
+Information: Building the design 'AES128_EN'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN)
+Information: Building the design 'AES128_EN_run'. (HDL-193)
+
+Statistics for case statements in always block at line 1934 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           3158           |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 2298 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           3073           |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 2353 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           3092           |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 2748 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           3118           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2437 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| reg_key_in_rsci_iswt0_cse_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2449 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| exitL_exit_ROUND_sva_reg | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2460 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=========================================================================================
+|         Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=========================================================================================
+| ciphertext_out_rsci_iswt0_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+=========================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2472 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+================================================================================================
+|            Register Name             |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================================
+| ciphertext_out_rsci_idat_127_126_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_59_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_61_60_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_58_57_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_63_62_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_56_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_71_64_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_55_48_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_79_72_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_47_40_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_87_80_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_39_32_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_88_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_31_30_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_90_89_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_29_28_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_91_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_27_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_93_92_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_26_25_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_95_94_reg  | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_24_reg    | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| ciphertext_out_rsci_idat_103_96_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_23_16_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ciphertext_out_rsci_idat_111_104_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|  ciphertext_out_rsci_idat_15_8_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ciphertext_out_rsci_idat_119_112_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_7_0_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_123_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| ciphertext_out_rsci_idat_122_121_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| ciphertext_out_rsci_idat_125_124_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|   ciphertext_out_rsci_idat_120_reg   | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2511 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  main_stage_v_reg   | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2522 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| main_stage_v_1_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2533 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| main_stage_v_2_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2544 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| main_stage_v_3_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2555 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| main_stage_v_4_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2566 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  ROUND_asn_itm_reg  | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2577 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================================================================
+|                              Register Name                               |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================================================================
+| AES128_EN_GenRoundKey_for_1_AES128_EN_GenRoundKey_for_xor_7_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                          ROUND_r_3_0_sva_1_reg                           | Flip-flop |   4   |  Y  | N  | N  | N  | N  | N  | N  |
+|                        state_arr_3_3_1_lpi_1_reg                         | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_3_AES128_EN_GenRoundKey_for_xor_7_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_2_AES128_EN_GenRoundKey_for_xor_7_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2590 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================================================================
+|                              Register Name                               |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================================================================
+|                           ROUND_mux_20_itm_reg                           | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_3_AES128_EN_GenRoundKey_for_xor_1_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_2_AES128_EN_GenRoundKey_for_xor_1_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_1_AES128_EN_GenRoundKey_for_xor_1_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2604 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| state_arr_3_2_1_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2611 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| state_arr_1_0_1_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| state_arr_2_1_1_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2619 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================================================================
+|                              Register Name                               |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================================================================
+| AES128_EN_GenRoundKey_for_3_AES128_EN_GenRoundKey_for_xor_5_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                        state_arr_2_0_1_lpi_1_reg                         | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2629 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================================================================
+|                              Register Name                               |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================================================================
+| AES128_EN_GenRoundKey_for_1_AES128_EN_GenRoundKey_for_xor_3_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                        state_arr_1_3_1_lpi_1_reg                         | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                         state_arr_0_0_lpi_1_reg                          | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_1_AES128_EN_GenRoundKey_for_xor_5_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_3_AES128_EN_GenRoundKey_for_xor_3_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_2_AES128_EN_GenRoundKey_for_xor_5_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_for_2_AES128_EN_GenRoundKey_for_xor_3_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2651 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| roundkeys_13_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| roundkeys_15_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| roundkeys_14_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2661 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+==================================================================================
+|     Register Name      |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+==================================================================================
+| roundkeys_12_lpi_1_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+==================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2667 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===========================================================================================================================================
+|                                  Register Name                                  |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================================================================
+|                      AES128_EN_ShiftRows_a_arr_2_1_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                      AES128_EN_ShiftRows_a_arr_1_2_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_8_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                      AES128_EN_ShiftRows_a_arr_3_0_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                      AES128_EN_ShiftRows_a_arr_2_0_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                      AES128_EN_ShiftRows_a_arr_3_1_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                      AES128_EN_ShiftRows_a_arr_1_1_sva_reg                      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===========================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2679 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================================================================
+|                              Register Name                               |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================================================================
+| AES128_EN_GenRoundKey_for_4_AES128_EN_GenRoundKey_for_xor_7_ncse_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                  AES128_EN_ShiftRows_a_arr_2_2_sva_reg                   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                  AES128_EN_ShiftRows_a_arr_2_3_sva_reg                   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                  AES128_EN_ShiftRows_a_arr_1_3_sva_reg                   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                  AES128_EN_ShiftRows_a_arr_3_3_sva_reg                   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|                  AES128_EN_ShiftRows_a_arr_3_2_sva_reg                   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+====================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2690 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=================================================================================================
+|             Register Name             |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================
+| AES128_EN_ShiftRows_a_arr_0_0_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2697 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+============================================================================================================================================
+|                                  Register Name                                   |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================================================================
+|  AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_17_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_19_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_18_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+============================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2709 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+============================================================================================================================================
+|                                  Register Name                                   |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================================================================
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_1_itm_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_16_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+============================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2717 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=================================================================================================
+|             Register Name             |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================
+| AES128_EN_ShiftRows_a_arr_1_0_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2724 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=================================================================================================
+|             Register Name             |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================
+| AES128_EN_ShiftRows_a_arr_0_2_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_ShiftRows_a_arr_0_3_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2732 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| ROUND_mux_2_itm_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_11_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_10_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_7_itm_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_6_itm_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_3_itm_reg  | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2748 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+| AES128_EN_Rcon_mux_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2755 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===========================================================================================================================================
+|                                  Register Name                                  |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================================================================
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_5_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_4_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+===========================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2763 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+|  ROUND_mux_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_31_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_34_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_24_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_26_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_30_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| ROUND_mux_29_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2781 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| ROUND_mux_25_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2787 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=============================================================================================================================================
+|                                   Register Name                                   |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=============================================================================================================================================
+|     AES128_EN_GenRoundKey_for_4_AES128_EN_GenRoundKey_for_xor_5_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_4_AES128_EN_AddRoundKey_2_for_for_xor_4_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_4_AES128_EN_AddRoundKey_2_for_for_xor_2_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_4_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_4_AES128_EN_AddRoundKey_2_for_for_xor_3_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_4_AES128_EN_AddRoundKey_2_for_for_xor_5_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_3_AES128_EN_AddRoundKey_2_for_for_xor_4_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_3_AES128_EN_AddRoundKey_2_for_for_xor_2_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_3_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_3_AES128_EN_AddRoundKey_2_for_for_xor_3_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_3_AES128_EN_AddRoundKey_2_for_for_xor_5_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_2_AES128_EN_AddRoundKey_2_for_for_xor_4_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_2_AES128_EN_AddRoundKey_2_for_for_xor_2_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_2_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_2_AES128_EN_AddRoundKey_2_for_for_xor_3_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_2_AES128_EN_AddRoundKey_2_for_for_xor_5_itm_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_for_4_AES128_EN_GenRoundKey_for_xor_3_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=============================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2834 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+============================================================================================================================================
+|                                  Register Name                                   |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+============================================================================================================================================
+| AES128_EN_MixColumns_for_for_for_else_read_rom_GF_MUL_TABLE_rom_map_1_24_itm_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_1_ncse_7_6_sva_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_1_ncse_0_sva_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_1_ncse_5_4_sva_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_1_ncse_2_1_sva_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_1_ncse_3_sva_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_for_4_AES128_EN_GenRoundKey_for_xor_1_ncse_sva_reg     | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+============================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2856 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=================================================================================================
+|             Register Name             |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================
+| AES128_EN_ShiftRows_a_arr_0_1_sva_reg | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2863 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=================================================================================================================================================
+|                                     Register Name                                     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=================================================================================================================================================
+|     AES128_EN_GenRoundKey_1_for_1_AES128_EN_GenRoundKey_1_for_xor_5_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   AES128_EN_AddRoundKey_2_for_2_for_3_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_1_for_3_AES128_EN_GenRoundKey_1_for_xor_3_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   AES128_EN_AddRoundKey_2_for_2_for_2_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   AES128_EN_AddRoundKey_2_for_4_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|   AES128_EN_AddRoundKey_2_for_2_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_reg   | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_7_6_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  AES128_EN_AddRoundKey_2_for_1_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_0_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_5_4_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+| AES128_EN_AddRoundKey_2_for_1_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_2_1_reg | Flip-flop |   2   |  Y  | N  | N  | N  | N  | N  | N  |
+|  AES128_EN_AddRoundKey_2_for_1_for_1_AES128_EN_AddRoundKey_2_for_for_xor_1_itm_3_reg  | Flip-flop |   1   |  N  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_1_for_3_AES128_EN_GenRoundKey_1_for_xor_7_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_1_for_2_AES128_EN_GenRoundKey_1_for_xor_7_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_1_for_3_AES128_EN_GenRoundKey_1_for_xor_5_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+|     AES128_EN_GenRoundKey_1_for_2_AES128_EN_GenRoundKey_1_for_xor_5_ncse_sva_reg      | Flip-flop |   8   |  Y  | N  | N  | N  | N  | N  | N  |
+=================================================================================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2912 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+====================================================================================
+|      Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+====================================================================================
+| ROUND_not_mdf_sva_st_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+====================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2923 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| main_stage_v_5_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run line 2934 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+| ROUND_not_mdf_sva_st_1_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+======================================================================================
+Presto compilation completed successfully. (AES128_EN_run)
+Information: Building the design 'AES128_ENmgc_rom_18_256_8_1'. (HDL-193)
+Statistics for MUX_OPs
+=====================================================================
+|        block name/line          | Inputs | Outputs | # sel inputs |
+=====================================================================
+| AES128_ENmgc_rom_18_256_8_1/390 |  256   |    1    |      8       |
+=====================================================================
+Presto compilation completed successfully. (AES128_ENmgc_rom_18_256_8_1)
+Information: Building the design 'AES128_ENmgc_rom_19_512_8_1'. (HDL-193)
+Statistics for MUX_OPs
+=====================================================================
+|        block name/line          | Inputs | Outputs | # sel inputs |
+=====================================================================
+| AES128_ENmgc_rom_19_512_8_1/951 |  512   |    1    |      9       |
+=====================================================================
+Presto compilation completed successfully. (AES128_ENmgc_rom_19_512_8_1)
+Information: Building the design 'AES128_EN_run_plaintext_in_rsci'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_plaintext_in_rsci)
+Information: Building the design 'AES128_EN_run_key_in_rsci'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_key_in_rsci)
+Information: Building the design 'AES128_EN_run_ciphertext_out_rsci'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_ciphertext_out_rsci)
+Information: Building the design 'AES128_EN_run_staller'. (HDL-193)
+
+Inferred memory devices in process
+	in routine AES128_EN_run_staller line 1083 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| run_flen_shf_0_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| run_flen_shf_4_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| run_flen_shf_3_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| run_flen_shf_2_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| run_flen_shf_1_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (AES128_EN_run_staller)
+Information: Building the design 'AES128_EN_run_run_fsm'. (HDL-193)
+
+Statistics for case statements in always block at line 1003 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1005           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run_run_fsm line 1034 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    state_var_reg    | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully. (AES128_EN_run_run_fsm)
+Information: Building the design 'ccs_in_wait_v1' instantiated from design 'AES128_EN_run_plaintext_in_rsci' with
+	the parameters "rscid=1,width=128". (HDL-193)
+Presto compilation completed successfully. (ccs_in_wait_v1_rscid1_width128)
+Information: Building the design 'AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_ctrl'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_ctrl)
+Information: Building the design 'AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_dp'. (HDL-193)
+
+Statistics for case statements in always block at line 1317 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1343           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_dp line 1319 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+======================================================================================
+|       Register Name        |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+======================================================================================
+| plaintext_in_rsci_bcwt_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+======================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_dp line 1331 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+===========================================================================================
+|          Register Name          |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================================
+| plaintext_in_rsci_idat_bfwt_reg | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+===========================================================================================
+Presto compilation completed successfully. (AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_dp)
+Information: Building the design 'ccs_in_wait_v1' instantiated from design 'AES128_EN_run_key_in_rsci' with
+	the parameters "rscid=2,width=128". (HDL-193)
+Presto compilation completed successfully. (ccs_in_wait_v1_rscid2_width128)
+Information: Building the design 'AES128_EN_run_key_in_rsci_key_in_wait_ctrl'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_key_in_rsci_key_in_wait_ctrl)
+Information: Building the design 'AES128_EN_run_key_in_rsci_key_in_wait_dp'. (HDL-193)
+
+Statistics for case statements in always block at line 1215 in file
+	'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1240           |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run_key_in_rsci_key_in_wait_dp line 1217 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+================================================================================
+|    Register Name     |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+================================================================================
+| key_in_rsci_bcwt_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+================================================================================
+
+Inferred memory devices in process
+	in routine AES128_EN_run_key_in_rsci_key_in_wait_dp line 1228 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+=====================================================================================
+|       Register Name       |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+=====================================================================================
+| key_in_rsci_idat_bfwt_reg | Flip-flop |  128  |  Y  | N  | N  | N  | N  | N  | N  |
+=====================================================================================
+Presto compilation completed successfully. (AES128_EN_run_key_in_rsci_key_in_wait_dp)
+Information: Building the design 'ccs_out_wait_v1' instantiated from design 'AES128_EN_run_ciphertext_out_rsci' with
+	the parameters "rscid=3,width=128". (HDL-193)
+Presto compilation completed successfully. (ccs_out_wait_v1_rscid3_width128)
+Information: Building the design 'AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_ctrl'. (HDL-193)
+Presto compilation completed successfully. (AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_ctrl)
+Information: Building the design 'AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_dp'. (HDL-193)
+
+Inferred memory devices in process
+	in routine AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_dp line 1137 in file
+		'/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/lab_synthesis/work/../../common/i2c_project/rtl/verilog/concat_rtl.v'.
+========================================================================================
+|        Register Name         |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+========================================================================================
+| ciphertext_out_rsci_bcwt_reg | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+========================================================================================
+Presto compilation completed successfully. (AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_dp)
+1
+current_design ${DESIGN_NAME}
+Current design is 'user_prj0'.
+{user_prj0}
+link
+
+  Linking design 'user_prj0'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed14rvt_tt0p8v25c (library) /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db
+
+1
+source $Constraints_file
+1
+set_fix_multiple_port_nets -outputs -feedthroughs 
+1
+source $Warning_file
+Warning: no aliases matched 'cpu_isle' (CMD-029)
+Warning: no aliases matched 'cpu_isle' (CMD-029)
+Warning: no aliases matched 'hif2bt' (CMD-029)
+Warning: no aliases matched 'sys_clk_sync' (CMD-029)
+Warning: no aliases matched 'hosif' (CMD-029)
+Warning: no aliases matched 'sync_regs' (CMD-029)
+Warning: no aliases matched 'iccm_control' (CMD-029)
+Warning: no aliases matched 'debug_port' (CMD-029)
+#set dont_use
+source ../scripts/set_dont_use.tcl
+check_design
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5
+Date:        Fri Jun 14 03:28:29 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+No issues found.
+--------------------------------------------------------------------------------
+
+1
+link
+
+  Linking design 'user_prj0'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  saed14rvt_tt0p8v25c (library)
+                              /home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db
+
+1
+compile -exact_map -map_effort high -area_effort medium -power_effort none
+Warning: Ignoring -power_effort option since there is no power constraint. (PWR-59)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | R-2020.09-DWBB_202009.5 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 483 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'AES128_EN_run_run_fsm'
+  Processing 'AES128_EN_run_staller'
+  Processing 'AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_dp'
+  Processing 'AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_ctrl'
+  Processing 'ccs_out_wait_v1_rscid3_width128'
+  Processing 'AES128_EN_run_ciphertext_out_rsci'
+  Processing 'AES128_EN_run_key_in_rsci_key_in_wait_dp'
+  Processing 'AES128_EN_run_key_in_rsci_key_in_wait_ctrl'
+  Processing 'ccs_in_wait_v1_rscid2_width128'
+  Processing 'AES128_EN_run_key_in_rsci'
+  Processing 'AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_dp'
+  Processing 'AES128_EN_run_plaintext_in_rsci_plaintext_in_wait_ctrl'
+  Processing 'ccs_in_wait_v1_rscid1_width128'
+  Processing 'AES128_EN_run_plaintext_in_rsci'
+  Processing 'AES128_ENmgc_rom_19_512_8_1_0'
+  Processing 'AES128_ENmgc_rom_18_256_8_1_0'
+  Processing 'AES128_EN_run'
+  Processing 'AES128_EN'
+  Processing 'user_prj0'
+WARNING: cell key3_reg[31] ignores exact_map
+WARNING: cell key3_reg[30] ignores exact_map
+WARNING: cell key3_reg[29] ignores exact_map
+WARNING: cell key3_reg[28] ignores exact_map
+WARNING: cell key3_reg[27] ignores exact_map
+WARNING: cell key3_reg[26] ignores exact_map
+WARNING: cell key3_reg[25] ignores exact_map
+WARNING: cell key3_reg[24] ignores exact_map
+WARNING: cell key3_reg[23] ignores exact_map
+WARNING: cell key3_reg[22] ignores exact_map
+WARNING: cell key3_reg[21] ignores exact_map
+WARNING: cell key3_reg[20] ignores exact_map
+WARNING: cell key3_reg[19] ignores exact_map
+WARNING: cell key3_reg[18] ignores exact_map
+WARNING: cell key3_reg[17] ignores exact_map
+WARNING: cell key3_reg[16] ignores exact_map
+WARNING: cell key3_reg[15] ignores exact_map
+WARNING: cell key3_reg[14] ignores exact_map
+WARNING: cell key3_reg[13] ignores exact_map
+WARNING: cell key3_reg[12] ignores exact_map
+WARNING: cell key3_reg[11] ignores exact_map
+WARNING: cell key3_reg[10] ignores exact_map
+WARNING: cell key3_reg[9] ignores exact_map
+WARNING: cell key3_reg[8] ignores exact_map
+WARNING: cell key3_reg[7] ignores exact_map
+WARNING: cell key3_reg[6] ignores exact_map
+WARNING: cell key3_reg[5] ignores exact_map
+WARNING: cell key3_reg[4] ignores exact_map
+WARNING: cell key3_reg[3] ignores exact_map
+WARNING: cell key3_reg[2] ignores exact_map
+WARNING: cell key3_reg[1] ignores exact_map
+WARNING: cell key3_reg[0] ignores exact_map
+WARNING: cell reg_rst_reg ignores exact_map
+WARNING: cell reg_data_length_reg[31] ignores exact_map
+WARNING: cell reg_data_length_reg[30] ignores exact_map
+WARNING: cell reg_data_length_reg[29] ignores exact_map
+WARNING: cell reg_data_length_reg[28] ignores exact_map
+WARNING: cell reg_data_length_reg[27] ignores exact_map
+WARNING: cell reg_data_length_reg[26] ignores exact_map
+WARNING: cell reg_data_length_reg[25] ignores exact_map
+WARNING: cell reg_data_length_reg[24] ignores exact_map
+WARNING: cell reg_data_length_reg[23] ignores exact_map
+WARNING: cell reg_data_length_reg[22] ignores exact_map
+WARNING: cell reg_data_length_reg[21] ignores exact_map
+WARNING: cell reg_data_length_reg[20] ignores exact_map
+WARNING: cell reg_data_length_reg[19] ignores exact_map
+WARNING: cell reg_data_length_reg[18] ignores exact_map
+WARNING: cell reg_data_length_reg[17] ignores exact_map
+WARNING: cell reg_data_length_reg[16] ignores exact_map
+WARNING: cell reg_data_length_reg[15] ignores exact_map
+WARNING: cell reg_data_length_reg[14] ignores exact_map
+WARNING: cell reg_data_length_reg[13] ignores exact_map
+WARNING: cell reg_data_length_reg[12] ignores exact_map
+WARNING: cell reg_data_length_reg[11] ignores exact_map
+WARNING: cell reg_data_length_reg[10] ignores exact_map
+WARNING: cell reg_data_length_reg[9] ignores exact_map
+WARNING: cell reg_data_length_reg[8] ignores exact_map
+WARNING: cell reg_data_length_reg[7] ignores exact_map
+WARNING: cell reg_data_length_reg[6] ignores exact_map
+WARNING: cell reg_data_length_reg[5] ignores exact_map
+WARNING: cell reg_data_length_reg[4] ignores exact_map
+WARNING: cell reg_data_length_reg[3] ignores exact_map
+WARNING: cell reg_data_length_reg[2] ignores exact_map
+WARNING: cell reg_data_length_reg[1] ignores exact_map
+WARNING: cell reg_data_length_reg[0] ignores exact_map
+WARNING: cell key0_reg[31] ignores exact_map
+WARNING: cell key0_reg[30] ignores exact_map
+WARNING: cell key0_reg[29] ignores exact_map
+WARNING: cell key0_reg[28] ignores exact_map
+WARNING: cell key0_reg[27] ignores exact_map
+WARNING: cell key0_reg[26] ignores exact_map
+WARNING: cell key0_reg[25] ignores exact_map
+WARNING: cell key0_reg[24] ignores exact_map
+WARNING: cell key0_reg[23] ignores exact_map
+WARNING: cell key0_reg[22] ignores exact_map
+WARNING: cell key0_reg[21] ignores exact_map
+WARNING: cell key0_reg[20] ignores exact_map
+WARNING: cell key0_reg[19] ignores exact_map
+WARNING: cell key0_reg[18] ignores exact_map
+WARNING: cell key0_reg[17] ignores exact_map
+WARNING: cell key0_reg[16] ignores exact_map
+WARNING: cell key0_reg[15] ignores exact_map
+WARNING: cell key0_reg[14] ignores exact_map
+WARNING: cell key0_reg[13] ignores exact_map
+WARNING: cell key0_reg[12] ignores exact_map
+WARNING: cell key0_reg[11] ignores exact_map
+WARNING: cell key0_reg[10] ignores exact_map
+WARNING: cell key0_reg[9] ignores exact_map
+WARNING: cell key0_reg[8] ignores exact_map
+WARNING: cell key0_reg[7] ignores exact_map
+WARNING: cell key0_reg[6] ignores exact_map
+WARNING: cell key0_reg[5] ignores exact_map
+WARNING: cell key0_reg[4] ignores exact_map
+WARNING: cell key0_reg[3] ignores exact_map
+WARNING: cell key0_reg[2] ignores exact_map
+WARNING: cell key0_reg[1] ignores exact_map
+WARNING: cell key0_reg[0] ignores exact_map
+WARNING: cell key1_reg[31] ignores exact_map
+WARNING: cell key1_reg[30] ignores exact_map
+WARNING: cell key1_reg[29] ignores exact_map
+WARNING: cell key1_reg[28] ignores exact_map
+WARNING: cell key1_reg[27] ignores exact_map
+WARNING: cell key1_reg[26] ignores exact_map
+WARNING: cell key1_reg[25] ignores exact_map
+WARNING: cell key1_reg[24] ignores exact_map
+WARNING: cell key1_reg[23] ignores exact_map
+WARNING: cell key1_reg[22] ignores exact_map
+WARNING: cell key1_reg[21] ignores exact_map
+WARNING: cell key1_reg[20] ignores exact_map
+WARNING: cell key1_reg[19] ignores exact_map
+WARNING: cell key1_reg[18] ignores exact_map
+WARNING: cell key1_reg[17] ignores exact_map
+WARNING: cell key1_reg[16] ignores exact_map
+WARNING: cell key1_reg[15] ignores exact_map
+WARNING: cell key1_reg[14] ignores exact_map
+WARNING: cell key1_reg[13] ignores exact_map
+WARNING: cell key1_reg[12] ignores exact_map
+WARNING: cell key1_reg[11] ignores exact_map
+WARNING: cell key1_reg[10] ignores exact_map
+WARNING: cell key1_reg[9] ignores exact_map
+WARNING: cell key1_reg[8] ignores exact_map
+WARNING: cell key1_reg[7] ignores exact_map
+WARNING: cell key1_reg[6] ignores exact_map
+WARNING: cell key1_reg[5] ignores exact_map
+WARNING: cell key1_reg[4] ignores exact_map
+WARNING: cell key1_reg[3] ignores exact_map
+WARNING: cell key1_reg[2] ignores exact_map
+WARNING: cell key1_reg[1] ignores exact_map
+WARNING: cell key1_reg[0] ignores exact_map
+WARNING: cell key2_reg[31] ignores exact_map
+WARNING: cell key2_reg[30] ignores exact_map
+WARNING: cell key2_reg[29] ignores exact_map
+WARNING: cell key2_reg[28] ignores exact_map
+WARNING: cell key2_reg[27] ignores exact_map
+WARNING: cell key2_reg[26] ignores exact_map
+WARNING: cell key2_reg[25] ignores exact_map
+WARNING: cell key2_reg[24] ignores exact_map
+WARNING: cell key2_reg[23] ignores exact_map
+WARNING: cell key2_reg[22] ignores exact_map
+WARNING: cell key2_reg[21] ignores exact_map
+WARNING: cell key2_reg[20] ignores exact_map
+WARNING: cell key2_reg[19] ignores exact_map
+WARNING: cell key2_reg[18] ignores exact_map
+WARNING: cell key2_reg[17] ignores exact_map
+WARNING: cell key2_reg[16] ignores exact_map
+WARNING: cell key2_reg[15] ignores exact_map
+WARNING: cell key2_reg[14] ignores exact_map
+WARNING: cell key2_reg[13] ignores exact_map
+WARNING: cell key2_reg[12] ignores exact_map
+WARNING: cell key2_reg[11] ignores exact_map
+WARNING: cell key2_reg[10] ignores exact_map
+WARNING: cell key2_reg[9] ignores exact_map
+WARNING: cell key2_reg[8] ignores exact_map
+WARNING: cell key2_reg[7] ignores exact_map
+WARNING: cell key2_reg[6] ignores exact_map
+WARNING: cell key2_reg[5] ignores exact_map
+WARNING: cell key2_reg[4] ignores exact_map
+WARNING: cell key2_reg[3] ignores exact_map
+WARNING: cell key2_reg[2] ignores exact_map
+WARNING: cell key2_reg[1] ignores exact_map
+WARNING: cell key2_reg[0] ignores exact_map
+WARNING: cell sm_cnt_reg[0] ignores exact_map
+WARNING: cell sm_cnt_reg[1] ignores exact_map
+WARNING: cell reg_data_idx_reg[1] ignores exact_map
+WARNING: cell reg_data_idx_reg[0] ignores exact_map
+WARNING: cell reg_data_idx_reg[2] ignores exact_map
+WARNING: cell reg_data_idx_reg[3] ignores exact_map
+WARNING: cell reg_data_idx_reg[4] ignores exact_map
+WARNING: cell reg_data_idx_reg[5] ignores exact_map
+WARNING: cell reg_data_idx_reg[6] ignores exact_map
+WARNING: cell reg_data_idx_reg[7] ignores exact_map
+WARNING: cell reg_data_idx_reg[8] ignores exact_map
+WARNING: cell reg_data_idx_reg[9] ignores exact_map
+WARNING: cell reg_data_idx_reg[10] ignores exact_map
+WARNING: cell reg_data_idx_reg[11] ignores exact_map
+WARNING: cell reg_data_idx_reg[12] ignores exact_map
+WARNING: cell reg_data_idx_reg[13] ignores exact_map
+WARNING: cell reg_data_idx_reg[14] ignores exact_map
+WARNING: cell reg_data_idx_reg[15] ignores exact_map
+WARNING: cell reg_data_idx_reg[16] ignores exact_map
+WARNING: cell reg_data_idx_reg[17] ignores exact_map
+WARNING: cell reg_data_idx_reg[18] ignores exact_map
+WARNING: cell reg_data_idx_reg[19] ignores exact_map
+WARNING: cell reg_data_idx_reg[20] ignores exact_map
+WARNING: cell reg_data_idx_reg[21] ignores exact_map
+WARNING: cell reg_data_idx_reg[22] ignores exact_map
+WARNING: cell reg_data_idx_reg[23] ignores exact_map
+WARNING: cell reg_data_idx_reg[24] ignores exact_map
+WARNING: cell reg_data_idx_reg[25] ignores exact_map
+WARNING: cell reg_data_idx_reg[26] ignores exact_map
+WARNING: cell reg_data_idx_reg[27] ignores exact_map
+WARNING: cell reg_data_idx_reg[28] ignores exact_map
+WARNING: cell reg_data_idx_reg[29] ignores exact_map
+WARNING: cell reg_data_idx_reg[30] ignores exact_map
+WARNING: cell reg_data_idx_reg[31] ignores exact_map
+WARNING: cell ss_cnt_reg[0] ignores exact_map
+WARNING: cell ss_cnt_reg[1] ignores exact_map
+WARNING: cell pt2_reg[0] ignores exact_map
+WARNING: cell pt2_reg[1] ignores exact_map
+WARNING: cell pt2_reg[2] ignores exact_map
+WARNING: cell pt2_reg[3] ignores exact_map
+WARNING: cell pt2_reg[4] ignores exact_map
+WARNING: cell pt2_reg[5] ignores exact_map
+WARNING: cell pt2_reg[6] ignores exact_map
+WARNING: cell pt2_reg[7] ignores exact_map
+WARNING: cell pt2_reg[8] ignores exact_map
+WARNING: cell pt2_reg[9] ignores exact_map
+WARNING: cell pt2_reg[10] ignores exact_map
+WARNING: cell pt2_reg[11] ignores exact_map
+WARNING: cell pt2_reg[12] ignores exact_map
+WARNING: cell pt2_reg[13] ignores exact_map
+WARNING: cell pt2_reg[14] ignores exact_map
+WARNING: cell pt2_reg[15] ignores exact_map
+WARNING: cell pt2_reg[16] ignores exact_map
+WARNING: cell pt2_reg[17] ignores exact_map
+WARNING: cell pt2_reg[18] ignores exact_map
+WARNING: cell pt2_reg[19] ignores exact_map
+WARNING: cell pt2_reg[20] ignores exact_map
+WARNING: cell pt2_reg[21] ignores exact_map
+WARNING: cell pt2_reg[22] ignores exact_map
+WARNING: cell pt2_reg[23] ignores exact_map
+WARNING: cell pt2_reg[24] ignores exact_map
+WARNING: cell pt2_reg[25] ignores exact_map
+WARNING: cell pt2_reg[26] ignores exact_map
+WARNING: cell pt2_reg[27] ignores exact_map
+WARNING: cell pt2_reg[28] ignores exact_map
+WARNING: cell pt2_reg[29] ignores exact_map
+WARNING: cell pt2_reg[30] ignores exact_map
+WARNING: cell pt2_reg[31] ignores exact_map
+WARNING: cell pt0_reg[0] ignores exact_map
+WARNING: cell pt0_reg[1] ignores exact_map
+WARNING: cell pt0_reg[2] ignores exact_map
+WARNING: cell pt0_reg[3] ignores exact_map
+WARNING: cell pt0_reg[4] ignores exact_map
+WARNING: cell pt0_reg[5] ignores exact_map
+WARNING: cell pt0_reg[6] ignores exact_map
+WARNING: cell pt0_reg[7] ignores exact_map
+WARNING: cell pt0_reg[8] ignores exact_map
+WARNING: cell pt0_reg[9] ignores exact_map
+WARNING: cell pt0_reg[10] ignores exact_map
+WARNING: cell pt0_reg[11] ignores exact_map
+WARNING: cell pt0_reg[12] ignores exact_map
+WARNING: cell pt0_reg[13] ignores exact_map
+WARNING: cell pt0_reg[14] ignores exact_map
+WARNING: cell pt0_reg[15] ignores exact_map
+WARNING: cell pt0_reg[16] ignores exact_map
+WARNING: cell pt0_reg[17] ignores exact_map
+WARNING: cell pt0_reg[18] ignores exact_map
+WARNING: cell pt0_reg[19] ignores exact_map
+WARNING: cell pt0_reg[20] ignores exact_map
+WARNING: cell pt0_reg[21] ignores exact_map
+WARNING: cell pt0_reg[22] ignores exact_map
+WARNING: cell pt0_reg[23] ignores exact_map
+WARNING: cell pt0_reg[24] ignores exact_map
+WARNING: cell pt0_reg[25] ignores exact_map
+WARNING: cell pt0_reg[26] ignores exact_map
+WARNING: cell pt0_reg[27] ignores exact_map
+WARNING: cell pt0_reg[28] ignores exact_map
+WARNING: cell pt0_reg[29] ignores exact_map
+WARNING: cell pt0_reg[30] ignores exact_map
+WARNING: cell pt0_reg[31] ignores exact_map
+WARNING: cell pt1_reg[0] ignores exact_map
+WARNING: cell pt1_reg[1] ignores exact_map
+WARNING: cell pt1_reg[2] ignores exact_map
+WARNING: cell pt1_reg[3] ignores exact_map
+WARNING: cell pt1_reg[4] ignores exact_map
+WARNING: cell pt1_reg[5] ignores exact_map
+WARNING: cell pt1_reg[6] ignores exact_map
+WARNING: cell pt1_reg[7] ignores exact_map
+WARNING: cell pt1_reg[8] ignores exact_map
+WARNING: cell pt1_reg[9] ignores exact_map
+WARNING: cell pt1_reg[10] ignores exact_map
+WARNING: cell pt1_reg[11] ignores exact_map
+WARNING: cell pt1_reg[12] ignores exact_map
+WARNING: cell pt1_reg[13] ignores exact_map
+WARNING: cell pt1_reg[14] ignores exact_map
+WARNING: cell pt1_reg[15] ignores exact_map
+WARNING: cell pt1_reg[16] ignores exact_map
+WARNING: cell pt1_reg[17] ignores exact_map
+WARNING: cell pt1_reg[18] ignores exact_map
+WARNING: cell pt1_reg[19] ignores exact_map
+WARNING: cell pt1_reg[20] ignores exact_map
+WARNING: cell pt1_reg[21] ignores exact_map
+WARNING: cell pt1_reg[22] ignores exact_map
+WARNING: cell pt1_reg[23] ignores exact_map
+WARNING: cell pt1_reg[24] ignores exact_map
+WARNING: cell pt1_reg[25] ignores exact_map
+WARNING: cell pt1_reg[26] ignores exact_map
+WARNING: cell pt1_reg[27] ignores exact_map
+WARNING: cell pt1_reg[28] ignores exact_map
+WARNING: cell pt1_reg[29] ignores exact_map
+WARNING: cell pt1_reg[30] ignores exact_map
+WARNING: cell pt1_reg[31] ignores exact_map
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'user_prj0_DW01_cmp6_0_DW01_cmp6_1'
+  Processing 'user_prj0_DW01_cmp6_1_DW01_cmp6_2'
+  Processing 'user_prj0_DW01_inc_0_DW01_inc_3'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Loading db file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db'
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN4_V2_0P5'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_4'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_2'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_1'. (OPT-914)
+Warning: No single bit degenerate for multibit library cell 'SAEDRVT14_FSDN2_V2_0P5'. (OPT-914)
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:19    4713.6      0.00       0.0      73.1                          
+    0:01:19    4713.6      0.00       0.0      73.1                          
+    0:01:19    4713.6      0.00       0.0      73.1                          
+    0:01:19    4713.6      0.00       0.0      73.1                          
+    0:01:39    4713.6      0.00       0.0      73.1                          
+    0:02:01    3010.0      0.00       0.0      73.1                          
+    0:02:03    3008.3      0.00       0.0      73.1                          
+    0:02:07    3008.2      0.00       0.0      73.1                          
+    0:02:08    3008.2      0.00       0.0      73.1                          
+    0:02:08    3008.2      0.00       0.0      73.1                          
+    0:02:08    3008.2      0.00       0.0      73.1                          
+    0:02:08    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+
+
+  Beginning Design Rule Fixing  (min_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:09    3008.2      0.00       0.0      73.1                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:09    3008.2      0.00       0.0      73.1                          
+    0:02:13    2948.9      0.00       0.0      73.1                          
+    0:02:16    2935.9      0.00       0.0      73.1                          
+    0:02:17    2931.1      0.00       0.0      73.1                          
+    0:02:18    2929.2      0.00       0.0      73.1                          
+    0:02:19    2927.7      0.00       0.0      73.1                          
+    0:02:19    2926.7      0.00       0.0      73.1                          
+    0:02:20    2925.9      0.00       0.0      73.1                          
+    0:02:20    2925.9      0.00       0.0      73.1                          
+    0:02:20    2925.9      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2925.3      0.00       0.0      73.1                          
+    0:02:20    2914.1      0.00       0.0      73.1                          
+Loading db file '/home/course/ee5252/lab_snps_flow/SAED14_EDK_LAB/SAED14_EDK_LAB/lib/stdcell_rvt/db_nldm/saed14rvt_tt0p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'user_prj0' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'u_AES128_EN/AES128_EN_run_inst/AES128_EN_run_ciphertext_out_rsci_inst/AES128_EN_run_ciphertext_out_rsci_ciphertext_out_wait_dp_inst/clk': 1376 load(s), 1 driver(s)
+1
+## reporting and output
+report_timing > ../../reports/timing_${DESIGN_NAME}_timing_reports.log
+report_qor > ../../reports/timing_${DESIGN_NAME}_qor_reports.log
+report_area -hierarchy  > ../../reports/timing_${DESIGN_NAME}_area_reports.log
+report_power -hierarchy > ../../reports/timing_${DESIGN_NAME}_power_reports.log
+change_names -rules verilog
+Warning: In the design user_prj0, net 'n2' is connecting multiple ports. (UCN-1)
+Warning: The specified replacement character (_) is conflicting with the specified allowed or restricted character.   (UCN-4)
+1
+write_file -format verilog -hierarchy -pg -output ../../input/${DESIGN_NAME}.v
+Warning: No PG information is available for design. (UPF-663)
+Writing verilog file '/home/m112/m112061576/ASoC-Final-Project/fsic/rtl/lab_formal_release/input/user_prj0.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+quit
+
+Memory usage for this session 324 Mbytes.
+Memory usage for this session including child processes 324 Mbytes.
+CPU usage for this session 40 seconds ( 0.01 hours ).
+Elapsed time for this session 412 seconds ( 0.11 hours ).
+
+Thank you...

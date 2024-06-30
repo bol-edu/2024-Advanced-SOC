@@ -1,0 +1,611 @@
+2024-04-29 13:12:52,920 INFO [default] APP Start Running
+2024-04-29 13:12:52,920 INFO [default] ============= default pipeline mods show start ==============
+2024-04-29 13:12:52,921 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-04-29 13:12:52,921 INFO [default] ============= default pipeline mods show end ==============
+2024-04-29 13:12:52,923 INFO [default] Sensor Name: cannon
+2024-04-29 13:12:52,923 INFO [default] Sensor CFA: "RGGB"
+2024-04-29 13:12:52,923 INFO [default] Sensor DT: "RAW16"
+2024-04-29 13:12:52,923 INFO [default] Sensor Resolution: 6080*4044
+2024-04-29 13:12:52,923 INFO [default] parse exit
+2024-04-29 13:12:52,964 INFO [default] ============= user pipeline print start ==============
+2024-04-29 13:12:52,964 INFO [default] mod[0] -> unpack
+2024-04-29 13:12:52,964 INFO [default] mod[1] -> depwl
+2024-04-29 13:12:52,964 INFO [default] mod[2] -> lsc
+2024-04-29 13:12:52,964 INFO [default] mod[3] -> dpc
+2024-04-29 13:12:52,964 INFO [default] mod[4] -> blc
+2024-04-29 13:12:52,964 INFO [default] mod[5] -> wbgain
+2024-04-29 13:12:52,964 INFO [default] mod[6] -> demoasic
+2024-04-29 13:12:52,964 INFO [default] mod[7] -> ccm
+2024-04-29 13:12:52,964 INFO [default] mod[8] -> ltm
+2024-04-29 13:12:52,964 INFO [default] mod[9] -> rgbgamma
+2024-04-29 13:12:52,964 INFO [default] mod[10] -> rgb2yuv
+2024-04-29 13:12:52,964 INFO [default] mod[11] -> ygamma
+2024-04-29 13:12:52,964 INFO [default] mod[12] -> contrast
+2024-04-29 13:12:52,964 INFO [default] mod[13] -> sharpen
+2024-04-29 13:12:52,965 INFO [default] mod[14] -> cns
+2024-04-29 13:12:52,965 INFO [default] mod[15] -> saturation
+2024-04-29 13:12:52,965 INFO [default] mod[16] -> yuv2rgb
+2024-04-29 13:12:52,965 INFO [default] ============= user pipeline print end ==============
+2024-04-29 13:12:52,965 INFO [default] ============= user pipeline running ==============
+2024-04-29 13:12:53,007 INFO [default] mod unpack	 time: 42ms
+2024-04-29 13:12:53,335 INFO [default] mod depwl	 time: 328ms
+2024-04-29 13:12:54,178 INFO [default] mod lsc	 time: 843ms
+2024-04-29 13:12:54,770 INFO [default] mod dpc	 time: 592ms
+2024-04-29 13:12:54,960 INFO [default] mod blc	 time: 190ms
+2024-04-29 13:12:55,202 INFO [default] mod wbgain	 time: 242ms
+2024-04-29 13:12:56,138 INFO [default] mod demoasic	 time: 936ms
+2024-04-29 13:12:56,959 INFO [default] mod ccm	 time: 820ms
+2024-04-29 13:14:40,267 INFO [default] mod ltm	 time: 103308ms
+2024-04-29 13:14:41,114 INFO [default] mod rgbgamma	 time: 846ms
+2024-04-29 13:14:41,576 INFO [default] mod rgb2yuv	 time: 462ms
+2024-04-29 13:14:41,854 INFO [default] mod ygamma	 time: 278ms
+2024-04-29 13:14:42,052 INFO [default] mod contrast	 time: 198ms
+2024-04-29 13:14:44,478 INFO [default] mod sharpen	 time: 2426ms
+2024-04-29 13:14:58,178 INFO [default] mod cns	 time: 13700ms
+2024-04-29 13:14:58,539 INFO [default] mod saturation	 time: 359ms
+2024-04-29 13:14:59,132 INFO [default] mod yuv2rgb	 time: 593ms
+2024-04-29 13:14:59,132 INFO [default] ============= user pipeline running end ==============
+2024-04-29 13:15:01,732 INFO [default] APP Common Exit
+2024-04-29 13:49:10,211 INFO [default] APP Start Running
+2024-04-29 13:49:10,211 INFO [default] ============= default pipeline mods show start ==============
+2024-04-29 13:49:10,211 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-04-29 13:49:10,211 INFO [default] ============= default pipeline mods show end ==============
+2024-04-29 13:49:10,214 INFO [default] Sensor Name: cannon
+2024-04-29 13:49:10,214 INFO [default] Sensor CFA: "RGGB"
+2024-04-29 13:49:10,214 INFO [default] Sensor DT: "RAW16"
+2024-04-29 13:49:10,214 INFO [default] Sensor Resolution: 6080*4044
+2024-04-29 13:49:10,215 INFO [default] parse exit
+2024-04-29 13:49:10,256 INFO [default] ============= user pipeline print start ==============
+2024-04-29 13:49:10,256 INFO [default] mod[0] -> unpack
+2024-04-29 13:49:10,256 INFO [default] mod[1] -> depwl
+2024-04-29 13:49:10,256 INFO [default] mod[2] -> lsc
+2024-04-29 13:49:10,256 INFO [default] mod[3] -> dpc
+2024-04-29 13:49:10,256 INFO [default] mod[4] -> blc
+2024-04-29 13:49:10,256 INFO [default] mod[5] -> wbgain
+2024-04-29 13:49:10,256 INFO [default] mod[6] -> demoasic
+2024-04-29 13:49:10,256 INFO [default] mod[7] -> ccm
+2024-04-29 13:49:10,256 INFO [default] mod[8] -> ltm
+2024-04-29 13:49:10,256 INFO [default] mod[9] -> rgbgamma
+2024-04-29 13:49:10,256 INFO [default] mod[10] -> rgb2yuv
+2024-04-29 13:49:10,256 INFO [default] mod[11] -> ygamma
+2024-04-29 13:49:10,256 INFO [default] mod[12] -> contrast
+2024-04-29 13:49:10,256 INFO [default] mod[13] -> sharpen
+2024-04-29 13:49:10,256 INFO [default] mod[14] -> cns
+2024-04-29 13:49:10,256 INFO [default] mod[15] -> saturation
+2024-04-29 13:49:10,256 INFO [default] mod[16] -> yuv2rgb
+2024-04-29 13:49:10,256 INFO [default] ============= user pipeline print end ==============
+2024-04-29 13:49:10,256 INFO [default] ============= user pipeline running ==============
+2024-04-29 13:49:10,298 INFO [default] mod unpack	 time: 42ms
+2024-04-29 13:49:10,637 INFO [default] mod depwl	 time: 339ms
+2024-04-29 13:49:11,506 INFO [default] mod lsc	 time: 869ms
+2024-04-29 13:49:12,108 INFO [default] mod dpc	 time: 602ms
+2024-04-29 13:49:12,303 INFO [default] mod blc	 time: 195ms
+2024-04-29 13:49:12,561 INFO [default] mod wbgain	 time: 258ms
+2024-04-29 13:49:13,537 INFO [default] mod demoasic	 time: 975ms
+2024-04-29 13:49:14,371 INFO [default] mod ccm	 time: 834ms
+2024-04-29 13:50:59,516 INFO [default] mod ltm	 time: 105145ms
+2024-04-29 13:51:00,340 INFO [default] mod rgbgamma	 time: 823ms
+2024-04-29 13:51:00,757 INFO [default] mod rgb2yuv	 time: 417ms
+2024-04-29 13:51:01,034 INFO [default] mod ygamma	 time: 277ms
+2024-04-29 13:51:01,232 INFO [default] mod contrast	 time: 198ms
+2024-04-29 13:51:03,650 INFO [default] mod sharpen	 time: 2418ms
+2024-04-29 13:51:17,248 INFO [default] mod cns	 time: 13598ms
+2024-04-29 13:51:17,605 INFO [default] mod saturation	 time: 356ms
+2024-04-29 13:51:18,192 INFO [default] mod yuv2rgb	 time: 587ms
+2024-04-29 13:51:18,193 INFO [default] ============= user pipeline running end ==============
+2024-04-29 13:51:20,759 INFO [default] APP Common Exit
+2024-04-29 13:53:24,001 INFO [default] APP Start Running
+2024-04-29 13:53:24,001 INFO [default] ============= default pipeline mods show start ==============
+2024-04-29 13:53:24,001 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-04-29 13:53:24,002 INFO [default] ============= default pipeline mods show end ==============
+2024-04-29 13:53:24,005 INFO [default] Sensor Name: cannon
+2024-04-29 13:53:24,005 INFO [default] Sensor CFA: "RGGB"
+2024-04-29 13:53:24,005 INFO [default] Sensor DT: "RAW16"
+2024-04-29 13:53:24,005 INFO [default] Sensor Resolution: 6080*4044
+2024-04-29 13:53:24,005 INFO [default] parse exit
+2024-04-29 13:53:24,046 INFO [default] ============= user pipeline print start ==============
+2024-04-29 13:53:24,047 INFO [default] mod[0] -> unpack
+2024-04-29 13:53:24,047 INFO [default] mod[1] -> depwl
+2024-04-29 13:53:24,047 INFO [default] mod[2] -> lsc
+2024-04-29 13:53:24,047 INFO [default] mod[3] -> dpc
+2024-04-29 13:53:24,047 INFO [default] mod[4] -> blc
+2024-04-29 13:53:24,047 INFO [default] mod[5] -> wbgain
+2024-04-29 13:53:24,047 INFO [default] mod[6] -> demoasic
+2024-04-29 13:53:24,047 INFO [default] mod[7] -> ccm
+2024-04-29 13:53:24,047 INFO [default] mod[8] -> ltm
+2024-04-29 13:53:24,047 INFO [default] mod[9] -> rgbgamma
+2024-04-29 13:53:24,047 INFO [default] mod[10] -> rgb2yuv
+2024-04-29 13:53:24,047 INFO [default] mod[11] -> ygamma
+2024-04-29 13:53:24,047 INFO [default] mod[12] -> contrast
+2024-04-29 13:53:24,047 INFO [default] mod[13] -> sharpen
+2024-04-29 13:53:24,047 INFO [default] mod[14] -> cns
+2024-04-29 13:53:24,047 INFO [default] mod[15] -> saturation
+2024-04-29 13:53:24,047 INFO [default] mod[16] -> yuv2rgb
+2024-04-29 13:53:24,047 INFO [default] ============= user pipeline print end ==============
+2024-04-29 13:53:24,047 INFO [default] ============= user pipeline running ==============
+2024-04-29 13:53:24,090 INFO [default] mod unpack	 time: 43ms
+2024-04-29 13:53:24,421 INFO [default] mod depwl	 time: 331ms
+2024-04-29 13:53:25,277 INFO [default] mod lsc	 time: 856ms
+2024-04-29 13:53:25,900 INFO [default] mod dpc	 time: 623ms
+2024-04-29 13:53:26,099 INFO [default] mod blc	 time: 199ms
+2024-04-29 13:53:26,347 INFO [default] mod wbgain	 time: 248ms
+2024-04-29 13:53:27,333 INFO [default] mod demoasic	 time: 986ms
+2024-04-29 13:53:28,179 INFO [default] mod ccm	 time: 845ms
+2024-04-29 13:55:15,202 INFO [default] mod ltm	 time: 107023ms
+2024-04-29 13:55:16,103 INFO [default] mod rgbgamma	 time: 900ms
+2024-04-29 13:55:16,630 INFO [default] mod rgb2yuv	 time: 527ms
+2024-04-29 13:55:16,954 INFO [default] mod ygamma	 time: 323ms
+2024-04-29 13:55:17,165 INFO [default] mod contrast	 time: 211ms
+2024-04-29 13:55:19,761 INFO [default] mod sharpen	 time: 2595ms
+2024-04-29 13:55:33,772 INFO [default] mod cns	 time: 14011ms
+2024-04-29 13:55:34,150 INFO [default] mod saturation	 time: 377ms
+2024-04-29 13:55:34,797 INFO [default] mod yuv2rgb	 time: 647ms
+2024-04-29 13:55:34,797 INFO [default] ============= user pipeline running end ==============
+2024-04-29 13:55:37,549 INFO [default] APP Common Exit
+2024-04-29 13:57:47,897 INFO [default] APP Start Running
+2024-04-29 13:57:47,897 INFO [default] ============= default pipeline mods show start ==============
+2024-04-29 13:57:47,897 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-04-29 13:57:47,897 INFO [default] ============= default pipeline mods show end ==============
+2024-04-29 13:57:47,899 INFO [default] Sensor Name: cannon
+2024-04-29 13:57:47,899 INFO [default] Sensor CFA: "RGGB"
+2024-04-29 13:57:47,899 INFO [default] Sensor DT: "RAW16"
+2024-04-29 13:57:47,899 INFO [default] Sensor Resolution: 6080*4044
+2024-04-29 13:57:47,900 INFO [default] parse exit
+2024-04-29 13:57:47,932 INFO [default] ============= user pipeline print start ==============
+2024-04-29 13:57:47,933 INFO [default] mod[0] -> unpack
+2024-04-29 13:57:47,933 INFO [default] mod[1] -> depwl
+2024-04-29 13:57:47,933 INFO [default] mod[2] -> lsc
+2024-04-29 13:57:47,933 INFO [default] mod[3] -> dpc
+2024-04-29 13:57:47,933 INFO [default] mod[4] -> blc
+2024-04-29 13:57:47,933 INFO [default] mod[5] -> wbgain
+2024-04-29 13:57:47,933 INFO [default] mod[6] -> demoasic
+2024-04-29 13:57:47,933 INFO [default] mod[7] -> ccm
+2024-04-29 13:57:47,933 INFO [default] mod[8] -> ltm
+2024-04-29 13:57:47,933 INFO [default] mod[9] -> rgbgamma
+2024-04-29 13:57:47,933 INFO [default] mod[10] -> rgb2yuv
+2024-04-29 13:57:47,933 INFO [default] mod[11] -> ygamma
+2024-04-29 13:57:47,933 INFO [default] mod[12] -> contrast
+2024-04-29 13:57:47,933 INFO [default] mod[13] -> sharpen
+2024-04-29 13:57:47,933 INFO [default] mod[14] -> cns
+2024-04-29 13:57:47,933 INFO [default] mod[15] -> saturation
+2024-04-29 13:57:47,933 INFO [default] mod[16] -> yuv2rgb
+2024-04-29 13:57:47,933 INFO [default] ============= user pipeline print end ==============
+2024-04-29 13:57:47,933 INFO [default] ============= user pipeline running ==============
+2024-04-29 13:57:47,969 INFO [default] mod unpack	 time: 36ms
+2024-04-29 13:57:48,320 INFO [default] mod depwl	 time: 350ms
+2024-04-29 13:57:49,208 INFO [default] mod lsc	 time: 888ms
+2024-04-29 13:57:49,804 INFO [default] mod dpc	 time: 596ms
+2024-04-29 13:57:49,997 INFO [default] mod blc	 time: 193ms
+2024-04-29 13:57:50,240 INFO [default] mod wbgain	 time: 243ms
+2024-04-29 13:57:51,195 INFO [default] mod demoasic	 time: 955ms
+2024-04-29 13:57:52,017 INFO [default] mod ccm	 time: 822ms
+2024-04-29 13:59:37,911 INFO [default] mod ltm	 time: 105894ms
+2024-04-29 13:59:38,728 INFO [default] mod rgbgamma	 time: 817ms
+2024-04-29 13:59:39,144 INFO [default] mod rgb2yuv	 time: 416ms
+2024-04-29 13:59:39,439 INFO [default] mod ygamma	 time: 295ms
+2024-04-29 13:59:39,652 INFO [default] mod contrast	 time: 213ms
+2024-04-29 13:59:42,102 INFO [default] mod sharpen	 time: 2450ms
+2024-04-29 13:59:55,734 INFO [default] mod cns	 time: 13632ms
+2024-04-29 13:59:56,095 INFO [default] mod saturation	 time: 361ms
+2024-04-29 13:59:56,693 INFO [default] mod yuv2rgb	 time: 598ms
+2024-04-29 13:59:56,693 INFO [default] ============= user pipeline running end ==============
+2024-04-29 13:59:56,693 INFO [default] Writing BMP Files...
+2024-04-29 13:59:58,638 INFO [default] Writing RAW Files...
+2024-04-29 13:59:59,331 INFO [default] APP Common Exit
+2024-04-29 14:01:50,660 INFO [default] APP Start Running
+2024-04-29 14:01:50,660 INFO [default] ============= default pipeline mods show start ==============
+2024-04-29 14:01:50,660 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,660 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,660 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,660 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-04-29 14:01:50,660 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-04-29 14:01:50,661 INFO [default] ============= default pipeline mods show end ==============
+2024-04-29 14:01:50,664 INFO [default] Sensor Name: cannon
+2024-04-29 14:01:50,664 INFO [default] Sensor CFA: "RGGB"
+2024-04-29 14:01:50,664 INFO [default] Sensor DT: "RAW16"
+2024-04-29 14:01:50,664 INFO [default] Sensor Resolution: 6080*4044
+2024-04-29 14:01:50,664 INFO [default] parse exit
+2024-04-29 14:01:50,698 INFO [default] ============= user pipeline print start ==============
+2024-04-29 14:01:50,699 INFO [default] mod[0] -> unpack
+2024-04-29 14:01:50,699 INFO [default] mod[1] -> depwl
+2024-04-29 14:01:50,699 INFO [default] mod[2] -> lsc
+2024-04-29 14:01:50,699 INFO [default] mod[3] -> dpc
+2024-04-29 14:01:50,699 INFO [default] mod[4] -> blc
+2024-04-29 14:01:50,699 INFO [default] mod[5] -> wbgain
+2024-04-29 14:01:50,699 INFO [default] mod[6] -> demoasic
+2024-04-29 14:01:50,699 INFO [default] mod[7] -> ccm
+2024-04-29 14:01:50,699 INFO [default] mod[8] -> ltm
+2024-04-29 14:01:50,699 INFO [default] mod[9] -> rgbgamma
+2024-04-29 14:01:50,699 INFO [default] mod[10] -> rgb2yuv
+2024-04-29 14:01:50,699 INFO [default] mod[11] -> ygamma
+2024-04-29 14:01:50,699 INFO [default] mod[12] -> contrast
+2024-04-29 14:01:50,699 INFO [default] mod[13] -> sharpen
+2024-04-29 14:01:50,699 INFO [default] mod[14] -> cns
+2024-04-29 14:01:50,699 INFO [default] mod[15] -> saturation
+2024-04-29 14:01:50,699 INFO [default] mod[16] -> yuv2rgb
+2024-04-29 14:01:50,699 INFO [default] ============= user pipeline print end ==============
+2024-04-29 14:01:50,699 INFO [default] ============= user pipeline running ==============
+2024-04-29 14:01:50,736 INFO [default] mod unpack	 time: 37ms
+2024-04-29 14:01:51,078 INFO [default] mod depwl	 time: 342ms
+2024-04-29 14:01:51,948 INFO [default] mod lsc	 time: 870ms
+2024-04-29 14:01:52,542 INFO [default] mod dpc	 time: 594ms
+2024-04-29 14:01:52,737 INFO [default] mod blc	 time: 195ms
+2024-04-29 14:01:52,981 INFO [default] mod wbgain	 time: 244ms
+2024-04-29 14:01:53,981 INFO [default] mod demoasic	 time: 1000ms
+2024-04-29 14:01:54,832 INFO [default] mod ccm	 time: 851ms
+2024-04-29 14:03:44,097 INFO [default] mod ltm	 time: 109265ms
+2024-04-29 14:03:45,091 INFO [default] mod rgbgamma	 time: 993ms
+2024-04-29 14:03:45,521 INFO [default] mod rgb2yuv	 time: 430ms
+2024-04-29 14:03:45,811 INFO [default] mod ygamma	 time: 290ms
+2024-04-29 14:03:46,015 INFO [default] mod contrast	 time: 204ms
+2024-04-29 14:03:48,556 INFO [default] mod sharpen	 time: 2541ms
+2024-04-29 14:04:02,826 INFO [default] mod cns	 time: 14270ms
+2024-04-29 14:04:03,204 INFO [default] mod saturation	 time: 378ms
+2024-04-29 14:04:03,810 INFO [default] mod yuv2rgb	 time: 605ms
+2024-04-29 14:04:03,810 INFO [default] ============= user pipeline running end ==============
+2024-04-29 14:04:03,810 INFO [default] Writing BMP Files...
+2024-04-29 14:04:05,704 INFO [default] Writing RAW Files...
+2024-04-29 14:04:06,375 INFO [default] APP Common Exit
+2024-05-15 00:11:55,279 INFO [default] APP Start Running
+2024-05-15 00:11:55,280 INFO [default] ============= default pipeline mods show start ==============
+2024-05-15 00:11:55,280 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-05-15 00:11:55,280 INFO [default] ============= default pipeline mods show end ==============
+2024-05-15 00:11:55,296 INFO [default] Sensor Name: xkISP
+2024-05-15 00:11:55,296 INFO [default] Sensor CFA: "RGGB"
+2024-05-15 00:11:55,296 INFO [default] Sensor DT: "RAW10"
+2024-05-15 00:11:55,296 INFO [default] Sensor Resolution: 640*480
+2024-05-15 00:11:55,296 INFO [default] parse exit
+2024-05-15 00:11:55,368 INFO [default] ============= user pipeline print start ==============
+2024-05-15 00:11:55,368 INFO [default] mod[0] -> unpack
+2024-05-15 00:11:55,368 INFO [default] ============= user pipeline print end ==============
+2024-05-15 00:11:55,368 INFO [default] ============= user pipeline running ==============
+2024-05-15 00:11:55,370 INFO [default] mod unpack	 time: 2ms
+2024-05-15 00:11:55,370 INFO [default] ============= user pipeline running end ==============
+2024-05-15 00:11:55,370 INFO [default] Writing BMP Files...
+2024-05-15 00:11:55,392 INFO [default] Writing RAW Files...
+2024-05-15 00:11:55,404 INFO [default] APP Common Exit
+2024-05-15 00:12:45,498 INFO [default] APP Start Running
+2024-05-15 00:12:45,498 INFO [default] ============= default pipeline mods show start ==============
+2024-05-15 00:12:45,498 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,498 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,498 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,498 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-05-15 00:12:45,498 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-05-15 00:12:45,499 INFO [default] ============= default pipeline mods show end ==============
+2024-05-15 00:12:45,513 INFO [default] Sensor Name: cannon
+2024-05-15 00:12:45,513 INFO [default] Sensor CFA: "RGGB"
+2024-05-15 00:12:45,513 INFO [default] Sensor DT: "RAW16"
+2024-05-15 00:12:45,513 INFO [default] Sensor Resolution: 6080*4044
+2024-05-15 00:12:45,513 INFO [default] parse exit
+2024-05-15 00:12:45,558 INFO [default] ============= user pipeline print start ==============
+2024-05-15 00:12:45,558 INFO [default] mod[0] -> unpack
+2024-05-15 00:12:45,558 INFO [default] mod[1] -> depwl
+2024-05-15 00:12:45,558 INFO [default] mod[2] -> lsc
+2024-05-15 00:12:45,558 INFO [default] mod[3] -> dpc
+2024-05-15 00:12:45,558 INFO [default] mod[4] -> blc
+2024-05-15 00:12:45,558 INFO [default] mod[5] -> wbgain
+2024-05-15 00:12:45,558 INFO [default] mod[6] -> demoasic
+2024-05-15 00:12:45,558 INFO [default] mod[7] -> ccm
+2024-05-15 00:12:45,559 INFO [default] mod[8] -> ltm
+2024-05-15 00:12:45,559 INFO [default] mod[9] -> rgbgamma
+2024-05-15 00:12:45,559 INFO [default] mod[10] -> rgb2yuv
+2024-05-15 00:12:45,559 INFO [default] mod[11] -> ygamma
+2024-05-15 00:12:45,559 INFO [default] mod[12] -> contrast
+2024-05-15 00:12:45,559 INFO [default] mod[13] -> sharpen
+2024-05-15 00:12:45,559 INFO [default] mod[14] -> cns
+2024-05-15 00:12:45,559 INFO [default] mod[15] -> saturation
+2024-05-15 00:12:45,559 INFO [default] mod[16] -> yuv2rgb
+2024-05-15 00:12:45,559 INFO [default] ============= user pipeline print end ==============
+2024-05-15 00:12:45,559 INFO [default] ============= user pipeline running ==============
+2024-05-15 00:12:45,604 INFO [default] mod unpack	 time: 45ms
+2024-05-15 00:12:45,937 INFO [default] mod depwl	 time: 332ms
+2024-05-15 00:12:46,787 INFO [default] mod lsc	 time: 850ms
+2024-05-15 00:12:47,376 INFO [default] mod dpc	 time: 589ms
+2024-05-15 00:12:47,569 INFO [default] mod blc	 time: 192ms
+2024-05-15 00:12:47,810 INFO [default] mod wbgain	 time: 241ms
+2024-05-15 00:12:48,749 INFO [default] mod demoasic	 time: 938ms
+2024-05-15 00:12:49,563 INFO [default] mod ccm	 time: 814ms
+2024-05-15 00:14:32,559 INFO [default] mod ltm	 time: 102996ms
+2024-05-15 00:14:33,376 INFO [default] mod rgbgamma	 time: 817ms
+2024-05-15 00:14:33,794 INFO [default] mod rgb2yuv	 time: 418ms
+2024-05-15 00:14:34,073 INFO [default] mod ygamma	 time: 279ms
+2024-05-15 00:14:34,282 INFO [default] mod contrast	 time: 209ms
+2024-05-15 00:14:36,693 INFO [default] mod sharpen	 time: 2411ms
+2024-05-15 00:14:50,098 INFO [default] mod cns	 time: 13405ms
+2024-05-15 00:14:50,457 INFO [default] mod saturation	 time: 358ms
+2024-05-15 00:14:51,050 INFO [default] mod yuv2rgb	 time: 593ms
+2024-05-15 00:14:51,050 INFO [default] ============= user pipeline running end ==============
+2024-05-15 00:14:51,050 INFO [default] Writing BMP Files...
+2024-05-15 00:14:52,970 INFO [default] Writing RAW Files...
+2024-05-15 00:14:53,857 INFO [default] APP Common Exit
+2024-05-15 00:15:00,963 INFO [default] APP Start Running
+2024-05-15 00:15:00,963 INFO [default] ============= default pipeline mods show start ==============
+2024-05-15 00:15:00,963 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-05-15 00:15:00,963 INFO [default] ============= default pipeline mods show end ==============
+2024-05-15 00:15:00,967 INFO [default] Sensor Name: cannon
+2024-05-15 00:15:00,967 INFO [default] Sensor CFA: "RGGB"
+2024-05-15 00:15:00,967 INFO [default] Sensor DT: "RAW16"
+2024-05-15 00:15:00,967 INFO [default] Sensor Resolution: 6080*4044
+2024-05-15 00:15:00,967 INFO [default] parse exit
+2024-05-15 00:15:01,014 INFO [default] ============= user pipeline print start ==============
+2024-05-15 00:15:01,014 INFO [default] mod[0] -> unpack
+2024-05-15 00:15:01,014 INFO [default] ============= user pipeline print end ==============
+2024-05-15 00:15:01,014 INFO [default] ============= user pipeline running ==============
+2024-05-15 00:15:01,058 INFO [default] mod unpack	 time: 44ms
+2024-05-15 00:15:01,058 INFO [default] ============= user pipeline running end ==============
+2024-05-15 00:15:01,058 INFO [default] Writing BMP Files...
+2024-05-15 00:15:03,074 INFO [default] Writing RAW Files...
+2024-05-15 00:15:03,752 INFO [default] APP Common Exit
+2024-05-15 00:17:47,051 INFO [default] APP Start Running
+2024-05-15 00:17:47,052 INFO [default] ============= default pipeline mods show start ==============
+2024-05-15 00:17:47,052 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-05-15 00:17:47,052 INFO [default] ============= default pipeline mods show end ==============
+2024-05-15 00:17:47,056 INFO [default] Sensor Name: xkISP
+2024-05-15 00:17:47,056 INFO [default] Sensor CFA: "RGGB"
+2024-05-15 00:17:47,056 INFO [default] Sensor DT: "RAW10"
+2024-05-15 00:17:47,056 INFO [default] Sensor Resolution: 640*480
+2024-05-15 00:17:47,056 INFO [default] parse exit
+2024-05-15 00:17:47,059 INFO [default] ============= user pipeline print start ==============
+2024-05-15 00:17:47,059 INFO [default] mod[0] -> unpack
+2024-05-15 00:17:47,059 INFO [default] ============= user pipeline print end ==============
+2024-05-15 00:17:47,059 INFO [default] ============= user pipeline running ==============
+2024-05-15 00:17:47,060 INFO [default] mod unpack	 time: 1ms
+2024-05-15 00:17:47,060 INFO [default] ============= user pipeline running end ==============
+2024-05-15 00:17:47,060 INFO [default] Writing BMP Files...
+2024-05-15 00:17:47,098 INFO [default] Writing RAW Files...
+2024-05-15 00:17:47,122 INFO [default] APP Common Exit
+2024-06-19 02:57:12,114 INFO [default] APP Start Running
+2024-06-19 02:57:12,114 INFO [default] ============= default pipeline mods show start ==============
+2024-06-19 02:57:12,114 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-06-19 02:57:12,114 INFO [default] ============= default pipeline mods show end ==============
+2024-06-19 02:57:12,147 INFO [default] Sensor Name: cannon
+2024-06-19 02:57:12,148 INFO [default] Sensor CFA: "RGGB"
+2024-06-19 02:57:12,148 INFO [default] Sensor DT: "RAW16"
+2024-06-19 02:57:12,148 INFO [default] Sensor Resolution: 6080*4044
+2024-06-19 02:57:12,148 INFO [default] parse exit
+2024-06-19 02:57:13,541 INFO [default] ============= user pipeline print start ==============
+2024-06-19 02:57:13,541 INFO [default] mod[0] -> unpack
+2024-06-19 02:57:13,541 INFO [default] mod[1] -> depwl
+2024-06-19 02:57:13,541 INFO [default] mod[2] -> lsc
+2024-06-19 02:57:13,541 INFO [default] mod[3] -> dpc
+2024-06-19 02:57:13,541 INFO [default] mod[4] -> blc
+2024-06-19 02:57:13,541 INFO [default] mod[5] -> wbgain
+2024-06-19 02:57:13,541 INFO [default] mod[6] -> demoasic
+2024-06-19 02:57:13,541 INFO [default] mod[7] -> ccm
+2024-06-19 02:57:13,541 INFO [default] mod[8] -> ltm
+2024-06-19 02:57:13,541 INFO [default] mod[9] -> rgbgamma
+2024-06-19 02:57:13,541 INFO [default] mod[10] -> rgb2yuv
+2024-06-19 02:57:13,541 INFO [default] mod[11] -> ygamma
+2024-06-19 02:57:13,541 INFO [default] mod[12] -> contrast
+2024-06-19 02:57:13,541 INFO [default] mod[13] -> sharpen
+2024-06-19 02:57:13,541 INFO [default] mod[14] -> cns
+2024-06-19 02:57:13,541 INFO [default] mod[15] -> saturation
+2024-06-19 02:57:13,541 INFO [default] mod[16] -> yuv2rgb
+2024-06-19 02:57:13,541 INFO [default] ============= user pipeline print end ==============
+2024-06-19 02:57:13,542 INFO [default] ============= user pipeline running ==============
+2024-06-19 02:57:13,577 INFO [default] mod unpack	 time: 35ms
+2024-06-19 02:57:13,915 INFO [default] mod depwl	 time: 337ms
+2024-06-19 02:57:14,779 INFO [default] mod lsc	 time: 864ms
+2024-06-19 02:57:15,386 INFO [default] mod dpc	 time: 607ms
+2024-06-19 02:57:15,584 INFO [default] mod blc	 time: 198ms
+2024-06-19 02:57:15,832 INFO [default] mod wbgain	 time: 248ms
+2024-06-19 02:57:16,787 INFO [default] mod demoasic	 time: 955ms
+2024-06-19 02:57:17,618 INFO [default] mod ccm	 time: 831ms
+2024-06-19 02:58:06,538 INFO [default] APP Start Running
+2024-06-19 02:58:06,538 INFO [default] ============= default pipeline mods show start ==============
+2024-06-19 02:58:06,538 INFO [default] isp module-> [yuv2rgb	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [ygamma	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [wbgain	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [unpack	] | in bits [1] | out bits [2]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [sharpen	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [saturation	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [rgbgamma	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [rgb2yuv	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [ltm	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [lsc	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,538 INFO [default] isp module-> [dpc	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [depwl	] | in bits [2] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [demoasic	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [contrast	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [cns	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [ccm	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] isp module-> [blc	] | in bits [4] | out bits [4]
+2024-06-19 02:58:06,539 INFO [default] ============= default pipeline mods show end ==============
+2024-06-19 02:58:06,543 INFO [default] Sensor Name: dsc
+2024-06-19 02:58:06,543 INFO [default] Sensor CFA: "RGGB"
+2024-06-19 02:58:06,543 INFO [default] Sensor DT: "RAW16"
+2024-06-19 02:58:06,543 INFO [default] Sensor Resolution: 768*512
+2024-06-19 02:58:06,543 INFO [default] parse exit
+2024-06-19 02:58:06,562 INFO [default] ============= user pipeline print start ==============
+2024-06-19 02:58:06,562 INFO [default] mod[0] -> unpack
+2024-06-19 02:58:06,562 INFO [default] mod[1] -> depwl
+2024-06-19 02:58:06,562 INFO [default] mod[2] -> lsc
+2024-06-19 02:58:06,562 INFO [default] mod[3] -> dpc
+2024-06-19 02:58:06,562 INFO [default] mod[4] -> blc
+2024-06-19 02:58:06,562 INFO [default] mod[5] -> wbgain
+2024-06-19 02:58:06,562 INFO [default] mod[6] -> demoasic
+2024-06-19 02:58:06,562 INFO [default] mod[7] -> ccm
+2024-06-19 02:58:06,562 INFO [default] mod[8] -> ltm
+2024-06-19 02:58:06,562 INFO [default] mod[9] -> rgbgamma
+2024-06-19 02:58:06,562 INFO [default] mod[10] -> rgb2yuv
+2024-06-19 02:58:06,562 INFO [default] mod[11] -> ygamma
+2024-06-19 02:58:06,562 INFO [default] mod[12] -> contrast
+2024-06-19 02:58:06,562 INFO [default] mod[13] -> sharpen
+2024-06-19 02:58:06,563 INFO [default] mod[14] -> cns
+2024-06-19 02:58:06,563 INFO [default] mod[15] -> saturation
+2024-06-19 02:58:06,563 INFO [default] mod[16] -> yuv2rgb
+2024-06-19 02:58:06,563 INFO [default] ============= user pipeline print end ==============
+2024-06-19 02:58:06,563 INFO [default] ============= user pipeline running ==============
+2024-06-19 02:58:06,563 INFO [default] mod unpack	 time: 0ms
+2024-06-19 02:58:06,569 INFO [default] mod depwl	 time: 6ms
+2024-06-19 02:58:06,583 INFO [default] mod lsc	 time: 14ms
+2024-06-19 02:58:06,593 INFO [default] mod dpc	 time: 10ms
+2024-06-19 02:58:06,596 INFO [default] mod blc	 time: 3ms
+2024-06-19 02:58:06,600 INFO [default] mod wbgain	 time: 4ms
+2024-06-19 02:58:06,616 INFO [default] mod demoasic	 time: 16ms
+2024-06-19 02:58:06,629 INFO [default] mod ccm	 time: 13ms
+2024-06-19 02:58:08,323 INFO [default] mod ltm	 time: 1694ms
+2024-06-19 02:58:08,336 INFO [default] mod rgbgamma	 time: 13ms
+2024-06-19 02:58:08,343 INFO [default] mod rgb2yuv	 time: 7ms
+2024-06-19 02:58:08,348 INFO [default] mod ygamma	 time: 5ms
+2024-06-19 02:58:08,351 INFO [default] mod contrast	 time: 3ms
+2024-06-19 02:58:08,391 INFO [default] mod sharpen	 time: 40ms
+2024-06-19 02:58:08,633 INFO [default] mod cns	 time: 242ms
+2024-06-19 02:58:08,639 INFO [default] mod saturation	 time: 6ms
+2024-06-19 02:58:08,649 INFO [default] mod yuv2rgb	 time: 10ms
+2024-06-19 02:58:08,649 INFO [default] ============= user pipeline running end ==============
+2024-06-19 02:58:08,649 INFO [default] Writing BMP Files...
+2024-06-19 02:58:08,681 INFO [default] Writing RAW Files...
+2024-06-19 02:58:08,694 INFO [default] APP Common Exit

@@ -1,0 +1,63 @@
+Vivado Simulator v2022.1
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.1/bin/unwrapped/lnx64.o/xelab tb_fsic -debug typical --snapshot tb_fsic_xelab --timescale 1ns/1ns 
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 12 for port 'axi_awaddr' [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:466]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 12 for port 'axi_araddr' [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:471]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 24 for port 'up_la_data' [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:513]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'ekey_rsc_vld' [/home/ubuntu/soc2_final/fsic/rtl/user_prj0.v:181]
+WARNING: [VRFC 10-3645] port 'axi_awready4' remains unconnected for this instance [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:183]
+WARNING: [VRFC 10-3645] port 'axi_awvalid' remains unconnected for this instance [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:311]
+WARNING: [VRFC 10-5021] port 'axi_arvalid' is not connected on this instance [/home/ubuntu/soc2_final/fsic/rtl/fsic.v:311]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.fsic_clock_div
+Compiling module work.CFG_CTRL(pADDR_WIDTH=15)
+Compiling module work.axilite_master
+Compiling module work.axilite_slave
+Compiling module work.axis_master
+Compiling module work.axis_slave
+Compiling module work.axi_ctrl_logic
+Compiling module work.AXIL_AXIS(pADDR_WIDTH=15)
+Compiling module work.AXIS_SW(pADDR_WIDTH=15)
+Compiling module work.fsic_coreclk_phase_cnt
+Compiling module work.fsic_io_serdes_rx
+Compiling module work.IO_SERDES_default
+Compiling module work.LOGIC_ANLZ(pADDR_WIDTH=15)
+Compiling module work.AXIL_SLAV
+Compiling module work.ROM_1i8_1o8_139451376f09106dead9...
+Compiling module work.ROM_1i8_1o8_d27bb9a4f562995da244...
+Compiling module work.ROM_1i8_1o8_285a0b00f8e79dc935ff...
+Compiling module work.ccs_in_wait_v1(width=128)
+Compiling module work.aes_enc_run_state_rsci_state_wai...
+Compiling module work.aes_enc_run_state_rsci_state_wai...
+Compiling module work.aes_enc_run_state_rsci
+Compiling module work.ccs_out_wait_v1(rscid=2,width=12...
+Compiling module work.aes_enc_run_cipher_rsci_cipher_w...
+Compiling module work.aes_enc_run_cipher_rsci_cipher_w...
+Compiling module work.aes_enc_run_cipher_rsci
+Compiling module work.aes_enc_run_ekey_rsci_ekey_wait_...
+Compiling module work.aes_enc_run_ekey_rsci_ekey_wait_...
+Compiling module work.aes_enc_run_ekey_rsci
+Compiling module work.aes_enc_run_staller
+Compiling module work.aes_enc_run_run_fsm
+Compiling module work.aes_enc_run
+Compiling module work.aes_enc
+Compiling module work.USER_PRJ0
+Compiling module work.USER_PRJ1
+Compiling module work.USER_PRJ2
+Compiling module work.USER_PRJ3
+Compiling module work.AXIS_SLAV
+Compiling module work.AXIS_MSTR
+Compiling module work.IRQ_MUX
+Compiling module work.LA_MUX
+Compiling module work.USER_SUBSYS(pADDR_WIDTH=15)
+Compiling module work.FSIC_CLKRST
+Compiling module work.MPRJ_IO(pADDR_WIDTH=15)
+Compiling module work.FSIC
+Compiling module work.fpga
+Compiling module work.tb_fsic
+Built simulation snapshot tb_fsic_xelab

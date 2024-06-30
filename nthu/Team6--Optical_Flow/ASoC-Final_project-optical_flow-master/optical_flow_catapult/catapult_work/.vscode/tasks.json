@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "g++ build",
+			"command": "/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/bin/g++",
+			"args": [
+				"-g",
+				"-std=c++11",
+				"-DSC_INCLUDE_DYNAMIC_PROCESSES",
+				"-Wl,-rpath=/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/lib,-rpath=/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/shared/lib",
+				"../hls_c/src/EdgeDetect_tb.cpp",
+				"../bmpUtil/src/bmp_io.cpp",
+				"-I/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work",
+				"-I./../hls_c/inc",
+				"-I./../cmodel/inc",
+				"-I./../bmpUtil/inc",
+				"-I./../hls_c/inc",
+				"-I./../cmodel/inc",
+				"-I./../bmpUtil/inc",
+				"-I/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/shared/include",
+				"-L/usr/cadtool/mentor/Catapult/2023.1/Mgc_home/shared/lib",
+				"-Wl,-Bstatic",
+				"-lsystemc",
+				"-Wl,-Bdynamic",
+				"-lpthread",
+				"-o",
+				"/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/EdgeDetect_IP__EdgeDetect_Top"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"type": "shell",
+			"label": "run",
+			"command": "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work/EdgeDetect_IP__EdgeDetect_Top ./image/people_gray.bmp out_algorithm.bmp out_hw.bmp",
+			"dependsOn": [
+				"g++ build"
+			],
+			"problemMatcher": []
+		},
+		{
+			"type": "shell",
+			"label": "trace",
+			"command": "gtkwave trace.vcd",
+			"dependsOn": [
+				"run"
+			],
+			"problemMatcher": []
+		}
+	]
+}

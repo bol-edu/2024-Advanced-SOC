@@ -1,0 +1,978 @@
+/*
+
+Xilinx Vivado v2022.1 (64-bit) [Major: 2022, Minor: 1]
+SW Build: 3526262 on Mon Apr 18 15:47:01 MDT 2022
+IP Build: 3524634 on Mon Apr 18 20:55:01 MDT 2022
+
+Process ID (PID): 616665
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Mon Jun 17 12:53:06 EDT 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.15.0-107-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 0
+Screen size: 1440x900
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.11 64-bit
+Java home: 	/tools/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9
+Java executable: 	/tools/Xilinx/Vivado/2022.1/tps/lnx64/jre11.0.11_9/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m, -Xrs]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	ubuntu
+User home directory: /home/ubuntu
+User working directory: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2022.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2022.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2022.1/bin
+
+Vivado preferences file: /home/ubuntu/.Xilinx/Vivado/2022.1/vivado.xml
+Vivado preferences directory: /home/ubuntu/.Xilinx/Vivado/2022.1/
+Vivado layouts directory: /home/ubuntu/.Xilinx/Vivado/2022.1/data/layouts
+PlanAhead jar file: 	/tools/Xilinx/Vivado/2022.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vivado.log
+Vivado journal file: 	/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-616665-ubuntu2004
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2022.1/ids_lite/ISE
+XILINX_HLS: /tools/Xilinx/Vitis_HLS/2022.1
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2022.1
+XILINX_SDK: /tools/Xilinx/Vitis/2022.1
+XILINX_VITIS: /tools/Xilinx/Vitis/2022.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2022.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2022.1
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,871 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1002 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,817 MB. GUI used memory: 54 MB. Current time: 6/17/24, 12:53:07 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1005 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1004 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr", 0); // r
+// [GUI Memory]: 94 MB (+96388kb) [00:00:41]
+// [Engine Memory]: 1,820 MB (+1756948kb) [00:00:41]
+// Opening Vivado Project: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr. Version: Vivado v2022.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,930 MB (+19764kb) [00:00:46]
+// [Engine Memory]: 2,045 MB (+19525kb) [00:00:48]
+// [GUI Memory]: 116 MB (+17545kb) [00:00:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  5630 ms.
+// Tcl Message: open_project /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_caravel_ps'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_output_pin'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/userdma_fir'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,014 MB. GUI used memory: 73 MB. Current time: 6/17/24, 12:53:46 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1206 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 7711.039 ; gain = 175.500 ; free physical = 7646 ; free virtual = 9810 
+// Project name: vvd_caravel_fpga; location: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga; part: xc7z020clg400-1
+// Elapsed time: 12 seconds
+dismissDialog("Open Project"); // bA
+// [GUI Memory]: 122 MB (+342kb) [00:01:00]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 403ms to process. Increasing delay to 3000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,106 MB. GUI used memory: 85 MB. Current time: 6/17/24, 12:54:03 PM EDT
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 130 MB (+2539kb) [00:01:12]
+// [Engine Memory]: 2,259 MB (+117097kb) [00:01:17]
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (design_1_wrapper.v) elapsed time: 0.2s
+// Elapsed time: 74 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 3, true); // D - Node
+// [GUI Memory]: 139 MB (+2431kb) [00:02:08]
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v)]", 3); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 4, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd} 
+// Tcl Message: Reading block design file </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_10M Adding component instance block -- xilinx.com:module_ref:spiflash:1.0 - spiflash_0 Successfully read diagram <design_1> from block design file </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  2822 ms.
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 7919.449 ; gain = 0.000 ; free physical = 4720 ; free virtual = 6887 
+// [GUI Memory]: 148 MB (+2248kb) [00:02:20]
+// JavaFX intialization before: 1718643315852
+dismissDialog("Open Block Design"); // bA
+// JavaFX initialization after: 1718643316120
+// WARNING: HTimer (Open addressing views timer) is taking 374ms to process. Increasing delay to 1300 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,366 MB. GUI used memory: 103 MB. Current time: 6/17/24, 12:55:18 PM EDT
+// [Engine Memory]: 2,374 MB (+2476kb) [00:02:28]
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // D
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // D
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // D
+// [GUI Memory]: 157 MB (+919kb) [00:04:20]
+// Elapsed time: 471 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "user"); // OverlayTextField
+// Elapsed time: 349 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // n
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // L
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // L
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 3, "User Repository", 0, true, false, false, false, false, true); // L - Double Click - Node
+// Elapsed time: 130 seconds
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // L - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true, false, false, false, true, false); // L - Popup Trigger - Node
+// [GUI Memory]: 169 MB (+4944kb) [00:18:44]
+selectMenuItem(PAResourceAtoD.CoreAndInterfacesBaseTreeTablePanel_REFRESH_ALL_REPOSITORIES, "Refresh All Repositories"); // ar
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// Tcl Message: update_ip_catalog -rebuild 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_caravel_ps'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/hls_output_pin'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vitis_prj/userdma_fir'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 183 MB (+5275kb) [00:18:45]
+dismissDialog("Refresh All IP Repositories"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceQtoS.SystemBuilderView_ADD_IP, "System_RSB_ADD_IP"); // D
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "user"); // OverlayTextField
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "userd"); // OverlayTextField
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "userdma"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 0, "Userdma", 0, false); // L
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 0); // L
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Userdma", 0, "Userdma", 0, false, false, false, false, false, true); // L - Double Click
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:userdma:1.0 userdma_0 
+// Tcl Message: endgroup 
+// Tcl Command: 'set_property location {7 2407 537} [get_bd_cells userdma_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {7 2407 537} [get_bd_cells userdma_0] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,394 MB. GUI used memory: 113 MB. Current time: 6/17/24, 1:11:53 PM EDT
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins userdma_0/ap_clk] [get_bd_pins clk_wiz_0/clk_out1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins userdma_0/ap_rst_n] [get_bd_pins rst_ps7_0_10M/peripheral_aresetn] 
+// Tcl Command: 'set_property location {6 2254 671} [get_bd_cells userdma_0]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {6 2254 671} [get_bd_cells userdma_0] 
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins ps_axil_0/updma_so] [get_bd_intf_pins userdma_0/inStreamTop] 
+// Elapsed time: 46 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // Q
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net -boundary_type upper [get_bd_intf_pins ps7_0_axi_periph/M02_AXI] [get_bd_intf_pins userdma_0/s_axi_control] 
+// Elapsed time: 36 seconds
+dismissDialog("Make Connection"); // M
+// Elapsed time: 43 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 695, 470, 1045, 663, false, false, false, true, false); // hw - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderMenu_IP_DOCUMENTATION, "IP Documentation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+dismissDialog("Re-customize IP"); // N
+selectComboBox("Number of Slave Interfaces (NUM_SI)", "3", 2); // bZ
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Re-customize IP"); // r
+// Tcl Command: 'set_property -dict [list CONFIG.NUM_SI {3} CONFIG.NUM_MI {1}] [get_bd_cells axi_mem_intercon]'
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// Tcl Message: startgroup 
+// Tcl Message: set_property -dict [list CONFIG.NUM_SI {3} CONFIG.NUM_MI {1}] [get_bd_cells axi_mem_intercon] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: endgroup 
+dismissDialog("Customize IP"); // bA
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins userdma_0/m_axi_gmem0] -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S01_AXI] 
+// [Engine Memory]: 2,550 MB (+59889kb) [00:21:15]
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins userdma_0/m_axi_gmem1] -boundary_type upper [get_bd_intf_pins axi_mem_intercon/S02_AXI] 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,559 MB. GUI used memory: 124 MB. Current time: 6/17/24, 1:14:13 PM EDT
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_INSERT_ADDRNETWORK
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_intf_net [get_bd_intf_pins userdma_0/outStreamTop] [get_bd_intf_pins ps_axil_0/updma_si] 
+// Elapsed time: 43 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // g
+selectCheckBoxTree(PAResourceAtoD.ApplyRSBMultiAutomationDialog_CHECKBOX_TREE, "[All Automation (0 out of 2 selected), axi_mem_intercon]", 1, true, false, ui.utils.collection.couples.TriState.False); // ac - Node
+// TclEventType: XGUI_RESET_GUI_ELEMENT
+dismissDialog("Run Connection Automation"); // O
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_mem_intercon/S01_ACLK] [get_bd_pins clk_wiz_0/clk_out1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_mem_intercon/S02_ACLK] [get_bd_pins clk_wiz_0/clk_out1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_mem_intercon/S01_ARESETN] [get_bd_pins rst_ps7_0_10M/peripheral_aresetn] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins axi_mem_intercon/S02_ARESETN] [get_bd_pins rst_ps7_0_10M/peripheral_aresetn] 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+dismissDialog("Save Design"); // bA
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // m
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "ps_axil_0 ;  ;  ;  ;  ; ", 3); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "userdma_0 ;  ;  ;  ;  ; ", 5); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ])", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 8); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ;  ;  ; ", 9, "/userdma_0/s_axi_control", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ;  ;  ; ", 9, "/userdma_0/s_axi_control", 0, false, false, false, false, true, false); // r - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_ASSIGN, "Assign"); // ar
+// Tcl Command: 'assign_bd_address -target_address_space /processing_system7_0/Data [get_bd_addr_segs userdma_0/s_axi_control/Reg] -force'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address -target_address_space /processing_system7_0/Data [get_bd_addr_segs userdma_0/s_axi_control/Reg] -force 
+// Tcl Message: Slave segment '/userdma_0/s_axi_control/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4002_0000 [ 64K ]>. 
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 3, "Network 1", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 64K ; 0x4002_FFFF", 8, "/userdma_0/s_axi_control", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 64K ; 0x4002_FFFF", 8, "0x4002_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x40020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x40020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ])", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 64K ; 0x4002_FFFF", 8, "64K", 4, false); // r
+// Tcl Command: 'set_property range 32K [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 32K [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 32K ; 0x4002_7FFF", 8, "0x4002_0000", 3, false); // r
+// HOptionPane Warning: 'The proposed address '0x6000_9000 [ 32K ]' is misaligned. The maximum range for offset '0x6000_9000' is '4K'. The next aligned offset for this range is '0x6001_0000'. (Set Base Address)'
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ps_axil_0/s_axi ; s_axi ; reg0 ; 0x6000_0000 ; 32K ; 0x6000_7FFF", 7, "0x6000_0000", 3, false); // r
+selectButton("OptionPane.button", "OK"); // JButton
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 32K ; 0x4002_7FFF", 8, "0x4002_0000", 3, false); // r
+// HOptionPane Warning: 'The proposed address '0x6000_0000 [ 32K ]' overlaps with slave segment '/ps_axil_0/ s_axi/reg0' already assigned into address space '/processing_system7_0/Data' at '0x6000_0000 [ 32K ]'. Please choose another available address. (Set Base Address)'
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 32K ; 0x4002_7FFF", 8, "32K", 4, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 32K ; 0x4002_7FFF", 8, "32K", 4, false); // r
+// Tcl Command: 'set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 4K ; 0x4002_0FFF", 8, "0x4002_0000", 3, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 4K ; 0x4002_0FFF", 8, "0x4002_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x40020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x40020000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1, "processing_system7_0", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x4002_0000 ; 4K ; 0x4002_0FFF", 8, "0x4002_0000", 3, false); // r
+// Tcl Command: 'set_property offset 0x60009000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_UPDATE_ADDRASSIGN
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x60009000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0, "Network 0", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0, "Network 0", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ])", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 9, "Network 1", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 9); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "ps_axil_0 ;  ;  ;  ;  ; ", 10); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "userdma_0 ;  ;  ;  ;  ; ", 12); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ps_axil_0/ladma_mm (64 address bits : 16E) ;  ;  ;  ;  ; ", 11); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem0 (64 address bits : 16E) ;  ;  ;  ;  ; ", 14); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E) ;  ;  ;  ;  ; ", 16); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 15); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 18); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 18, "Unassigned (1)", 0, true); // r - Node
+collapseTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 15); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 15); // r
+collapseTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 18); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 18); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Unassigned (1) ;  ;  ;  ;  ; ", 18, "Unassigned (1)", 0, true, false, false, false, false, true); // r - Double Click - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E) ;  ;  ;  ;  ; ", 17, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E)", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/S_AXI_HP0 ; S_AXI_HP0 ; HP0_DDR_LOWOCM ;  ;  ; ", 19, "/processing_system7_0/S_AXI_HP0", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E) ;  ;  ;  ;  ; ", 17, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E)", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/S_AXI_HP0 ; S_AXI_HP0 ; HP0_DDR_LOWOCM ;  ;  ; ", 16, "/processing_system7_0/S_AXI_HP0", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem0 (64 address bits : 16E) ;  ;  ;  ;  ; ", 14, "/userdma_0/Data_m_axi_gmem0 (64 address bits : 16E)", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "userdma_0 ;  ;  ;  ;  ; ", 13, "userdma_0", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "userdma_0 ;  ;  ;  ;  ; ", 13, "userdma_0", 0, false, false, false, false, true, false); // r - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS, "Assign All"); // ar
+// Run Command: PAResourceCommand.PACommandNames_AUTO_ASSIGN_ADDRESS
+// Tcl Command: 'assign_bd_address'
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: assign_bd_address 
+// Tcl Message: Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/userdma_0/Data_m_axi_gmem0' at <0x0000_0000 [ 512M ]>. Slave segment '/processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM' is being assigned into address space '/userdma_0/Data_m_axi_gmem1' at <0x0000_0000 [ 512M ]>. 
+selectButton("OptionPane.button", "OK"); // JButton
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "userdma_0 ;  ;  ;  ;  ; ", 3); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem0 (64 address bits : 16E) ;  ;  ;  ;  ; ", 4); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/S_AXI_HP0 ; S_AXI_HP0 ; HP0_DDR_LOWOCM ; 0x0000_0000_0000_0000 ; 512M ; 0x0000_0000_1FFF_FFFF", 5, "/processing_system7_0/S_AXI_HP0", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/Data_m_axi_gmem1 (64 address bits : 16E) ;  ;  ;  ;  ; ", 6); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "ps_axil_0 ;  ;  ;  ;  ; ", 2, "ps_axil_0", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "ps_axil_0 ;  ;  ;  ;  ; ", 2, "ps_axil_0", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "ps_axil_0 ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ps_axil_0/ladma_mm (64 address bits : 16E) ;  ;  ;  ;  ; ", 3, "/ps_axil_0/ladma_mm (64 address bits : 16E)", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ps_axil_0/ladma_mm (64 address bits : 16E) ;  ;  ;  ;  ; ", 3); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/ps_axil_0/ladma_mm (64 address bits : 16E) ;  ;  ;  ;  ; ", 3, "/ps_axil_0/ladma_mm (64 address bits : 16E)", 0, true); // r - Node
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/S_AXI_HP0 ; S_AXI_HP0 ; HP0_DDR_LOWOCM ; 0x0000_0000_0000_0000 ; 512M ; 0x0000_0000_1FFF_FFFF", 4, "/processing_system7_0/S_AXI_HP0", 0, false); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 1 ;  ;  ;  ;  ; ", 1, "Network 1", 0, true); // r - Node
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "Network 0 ;  ;  ;  ;  ; ", 0); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "processing_system7_0 ;  ;  ;  ;  ; ", 1); // r
+expandTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/processing_system7_0/Data (32 address bits : 0x40000000 [ 1G ]) ;  ;  ;  ;  ; ", 2); // r
+selectTreeTable(PAResourceAtoD.AddressNetworkTreeTablePanel_ADDRESS_NETWORK_TREE_TABLE_PANEL, "/userdma_0/s_axi_control ; s_axi_control ; Reg ; 0x6000_9000 ; 4K ; 0x6000_9FFF", 8, "0x6000_9000", 3, false); // r
+// Tcl Command: 'set_property offset 0x60009000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}]'
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: set_property offset 0x60009000 [get_bd_addr_segs {processing_system7_0/Data/SEG_userdma_0_Reg}] 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+// TclEventType: SELECT_REMOVE
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// [GUI Memory]: 207 MB (+15541kb) [00:24:03]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Map", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // m
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("IP Integrator", "Block Design", "DesignTask.IP_INTEGRATOR");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_CLOSE_DIAGRAM
+dismissDialog("Confirm Close"); // A
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_ADDRNETWORK
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: close_bd_design [get_bd_designs design_1] 
+dismissDialog("Close Block Designs"); // bA
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd)]", 4, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, design_1_wrapper (design_1_wrapper.v), design_1_i : design_1 (design_1.bd), design_1 (design_1.v)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: open_bd_design {/home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd} 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// WARNING: HEventQueue.dispatchEvent() is taking  1370 ms.
+// Tcl Message: Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_10M Adding component instance block -- xilinx.com:module_ref:spiflash:1.0 - spiflash_0 Adding component instance block -- xilinx.com:hls:userdma:1.0 - userdma_0 Successfully read diagram <design_1> from block design file </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd> 
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// JavaFX intialization before: 1718644632291
+// JavaFX initialization after: 1718644632291
+dismissDialog("Open Block Design"); // bA
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 139, 251, 640, 363, false, false, false, true, false); // hw - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ao
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ao
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // n
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run design_1_caravel_0_0_synth_1 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Launch Runs"); // f
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: launch_runs synth_1 -jobs 4 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/design_1.bd>  Wrote  : </home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: Verilog Output written to : /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/synth/design_1.v 
+// Tcl Message: Verilog Output written to : /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/sim/design_1.v Verilog Output written to : /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/xbar . INFO: [BD 41-1029] Generation completed for the IP Integrator block userdma_0 . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s00_couplers/auto_us . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s01_couplers/auto_us . 
+// Tcl Message: INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created. INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created. INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/s02_couplers/auto_us . 
+// TclEventType: RUN_ADD
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_mem_intercon/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh Generated Hardware Definition File /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.gen/sources_1/bd/design_1/synth/design_1.hwdef 
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// HMemoryUtils.trashcanNow. Engine heap size: 2,643 MB. GUI used memory: 122 MB. Current time: 6/17/24, 1:17:48 PM EDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,648 MB. GUI used memory: 120 MB. Current time: 6/17/24, 1:17:48 PM EDT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Mon Jun 17 13:17:56 2024] Launched synth_1... Run output will be captured here: /home/ubuntu/SoC_Design/homework/ASOC/ASoC-Final_project-optical_flow/vivado/vvd_caravel_fpga/vvd_caravel_fpga.runs/synth_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:42 ; elapsed = 00:00:38 . Memory (MB): peak = 9460.641 ; gain = 9.785 ; free physical = 2942 ; free virtual = 5625 
+// TclEventType: RUN_STATUS_CHANGE
+// [Engine Memory]: 2,731 MB (+56317kb) [00:25:08]
+// Elapsed time: 118 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f
+// 'k' command handler elapsed time: 120 seconds
+dismissDialog("Launch Run Critical Messages"); // bu
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1238ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1853 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4213 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1103 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+// WARNING: HTimer (ExpRunMonitor Open Timer) is taking 2081ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2603 ms.

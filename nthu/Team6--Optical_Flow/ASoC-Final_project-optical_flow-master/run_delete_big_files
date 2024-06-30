@@ -1,0 +1,5 @@
+##### Reference: https://dylan237.github.io/linux-basic.html
+#####find ./ -type f -size +100M -exec rm -f {} \;
+#####find ./ -type f -name '*.vcd' -o -name '*.wdb' -size +100M -exec rm -f {} \;
+find ./ -type f -name '*.vcd' -size +100M -exec rm -f {} \;
+find ./ -type f -name '*.wdb' -size +100M -exec rm -f {} \;

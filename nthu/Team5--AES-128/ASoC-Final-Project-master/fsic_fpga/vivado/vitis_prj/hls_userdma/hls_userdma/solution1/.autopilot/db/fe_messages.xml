@@ -1,0 +1,75 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="userdma.cpp:176:52" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="userdma.cpp:177:60" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_DATAFLOW" msg_id="214-113" msg_severity="WARNING" msg_loc="userdma.cpp:179:40" msg_body="Either use an argument of the function or declare the variable inside the dataflow loop body"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:22:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="streamtoparallelwithburst" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:50:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="getinstream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:101:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="paralleltostreamwithburst" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:129:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="sendoutstream" ARG_PragmaIsValid="1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="/home/ricky/asoc/final_project/fsic_fpga/vivado/vitis_prj/hls_userdma/hls_userdma/solution1/csynth.tcl:16:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=userdma" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:154:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register_mode=both register port=inStreamTop" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:155:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi max_write_burst_length=16 latency=10 depth=1024 bundle=gmem0 port=s2mbuf offset = slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:156:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = s2m_buf_sts bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:157:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = s2m_len bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:158:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = s2m_enb_clrsts bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:159:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = s2mbuf bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:160:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = s2m_err bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:161:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = endianness bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:162:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="axis register_mode=both register port=outStreamTop" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:163:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi max_read_burst_length=16 num_read_outstanding=4 latency=10 depth=1024 bundle=gmem1 port=m2sbuf offset = slave" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:164:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = m2s_buf_sts bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:165:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = m2s_len bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:166:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = m2s_enb_clrsts bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:167:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = m2sbuf bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:168:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port = return bundle = control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="userdma.cpp:170:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="userdma" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="userdma.cpp:172:32" msg_body="Aggregating fifo (hls::stream) variable 'inbuf' with compact=bit mode in 33-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="33" HwTyName="fifo (hls::stream)" Name="inbuf"/>
+    </msg>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="userdma.cpp:174:32" msg_body="Aggregating fifo (hls::stream) variable 'outbuf' with compact=bit mode in 33-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="33" HwTyName="fifo (hls::stream)" Name="outbuf"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

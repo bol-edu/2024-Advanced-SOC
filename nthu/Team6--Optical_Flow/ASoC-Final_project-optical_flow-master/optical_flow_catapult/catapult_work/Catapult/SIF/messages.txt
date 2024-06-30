@@ -1,0 +1,24 @@
+
+# Messages from "go new"
+
+# Info: Branching solution 'solution.v2' at state 'initial' (PRJ-2)
+
+# Messages from "go analyze"
+
+# Info: Branching solution 'solution.v2' at state 'new' (PRJ-2)
+solution design set EdgeDetect_IP::EdgeDetect_VerDer -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_HorDer -block
+solution design set EdgeDetect_IP::EdgeDetect_HorDer -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_MagAng -block
+solution design set EdgeDetect_IP::EdgeDetect_MagAng -block (HC-8)
+solution design set EdgeDetect_IP::EdgeDetect_Top -top
+solution design set EdgeDetect_IP::EdgeDetect_Top -top (HC-8)
+go compile
+# Info: Starting transformation 'analyze' on solution 'solution.v2' (SOL-8)
+Front End called with arguments: -I../hls_c/inc -I../cmodel/inc -I../bmpUtil/inc -- /home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/hls_c/inc/EdgeDetect.h (CIN-69)
+Edison Design Group C++/C Front End - Version 6.3 (CIN-1)
+# Warning: Cannot bind pragma 'hls_waive ISE' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+# Warning: Cannot bind pragma 'hls_waive CNS' to any valid construct. Please check if a valid construct follows the pragma. (CIN-319)
+Pragma 'hls_design<top>' detected on class 'EdgeDetect_IP::EdgeDetect_Top' (CIN-6)
+Source file analysis completed (CIN-68)
+# Info: Completed transformation 'analyze' on solution 'solution.v2': elapsed time 3.78 seconds, memory usage 1514940kB, peak memory usage 1514944kB (SOL-9)

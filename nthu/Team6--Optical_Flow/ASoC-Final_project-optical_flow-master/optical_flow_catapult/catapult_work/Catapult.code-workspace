@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/catapult_work"
+		},
+		{
+			"path": "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/bmpUtil/src"
+		},
+		{
+			"path": "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/hls_c/inc"
+		},
+		{
+			"path": "/home/m111/m111061545/catapult/catapult-for-soc-course/lab2_edgedetec_fsic/01_edgedetect/hls_c/src"
+		}
+	]
+}

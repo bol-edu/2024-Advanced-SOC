@@ -1,0 +1,9 @@
+#@ # 
+#@ # Running icc2_shell Version R-2020.09-SP3 for linux64 -- Jan 19, 2021
+#@ # Date:   Wed Jun 19 04:38:36 2024
+#@ # Run by: m112061576@ws31
+#@ 
+
+source -echo -verbose ./../scripts/step3_powerplan.tcl
+error_info
+exit
