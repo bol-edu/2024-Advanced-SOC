@@ -7,5 +7,3 @@ The GitHub link for each group is as follows:
 - Team 5: https://github.com/ruei7916/ASoC-Final-Project
 - Team 6: https://github.com/whywhytellmewhy/ASoC-Final_project-optical_flow
 - Team 7: https://github.com/roy-tsai-tw/Advanced_SOC_Design/tree/main/Lab5_6_Final_Project
-
-The repositories will be forked to here soon.
